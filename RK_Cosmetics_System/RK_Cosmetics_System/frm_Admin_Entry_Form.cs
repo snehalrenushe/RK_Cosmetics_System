@@ -30,5 +30,13 @@ namespace RK_Cosmetics_System
             MCD.Show();
             this.Hide();
         }
+
+        private void btn_Employee_Click(object sender, EventArgs e)
+        {
+            frm_MDI_Employee_Details MED = new frm_MDI_Employee_Details();
+
+            MED.Show();
+            this.Hide();
+        }
     }
 }

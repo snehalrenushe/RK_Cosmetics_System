@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Admin_Entry_Form));
             this.pnl_Admin_Entry_Form = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lbl_Welcome = new System.Windows.Forms.Label();
-            this.lbl_To_RK = new System.Windows.Forms.Label();
-            this.lbl_Admin = new System.Windows.Forms.Label();
-            this.btn_User_Management = new System.Windows.Forms.Button();
             this.btn_Reports = new System.Windows.Forms.Button();
+            this.lbl_Admin = new System.Windows.Forms.Label();
+            this.lbl_To_RK = new System.Windows.Forms.Label();
+            this.lbl_Welcome = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btn_User_Management = new System.Windows.Forms.Button();
             this.btn_Logout = new System.Windows.Forms.Button();
             this.btn_Stock = new System.Windows.Forms.Button();
             this.pb_Customer = new System.Windows.Forms.PictureBox();
@@ -72,39 +72,17 @@
             this.pnl_Admin_Entry_Form.Size = new System.Drawing.Size(357, 884);
             this.pnl_Admin_Entry_Form.TabIndex = 0;
             // 
-            // pictureBox1
+            // btn_Reports
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(357, 271);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // lbl_Welcome
-            // 
-            this.lbl_Welcome.AutoSize = true;
-            this.lbl_Welcome.BackColor = System.Drawing.Color.White;
-            this.lbl_Welcome.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Welcome.ForeColor = System.Drawing.Color.Black;
-            this.lbl_Welcome.Location = new System.Drawing.Point(100, 92);
-            this.lbl_Welcome.Name = "lbl_Welcome";
-            this.lbl_Welcome.Size = new System.Drawing.Size(127, 40);
-            this.lbl_Welcome.TabIndex = 1;
-            this.lbl_Welcome.Text = "Welcome";
-            // 
-            // lbl_To_RK
-            // 
-            this.lbl_To_RK.AutoSize = true;
-            this.lbl_To_RK.BackColor = System.Drawing.Color.White;
-            this.lbl_To_RK.Font = new System.Drawing.Font("Segoe Script", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_To_RK.ForeColor = System.Drawing.Color.DeepPink;
-            this.lbl_To_RK.Location = new System.Drawing.Point(95, 132);
-            this.lbl_To_RK.Name = "lbl_To_RK";
-            this.lbl_To_RK.Size = new System.Drawing.Size(163, 33);
-            this.lbl_To_RK.TabIndex = 2;
-            this.lbl_To_RK.Text = "to RK Varities";
+            this.btn_Reports.BackColor = System.Drawing.Color.YellowGreen;
+            this.btn_Reports.Font = new System.Drawing.Font("Palatino Linotype", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Reports.ForeColor = System.Drawing.Color.Black;
+            this.btn_Reports.Location = new System.Drawing.Point(59, 363);
+            this.btn_Reports.Name = "btn_Reports";
+            this.btn_Reports.Size = new System.Drawing.Size(184, 56);
+            this.btn_Reports.TabIndex = 6;
+            this.btn_Reports.Text = "Reports";
+            this.btn_Reports.UseVisualStyleBackColor = false;
             // 
             // lbl_Admin
             // 
@@ -118,6 +96,40 @@
             this.lbl_Admin.TabIndex = 3;
             this.lbl_Admin.Text = "Admin";
             // 
+            // lbl_To_RK
+            // 
+            this.lbl_To_RK.AutoSize = true;
+            this.lbl_To_RK.BackColor = System.Drawing.Color.White;
+            this.lbl_To_RK.Font = new System.Drawing.Font("Segoe Script", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_To_RK.ForeColor = System.Drawing.Color.DeepPink;
+            this.lbl_To_RK.Location = new System.Drawing.Point(95, 132);
+            this.lbl_To_RK.Name = "lbl_To_RK";
+            this.lbl_To_RK.Size = new System.Drawing.Size(163, 33);
+            this.lbl_To_RK.TabIndex = 2;
+            this.lbl_To_RK.Text = "to RK Varities";
+            // 
+            // lbl_Welcome
+            // 
+            this.lbl_Welcome.AutoSize = true;
+            this.lbl_Welcome.BackColor = System.Drawing.Color.White;
+            this.lbl_Welcome.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Welcome.ForeColor = System.Drawing.Color.Black;
+            this.lbl_Welcome.Location = new System.Drawing.Point(100, 92);
+            this.lbl_Welcome.Name = "lbl_Welcome";
+            this.lbl_Welcome.Size = new System.Drawing.Size(127, 40);
+            this.lbl_Welcome.TabIndex = 1;
+            this.lbl_Welcome.Text = "Welcome";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(357, 271);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // btn_User_Management
             // 
             this.btn_User_Management.BackColor = System.Drawing.Color.YellowGreen;
@@ -130,18 +142,6 @@
             this.btn_User_Management.Text = "User Management";
             this.btn_User_Management.UseVisualStyleBackColor = false;
             this.btn_User_Management.Click += new System.EventHandler(this.btn_User_Management_Click);
-            // 
-            // btn_Reports
-            // 
-            this.btn_Reports.BackColor = System.Drawing.Color.YellowGreen;
-            this.btn_Reports.Font = new System.Drawing.Font("Palatino Linotype", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Reports.ForeColor = System.Drawing.Color.Black;
-            this.btn_Reports.Location = new System.Drawing.Point(59, 363);
-            this.btn_Reports.Name = "btn_Reports";
-            this.btn_Reports.Size = new System.Drawing.Size(184, 56);
-            this.btn_Reports.TabIndex = 6;
-            this.btn_Reports.Text = "Reports";
-            this.btn_Reports.UseVisualStyleBackColor = false;
             // 
             // btn_Logout
             // 
@@ -252,6 +252,7 @@
             this.btn_Employee.TabIndex = 11;
             this.btn_Employee.Text = "Employee";
             this.btn_Employee.UseVisualStyleBackColor = false;
+            this.btn_Employee.Click += new System.EventHandler(this.btn_Employee_Click);
             // 
             // btn_Distributor
             // 

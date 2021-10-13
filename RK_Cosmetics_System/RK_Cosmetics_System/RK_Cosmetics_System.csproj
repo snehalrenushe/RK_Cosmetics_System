@@ -53,6 +53,12 @@
     <Compile Include="frm_Add_New_Customer.Designer.cs">
       <DependentUpon>frm_Add_New_Customer.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_Add_New_Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Add_New_Employee.Designer.cs">
+      <DependentUpon>frm_Add_New_Employee.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_Add_New_User.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +82,12 @@
     </Compile>
     <Compile Include="frm_Delete_User.Designer.cs">
       <DependentUpon>frm_Delete_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_MDI_Employee_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_MDI_Employee_Details.Designer.cs">
+      <DependentUpon>frm_MDI_Employee_Details.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_Login_Form.cs">
       <SubType>Form</SubType>
@@ -101,10 +113,31 @@
     <Compile Include="frm_Non_Admin_Entry_Form.Designer.cs">
       <DependentUpon>frm_Non_Admin_Entry_Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_Update_Employee_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Update_Employee_Details.Designer.cs">
+      <DependentUpon>frm_Update_Employee_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_View_Customer_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_View_Customer_Details.Designer.cs">
+      <DependentUpon>frm_View_Customer_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_View_Employee_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_View_Employee_Details.Designer.cs">
+      <DependentUpon>frm_View_Employee_Details.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frm_Add_New_Customer.resx">
       <DependentUpon>frm_Add_New_Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Add_New_Employee.resx">
+      <DependentUpon>frm_Add_New_Employee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Add_New_User.resx">
       <DependentUpon>frm_Add_New_User.cs</DependentUpon>
@@ -118,6 +151,9 @@
     <EmbeddedResource Include="frm_Delete_User.resx">
       <DependentUpon>frm_Delete_User.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_MDI_Employee_Details.resx">
+      <DependentUpon>frm_MDI_Employee_Details.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_Login_Form.resx">
       <DependentUpon>frm_Login_Form.cs</DependentUpon>
     </EmbeddedResource>
@@ -129,6 +165,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Non_Admin_Entry_Form.resx">
       <DependentUpon>frm_Non_Admin_Entry_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Update_Employee_Details.resx">
+      <DependentUpon>frm_Update_Employee_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_View_Customer_Details.resx">
+      <DependentUpon>frm_View_Customer_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_View_Employee_Details.resx">
+      <DependentUpon>frm_View_Employee_Details.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

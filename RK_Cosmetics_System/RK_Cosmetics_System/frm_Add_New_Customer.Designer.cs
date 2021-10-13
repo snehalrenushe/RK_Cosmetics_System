@@ -36,7 +36,7 @@
             this.lbl_Mobile_No = new System.Windows.Forms.Label();
             this.lbl_Date = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtp_Date = new System.Windows.Forms.DateTimePicker();
             this.gb_Purchase_Details = new System.Windows.Forms.GroupBox();
             this.lbl_Product_Name = new System.Windows.Forms.Label();
             this.lbl_Brand_Name = new System.Windows.Forms.Label();
@@ -51,7 +51,7 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.btn_Add = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgv_Add_New_Customer = new System.Windows.Forms.DataGridView();
             this.gb_Bill_Details = new System.Windows.Forms.GroupBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.lbl_Final_Bill = new System.Windows.Forms.Label();
@@ -64,13 +64,13 @@
             this.btn_Refresh = new System.Windows.Forms.Button();
             this.gb_Customer_Details.SuspendLayout();
             this.gb_Purchase_Details.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Add_New_Customer)).BeginInit();
             this.gb_Bill_Details.SuspendLayout();
             this.SuspendLayout();
             // 
             // gb_Customer_Details
             // 
-            this.gb_Customer_Details.Controls.Add(this.dateTimePicker1);
+            this.gb_Customer_Details.Controls.Add(this.dtp_Date);
             this.gb_Customer_Details.Controls.Add(this.textBox1);
             this.gb_Customer_Details.Controls.Add(this.lbl_Mobile_No);
             this.gb_Customer_Details.Controls.Add(this.lbl_Date);
@@ -164,17 +164,17 @@
             this.textBox1.Size = new System.Drawing.Size(301, 44);
             this.textBox1.TabIndex = 19;
             // 
-            // dateTimePicker1
+            // dtp_Date
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(1353, 56);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(301, 39);
-            this.dateTimePicker1.TabIndex = 20;
+            this.dtp_Date.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtp_Date.Location = new System.Drawing.Point(1353, 56);
+            this.dtp_Date.Name = "dtp_Date";
+            this.dtp_Date.Size = new System.Drawing.Size(301, 39);
+            this.dtp_Date.TabIndex = 20;
             // 
             // gb_Purchase_Details
             // 
-            this.gb_Purchase_Details.Controls.Add(this.dataGridView1);
+            this.gb_Purchase_Details.Controls.Add(this.dgv_Add_New_Customer);
             this.gb_Purchase_Details.Controls.Add(this.btn_Add);
             this.gb_Purchase_Details.Controls.Add(this.comboBox2);
             this.gb_Purchase_Details.Controls.Add(this.comboBox1);
@@ -339,15 +339,15 @@
             this.btn_Add.Text = "Add";
             this.btn_Add.UseVisualStyleBackColor = false;
             // 
-            // dataGridView1
+            // dgv_Add_New_Customer
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.PeachPuff;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(891, 50);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(850, 302);
-            this.dataGridView1.TabIndex = 28;
+            this.dgv_Add_New_Customer.BackgroundColor = System.Drawing.Color.PeachPuff;
+            this.dgv_Add_New_Customer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_Add_New_Customer.Location = new System.Drawing.Point(891, 50);
+            this.dgv_Add_New_Customer.Name = "dgv_Add_New_Customer";
+            this.dgv_Add_New_Customer.RowTemplate.Height = 28;
+            this.dgv_Add_New_Customer.Size = new System.Drawing.Size(850, 302);
+            this.dgv_Add_New_Customer.TabIndex = 28;
             // 
             // gb_Bill_Details
             // 
@@ -489,7 +489,7 @@
             this.gb_Customer_Details.PerformLayout();
             this.gb_Purchase_Details.ResumeLayout(false);
             this.gb_Purchase_Details.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Add_New_Customer)).EndInit();
             this.gb_Bill_Details.ResumeLayout(false);
             this.gb_Bill_Details.PerformLayout();
             this.ResumeLayout(false);
@@ -499,7 +499,7 @@
         #endregion
 
         private System.Windows.Forms.GroupBox gb_Customer_Details;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtp_Date;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label lbl_Mobile_No;
         private System.Windows.Forms.Label lbl_Date;
@@ -521,7 +521,7 @@
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button btn_Add;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgv_Add_New_Customer;
         private System.Windows.Forms.GroupBox gb_Bill_Details;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label lbl_Final_Bill;

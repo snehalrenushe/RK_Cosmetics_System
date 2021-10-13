@@ -13,3 +13,8 @@ C:\Ty_Project\Project\RK_Cosmetics_System\RK_Cosmetics_System\obj\x86\Debug\RK_C
 C:\Ty_Project\Project\RK_Cosmetics_System\RK_Cosmetics_System\obj\x86\Debug\RK_Cosmetics_System.frm_Non_Admin_Entry_Form.resources
 C:\Ty_Project\Project\RK_Cosmetics_System\RK_Cosmetics_System\obj\x86\Debug\RK_Cosmetics_System.frm_MDI_Customer_Details.resources
 C:\Ty_Project\Project\RK_Cosmetics_System\RK_Cosmetics_System\obj\x86\Debug\RK_Cosmetics_System.frm_Add_New_Customer.resources
+C:\Ty_Project\Project\RK_Cosmetics_System\RK_Cosmetics_System\obj\x86\Debug\RK_Cosmetics_System.frm_View_Customer_Details.resources
+C:\Ty_Project\Project\RK_Cosmetics_System\RK_Cosmetics_System\obj\x86\Debug\RK_Cosmetics_System.frm_MDI_Employee_Details.resources
+C:\Ty_Project\Project\RK_Cosmetics_System\RK_Cosmetics_System\obj\x86\Debug\RK_Cosmetics_System.frm_Add_New_Employee.resources
+C:\Ty_Project\Project\RK_Cosmetics_System\RK_Cosmetics_System\obj\x86\Debug\RK_Cosmetics_System.frm_Update_Employee_Details.resources
+C:\Ty_Project\Project\RK_Cosmetics_System\RK_Cosmetics_System\obj\x86\Debug\RK_Cosmetics_System.frm_View_Employee_Details.resources

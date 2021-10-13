@@ -88,7 +88,7 @@
             this.lbl_Customer_Details.AutoSize = true;
             this.lbl_Customer_Details.Font = new System.Drawing.Font("Copperplate Gothic Bold", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Customer_Details.ForeColor = System.Drawing.Color.White;
-            this.lbl_Customer_Details.Location = new System.Drawing.Point(234, 9);
+            this.lbl_Customer_Details.Location = new System.Drawing.Point(281, 9);
             this.lbl_Customer_Details.Name = "lbl_Customer_Details";
             this.lbl_Customer_Details.Size = new System.Drawing.Size(755, 80);
             this.lbl_Customer_Details.TabIndex = 1;
@@ -133,7 +133,7 @@
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox2.BackColor = System.Drawing.Color.GreenYellow;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(1161, 106);
+            this.pictureBox2.Location = new System.Drawing.Point(1108, 106);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(68, 52);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -151,7 +151,7 @@
             this.toolStripMenuItem1});
             this.menuStrip2.Location = new System.Drawing.Point(708, 106);
             this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Size = new System.Drawing.Size(400, 52);
+            this.menuStrip2.Size = new System.Drawing.Size(379, 52);
             this.menuStrip2.TabIndex = 7;
             this.menuStrip2.Text = "menuStrip2";
             this.menuStrip2.UseWaitCursor = true;
@@ -159,8 +159,8 @@
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(392, 48);
-            this.toolStripMenuItem1.Text = "Search Customer Details";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(371, 48);
+            this.toolStripMenuItem1.Text = "View Customer Details";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // frm_MDI_Customer_Details

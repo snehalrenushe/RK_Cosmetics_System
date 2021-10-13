@@ -42,7 +42,11 @@ namespace RK_Cosmetics_System
 
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
+            frm_View_Customer_Details VCD = new frm_View_Customer_Details();
 
+            VCD.MdiParent = this;
+            VCD.WindowState = FormWindowState.Maximized;
+            VCD.Show();
         }
     }
 }
