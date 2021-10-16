@@ -16,11 +16,6 @@ namespace RK_Cosmetics_System
             InitializeComponent();
         }
 
-        private void frm_MDI_Customer_Details_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void addNewCustomerToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frm_Add_New_Customer ANC = new frm_Add_New_Customer();
@@ -30,16 +25,6 @@ namespace RK_Cosmetics_System
             ANC.Show();
         }
 
-        private void searchCustomerDetailsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
             frm_View_Customer_Details VCD = new frm_View_Customer_Details();
@@ -47,6 +32,14 @@ namespace RK_Cosmetics_System
             VCD.MdiParent = this;
             VCD.WindowState = FormWindowState.Maximized;
             VCD.Show();
+        }
+
+        private void btn_Back_Click(object sender, EventArgs e)
+        {
+            frm_Admin_Entry_Form AEF = new frm_Admin_Entry_Form();
+
+            AEF.Show();
+            this.Hide();
         }
     }
 }

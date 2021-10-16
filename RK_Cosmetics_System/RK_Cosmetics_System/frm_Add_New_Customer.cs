@@ -15,15 +15,5 @@ namespace RK_Cosmetics_System
         {
             InitializeComponent();
         }
-
-        private void frm_Add_New_Customer_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void gb_Bill_Details_Enter(object sender, EventArgs e)
-        {
-
-        }
     }
 }

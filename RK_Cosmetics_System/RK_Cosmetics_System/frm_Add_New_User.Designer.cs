@@ -124,6 +124,7 @@
             this.btn_Save.TabIndex = 27;
             this.btn_Save.Text = "Save";
             this.btn_Save.UseVisualStyleBackColor = false;
+           
             // 
             // btn_Close
             // 
@@ -155,7 +156,6 @@
             this.Controls.Add(this.lbl_Username);
             this.Name = "frm_Add_New_User";
             this.Text = "Add New User";
-            this.Load += new System.EventHandler(this.frm_Add_New_User_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

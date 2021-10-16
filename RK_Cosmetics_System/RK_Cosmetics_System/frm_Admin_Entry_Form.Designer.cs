@@ -167,6 +167,7 @@
             this.btn_Stock.TabIndex = 7;
             this.btn_Stock.Text = "Stock";
             this.btn_Stock.UseVisualStyleBackColor = false;
+            this.btn_Stock.Click += new System.EventHandler(this.btn_Stock_Click);
             // 
             // pb_Customer
             // 
@@ -265,6 +266,7 @@
             this.btn_Distributor.TabIndex = 12;
             this.btn_Distributor.Text = "Distributor";
             this.btn_Distributor.UseVisualStyleBackColor = false;
+            this.btn_Distributor.Click += new System.EventHandler(this.btn_Distributor_Click);
             // 
             // btn_Product
             // 
@@ -277,6 +279,7 @@
             this.btn_Product.TabIndex = 13;
             this.btn_Product.Text = "Product";
             this.btn_Product.UseVisualStyleBackColor = false;
+            this.btn_Product.Click += new System.EventHandler(this.btn_Product_Click);
             // 
             // frm_Admin_Entry_Form
             // 

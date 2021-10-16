@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_MDI_Employee_Details));
-            this.pnl_Customer_Details = new System.Windows.Forms.Panel();
+            this.pnl_Employee_Details = new System.Windows.Forms.Panel();
             this.btn_Logout = new System.Windows.Forms.Button();
             this.btn_Back = new System.Windows.Forms.Button();
             this.lbl_Employee_Details = new System.Windows.Forms.Label();
@@ -42,7 +42,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.menuStrip3 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.pnl_Customer_Details.SuspendLayout();
+            this.pnl_Employee_Details.SuspendLayout();
             this.menuStrip2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -51,17 +51,17 @@
             this.menuStrip3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // pnl_Customer_Details
+            // pnl_Employee_Details
             // 
-            this.pnl_Customer_Details.BackColor = System.Drawing.Color.DeepPink;
-            this.pnl_Customer_Details.Controls.Add(this.btn_Logout);
-            this.pnl_Customer_Details.Controls.Add(this.btn_Back);
-            this.pnl_Customer_Details.Controls.Add(this.lbl_Employee_Details);
-            this.pnl_Customer_Details.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_Customer_Details.Location = new System.Drawing.Point(0, 0);
-            this.pnl_Customer_Details.Name = "pnl_Customer_Details";
-            this.pnl_Customer_Details.Size = new System.Drawing.Size(1412, 100);
-            this.pnl_Customer_Details.TabIndex = 3;
+            this.pnl_Employee_Details.BackColor = System.Drawing.Color.DeepPink;
+            this.pnl_Employee_Details.Controls.Add(this.btn_Logout);
+            this.pnl_Employee_Details.Controls.Add(this.btn_Back);
+            this.pnl_Employee_Details.Controls.Add(this.lbl_Employee_Details);
+            this.pnl_Employee_Details.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl_Employee_Details.Location = new System.Drawing.Point(0, 0);
+            this.pnl_Employee_Details.Name = "pnl_Employee_Details";
+            this.pnl_Employee_Details.Size = new System.Drawing.Size(1412, 100);
+            this.pnl_Employee_Details.TabIndex = 3;
             // 
             // btn_Logout
             // 
@@ -85,6 +85,7 @@
             this.btn_Back.TabIndex = 2;
             this.btn_Back.Text = "Back";
             this.btn_Back.UseVisualStyleBackColor = true;
+            this.btn_Back.Click += new System.EventHandler(this.btn_Back_Click);
             // 
             // lbl_Employee_Details
             // 
@@ -211,14 +212,14 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
-            this.Controls.Add(this.pnl_Customer_Details);
+            this.Controls.Add(this.pnl_Employee_Details);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frm_MDI_Employee_Details";
             this.Text = "Employee Details";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.pnl_Customer_Details.ResumeLayout(false);
-            this.pnl_Customer_Details.PerformLayout();
+            this.pnl_Employee_Details.ResumeLayout(false);
+            this.pnl_Employee_Details.PerformLayout();
             this.menuStrip2.ResumeLayout(false);
             this.menuStrip2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -235,7 +236,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel pnl_Customer_Details;
+        private System.Windows.Forms.Panel pnl_Employee_Details;
         private System.Windows.Forms.Button btn_Logout;
         private System.Windows.Forms.Button btn_Back;
         private System.Windows.Forms.Label lbl_Employee_Details;

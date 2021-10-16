@@ -16,9 +16,5 @@ namespace RK_Cosmetics_System
             InitializeComponent();
         }
 
-        private void frm_Add_New_User_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

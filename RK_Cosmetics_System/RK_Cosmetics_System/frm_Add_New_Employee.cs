@@ -16,9 +16,5 @@ namespace RK_Cosmetics_System
             InitializeComponent();
         }
 
-        private void gb_Employee_Details_Enter(object sender, EventArgs e)
-        {
-
-        }
     }
 }

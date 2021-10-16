@@ -42,5 +42,13 @@ namespace RK_Cosmetics_System
             VED.WindowState = FormWindowState.Maximized;
             VED.Show();
         }
+
+        private void btn_Back_Click(object sender, EventArgs e)
+        {
+            frm_Admin_Entry_Form AEF = new frm_Admin_Entry_Form();
+
+            AEF.Show();
+            this.Hide();
+        }
     }
 }

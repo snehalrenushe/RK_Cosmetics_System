@@ -38,5 +38,29 @@ namespace RK_Cosmetics_System
             MED.Show();
             this.Hide();
         }
+
+        private void btn_Distributor_Click(object sender, EventArgs e)
+        {
+            frm_MDI_Distributor_Details MDD = new frm_MDI_Distributor_Details();
+
+            MDD.Show();
+            this.Hide();
+        }
+
+        private void btn_Product_Click(object sender, EventArgs e)
+        {
+            frm_MDI_Product_Details MPD = new frm_MDI_Product_Details();
+
+            MPD.Show();
+            this.Hide();
+        }
+
+        private void btn_Stock_Click(object sender, EventArgs e)
+        {
+            frm_MDI_Stock_Details MSD = new frm_MDI_Stock_Details();
+
+            MSD.Show();
+            this.Hide();
+        }
     }
 }

@@ -129,6 +129,7 @@
             this.btn_Customer.TabIndex = 13;
             this.btn_Customer.Text = "Customer";
             this.btn_Customer.UseVisualStyleBackColor = false;
+            this.btn_Customer.Click += new System.EventHandler(this.btn_Customer_Click);
             // 
             // pb_Product
             // 
@@ -161,6 +162,7 @@
             this.btn_Product.TabIndex = 14;
             this.btn_Product.Text = "Product";
             this.btn_Product.UseVisualStyleBackColor = false;
+            this.btn_Product.Click += new System.EventHandler(this.btn_Product_Click);
             // 
             // btn_Logout
             // 

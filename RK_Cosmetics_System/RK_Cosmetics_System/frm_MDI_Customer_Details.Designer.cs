@@ -81,6 +81,7 @@
             this.btn_Back.TabIndex = 2;
             this.btn_Back.Text = "Back";
             this.btn_Back.UseVisualStyleBackColor = true;
+            this.btn_Back.Click += new System.EventHandler(this.btn_Back_Click);
             // 
             // lbl_Customer_Details
             // 
@@ -139,7 +140,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // menuStrip2
             // 
@@ -179,7 +179,6 @@
             this.Name = "frm_MDI_Customer_Details";
             this.Text = "Customer Details";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.frm_MDI_Customer_Details_Load);
             this.pnl_Customer_Details.ResumeLayout(false);
             this.pnl_Customer_Details.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
