@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_MDI_User_Management));
             this.pnl_User_Management = new System.Windows.Forms.Panel();
+            this.btn_Logout = new System.Windows.Forms.Button();
             this.btn_Back = new System.Windows.Forms.Button();
             this.lbl_User_Management = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -41,7 +42,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.addNewCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.btn_Logout = new System.Windows.Forms.Button();
             this.pnl_User_Management.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.menuStrip3.SuspendLayout();
@@ -63,6 +63,18 @@
             this.pnl_User_Management.Size = new System.Drawing.Size(1459, 89);
             this.pnl_User_Management.TabIndex = 1;
             // 
+            // btn_Logout
+            // 
+            this.btn_Logout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Logout.Font = new System.Drawing.Font("Rockwell Condensed", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Logout.Image = ((System.Drawing.Image)(resources.GetObject("btn_Logout.Image")));
+            this.btn_Logout.Location = new System.Drawing.Point(1285, 21);
+            this.btn_Logout.Name = "btn_Logout";
+            this.btn_Logout.Size = new System.Drawing.Size(151, 55);
+            this.btn_Logout.TabIndex = 4;
+            this.btn_Logout.Text = "Logout";
+            this.btn_Logout.UseVisualStyleBackColor = true;
+            // 
             // btn_Back
             // 
             this.btn_Back.Font = new System.Drawing.Font("Rockwell Condensed", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -79,11 +91,11 @@
             // 
             this.lbl_User_Management.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_User_Management.AutoSize = true;
-            this.lbl_User_Management.Font = new System.Drawing.Font("Copperplate Gothic Bold", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_User_Management.Font = new System.Drawing.Font("Imprint MT Shadow", 42F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_User_Management.ForeColor = System.Drawing.Color.White;
-            this.lbl_User_Management.Location = new System.Drawing.Point(385, 3);
+            this.lbl_User_Management.Location = new System.Drawing.Point(399, -10);
             this.lbl_User_Management.Name = "lbl_User_Management";
-            this.lbl_User_Management.Size = new System.Drawing.Size(772, 80);
+            this.lbl_User_Management.Size = new System.Drawing.Size(718, 99);
             this.lbl_User_Management.TabIndex = 1;
             this.lbl_User_Management.Text = "User Management";
             // 
@@ -188,18 +200,6 @@
             this.addNewCustomerToolStripMenuItem.Size = new System.Drawing.Size(250, 48);
             this.addNewCustomerToolStripMenuItem.Text = "Add New User";
             this.addNewCustomerToolStripMenuItem.Click += new System.EventHandler(this.addNewCustomerToolStripMenuItem_Click);
-            // 
-            // btn_Logout
-            // 
-            this.btn_Logout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_Logout.Font = new System.Drawing.Font("Rockwell Condensed", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Logout.Image = ((System.Drawing.Image)(resources.GetObject("btn_Logout.Image")));
-            this.btn_Logout.Location = new System.Drawing.Point(1285, 21);
-            this.btn_Logout.Name = "btn_Logout";
-            this.btn_Logout.Size = new System.Drawing.Size(151, 55);
-            this.btn_Logout.TabIndex = 4;
-            this.btn_Logout.Text = "Logout";
-            this.btn_Logout.UseVisualStyleBackColor = true;
             // 
             // frm_MDI_User_Management
             // 

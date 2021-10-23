@@ -91,11 +91,11 @@
             // 
             this.lbl_Distributor_Details.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_Distributor_Details.AutoSize = true;
-            this.lbl_Distributor_Details.Font = new System.Drawing.Font("Copperplate Gothic Bold", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Distributor_Details.Font = new System.Drawing.Font("Imprint MT Shadow", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Distributor_Details.ForeColor = System.Drawing.Color.White;
-            this.lbl_Distributor_Details.Location = new System.Drawing.Point(316, 9);
+            this.lbl_Distributor_Details.Location = new System.Drawing.Point(305, -9);
             this.lbl_Distributor_Details.Name = "lbl_Distributor_Details";
-            this.lbl_Distributor_Details.Size = new System.Drawing.Size(831, 80);
+            this.lbl_Distributor_Details.Size = new System.Drawing.Size(838, 113);
             this.lbl_Distributor_Details.TabIndex = 1;
             this.lbl_Distributor_Details.Text = "Distributor Details";
             // 
@@ -217,7 +217,7 @@
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frm_MDI_Distributor_Details";
-            this.Text = "MDI Distributor Details";
+            this.Text = "Distributor Details";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.pnl_Customer_Details.ResumeLayout(false);
             this.pnl_Customer_Details.PerformLayout();

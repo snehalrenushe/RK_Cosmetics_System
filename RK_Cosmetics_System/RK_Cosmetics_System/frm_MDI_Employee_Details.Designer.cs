@@ -91,11 +91,11 @@
             // 
             this.lbl_Employee_Details.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_Employee_Details.AutoSize = true;
-            this.lbl_Employee_Details.Font = new System.Drawing.Font("Copperplate Gothic Bold", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Employee_Details.Font = new System.Drawing.Font("Imprint MT Shadow", 48F, System.Drawing.FontStyle.Bold);
             this.lbl_Employee_Details.ForeColor = System.Drawing.Color.White;
-            this.lbl_Employee_Details.Location = new System.Drawing.Point(316, 9);
+            this.lbl_Employee_Details.Location = new System.Drawing.Point(312, -13);
             this.lbl_Employee_Details.Name = "lbl_Employee_Details";
-            this.lbl_Employee_Details.Size = new System.Drawing.Size(743, 80);
+            this.lbl_Employee_Details.Size = new System.Drawing.Size(787, 113);
             this.lbl_Employee_Details.TabIndex = 1;
             this.lbl_Employee_Details.Text = "Employee Details";
             // 

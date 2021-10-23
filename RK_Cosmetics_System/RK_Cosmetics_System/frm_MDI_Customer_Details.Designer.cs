@@ -87,11 +87,11 @@
             // 
             this.lbl_Customer_Details.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_Customer_Details.AutoSize = true;
-            this.lbl_Customer_Details.Font = new System.Drawing.Font("Copperplate Gothic Bold", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Customer_Details.Font = new System.Drawing.Font("Imprint MT Shadow", 48F, System.Drawing.FontStyle.Bold);
             this.lbl_Customer_Details.ForeColor = System.Drawing.Color.White;
-            this.lbl_Customer_Details.Location = new System.Drawing.Point(281, 9);
+            this.lbl_Customer_Details.Location = new System.Drawing.Point(309, -7);
             this.lbl_Customer_Details.Name = "lbl_Customer_Details";
-            this.lbl_Customer_Details.Size = new System.Drawing.Size(755, 80);
+            this.lbl_Customer_Details.Size = new System.Drawing.Size(778, 113);
             this.lbl_Customer_Details.TabIndex = 1;
             this.lbl_Customer_Details.Text = "Customer Details";
             // 

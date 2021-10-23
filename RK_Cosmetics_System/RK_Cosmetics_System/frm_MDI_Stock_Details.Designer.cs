@@ -86,11 +86,11 @@
             // 
             this.lbl_Stock_Details.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_Stock_Details.AutoSize = true;
-            this.lbl_Stock_Details.Font = new System.Drawing.Font("Copperplate Gothic Bold", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Stock_Details.Font = new System.Drawing.Font("Imprint MT Shadow", 48F, System.Drawing.FontStyle.Bold);
             this.lbl_Stock_Details.ForeColor = System.Drawing.Color.White;
-            this.lbl_Stock_Details.Location = new System.Drawing.Point(403, 9);
+            this.lbl_Stock_Details.Location = new System.Drawing.Point(404, -7);
             this.lbl_Stock_Details.Name = "lbl_Stock_Details";
-            this.lbl_Stock_Details.Size = new System.Drawing.Size(598, 80);
+            this.lbl_Stock_Details.Size = new System.Drawing.Size(602, 113);
             this.lbl_Stock_Details.TabIndex = 1;
             this.lbl_Stock_Details.Text = "Stock Details";
             // 
