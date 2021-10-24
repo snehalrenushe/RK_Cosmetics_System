@@ -449,7 +449,7 @@
             this.btn_Save.BackColor = System.Drawing.Color.Yellow;
             this.btn_Save.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Save.ForeColor = System.Drawing.Color.Black;
-            this.btn_Save.Location = new System.Drawing.Point(234, 815);
+            this.btn_Save.Location = new System.Drawing.Point(237, 815);
             this.btn_Save.Name = "btn_Save";
             this.btn_Save.Size = new System.Drawing.Size(131, 56);
             this.btn_Save.TabIndex = 32;
@@ -462,7 +462,7 @@
             this.btn_Refresh.BackColor = System.Drawing.Color.Yellow;
             this.btn_Refresh.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Refresh.ForeColor = System.Drawing.Color.Black;
-            this.btn_Refresh.Location = new System.Drawing.Point(936, 815);
+            this.btn_Refresh.Location = new System.Drawing.Point(939, 815);
             this.btn_Refresh.Name = "btn_Refresh";
             this.btn_Refresh.Size = new System.Drawing.Size(151, 56);
             this.btn_Refresh.TabIndex = 31;
@@ -474,7 +474,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LavenderBlush;
-            this.ClientSize = new System.Drawing.Size(1799, 883);
+            this.ClientSize = new System.Drawing.Size(1804, 883);
             this.ControlBox = false;
             this.Controls.Add(this.btn_Save);
             this.Controls.Add(this.btn_Refresh);

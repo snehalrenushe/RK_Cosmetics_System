@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.gb_Update_Or_Search_Employee_Details = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label_Address = new System.Windows.Forms.Label();
+            this.tb_Addres = new System.Windows.Forms.TextBox();
+            this.lbl_Addres = new System.Windows.Forms.Label();
             this.pnl_Update_or_Search_Employee = new System.Windows.Forms.Panel();
             this.btn_Update = new System.Windows.Forms.Button();
             this.btn_Search = new System.Windows.Forms.Button();
@@ -62,8 +62,8 @@
             // gb_Update_Or_Search_Employee_Details
             // 
             this.gb_Update_Or_Search_Employee_Details.BackColor = System.Drawing.Color.LavenderBlush;
-            this.gb_Update_Or_Search_Employee_Details.Controls.Add(this.textBox1);
-            this.gb_Update_Or_Search_Employee_Details.Controls.Add(this.label_Address);
+            this.gb_Update_Or_Search_Employee_Details.Controls.Add(this.tb_Addres);
+            this.gb_Update_Or_Search_Employee_Details.Controls.Add(this.lbl_Addres);
             this.gb_Update_Or_Search_Employee_Details.Controls.Add(this.pnl_Update_or_Search_Employee);
             this.gb_Update_Or_Search_Employee_Details.Controls.Add(this.gb_Gender);
             this.gb_Update_Or_Search_Employee_Details.Controls.Add(this.tb_Address);
@@ -87,27 +87,27 @@
             this.gb_Update_Or_Search_Employee_Details.TabStop = false;
             this.gb_Update_Or_Search_Employee_Details.Text = "Update or Search Employee";
             // 
-            // textBox1
+            // tb_Addres
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(1341, 242);
-            this.textBox1.MaxLength = 10;
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(301, 40);
-            this.textBox1.TabIndex = 45;
+            this.tb_Addres.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Addres.Location = new System.Drawing.Point(1341, 242);
+            this.tb_Addres.MaxLength = 10;
+            this.tb_Addres.Multiline = true;
+            this.tb_Addres.Name = "tb_Addres";
+            this.tb_Addres.Size = new System.Drawing.Size(301, 40);
+            this.tb_Addres.TabIndex = 45;
             // 
-            // label_Address
+            // lbl_Addres
             // 
-            this.label_Address.AutoSize = true;
-            this.label_Address.BackColor = System.Drawing.Color.Pink;
-            this.label_Address.Font = new System.Drawing.Font("Microsoft YaHei", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Address.ForeColor = System.Drawing.Color.Maroon;
-            this.label_Address.Location = new System.Drawing.Point(1059, 249);
-            this.label_Address.Name = "label_Address";
-            this.label_Address.Size = new System.Drawing.Size(124, 36);
-            this.label_Address.TabIndex = 44;
-            this.label_Address.Text = "Address\r\n";
+            this.lbl_Addres.AutoSize = true;
+            this.lbl_Addres.BackColor = System.Drawing.Color.Pink;
+            this.lbl_Addres.Font = new System.Drawing.Font("Microsoft YaHei", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Addres.ForeColor = System.Drawing.Color.Maroon;
+            this.lbl_Addres.Location = new System.Drawing.Point(1059, 249);
+            this.lbl_Addres.Name = "lbl_Addres";
+            this.lbl_Addres.Size = new System.Drawing.Size(124, 36);
+            this.lbl_Addres.TabIndex = 44;
+            this.lbl_Addres.Text = "Address\r\n";
             // 
             // pnl_Update_or_Search_Employee
             // 
@@ -423,8 +423,8 @@
         private System.Windows.Forms.Button btn_Update;
         private System.Windows.Forms.Button btn_Search;
         private System.Windows.Forms.Label lbl_Employee_ID;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label_Address;
+        private System.Windows.Forms.TextBox tb_Addres;
+        private System.Windows.Forms.Label lbl_Addres;
         private System.Windows.Forms.Button btn_Save;
         private System.Windows.Forms.Button btn_Refresh;
     }

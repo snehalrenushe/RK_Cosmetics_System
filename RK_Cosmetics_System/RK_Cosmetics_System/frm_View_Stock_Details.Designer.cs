@@ -35,11 +35,11 @@
             this.cb_Brand_Name = new System.Windows.Forms.ComboBox();
             this.lbl_Product_Name = new System.Windows.Forms.Label();
             this.gb_Stock_Details = new System.Windows.Forms.GroupBox();
-            this.dgv_View_Product_Details = new System.Windows.Forms.DataGridView();
+            this.dgv_View_Stock_Details = new System.Windows.Forms.DataGridView();
             this.btn_Refresh = new System.Windows.Forms.Button();
             this.pnl_View_Stock_Details.SuspendLayout();
             this.gb_Stock_Details.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_View_Product_Details)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_View_Stock_Details)).BeginInit();
             this.SuspendLayout();
             // 
             // pnl_View_Stock_Details
@@ -113,7 +113,7 @@
             // gb_Stock_Details
             // 
             this.gb_Stock_Details.BackColor = System.Drawing.Color.LavenderBlush;
-            this.gb_Stock_Details.Controls.Add(this.dgv_View_Product_Details);
+            this.gb_Stock_Details.Controls.Add(this.dgv_View_Stock_Details);
             this.gb_Stock_Details.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gb_Stock_Details.Location = new System.Drawing.Point(76, 390);
             this.gb_Stock_Details.Name = "gb_Stock_Details";
@@ -122,15 +122,15 @@
             this.gb_Stock_Details.TabStop = false;
             this.gb_Stock_Details.Text = "Stock Details";
             // 
-            // dgv_View_Product_Details
+            // dgv_View_Stock_Details
             // 
-            this.dgv_View_Product_Details.BackgroundColor = System.Drawing.Color.PeachPuff;
-            this.dgv_View_Product_Details.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_View_Product_Details.Location = new System.Drawing.Point(77, 53);
-            this.dgv_View_Product_Details.Name = "dgv_View_Product_Details";
-            this.dgv_View_Product_Details.RowTemplate.Height = 28;
-            this.dgv_View_Product_Details.Size = new System.Drawing.Size(1611, 337);
-            this.dgv_View_Product_Details.TabIndex = 30;
+            this.dgv_View_Stock_Details.BackgroundColor = System.Drawing.Color.PeachPuff;
+            this.dgv_View_Stock_Details.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_View_Stock_Details.Location = new System.Drawing.Point(77, 53);
+            this.dgv_View_Stock_Details.Name = "dgv_View_Stock_Details";
+            this.dgv_View_Stock_Details.RowTemplate.Height = 28;
+            this.dgv_View_Stock_Details.Size = new System.Drawing.Size(1611, 337);
+            this.dgv_View_Stock_Details.TabIndex = 30;
             // 
             // btn_Refresh
             // 
@@ -159,7 +159,7 @@
             this.pnl_View_Stock_Details.ResumeLayout(false);
             this.pnl_View_Stock_Details.PerformLayout();
             this.gb_Stock_Details.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_View_Product_Details)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_View_Stock_Details)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -173,7 +173,7 @@
         private System.Windows.Forms.Label lbl_Product_Name;
         private System.Windows.Forms.Button btn_Search;
         private System.Windows.Forms.GroupBox gb_Stock_Details;
-        private System.Windows.Forms.DataGridView dgv_View_Product_Details;
+        private System.Windows.Forms.DataGridView dgv_View_Stock_Details;
         private System.Windows.Forms.Button btn_Refresh;
     }
 }

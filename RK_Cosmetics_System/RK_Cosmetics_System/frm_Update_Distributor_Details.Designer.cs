@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.gb_Update_Or_Search_Distributor_Details = new System.Windows.Forms.GroupBox();
+            this.tb_Addres = new System.Windows.Forms.TextBox();
+            this.lbl_Addres = new System.Windows.Forms.Label();
             this.clb_Brand_Delieverd = new System.Windows.Forms.CheckedListBox();
             this.lbl_Brand_Delieverd = new System.Windows.Forms.Label();
             this.tb_Last_Name = new System.Windows.Forms.TextBox();
@@ -54,8 +56,6 @@
             this.lbl_Mobile_No_1 = new System.Windows.Forms.Label();
             this.btn_Save = new System.Windows.Forms.Button();
             this.btn_Refresh = new System.Windows.Forms.Button();
-            this.tb_Addres = new System.Windows.Forms.TextBox();
-            this.lbl_Addres = new System.Windows.Forms.Label();
             this.gb_Update_Or_Search_Distributor_Details.SuspendLayout();
             this.pnl_Update_or_Search_Distributor.SuspendLayout();
             this.gb_Gender.SuspendLayout();
@@ -90,6 +90,28 @@
             this.gb_Update_Or_Search_Distributor_Details.TabIndex = 3;
             this.gb_Update_Or_Search_Distributor_Details.TabStop = false;
             this.gb_Update_Or_Search_Distributor_Details.Text = "Update or Search Distributor";
+            // 
+            // tb_Addres
+            // 
+            this.tb_Addres.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Addres.Location = new System.Drawing.Point(468, 529);
+            this.tb_Addres.MaxLength = 10;
+            this.tb_Addres.Multiline = true;
+            this.tb_Addres.Name = "tb_Addres";
+            this.tb_Addres.Size = new System.Drawing.Size(301, 40);
+            this.tb_Addres.TabIndex = 57;
+            // 
+            // lbl_Addres
+            // 
+            this.lbl_Addres.AutoSize = true;
+            this.lbl_Addres.BackColor = System.Drawing.Color.Pink;
+            this.lbl_Addres.Font = new System.Drawing.Font("Microsoft YaHei", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Addres.ForeColor = System.Drawing.Color.Maroon;
+            this.lbl_Addres.Location = new System.Drawing.Point(159, 533);
+            this.lbl_Addres.Name = "lbl_Addres";
+            this.lbl_Addres.Size = new System.Drawing.Size(124, 36);
+            this.lbl_Addres.TabIndex = 56;
+            this.lbl_Addres.Text = "Address";
             // 
             // clb_Brand_Delieverd
             // 
@@ -385,28 +407,6 @@
             this.btn_Refresh.TabIndex = 37;
             this.btn_Refresh.Text = "Refresh";
             this.btn_Refresh.UseVisualStyleBackColor = false;
-            // 
-            // tb_Addres
-            // 
-            this.tb_Addres.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_Addres.Location = new System.Drawing.Point(468, 529);
-            this.tb_Addres.MaxLength = 10;
-            this.tb_Addres.Multiline = true;
-            this.tb_Addres.Name = "tb_Addres";
-            this.tb_Addres.Size = new System.Drawing.Size(301, 40);
-            this.tb_Addres.TabIndex = 57;
-            // 
-            // lbl_Addres
-            // 
-            this.lbl_Addres.AutoSize = true;
-            this.lbl_Addres.BackColor = System.Drawing.Color.Pink;
-            this.lbl_Addres.Font = new System.Drawing.Font("Microsoft YaHei", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Addres.ForeColor = System.Drawing.Color.Maroon;
-            this.lbl_Addres.Location = new System.Drawing.Point(159, 533);
-            this.lbl_Addres.Name = "lbl_Addres";
-            this.lbl_Addres.Size = new System.Drawing.Size(124, 36);
-            this.lbl_Addres.TabIndex = 56;
-            this.lbl_Addres.Text = "Address";
             // 
             // frm_Update_Distributor_Details
             // 

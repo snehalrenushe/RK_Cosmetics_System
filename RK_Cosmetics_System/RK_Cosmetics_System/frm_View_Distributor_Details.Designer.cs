@@ -33,7 +33,7 @@
             this.pnl_Distributor_Details = new System.Windows.Forms.Panel();
             this.btn_Search = new System.Windows.Forms.Button();
             this.lbl_Tieup_Date = new System.Windows.Forms.Label();
-            this.dtp_Joining_Date = new System.Windows.Forms.DateTimePicker();
+            this.dtp_Tieup_Date = new System.Windows.Forms.DateTimePicker();
             this.btn_Refresh = new System.Windows.Forms.Button();
             this.gb_Distributor_Details.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_View_Distributor_Details)).BeginInit();
@@ -67,7 +67,7 @@
             this.pnl_Distributor_Details.BackColor = System.Drawing.Color.MistyRose;
             this.pnl_Distributor_Details.Controls.Add(this.btn_Search);
             this.pnl_Distributor_Details.Controls.Add(this.lbl_Tieup_Date);
-            this.pnl_Distributor_Details.Controls.Add(this.dtp_Joining_Date);
+            this.pnl_Distributor_Details.Controls.Add(this.dtp_Tieup_Date);
             this.pnl_Distributor_Details.Location = new System.Drawing.Point(228, 44);
             this.pnl_Distributor_Details.Name = "pnl_Distributor_Details";
             this.pnl_Distributor_Details.Size = new System.Drawing.Size(1351, 100);
@@ -87,7 +87,6 @@
             this.btn_Search.TabIndex = 28;
             this.btn_Search.Text = "Search";
             this.btn_Search.UseVisualStyleBackColor = false;
-            
             // 
             // lbl_Tieup_Date
             // 
@@ -101,13 +100,13 @@
             this.lbl_Tieup_Date.TabIndex = 15;
             this.lbl_Tieup_Date.Text = "Tie-Up Date";
             // 
-            // dtp_Joining_Date
+            // dtp_Tieup_Date
             // 
-            this.dtp_Joining_Date.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtp_Joining_Date.Location = new System.Drawing.Point(294, 32);
-            this.dtp_Joining_Date.Name = "dtp_Joining_Date";
-            this.dtp_Joining_Date.Size = new System.Drawing.Size(301, 39);
-            this.dtp_Joining_Date.TabIndex = 21;
+            this.dtp_Tieup_Date.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtp_Tieup_Date.Location = new System.Drawing.Point(294, 32);
+            this.dtp_Tieup_Date.Name = "dtp_Tieup_Date";
+            this.dtp_Tieup_Date.Size = new System.Drawing.Size(301, 39);
+            this.dtp_Tieup_Date.TabIndex = 21;
             // 
             // btn_Refresh
             // 
@@ -147,7 +146,7 @@
         private System.Windows.Forms.Panel pnl_Distributor_Details;
         private System.Windows.Forms.Button btn_Search;
         private System.Windows.Forms.Label lbl_Tieup_Date;
-        private System.Windows.Forms.DateTimePicker dtp_Joining_Date;
+        private System.Windows.Forms.DateTimePicker dtp_Tieup_Date;
         private System.Windows.Forms.Button btn_Refresh;
     }
 }

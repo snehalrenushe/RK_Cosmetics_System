@@ -31,9 +31,9 @@
             this.btn_Close = new System.Windows.Forms.Button();
             this.btn_Update = new System.Windows.Forms.Button();
             this.lbl_Change_Password = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tb_New_Password = new System.Windows.Forms.TextBox();
             this.lbl_New_Password = new System.Windows.Forms.Label();
-            this.tb_Password = new System.Windows.Forms.TextBox();
+            this.tb_Current_Password = new System.Windows.Forms.TextBox();
             this.tb_Username = new System.Windows.Forms.TextBox();
             this.lbl_Current_Password = new System.Windows.Forms.Label();
             this.lbl_Username = new System.Windows.Forms.Label();
@@ -74,15 +74,15 @@
             this.lbl_Change_Password.TabIndex = 35;
             this.lbl_Change_Password.Text = "Change Password";
             // 
-            // textBox1
+            // tb_New_Password
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(997, 549);
-            this.textBox1.MaxLength = 10;
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(383, 45);
-            this.textBox1.TabIndex = 33;
+            this.tb_New_Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_New_Password.Location = new System.Drawing.Point(997, 549);
+            this.tb_New_Password.MaxLength = 10;
+            this.tb_New_Password.Multiline = true;
+            this.tb_New_Password.Name = "tb_New_Password";
+            this.tb_New_Password.Size = new System.Drawing.Size(383, 45);
+            this.tb_New_Password.TabIndex = 33;
             // 
             // lbl_New_Password
             // 
@@ -91,19 +91,19 @@
             this.lbl_New_Password.ForeColor = System.Drawing.Color.Red;
             this.lbl_New_Password.Location = new System.Drawing.Point(523, 542);
             this.lbl_New_Password.Name = "lbl_New_Password";
-            this.lbl_New_Password.Size = new System.Drawing.Size(337, 58);
+            this.lbl_New_Password.Size = new System.Drawing.Size(350, 58);
             this.lbl_New_Password.TabIndex = 34;
-            this.lbl_New_Password.Text = "NewPassword";
+            this.lbl_New_Password.Text = "New Password";
             // 
-            // tb_Password
+            // tb_Current_Password
             // 
-            this.tb_Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_Password.Location = new System.Drawing.Point(997, 425);
-            this.tb_Password.MaxLength = 10;
-            this.tb_Password.Multiline = true;
-            this.tb_Password.Name = "tb_Password";
-            this.tb_Password.Size = new System.Drawing.Size(383, 45);
-            this.tb_Password.TabIndex = 30;
+            this.tb_Current_Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Current_Password.Location = new System.Drawing.Point(997, 425);
+            this.tb_Current_Password.MaxLength = 10;
+            this.tb_Current_Password.Multiline = true;
+            this.tb_Current_Password.Name = "tb_Current_Password";
+            this.tb_Current_Password.Size = new System.Drawing.Size(383, 45);
+            this.tb_Current_Password.TabIndex = 30;
             // 
             // tb_Username
             // 
@@ -147,9 +147,9 @@
             this.Controls.Add(this.btn_Close);
             this.Controls.Add(this.btn_Update);
             this.Controls.Add(this.lbl_Change_Password);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tb_New_Password);
             this.Controls.Add(this.lbl_New_Password);
-            this.Controls.Add(this.tb_Password);
+            this.Controls.Add(this.tb_Current_Password);
             this.Controls.Add(this.tb_Username);
             this.Controls.Add(this.lbl_Current_Password);
             this.Controls.Add(this.lbl_Username);
@@ -165,9 +165,9 @@
         private System.Windows.Forms.Button btn_Close;
         private System.Windows.Forms.Button btn_Update;
         private System.Windows.Forms.Label lbl_Change_Password;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tb_New_Password;
         private System.Windows.Forms.Label lbl_New_Password;
-        private System.Windows.Forms.TextBox tb_Password;
+        private System.Windows.Forms.TextBox tb_Current_Password;
         private System.Windows.Forms.TextBox tb_Username;
         private System.Windows.Forms.Label lbl_Current_Password;
         private System.Windows.Forms.Label lbl_Username;

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.lbl_Add_New_User = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tb_Confirm_Password = new System.Windows.Forms.TextBox();
             this.lbl_Confirm_Password = new System.Windows.Forms.Label();
             this.tb_Password = new System.Windows.Forms.TextBox();
             this.tb_Username = new System.Windows.Forms.TextBox();
@@ -50,15 +50,15 @@
             this.lbl_Add_New_User.TabIndex = 26;
             this.lbl_Add_New_User.Text = "Add New User";
             // 
-            // textBox1
+            // tb_Confirm_Password
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(999, 551);
-            this.textBox1.MaxLength = 10;
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(383, 45);
-            this.textBox1.TabIndex = 24;
+            this.tb_Confirm_Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Confirm_Password.Location = new System.Drawing.Point(999, 551);
+            this.tb_Confirm_Password.MaxLength = 10;
+            this.tb_Confirm_Password.Multiline = true;
+            this.tb_Confirm_Password.Name = "tb_Confirm_Password";
+            this.tb_Confirm_Password.Size = new System.Drawing.Size(383, 45);
+            this.tb_Confirm_Password.TabIndex = 24;
             // 
             // lbl_Confirm_Password
             // 
@@ -124,7 +124,6 @@
             this.btn_Save.TabIndex = 27;
             this.btn_Save.Text = "Save";
             this.btn_Save.UseVisualStyleBackColor = false;
-           
             // 
             // btn_Close
             // 
@@ -148,7 +147,7 @@
             this.Controls.Add(this.btn_Close);
             this.Controls.Add(this.btn_Save);
             this.Controls.Add(this.lbl_Add_New_User);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tb_Confirm_Password);
             this.Controls.Add(this.lbl_Confirm_Password);
             this.Controls.Add(this.tb_Password);
             this.Controls.Add(this.tb_Username);
@@ -164,7 +163,7 @@
         #endregion
 
         private System.Windows.Forms.Label lbl_Add_New_User;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tb_Confirm_Password;
         private System.Windows.Forms.Label lbl_Confirm_Password;
         private System.Windows.Forms.TextBox tb_Password;
         private System.Windows.Forms.TextBox tb_Username;

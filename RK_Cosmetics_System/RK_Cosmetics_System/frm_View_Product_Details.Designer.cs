@@ -33,7 +33,7 @@
             this.pnl_Product_Details = new System.Windows.Forms.Panel();
             this.btn_Search = new System.Windows.Forms.Button();
             this.lbl_Date = new System.Windows.Forms.Label();
-            this.dtp_Joining_Date = new System.Windows.Forms.DateTimePicker();
+            this.dtp_Date = new System.Windows.Forms.DateTimePicker();
             this.btn_Refresh = new System.Windows.Forms.Button();
             this.gb_Product_Details.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_View_Product_Details)).BeginInit();
@@ -67,7 +67,7 @@
             this.pnl_Product_Details.BackColor = System.Drawing.Color.MistyRose;
             this.pnl_Product_Details.Controls.Add(this.btn_Search);
             this.pnl_Product_Details.Controls.Add(this.lbl_Date);
-            this.pnl_Product_Details.Controls.Add(this.dtp_Joining_Date);
+            this.pnl_Product_Details.Controls.Add(this.dtp_Date);
             this.pnl_Product_Details.Location = new System.Drawing.Point(228, 44);
             this.pnl_Product_Details.Name = "pnl_Product_Details";
             this.pnl_Product_Details.Size = new System.Drawing.Size(1351, 100);
@@ -100,13 +100,13 @@
             this.lbl_Date.TabIndex = 15;
             this.lbl_Date.Text = "Date";
             // 
-            // dtp_Joining_Date
+            // dtp_Date
             // 
-            this.dtp_Joining_Date.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtp_Joining_Date.Location = new System.Drawing.Point(294, 32);
-            this.dtp_Joining_Date.Name = "dtp_Joining_Date";
-            this.dtp_Joining_Date.Size = new System.Drawing.Size(301, 39);
-            this.dtp_Joining_Date.TabIndex = 21;
+            this.dtp_Date.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtp_Date.Location = new System.Drawing.Point(294, 32);
+            this.dtp_Date.Name = "dtp_Date";
+            this.dtp_Date.Size = new System.Drawing.Size(301, 39);
+            this.dtp_Date.TabIndex = 21;
             // 
             // btn_Refresh
             // 
@@ -146,7 +146,7 @@
         private System.Windows.Forms.Panel pnl_Product_Details;
         private System.Windows.Forms.Button btn_Search;
         private System.Windows.Forms.Label lbl_Date;
-        private System.Windows.Forms.DateTimePicker dtp_Joining_Date;
+        private System.Windows.Forms.DateTimePicker dtp_Date;
         private System.Windows.Forms.Button btn_Refresh;
     }
 }
