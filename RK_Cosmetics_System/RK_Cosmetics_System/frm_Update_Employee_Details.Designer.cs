@@ -85,7 +85,7 @@
             this.gb_Update_Or_Search_Employee_Details.Size = new System.Drawing.Size(1765, 555);
             this.gb_Update_Or_Search_Employee_Details.TabIndex = 2;
             this.gb_Update_Or_Search_Employee_Details.TabStop = false;
-            this.gb_Update_Or_Search_Employee_Details.Text = "Update or Search Employee";
+            this.gb_Update_Or_Search_Employee_Details.Text = "Update Or Search Employee";
             // 
             // tb_Addres
             // 
