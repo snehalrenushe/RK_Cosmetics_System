@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RK_Cosmetics_System", "RK_Cosmetics_System\RK_Cosmetics_System.csproj", "{1DAF8750-8558-4B1D-808F-C9B0FFD95449}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1DAF8750-8558-4B1D-808F-C9B0FFD95449}.Debug|x86.ActiveCfg = Debug|x86
+		{1DAF8750-8558-4B1D-808F-C9B0FFD95449}.Debug|x86.Build.0 = Debug|x86
+		{1DAF8750-8558-4B1D-808F-C9B0FFD95449}.Release|x86.ActiveCfg = Release|x86
+		{1DAF8750-8558-4B1D-808F-C9B0FFD95449}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
