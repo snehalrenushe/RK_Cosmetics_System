@@ -42,9 +42,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.addNewCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.menuStrip4 = new System.Windows.Forms.MenuStrip();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.pnl_Product_Details.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.menuStrip3.SuspendLayout();
@@ -52,8 +49,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.menuStrip4.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnl_Product_Details
@@ -65,7 +60,7 @@
             this.pnl_Product_Details.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_Product_Details.Location = new System.Drawing.Point(0, 0);
             this.pnl_Product_Details.Name = "pnl_Product_Details";
-            this.pnl_Product_Details.Size = new System.Drawing.Size(1837, 100);
+            this.pnl_Product_Details.Size = new System.Drawing.Size(1400, 100);
             this.pnl_Product_Details.TabIndex = 4;
             // 
             // btn_Logout
@@ -73,7 +68,7 @@
             this.btn_Logout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Logout.Font = new System.Drawing.Font("Rockwell Condensed", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Logout.Image = ((System.Drawing.Image)(resources.GetObject("btn_Logout.Image")));
-            this.btn_Logout.Location = new System.Drawing.Point(1654, 21);
+            this.btn_Logout.Location = new System.Drawing.Point(1217, 21);
             this.btn_Logout.Name = "btn_Logout";
             this.btn_Logout.Size = new System.Drawing.Size(151, 55);
             this.btn_Logout.TabIndex = 3;
@@ -98,7 +93,7 @@
             this.lbl_Product_Details.AutoSize = true;
             this.lbl_Product_Details.Font = new System.Drawing.Font("Imprint MT Shadow", 48F, System.Drawing.FontStyle.Bold);
             this.lbl_Product_Details.ForeColor = System.Drawing.Color.White;
-            this.lbl_Product_Details.Location = new System.Drawing.Point(569, -10);
+            this.lbl_Product_Details.Location = new System.Drawing.Point(351, -10);
             this.lbl_Product_Details.Name = "lbl_Product_Details";
             this.lbl_Product_Details.Size = new System.Drawing.Size(706, 113);
             this.lbl_Product_Details.TabIndex = 1;
@@ -109,7 +104,7 @@
             this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox3.BackColor = System.Drawing.Color.GreenYellow;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(897, 103);
+            this.pictureBox3.Location = new System.Drawing.Point(471, 106);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(64, 52);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -124,7 +119,7 @@
             this.menuStrip3.Font = new System.Drawing.Font("Palatino Linotype", 16F, System.Drawing.FontStyle.Bold);
             this.menuStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem2});
-            this.menuStrip3.Location = new System.Drawing.Point(1474, 103);
+            this.menuStrip3.Location = new System.Drawing.Point(1060, 106);
             this.menuStrip3.Name = "menuStrip3";
             this.menuStrip3.Size = new System.Drawing.Size(352, 52);
             this.menuStrip3.TabIndex = 18;
@@ -146,13 +141,12 @@
             this.menuStrip2.Font = new System.Drawing.Font("Palatino Linotype", 16F, System.Drawing.FontStyle.Bold);
             this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem1});
-            this.menuStrip2.Location = new System.Drawing.Point(964, 103);
+            this.menuStrip2.Location = new System.Drawing.Point(538, 106);
             this.menuStrip2.Name = "menuStrip2";
             this.menuStrip2.Size = new System.Drawing.Size(383, 52);
             this.menuStrip2.TabIndex = 17;
             this.menuStrip2.Text = "menuStrip2";
             this.menuStrip2.UseWaitCursor = true;
-            this.menuStrip2.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip2_ItemClicked);
             // 
             // toolStripMenuItem1
             // 
@@ -166,7 +160,7 @@
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox2.BackColor = System.Drawing.Color.GreenYellow;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(1403, 103);
+            this.pictureBox2.Location = new System.Drawing.Point(989, 106);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(68, 52);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -178,7 +172,7 @@
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox1.BackColor = System.Drawing.Color.GreenYellow;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(463, 103);
+            this.pictureBox1.Location = new System.Drawing.Point(34, 106);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(64, 52);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -193,7 +187,7 @@
             this.menuStrip1.Font = new System.Drawing.Font("Palatino Linotype", 16F, System.Drawing.FontStyle.Bold);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addNewCustomerToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(530, 103);
+            this.menuStrip1.Location = new System.Drawing.Point(101, 106);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(306, 52);
             this.menuStrip1.TabIndex = 14;
@@ -207,47 +201,11 @@
             this.addNewCustomerToolStripMenuItem.Text = "Add New Product";
             this.addNewCustomerToolStripMenuItem.Click += new System.EventHandler(this.addNewCustomerToolStripMenuItem_Click);
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox4.BackColor = System.Drawing.Color.GreenYellow;
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(34, 103);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(63, 52);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 22;
-            this.pictureBox4.TabStop = false;
-            // 
-            // menuStrip4
-            // 
-            this.menuStrip4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.menuStrip4.BackColor = System.Drawing.Color.GreenYellow;
-            this.menuStrip4.Dock = System.Windows.Forms.DockStyle.None;
-            this.menuStrip4.Font = new System.Drawing.Font("Palatino Linotype", 16F, System.Drawing.FontStyle.Bold);
-            this.menuStrip4.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem3});
-            this.menuStrip4.Location = new System.Drawing.Point(101, 103);
-            this.menuStrip4.Name = "menuStrip4";
-            this.menuStrip4.Size = new System.Drawing.Size(297, 52);
-            this.menuStrip4.TabIndex = 21;
-            this.menuStrip4.Text = "menuStrip4";
-            this.menuStrip4.UseWaitCursor = true;
-            // 
-            // toolStripMenuItem3
-            // 
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(289, 48);
-            this.toolStripMenuItem3.Text = "Add Brand Name";
-            this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
-            // 
             // frm_MDI_Product_Details
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1837, 1049);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.menuStrip4);
+            this.ClientSize = new System.Drawing.Size(1400, 1049);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.menuStrip3);
             this.Controls.Add(this.menuStrip2);
@@ -271,9 +229,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.menuStrip4.ResumeLayout(false);
-            this.menuStrip4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -294,8 +249,5 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem addNewCustomerToolStripMenuItem;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.MenuStrip menuStrip4;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
     }
 }

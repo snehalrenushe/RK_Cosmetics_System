@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.gb_Product_Details = new System.Windows.Forms.GroupBox();
+            this.cb_Product_Name = new System.Windows.Forms.ComboBox();
             this.cb_Distributor_Name = new System.Windows.Forms.ComboBox();
             this.cb_Brand_Name = new System.Windows.Forms.ComboBox();
             this.tb_Selling_Price = new System.Windows.Forms.TextBox();
@@ -54,14 +55,13 @@
             this.lbl_Product_ID = new System.Windows.Forms.Label();
             this.btn_Save = new System.Windows.Forms.Button();
             this.btn_Refresh = new System.Windows.Forms.Button();
-            this.tb_Product_Name = new System.Windows.Forms.TextBox();
             this.gb_Product_Details.SuspendLayout();
             this.SuspendLayout();
             // 
             // gb_Product_Details
             // 
             this.gb_Product_Details.BackColor = System.Drawing.Color.LavenderBlush;
-            this.gb_Product_Details.Controls.Add(this.tb_Product_Name);
+            this.gb_Product_Details.Controls.Add(this.cb_Product_Name);
             this.gb_Product_Details.Controls.Add(this.cb_Distributor_Name);
             this.gb_Product_Details.Controls.Add(this.cb_Brand_Name);
             this.gb_Product_Details.Controls.Add(this.tb_Selling_Price);
@@ -92,6 +92,14 @@
             this.gb_Product_Details.TabIndex = 2;
             this.gb_Product_Details.TabStop = false;
             this.gb_Product_Details.Text = "Product Details";
+            // 
+            // cb_Product_Name
+            // 
+            this.cb_Product_Name.FormattingEnabled = true;
+            this.cb_Product_Name.Location = new System.Drawing.Point(445, 261);
+            this.cb_Product_Name.Name = "cb_Product_Name";
+            this.cb_Product_Name.Size = new System.Drawing.Size(301, 33);
+            this.cb_Product_Name.TabIndex = 44;
             // 
             // cb_Distributor_Name
             // 
@@ -361,16 +369,6 @@
             this.btn_Refresh.Text = "Refresh";
             this.btn_Refresh.UseVisualStyleBackColor = false;
             // 
-            // tb_Product_Name
-            // 
-            this.tb_Product_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_Product_Name.Location = new System.Drawing.Point(444, 257);
-            this.tb_Product_Name.MaxLength = 10;
-            this.tb_Product_Name.Multiline = true;
-            this.tb_Product_Name.Name = "tb_Product_Name";
-            this.tb_Product_Name.Size = new System.Drawing.Size(301, 40);
-            this.tb_Product_Name.TabIndex = 44;
-            // 
             // frm_Add_New_Product
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -392,6 +390,7 @@
         #endregion
 
         private System.Windows.Forms.GroupBox gb_Product_Details;
+        private System.Windows.Forms.ComboBox cb_Product_Name;
         private System.Windows.Forms.ComboBox cb_Distributor_Name;
         private System.Windows.Forms.ComboBox cb_Brand_Name;
         private System.Windows.Forms.TextBox tb_Selling_Price;
@@ -417,6 +416,5 @@
         private System.Windows.Forms.Label lbl_Product_ID;
         private System.Windows.Forms.Button btn_Save;
         private System.Windows.Forms.Button btn_Refresh;
-        private System.Windows.Forms.TextBox tb_Product_Name;
     }
 }

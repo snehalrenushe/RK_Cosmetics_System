@@ -50,21 +50,5 @@ namespace RK_Cosmetics_System
             AEF.Show();
             this.Hide();
         }
-
-        private void menuStrip2_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
-
-        private void toolStripMenuItem3_Click(object sender, EventArgs e)
-        {
-            frm_Add_New_Brand ANB = new frm_Add_New_Brand();
-
-            ANB.MdiParent = this;
-
-            ANB.WindowState = FormWindowState.Maximized;
-
-            ANB.Show();
-        }
     }
 }
