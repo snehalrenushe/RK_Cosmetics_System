@@ -170,7 +170,7 @@
             this.btn_Update.BackColor = System.Drawing.Color.Yellow;
             this.btn_Update.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Update.ForeColor = System.Drawing.Color.Black;
-            this.btn_Update.Location = new System.Drawing.Point(617, 658);
+            this.btn_Update.Location = new System.Drawing.Point(623, 658);
             this.btn_Update.Name = "btn_Update";
             this.btn_Update.Size = new System.Drawing.Size(149, 66);
             this.btn_Update.TabIndex = 34;
