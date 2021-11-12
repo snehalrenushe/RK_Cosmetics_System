@@ -79,7 +79,7 @@
             this.gb_Customer_Details.Controls.Add(this.lbl_Customer_Name);
             this.gb_Customer_Details.Controls.Add(this.lbl_Customer_ID);
             this.gb_Customer_Details.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gb_Customer_Details.Location = new System.Drawing.Point(22, 75);
+            this.gb_Customer_Details.Location = new System.Drawing.Point(67, 83);
             this.gb_Customer_Details.Name = "gb_Customer_Details";
             this.gb_Customer_Details.Size = new System.Drawing.Size(1765, 202);
             this.gb_Customer_Details.TabIndex = 0;
@@ -189,7 +189,7 @@
             this.gb_Purchase_Details.Controls.Add(this.lbl_Product_Name);
             this.gb_Purchase_Details.Controls.Add(this.lbl_Brand_Name);
             this.gb_Purchase_Details.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gb_Purchase_Details.Location = new System.Drawing.Point(22, 283);
+            this.gb_Purchase_Details.Location = new System.Drawing.Point(67, 291);
             this.gb_Purchase_Details.Name = "gb_Purchase_Details";
             this.gb_Purchase_Details.Size = new System.Drawing.Size(1765, 374);
             this.gb_Purchase_Details.TabIndex = 1;
@@ -359,7 +359,7 @@
             this.gb_Bill_Details.Controls.Add(this.lbl_Discount);
             this.gb_Bill_Details.Controls.Add(this.lbl_Bill);
             this.gb_Bill_Details.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gb_Bill_Details.Location = new System.Drawing.Point(22, 663);
+            this.gb_Bill_Details.Location = new System.Drawing.Point(67, 671);
             this.gb_Bill_Details.Name = "gb_Bill_Details";
             this.gb_Bill_Details.Size = new System.Drawing.Size(1765, 130);
             this.gb_Bill_Details.TabIndex = 2;

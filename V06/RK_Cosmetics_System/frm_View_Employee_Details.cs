@@ -48,6 +48,7 @@ namespace RK_Cosmetics_System
             dgv_View_Employee_Details.DataSource = dt;
 
             tb_Employee_ID.Enabled = false;
+
             Con_Close();
         }
 

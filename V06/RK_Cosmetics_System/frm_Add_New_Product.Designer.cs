@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.gb_Product_Details = new System.Windows.Forms.GroupBox();
+            this.tb_Product_Name = new System.Windows.Forms.TextBox();
             this.cb_Distributor_Name = new System.Windows.Forms.ComboBox();
             this.cb_Brand_Name = new System.Windows.Forms.ComboBox();
             this.tb_Selling_Price = new System.Windows.Forms.TextBox();
@@ -54,7 +55,6 @@
             this.lbl_Product_ID = new System.Windows.Forms.Label();
             this.btn_Save = new System.Windows.Forms.Button();
             this.btn_Refresh = new System.Windows.Forms.Button();
-            this.tb_Product_Name = new System.Windows.Forms.TextBox();
             this.gb_Product_Details.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -93,75 +93,90 @@
             this.gb_Product_Details.TabStop = false;
             this.gb_Product_Details.Text = "Product Details";
             // 
+            // tb_Product_Name
+            // 
+            this.tb_Product_Name.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.tb_Product_Name.Location = new System.Drawing.Point(444, 257);
+            this.tb_Product_Name.MaxLength = 10;
+            this.tb_Product_Name.Multiline = true;
+            this.tb_Product_Name.Name = "tb_Product_Name";
+            this.tb_Product_Name.Size = new System.Drawing.Size(301, 40);
+            this.tb_Product_Name.TabIndex = 3;
+            // 
             // cb_Distributor_Name
             // 
+            this.cb_Distributor_Name.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.cb_Distributor_Name.FormattingEnabled = true;
             this.cb_Distributor_Name.Location = new System.Drawing.Point(1348, 72);
             this.cb_Distributor_Name.Name = "cb_Distributor_Name";
-            this.cb_Distributor_Name.Size = new System.Drawing.Size(301, 33);
-            this.cb_Distributor_Name.TabIndex = 43;
+            this.cb_Distributor_Name.Size = new System.Drawing.Size(301, 39);
+            this.cb_Distributor_Name.TabIndex = 7;
             // 
             // cb_Brand_Name
             // 
+            this.cb_Brand_Name.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.cb_Brand_Name.FormattingEnabled = true;
             this.cb_Brand_Name.Location = new System.Drawing.Point(445, 166);
             this.cb_Brand_Name.Name = "cb_Brand_Name";
-            this.cb_Brand_Name.Size = new System.Drawing.Size(301, 33);
-            this.cb_Brand_Name.TabIndex = 42;
+            this.cb_Brand_Name.Size = new System.Drawing.Size(301, 39);
+            this.cb_Brand_Name.TabIndex = 2;
+            
             // 
             // tb_Selling_Price
             // 
-            this.tb_Selling_Price.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Selling_Price.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.tb_Selling_Price.Location = new System.Drawing.Point(444, 450);
             this.tb_Selling_Price.MaxLength = 10;
             this.tb_Selling_Price.Multiline = true;
             this.tb_Selling_Price.Name = "tb_Selling_Price";
             this.tb_Selling_Price.Size = new System.Drawing.Size(301, 40);
-            this.tb_Selling_Price.TabIndex = 41;
+            this.tb_Selling_Price.TabIndex = 5;
+            this.tb_Selling_Price.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Numeric);
             // 
             // tb_Stock
             // 
-            this.tb_Stock.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Stock.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.tb_Stock.Location = new System.Drawing.Point(444, 551);
             this.tb_Stock.MaxLength = 10;
             this.tb_Stock.Multiline = true;
             this.tb_Stock.Name = "tb_Stock";
             this.tb_Stock.Size = new System.Drawing.Size(301, 40);
-            this.tb_Stock.TabIndex = 40;
+            this.tb_Stock.TabIndex = 6;
+            this.tb_Stock.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Numeric);
             // 
             // dtp_Mfg_Date
             // 
-            this.dtp_Mfg_Date.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtp_Mfg_Date.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.dtp_Mfg_Date.Location = new System.Drawing.Point(1347, 159);
             this.dtp_Mfg_Date.Name = "dtp_Mfg_Date";
             this.dtp_Mfg_Date.Size = new System.Drawing.Size(301, 39);
-            this.dtp_Mfg_Date.TabIndex = 39;
+            this.dtp_Mfg_Date.TabIndex = 8;
             // 
             // dtp_Expiry_Date
             // 
-            this.dtp_Expiry_Date.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtp_Expiry_Date.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.dtp_Expiry_Date.Location = new System.Drawing.Point(1347, 255);
             this.dtp_Expiry_Date.Name = "dtp_Expiry_Date";
             this.dtp_Expiry_Date.Size = new System.Drawing.Size(301, 39);
-            this.dtp_Expiry_Date.TabIndex = 38;
+            this.dtp_Expiry_Date.TabIndex = 9;
             // 
             // dtp_Date
             // 
-            this.dtp_Date.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtp_Date.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.dtp_Date.Location = new System.Drawing.Point(1347, 346);
             this.dtp_Date.Name = "dtp_Date";
             this.dtp_Date.Size = new System.Drawing.Size(301, 39);
-            this.dtp_Date.TabIndex = 37;
+            this.dtp_Date.TabIndex = 10;
             // 
             // tb_Description
             // 
-            this.tb_Description.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Description.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.tb_Description.Location = new System.Drawing.Point(1349, 551);
             this.tb_Description.MaxLength = 10;
             this.tb_Description.Multiline = true;
             this.tb_Description.Name = "tb_Description";
             this.tb_Description.Size = new System.Drawing.Size(301, 97);
-            this.tb_Description.TabIndex = 36;
+            this.tb_Description.TabIndex = 12;
             // 
             // lbl_Description
             // 
@@ -177,13 +192,13 @@
             // 
             // tb_GST
             // 
-            this.tb_GST.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_GST.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.tb_GST.Location = new System.Drawing.Point(1348, 454);
             this.tb_GST.MaxLength = 10;
             this.tb_GST.Multiline = true;
             this.tb_GST.Name = "tb_GST";
             this.tb_GST.Size = new System.Drawing.Size(301, 40);
-            this.tb_GST.TabIndex = 34;
+            this.tb_GST.TabIndex = 11;
             // 
             // lbl_GST
             // 
@@ -235,13 +250,14 @@
             // 
             // tb_Purchase_Price
             // 
-            this.tb_Purchase_Price.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Purchase_Price.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.tb_Purchase_Price.Location = new System.Drawing.Point(444, 353);
             this.tb_Purchase_Price.MaxLength = 10;
             this.tb_Purchase_Price.Multiline = true;
             this.tb_Purchase_Price.Name = "tb_Purchase_Price";
             this.tb_Purchase_Price.Size = new System.Drawing.Size(301, 40);
-            this.tb_Purchase_Price.TabIndex = 26;
+            this.tb_Purchase_Price.TabIndex = 4;
+            this.tb_Purchase_Price.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Numeric);
             // 
             // lbl_Purchase_Price
             // 
@@ -305,13 +321,14 @@
             // 
             // tb_Product_ID
             // 
-            this.tb_Product_ID.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Product_ID.Enabled = false;
+            this.tb_Product_ID.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.tb_Product_ID.Location = new System.Drawing.Point(445, 65);
             this.tb_Product_ID.MaxLength = 15;
             this.tb_Product_ID.Multiline = true;
             this.tb_Product_ID.Name = "tb_Product_ID";
             this.tb_Product_ID.Size = new System.Drawing.Size(301, 40);
-            this.tb_Product_ID.TabIndex = 13;
+            this.tb_Product_ID.TabIndex = 1;
             // 
             // lbl_Brand_Name
             // 
@@ -348,6 +365,7 @@
             this.btn_Save.TabIndex = 32;
             this.btn_Save.Text = "Save";
             this.btn_Save.UseVisualStyleBackColor = false;
+            this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
             // 
             // btn_Refresh
             // 
@@ -361,16 +379,6 @@
             this.btn_Refresh.Text = "Refresh";
             this.btn_Refresh.UseVisualStyleBackColor = false;
             // 
-            // tb_Product_Name
-            // 
-            this.tb_Product_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_Product_Name.Location = new System.Drawing.Point(444, 257);
-            this.tb_Product_Name.MaxLength = 10;
-            this.tb_Product_Name.Multiline = true;
-            this.tb_Product_Name.Name = "tb_Product_Name";
-            this.tb_Product_Name.Size = new System.Drawing.Size(301, 40);
-            this.tb_Product_Name.TabIndex = 44;
-            // 
             // frm_Add_New_Product
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -383,6 +391,7 @@
             this.Controls.Add(this.gb_Product_Details);
             this.Name = "frm_Add_New_Product";
             this.Text = "Add New Product";
+            this.Load += new System.EventHandler(this.frm_Add_New_Product_Load);
             this.gb_Product_Details.ResumeLayout(false);
             this.gb_Product_Details.PerformLayout();
             this.ResumeLayout(false);

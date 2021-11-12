@@ -100,6 +100,7 @@
             // 
             this.gb_Gender.Controls.Add(this.rb_Female);
             this.gb_Gender.Controls.Add(this.rb_Male);
+            this.gb_Gender.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.gb_Gender.Location = new System.Drawing.Point(445, 484);
             this.gb_Gender.Name = "gb_Gender";
             this.gb_Gender.Size = new System.Drawing.Size(302, 62);
@@ -144,7 +145,7 @@
             // 
             // tb_Registration_No
             // 
-            this.tb_Registration_No.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Registration_No.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.tb_Registration_No.Location = new System.Drawing.Point(1365, 67);
             this.tb_Registration_No.MaxLength = 10;
             this.tb_Registration_No.Multiline = true;
@@ -166,7 +167,7 @@
             // 
             // tb_Address
             // 
-            this.tb_Address.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Address.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.tb_Address.Location = new System.Drawing.Point(444, 408);
             this.tb_Address.MaxLength = 30;
             this.tb_Address.Multiline = true;
@@ -188,7 +189,7 @@
             // 
             // tb_Pan_No
             // 
-            this.tb_Pan_No.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Pan_No.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.tb_Pan_No.Location = new System.Drawing.Point(1365, 506);
             this.tb_Pan_No.MaxLength = 10;
             this.tb_Pan_No.Multiline = true;
@@ -198,7 +199,7 @@
             // 
             // tb_Aadhar_No
             // 
-            this.tb_Aadhar_No.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Aadhar_No.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.tb_Aadhar_No.Location = new System.Drawing.Point(1365, 412);
             this.tb_Aadhar_No.MaxLength = 14;
             this.tb_Aadhar_No.Multiline = true;
@@ -233,7 +234,7 @@
             // 
             // tb_Alternate_Mobile_No
             // 
-            this.tb_Alternate_Mobile_No.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Alternate_Mobile_No.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.tb_Alternate_Mobile_No.Location = new System.Drawing.Point(1365, 321);
             this.tb_Alternate_Mobile_No.MaxLength = 10;
             this.tb_Alternate_Mobile_No.Multiline = true;
@@ -256,7 +257,7 @@
             // 
             // tb_Last_Name
             // 
-            this.tb_Last_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Last_Name.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.tb_Last_Name.Location = new System.Drawing.Point(444, 317);
             this.tb_Last_Name.MaxLength = 10;
             this.tb_Last_Name.Multiline = true;
@@ -267,7 +268,7 @@
             // 
             // tb_Middle_Name
             // 
-            this.tb_Middle_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Middle_Name.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.tb_Middle_Name.Location = new System.Drawing.Point(443, 234);
             this.tb_Middle_Name.MaxLength = 10;
             this.tb_Middle_Name.Multiline = true;
@@ -302,7 +303,7 @@
             // 
             // dtp_Tieup_Date
             // 
-            this.dtp_Tieup_Date.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtp_Tieup_Date.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.dtp_Tieup_Date.Location = new System.Drawing.Point(1365, 153);
             this.dtp_Tieup_Date.Name = "dtp_Tieup_Date";
             this.dtp_Tieup_Date.Size = new System.Drawing.Size(301, 39);
@@ -310,7 +311,7 @@
             // 
             // tb_Mobile_No_1
             // 
-            this.tb_Mobile_No_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Mobile_No_1.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.tb_Mobile_No_1.Location = new System.Drawing.Point(1365, 238);
             this.tb_Mobile_No_1.MaxLength = 10;
             this.tb_Mobile_No_1.Multiline = true;
@@ -345,7 +346,7 @@
             // 
             // tb_First_Name
             // 
-            this.tb_First_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_First_Name.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.tb_First_Name.Location = new System.Drawing.Point(445, 155);
             this.tb_First_Name.MaxLength = 10;
             this.tb_First_Name.Multiline = true;
@@ -356,7 +357,8 @@
             // 
             // tb_Distributor_ID
             // 
-            this.tb_Distributor_ID.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Distributor_ID.Enabled = false;
+            this.tb_Distributor_ID.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.tb_Distributor_ID.Location = new System.Drawing.Point(445, 74);
             this.tb_Distributor_ID.MaxLength = 15;
             this.tb_Distributor_ID.Multiline = true;
@@ -400,6 +402,7 @@
             this.btn_Refresh.TabIndex = 14;
             this.btn_Refresh.Text = "Refresh";
             this.btn_Refresh.UseVisualStyleBackColor = false;
+            this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
             // 
             // btn_Save
             // 

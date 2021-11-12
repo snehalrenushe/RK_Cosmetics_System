@@ -31,15 +31,9 @@
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gb_Employee_Details = new System.Windows.Forms.GroupBox();
             this.dgv_View_Employee_Details = new System.Windows.Forms.DataGridView();
-            this.employeeIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dateOfBirthDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.joiningDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.mobileNo1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.mobileNo2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.employeeDetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dB_RK_Cosmetics_SystemDataSet = new RK_Cosmetics_System.DB_RK_Cosmetics_SystemDataSet();
             this.pnl_Employee_Details = new System.Windows.Forms.Panel();
@@ -48,6 +42,15 @@
             this.btn_Search = new System.Windows.Forms.Button();
             this.btn_Refresh = new System.Windows.Forms.Button();
             this.employee_DetailsTableAdapter = new RK_Cosmetics_System.DB_RK_Cosmetics_SystemDataSetTableAdapters.Employee_DetailsTableAdapter();
+            this.employeeIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateOfBirthDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.joiningDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mobileNo1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mobileNo2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Aadhar_No = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Pan_No = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gb_Employee_Details.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_View_Employee_Details)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeeDetailsBindingSource)).BeginInit();
@@ -60,9 +63,9 @@
             this.gb_Employee_Details.Controls.Add(this.dgv_View_Employee_Details);
             this.gb_Employee_Details.Controls.Add(this.pnl_Employee_Details);
             this.gb_Employee_Details.Font = new System.Drawing.Font("Modern No. 20", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gb_Employee_Details.Location = new System.Drawing.Point(104, 84);
+            this.gb_Employee_Details.Location = new System.Drawing.Point(28, 86);
             this.gb_Employee_Details.Name = "gb_Employee_Details";
-            this.gb_Employee_Details.Size = new System.Drawing.Size(1762, 695);
+            this.gb_Employee_Details.Size = new System.Drawing.Size(1865, 695);
             this.gb_Employee_Details.TabIndex = 2;
             this.gb_Employee_Details.TabStop = false;
             this.gb_Employee_Details.Text = "Employee Details";
@@ -75,9 +78,9 @@
             this.dgv_View_Employee_Details.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_View_Employee_Details.BackgroundColor = System.Drawing.Color.PeachPuff;
             this.dgv_View_Employee_Details.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Modern No. 20", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("MS Reference Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Red;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.Desktop;
@@ -91,71 +94,32 @@
             this.joiningDateDataGridViewTextBoxColumn,
             this.mobileNo1DataGridViewTextBoxColumn,
             this.mobileNo2DataGridViewTextBoxColumn,
-            this.addressDataGridViewTextBoxColumn});
+            this.addressDataGridViewTextBoxColumn,
+            this.Aadhar_No,
+            this.Pan_No});
             this.dgv_View_Employee_Details.DataSource = this.employeeDetailsBindingSource;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Modern No. 20", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Perpetua", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgv_View_Employee_Details.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgv_View_Employee_Details.Location = new System.Drawing.Point(93, 185);
+            this.dgv_View_Employee_Details.Location = new System.Drawing.Point(32, 185);
             this.dgv_View_Employee_Details.Name = "dgv_View_Employee_Details";
             this.dgv_View_Employee_Details.ReadOnly = true;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Yi Baiti", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_View_Employee_Details.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgv_View_Employee_Details.RowTemplate.Height = 28;
-            this.dgv_View_Employee_Details.Size = new System.Drawing.Size(1611, 457);
+            this.dgv_View_Employee_Details.Size = new System.Drawing.Size(1794, 457);
             this.dgv_View_Employee_Details.TabIndex = 30;
-            // 
-            // employeeIDDataGridViewTextBoxColumn
-            // 
-            this.employeeIDDataGridViewTextBoxColumn.DataPropertyName = "Employee_ID";
-            this.employeeIDDataGridViewTextBoxColumn.HeaderText = "Employee_ID";
-            this.employeeIDDataGridViewTextBoxColumn.Name = "employeeIDDataGridViewTextBoxColumn";
-            this.employeeIDDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // firstNameDataGridViewTextBoxColumn
-            // 
-            this.firstNameDataGridViewTextBoxColumn.DataPropertyName = "First_Name";
-            this.firstNameDataGridViewTextBoxColumn.HeaderText = "First_Name";
-            this.firstNameDataGridViewTextBoxColumn.Name = "firstNameDataGridViewTextBoxColumn";
-            this.firstNameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // dateOfBirthDataGridViewTextBoxColumn
-            // 
-            this.dateOfBirthDataGridViewTextBoxColumn.DataPropertyName = "Date_Of_Birth";
-            this.dateOfBirthDataGridViewTextBoxColumn.HeaderText = "Date_Of_Birth";
-            this.dateOfBirthDataGridViewTextBoxColumn.Name = "dateOfBirthDataGridViewTextBoxColumn";
-            this.dateOfBirthDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // joiningDateDataGridViewTextBoxColumn
-            // 
-            this.joiningDateDataGridViewTextBoxColumn.DataPropertyName = "Joining_Date";
-            this.joiningDateDataGridViewTextBoxColumn.HeaderText = "Joining_Date";
-            this.joiningDateDataGridViewTextBoxColumn.Name = "joiningDateDataGridViewTextBoxColumn";
-            this.joiningDateDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // mobileNo1DataGridViewTextBoxColumn
-            // 
-            this.mobileNo1DataGridViewTextBoxColumn.DataPropertyName = "Mobile_No_1";
-            this.mobileNo1DataGridViewTextBoxColumn.HeaderText = "Mobile_No_1";
-            this.mobileNo1DataGridViewTextBoxColumn.Name = "mobileNo1DataGridViewTextBoxColumn";
-            this.mobileNo1DataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // mobileNo2DataGridViewTextBoxColumn
-            // 
-            this.mobileNo2DataGridViewTextBoxColumn.DataPropertyName = "Mobile_No_2";
-            this.mobileNo2DataGridViewTextBoxColumn.HeaderText = "Mobile_No_2";
-            this.mobileNo2DataGridViewTextBoxColumn.Name = "mobileNo2DataGridViewTextBoxColumn";
-            this.mobileNo2DataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // addressDataGridViewTextBoxColumn
-            // 
-            this.addressDataGridViewTextBoxColumn.DataPropertyName = "Address";
-            this.addressDataGridViewTextBoxColumn.HeaderText = "Address";
-            this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
-            this.addressDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // employeeDetailsBindingSource
             // 
@@ -235,6 +199,69 @@
             // 
             this.employee_DetailsTableAdapter.ClearBeforeFill = true;
             // 
+            // employeeIDDataGridViewTextBoxColumn
+            // 
+            this.employeeIDDataGridViewTextBoxColumn.DataPropertyName = "Employee_ID";
+            this.employeeIDDataGridViewTextBoxColumn.HeaderText = "Employee_ID";
+            this.employeeIDDataGridViewTextBoxColumn.Name = "employeeIDDataGridViewTextBoxColumn";
+            this.employeeIDDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // firstNameDataGridViewTextBoxColumn
+            // 
+            this.firstNameDataGridViewTextBoxColumn.DataPropertyName = "First_Name";
+            this.firstNameDataGridViewTextBoxColumn.HeaderText = "First_Name";
+            this.firstNameDataGridViewTextBoxColumn.Name = "firstNameDataGridViewTextBoxColumn";
+            this.firstNameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // dateOfBirthDataGridViewTextBoxColumn
+            // 
+            this.dateOfBirthDataGridViewTextBoxColumn.DataPropertyName = "Date_Of_Birth";
+            this.dateOfBirthDataGridViewTextBoxColumn.HeaderText = "Date_Of_Birth";
+            this.dateOfBirthDataGridViewTextBoxColumn.Name = "dateOfBirthDataGridViewTextBoxColumn";
+            this.dateOfBirthDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // joiningDateDataGridViewTextBoxColumn
+            // 
+            this.joiningDateDataGridViewTextBoxColumn.DataPropertyName = "Joining_Date";
+            this.joiningDateDataGridViewTextBoxColumn.HeaderText = "Joining_Date";
+            this.joiningDateDataGridViewTextBoxColumn.Name = "joiningDateDataGridViewTextBoxColumn";
+            this.joiningDateDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // mobileNo1DataGridViewTextBoxColumn
+            // 
+            this.mobileNo1DataGridViewTextBoxColumn.DataPropertyName = "Mobile_No_1";
+            this.mobileNo1DataGridViewTextBoxColumn.HeaderText = "Mobile_No_1";
+            this.mobileNo1DataGridViewTextBoxColumn.Name = "mobileNo1DataGridViewTextBoxColumn";
+            this.mobileNo1DataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // mobileNo2DataGridViewTextBoxColumn
+            // 
+            this.mobileNo2DataGridViewTextBoxColumn.DataPropertyName = "Mobile_No_2";
+            this.mobileNo2DataGridViewTextBoxColumn.HeaderText = "Mobile_No_2";
+            this.mobileNo2DataGridViewTextBoxColumn.Name = "mobileNo2DataGridViewTextBoxColumn";
+            this.mobileNo2DataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // addressDataGridViewTextBoxColumn
+            // 
+            this.addressDataGridViewTextBoxColumn.DataPropertyName = "Address";
+            this.addressDataGridViewTextBoxColumn.HeaderText = "Address";
+            this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
+            this.addressDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // Aadhar_No
+            // 
+            this.Aadhar_No.DataPropertyName = "Aadhar_No";
+            this.Aadhar_No.HeaderText = "Aadhar_No";
+            this.Aadhar_No.Name = "Aadhar_No";
+            this.Aadhar_No.ReadOnly = true;
+            // 
+            // Pan_No
+            // 
+            this.Pan_No.DataPropertyName = "Pan_No";
+            this.Pan_No.HeaderText = "Pan_No";
+            this.Pan_No.Name = "Pan_No";
+            this.Pan_No.ReadOnly = true;
+            // 
             // frm_View_Employee_Details
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -276,5 +303,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn mobileNo1DataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn mobileNo2DataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn addressDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Aadhar_No;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Pan_No;
     }
 }

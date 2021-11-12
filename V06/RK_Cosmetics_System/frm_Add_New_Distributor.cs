@@ -49,7 +49,7 @@ namespace RK_Cosmetics_System
 
             Cmd.Dispose();
 
-            if (Cnt < 0)
+            if (Cnt > 0)
             {
                 Cmd.Connection = Con;
 
@@ -70,6 +70,18 @@ namespace RK_Cosmetics_System
         void Clear_Controls()
         {
             tb_Distributor_ID.Text = Convert.ToString(Auto_Increament_ID());
+            tb_First_Name.Text = "";
+            tb_Last_Name.Text = "";
+            tb_Middle_Name.Text = "";
+            tb_Address.Text = "";
+            rb_Female.Checked = false;
+            rb_Male.Checked = false;
+            tb_Registration_No.Text = "";
+            dtp_Tieup_Date.ResetText();
+            tb_Mobile_No_1.Text = "";
+            tb_Alternate_Mobile_No.Text = "";
+            tb_Aadhar_No.Text = "";
+            tb_Pan_No.Text = "";
         }
 
         private void btn_Save_Click(object sender, EventArgs e)
@@ -170,11 +182,15 @@ namespace RK_Cosmetics_System
             if (!((char.IsLetter(e.KeyChar)) || (e.KeyChar == (char)Keys.Back) || (e.KeyChar == (char)Keys.Space)))
             {
                 e.Handled = true;
-
             }
         }
 
         private void frm_Add_New_Distributor_Load(object sender, EventArgs e)
+        {
+            Clear_Controls();
+        }
+
+        private void btn_Refresh_Click(object sender, EventArgs e)
         {
             Clear_Controls();
         }

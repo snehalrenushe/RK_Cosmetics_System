@@ -58,6 +58,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DB_RK_Cosmetics_SystemDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DB_RK_Cosmetics_SystemDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_RK_Cosmetics_SystemDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="frm_Add_New_Brand.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -352,6 +357,17 @@
     </None>
     <None Include="DB_RK_Cosmetics_SystemDataSet1.xss">
       <DependentUpon>DB_RK_Cosmetics_SystemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DB_RK_Cosmetics_SystemDataSet2.xsc">
+      <DependentUpon>DB_RK_Cosmetics_SystemDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DB_RK_Cosmetics_SystemDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_RK_Cosmetics_SystemDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_RK_Cosmetics_SystemDataSet2.xss">
+      <DependentUpon>DB_RK_Cosmetics_SystemDataSet2.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
