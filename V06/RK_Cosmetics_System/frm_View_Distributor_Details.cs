@@ -37,8 +37,8 @@ namespace RK_Cosmetics_System
 
         private void frm_View_Distributor_Details_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dB_RK_Cosmetics_SystemDataSet2.Distributor_Details' table. You can move, or remove it, as needed.
-            this.distributor_DetailsTableAdapter.Fill(this.dB_RK_Cosmetics_SystemDataSet2.Distributor_Details);
+            // TODO: This line of code loads data into the 'dB_RK_Cosmetics_SystemDataSet4.Distributor_Details' table. You can move, or remove it, as needed.
+            this.distributor_DetailsTableAdapter.Fill(this.dB_RK_Cosmetics_SystemDataSet4.Distributor_Details);
             tb_Distributor_ID.Focus();
 
         }

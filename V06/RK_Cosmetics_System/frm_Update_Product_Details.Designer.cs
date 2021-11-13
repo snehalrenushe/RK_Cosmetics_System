@@ -86,7 +86,6 @@
             this.gb_Update_Or_Search_Product_Details.TabIndex = 41;
             this.gb_Update_Or_Search_Product_Details.TabStop = false;
             this.gb_Update_Or_Search_Product_Details.Text = "Update or Search Product";
-            
             // 
             // tb_Description
             // 
@@ -257,6 +256,7 @@
             this.btn_Search.TabIndex = 28;
             this.btn_Search.Text = "Search";
             this.btn_Search.UseVisualStyleBackColor = false;
+            this.btn_Search.Click += new System.EventHandler(this.btn_Search_Click);
             // 
             // lbl_Product_ID
             // 

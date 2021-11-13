@@ -97,7 +97,7 @@
             // 
             this.tb_Product_Name.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.tb_Product_Name.Location = new System.Drawing.Point(444, 257);
-            this.tb_Product_Name.MaxLength = 10;
+            this.tb_Product_Name.MaxLength = 20;
             this.tb_Product_Name.Multiline = true;
             this.tb_Product_Name.Name = "tb_Product_Name";
             this.tb_Product_Name.Size = new System.Drawing.Size(301, 40);
@@ -116,11 +116,10 @@
             // 
             this.cb_Brand_Name.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.cb_Brand_Name.FormattingEnabled = true;
-            this.cb_Brand_Name.Location = new System.Drawing.Point(445, 166);
+            this.cb_Brand_Name.Location = new System.Drawing.Point(445, 156);
             this.cb_Brand_Name.Name = "cb_Brand_Name";
             this.cb_Brand_Name.Size = new System.Drawing.Size(301, 39);
             this.cb_Brand_Name.TabIndex = 2;
-            
             // 
             // tb_Selling_Price
             // 
@@ -257,6 +256,7 @@
             this.tb_Purchase_Price.Name = "tb_Purchase_Price";
             this.tb_Purchase_Price.Size = new System.Drawing.Size(301, 40);
             this.tb_Purchase_Price.TabIndex = 4;
+            this.tb_Purchase_Price.TextChanged += new System.EventHandler(this.tb_Purchase_Price_TextChanged);
             this.tb_Purchase_Price.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Numeric);
             // 
             // lbl_Purchase_Price
@@ -378,6 +378,7 @@
             this.btn_Refresh.TabIndex = 33;
             this.btn_Refresh.Text = "Refresh";
             this.btn_Refresh.UseVisualStyleBackColor = false;
+            this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
             // 
             // frm_Add_New_Product
             // 

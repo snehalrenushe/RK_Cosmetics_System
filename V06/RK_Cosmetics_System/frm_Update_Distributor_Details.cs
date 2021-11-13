@@ -42,12 +42,11 @@ namespace RK_Cosmetics_System
             btn_Search.Enabled = false;
             btn_Update.Enabled = false;
             tb_Distributor_ID.Text = "";
-            tb_First_Name.Text = "";
-            tb_Middle_Name.Text = "";
-            tb_Last_Name.Text = "";
+            tb_Name.Text = "";
             tb_Mobile_No_1.Text = "";
             tb_Alternate_Mobile_No.Text = "";
             tb_Addres.Text = "";
+            tb_Email_ID.Text = "";
 
             tb_Distributor_ID.Enabled = true;
         }
@@ -67,12 +66,11 @@ namespace RK_Cosmetics_System
 
             if (Obj.Read())
             {
-                tb_First_Name.Text = Obj.GetString(Obj.GetOrdinal("First_Name"));
-                tb_Middle_Name.Text = Obj.GetString(Obj.GetOrdinal("Middle_Name"));
-                tb_Last_Name.Text = Obj.GetString(Obj.GetOrdinal("Last_Name"));
+                tb_Name.Text = Obj.GetString(Obj.GetOrdinal("Name"));
                 tb_Addres.Text = Obj.GetString(Obj.GetOrdinal("Address"));
-                tb_Mobile_No_1.Text = (Obj["Mobile_No"].ToString());
+                tb_Mobile_No_1.Text = (Obj["Mobile_No_1"].ToString());
                 tb_Alternate_Mobile_No.Text = (Obj["Alternate_Mobile_No"].ToString());
+                tb_Email_ID.Text = Obj.GetString(Obj.GetOrdinal("Email_ID"));
 
                 btn_Update.Enabled = true;
             }
@@ -105,7 +103,7 @@ namespace RK_Cosmetics_System
 
             Con_Open();
 
-            if (tb_Distributor_ID.Text != "" && tb_First_Name.Text != "" && tb_Middle_Name.Text != "" && tb_Last_Name.Text != "" && tb_Mobile_No_1.Text != "" && tb_Addres.Text != "")
+            if (tb_Distributor_ID.Text != "" && tb_Name.Text != "" && tb_Mobile_No_1.Text != "" && tb_Addres.Text != "")
             {
                 Con_Open();
 
@@ -113,15 +111,14 @@ namespace RK_Cosmetics_System
 
                 Cmd.Connection = Con;
 
-                Cmd.CommandText = "Update Distributor_Details Set First_Name = @F_Name, Middle_Name = @M_Name, Last_Name = @L_Name, Mobile_No = @Mob1, Alternate_Mobile_No = @Mob2, Address = @Add Where Distributor_ID = @Dist_ID";
+                Cmd.CommandText = "Update Distributor_Details Set Name = @Name, Mobile_No_1 = @Mob1, Alternate_Mobile_No = @Mob2, Address = @Add ,Email_ID = @E_ID Where Distributor_ID = @Dist_ID";
 
                 Cmd.Parameters.Add("Dist_ID", SqlDbType.Int).Value = tb_Distributor_ID.Text;
-                Cmd.Parameters.Add("F_Name", SqlDbType.VarChar).Value = tb_First_Name.Text;
-                Cmd.Parameters.Add("M_Name", SqlDbType.VarChar).Value = tb_Middle_Name.Text;
-                Cmd.Parameters.Add("L_Name", SqlDbType.VarChar).Value = tb_Last_Name.Text;
+                Cmd.Parameters.Add("Name", SqlDbType.VarChar).Value = tb_Name.Text;
                 Cmd.Parameters.Add("Mob1", SqlDbType.Money).Value = tb_Mobile_No_1.Text;
                 Cmd.Parameters.Add("Mob2", SqlDbType.Money).Value = tb_Alternate_Mobile_No.Text;
                 Cmd.Parameters.Add("Add", SqlDbType.NVarChar).Value = tb_Addres.Text;
+                Cmd.Parameters.Add("E_ID", SqlDbType.NVarChar).Value = tb_Email_ID.Text;
 
                 Cmd.ExecuteNonQuery();
 
