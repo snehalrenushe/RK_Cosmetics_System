@@ -176,6 +176,7 @@
             this.tb_Employee_ID.Size = new System.Drawing.Size(301, 40);
             this.tb_Employee_ID.TabIndex = 1;
             this.tb_Employee_ID.TextChanged += new System.EventHandler(this.tb_Employee_ID_TextChanged);
+            this.tb_Employee_ID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Numeric);
             // 
             // gb_Gender
             // 
@@ -242,6 +243,7 @@
             this.tb_Mobile_No_2.Name = "tb_Mobile_No_2";
             this.tb_Mobile_No_2.Size = new System.Drawing.Size(301, 44);
             this.tb_Mobile_No_2.TabIndex = 9;
+            this.tb_Mobile_No_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Numeric);
             // 
             // lbl_Mobile_No_2
             // 
@@ -276,6 +278,7 @@
             this.tb_Last_Name.Name = "tb_Last_Name";
             this.tb_Last_Name.Size = new System.Drawing.Size(301, 40);
             this.tb_Last_Name.TabIndex = 6;
+            this.tb_Last_Name.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Char);
             // 
             // tb_Middle_Name
             // 
@@ -286,6 +289,7 @@
             this.tb_Middle_Name.Name = "tb_Middle_Name";
             this.tb_Middle_Name.Size = new System.Drawing.Size(301, 40);
             this.tb_Middle_Name.TabIndex = 5;
+            this.tb_Middle_Name.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Char);
             // 
             // lbl_Last_Name
             // 
@@ -320,6 +324,7 @@
             this.tb_Mobile_No_1.Name = "tb_Mobile_No_1";
             this.tb_Mobile_No_1.Size = new System.Drawing.Size(301, 44);
             this.tb_Mobile_No_1.TabIndex = 8;
+            this.tb_Mobile_No_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Numeric);
             // 
             // lbl_Mobile_No_1
             // 
@@ -342,6 +347,7 @@
             this.tb_First_Name.Name = "tb_First_Name";
             this.tb_First_Name.Size = new System.Drawing.Size(301, 40);
             this.tb_First_Name.TabIndex = 4;
+            this.tb_First_Name.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Char);
             // 
             // lbl_First_Name
             // 

@@ -135,6 +135,7 @@
             this.tb_Name.Name = "tb_Name";
             this.tb_Name.Size = new System.Drawing.Size(301, 40);
             this.tb_Name.TabIndex = 2;
+            this.tb_Name.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Char);
             // 
             // lbl_Name
             // 
@@ -206,6 +207,7 @@
             // 
             // tb_Distributor_ID
             // 
+            this.tb_Distributor_ID.Enabled = false;
             this.tb_Distributor_ID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.tb_Distributor_ID.Location = new System.Drawing.Point(405, 32);
             this.tb_Distributor_ID.MaxLength = 15;
@@ -214,6 +216,7 @@
             this.tb_Distributor_ID.Size = new System.Drawing.Size(301, 40);
             this.tb_Distributor_ID.TabIndex = 1;
             this.tb_Distributor_ID.TextChanged += new System.EventHandler(this.tb_Distributor_ID_TextChanged);
+            this.tb_Distributor_ID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Numeric);
             // 
             // gb_Gender
             // 
@@ -280,6 +283,7 @@
             this.tb_Alternate_Mobile_No.Name = "tb_Alternate_Mobile_No";
             this.tb_Alternate_Mobile_No.Size = new System.Drawing.Size(301, 44);
             this.tb_Alternate_Mobile_No.TabIndex = 5;
+            this.tb_Alternate_Mobile_No.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Numeric);
             // 
             // lbl_Alternate_Mobile_No
             // 
@@ -314,6 +318,7 @@
             this.tb_Mobile_No_1.Name = "tb_Mobile_No_1";
             this.tb_Mobile_No_1.Size = new System.Drawing.Size(301, 44);
             this.tb_Mobile_No_1.TabIndex = 4;
+            this.tb_Mobile_No_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Numeric);
             // 
             // lbl_Mobile_No_1
             // 

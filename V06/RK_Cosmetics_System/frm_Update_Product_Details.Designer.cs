@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.gb_Update_Or_Search_Product_Details = new System.Windows.Forms.GroupBox();
+            this.tb_Product_Name = new System.Windows.Forms.TextBox();
             this.tb_Description = new System.Windows.Forms.TextBox();
             this.lbl_Description = new System.Windows.Forms.Label();
             this.tb_Stock = new System.Windows.Forms.TextBox();
             this.lbl_Stock = new System.Windows.Forms.Label();
             this.tb_Selling_Price = new System.Windows.Forms.TextBox();
             this.lbl_Selling_Price = new System.Windows.Forms.Label();
-            this.cb_Product_Name = new System.Windows.Forms.ComboBox();
             this.cb_Brand_Name = new System.Windows.Forms.ComboBox();
             this.tb_Purchase_Price = new System.Windows.Forms.TextBox();
             this.lbl_Purchase_Price = new System.Windows.Forms.Label();
@@ -52,7 +52,6 @@
             this.tb_Address = new System.Windows.Forms.TextBox();
             this.lbl_Address = new System.Windows.Forms.Label();
             this.lbl_Gender = new System.Windows.Forms.Label();
-            this.btn_Save = new System.Windows.Forms.Button();
             this.btn_Refresh = new System.Windows.Forms.Button();
             this.gb_Update_Or_Search_Product_Details.SuspendLayout();
             this.pnl_Update_or_Search_Product.SuspendLayout();
@@ -62,13 +61,13 @@
             // gb_Update_Or_Search_Product_Details
             // 
             this.gb_Update_Or_Search_Product_Details.BackColor = System.Drawing.Color.LavenderBlush;
+            this.gb_Update_Or_Search_Product_Details.Controls.Add(this.tb_Product_Name);
             this.gb_Update_Or_Search_Product_Details.Controls.Add(this.tb_Description);
             this.gb_Update_Or_Search_Product_Details.Controls.Add(this.lbl_Description);
             this.gb_Update_Or_Search_Product_Details.Controls.Add(this.tb_Stock);
             this.gb_Update_Or_Search_Product_Details.Controls.Add(this.lbl_Stock);
             this.gb_Update_Or_Search_Product_Details.Controls.Add(this.tb_Selling_Price);
             this.gb_Update_Or_Search_Product_Details.Controls.Add(this.lbl_Selling_Price);
-            this.gb_Update_Or_Search_Product_Details.Controls.Add(this.cb_Product_Name);
             this.gb_Update_Or_Search_Product_Details.Controls.Add(this.cb_Brand_Name);
             this.gb_Update_Or_Search_Product_Details.Controls.Add(this.tb_Purchase_Price);
             this.gb_Update_Or_Search_Product_Details.Controls.Add(this.lbl_Purchase_Price);
@@ -86,6 +85,16 @@
             this.gb_Update_Or_Search_Product_Details.TabIndex = 41;
             this.gb_Update_Or_Search_Product_Details.TabStop = false;
             this.gb_Update_Or_Search_Product_Details.Text = "Update or Search Product";
+            // 
+            // tb_Product_Name
+            // 
+            this.tb_Product_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Product_Name.Location = new System.Drawing.Point(492, 349);
+            this.tb_Product_Name.MaxLength = 10;
+            this.tb_Product_Name.Multiline = true;
+            this.tb_Product_Name.Name = "tb_Product_Name";
+            this.tb_Product_Name.Size = new System.Drawing.Size(301, 40);
+            this.tb_Product_Name.TabIndex = 68;
             // 
             // tb_Description
             // 
@@ -118,6 +127,7 @@
             this.tb_Stock.Name = "tb_Stock";
             this.tb_Stock.Size = new System.Drawing.Size(301, 40);
             this.tb_Stock.TabIndex = 65;
+            this.tb_Stock.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Numeric);
             // 
             // lbl_Stock
             // 
@@ -140,6 +150,7 @@
             this.tb_Selling_Price.Name = "tb_Selling_Price";
             this.tb_Selling_Price.Size = new System.Drawing.Size(301, 40);
             this.tb_Selling_Price.TabIndex = 63;
+            this.tb_Selling_Price.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Numeric);
             // 
             // lbl_Selling_Price
             // 
@@ -152,14 +163,6 @@
             this.lbl_Selling_Price.Size = new System.Drawing.Size(176, 36);
             this.lbl_Selling_Price.TabIndex = 62;
             this.lbl_Selling_Price.Text = "Selling Price";
-            // 
-            // cb_Product_Name
-            // 
-            this.cb_Product_Name.FormattingEnabled = true;
-            this.cb_Product_Name.Location = new System.Drawing.Point(493, 352);
-            this.cb_Product_Name.Name = "cb_Product_Name";
-            this.cb_Product_Name.Size = new System.Drawing.Size(301, 33);
-            this.cb_Product_Name.TabIndex = 61;
             // 
             // cb_Brand_Name
             // 
@@ -178,6 +181,7 @@
             this.tb_Purchase_Price.Name = "tb_Purchase_Price";
             this.tb_Purchase_Price.Size = new System.Drawing.Size(301, 40);
             this.tb_Purchase_Price.TabIndex = 59;
+            this.tb_Purchase_Price.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Numeric);
             // 
             // lbl_Purchase_Price
             // 
@@ -233,6 +237,7 @@
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Update.BackColor = System.Drawing.Color.Yellow;
+            this.btn_Update.Enabled = false;
             this.btn_Update.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Update.ForeColor = System.Drawing.Color.Black;
             this.btn_Update.Location = new System.Drawing.Point(1174, 21);
@@ -241,6 +246,7 @@
             this.btn_Update.TabIndex = 29;
             this.btn_Update.Text = "Update";
             this.btn_Update.UseVisualStyleBackColor = false;
+            this.btn_Update.Click += new System.EventHandler(this.btn_Update_Click);
             // 
             // btn_Search
             // 
@@ -248,6 +254,7 @@
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Search.BackColor = System.Drawing.Color.Yellow;
+            this.btn_Search.Enabled = false;
             this.btn_Search.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Search.ForeColor = System.Drawing.Color.Black;
             this.btn_Search.Location = new System.Drawing.Point(853, 21);
@@ -272,6 +279,7 @@
             // 
             // tb_Product_ID
             // 
+            this.tb_Product_ID.Enabled = false;
             this.tb_Product_ID.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Product_ID.Location = new System.Drawing.Point(375, 32);
             this.tb_Product_ID.MaxLength = 15;
@@ -279,6 +287,8 @@
             this.tb_Product_ID.Name = "tb_Product_ID";
             this.tb_Product_ID.Size = new System.Drawing.Size(301, 40);
             this.tb_Product_ID.TabIndex = 13;
+            this.tb_Product_ID.TextChanged += new System.EventHandler(this.tb_Product_ID_TextChanged);
+            this.tb_Product_ID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Numeric);
             // 
             // gb_Gender
             // 
@@ -348,31 +358,19 @@
             this.lbl_Gender.TabIndex = 27;
             this.lbl_Gender.Text = "Gender";
             // 
-            // btn_Save
-            // 
-            this.btn_Save.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btn_Save.BackColor = System.Drawing.Color.Yellow;
-            this.btn_Save.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Save.ForeColor = System.Drawing.Color.Black;
-            this.btn_Save.Location = new System.Drawing.Point(349, 776);
-            this.btn_Save.Name = "btn_Save";
-            this.btn_Save.Size = new System.Drawing.Size(131, 56);
-            this.btn_Save.TabIndex = 43;
-            this.btn_Save.Text = "Save";
-            this.btn_Save.UseVisualStyleBackColor = false;
-            // 
             // btn_Refresh
             // 
             this.btn_Refresh.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btn_Refresh.BackColor = System.Drawing.Color.Yellow;
             this.btn_Refresh.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Refresh.ForeColor = System.Drawing.Color.Black;
-            this.btn_Refresh.Location = new System.Drawing.Point(953, 776);
+            this.btn_Refresh.Location = new System.Drawing.Point(546, 763);
             this.btn_Refresh.Name = "btn_Refresh";
             this.btn_Refresh.Size = new System.Drawing.Size(148, 56);
             this.btn_Refresh.TabIndex = 42;
             this.btn_Refresh.Text = "Refresh";
             this.btn_Refresh.UseVisualStyleBackColor = false;
+            this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
             // 
             // frm_Update_Product_Details
             // 
@@ -381,11 +379,11 @@
             this.BackColor = System.Drawing.Color.LavenderBlush;
             this.ClientSize = new System.Drawing.Size(1838, 881);
             this.ControlBox = false;
-            this.Controls.Add(this.btn_Save);
             this.Controls.Add(this.btn_Refresh);
             this.Controls.Add(this.gb_Update_Or_Search_Product_Details);
             this.Name = "frm_Update_Product_Details";
             this.Text = "Update Product Details";
+            this.Load += new System.EventHandler(this.frm_Update_Product_Details_Load);
             this.gb_Update_Or_Search_Product_Details.ResumeLayout(false);
             this.gb_Update_Or_Search_Product_Details.PerformLayout();
             this.pnl_Update_or_Search_Product.ResumeLayout(false);
@@ -410,7 +408,6 @@
         private System.Windows.Forms.TextBox tb_Address;
         private System.Windows.Forms.Label lbl_Address;
         private System.Windows.Forms.Label lbl_Gender;
-        private System.Windows.Forms.ComboBox cb_Product_Name;
         private System.Windows.Forms.ComboBox cb_Brand_Name;
         private System.Windows.Forms.TextBox tb_Purchase_Price;
         private System.Windows.Forms.Label lbl_Purchase_Price;
@@ -422,8 +419,8 @@
         private System.Windows.Forms.Label lbl_Stock;
         private System.Windows.Forms.TextBox tb_Description;
         private System.Windows.Forms.Label lbl_Description;
-        private System.Windows.Forms.Button btn_Save;
         private System.Windows.Forms.Button btn_Refresh;
+        private System.Windows.Forms.TextBox tb_Product_Name;
 
     }
 }

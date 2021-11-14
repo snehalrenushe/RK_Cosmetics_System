@@ -84,5 +84,13 @@ namespace RK_Cosmetics_System
             Con_Close();
         }
 
+        private void Only_Numeric(object sender, KeyPressEventArgs e)
+        {
+            if (!(Char.IsDigit(e.KeyChar) || (e.KeyChar == (char)Keys.Back)))
+            {
+                e.Handled = true;
+            }
+        }
+
     }
 }
