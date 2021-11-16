@@ -88,7 +88,7 @@
             // 
             // tb_Product_Name
             // 
-            this.tb_Product_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Product_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.tb_Product_Name.Location = new System.Drawing.Point(492, 349);
             this.tb_Product_Name.MaxLength = 10;
             this.tb_Product_Name.Multiline = true;
@@ -98,7 +98,7 @@
             // 
             // tb_Description
             // 
-            this.tb_Description.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Description.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.tb_Description.Location = new System.Drawing.Point(1272, 440);
             this.tb_Description.MaxLength = 10;
             this.tb_Description.Multiline = true;
@@ -120,7 +120,7 @@
             // 
             // tb_Stock
             // 
-            this.tb_Stock.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Stock.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.tb_Stock.Location = new System.Drawing.Point(1270, 345);
             this.tb_Stock.MaxLength = 10;
             this.tb_Stock.Multiline = true;
@@ -143,7 +143,7 @@
             // 
             // tb_Selling_Price
             // 
-            this.tb_Selling_Price.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Selling_Price.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.tb_Selling_Price.Location = new System.Drawing.Point(1270, 253);
             this.tb_Selling_Price.MaxLength = 10;
             this.tb_Selling_Price.Multiline = true;
@@ -166,15 +166,16 @@
             // 
             // cb_Brand_Name
             // 
+            this.cb_Brand_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_Brand_Name.FormattingEnabled = true;
             this.cb_Brand_Name.Location = new System.Drawing.Point(493, 257);
             this.cb_Brand_Name.Name = "cb_Brand_Name";
-            this.cb_Brand_Name.Size = new System.Drawing.Size(301, 33);
+            this.cb_Brand_Name.Size = new System.Drawing.Size(301, 38);
             this.cb_Brand_Name.TabIndex = 60;
             // 
             // tb_Purchase_Price
             // 
-            this.tb_Purchase_Price.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Purchase_Price.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.tb_Purchase_Price.Location = new System.Drawing.Point(492, 444);
             this.tb_Purchase_Price.MaxLength = 10;
             this.tb_Purchase_Price.Multiline = true;
@@ -280,7 +281,7 @@
             // tb_Product_ID
             // 
             this.tb_Product_ID.Enabled = false;
-            this.tb_Product_ID.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Product_ID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.tb_Product_ID.Location = new System.Drawing.Point(375, 32);
             this.tb_Product_ID.MaxLength = 15;
             this.tb_Product_ID.Multiline = true;

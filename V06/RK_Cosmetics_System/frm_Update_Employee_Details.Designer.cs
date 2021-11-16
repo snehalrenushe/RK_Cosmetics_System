@@ -367,7 +367,7 @@
             this.btn_Refresh.BackColor = System.Drawing.Color.Yellow;
             this.btn_Refresh.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Refresh.ForeColor = System.Drawing.Color.Black;
-            this.btn_Refresh.Location = new System.Drawing.Point(773, 731);
+            this.btn_Refresh.Location = new System.Drawing.Point(472, 738);
             this.btn_Refresh.Name = "btn_Refresh";
             this.btn_Refresh.Size = new System.Drawing.Size(148, 56);
             this.btn_Refresh.TabIndex = 10;
