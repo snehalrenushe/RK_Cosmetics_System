@@ -49,12 +49,12 @@ namespace RK_Cosmetics_System
 
             if (rb_In_Use.Checked)
             {
-                Stat = "1";
+                Stat = rb_In_Use.Text;
 
             }
             else if (rb_Not_In_Use.Checked)
             {
-                Stat = "0";
+                Stat = rb_Not_In_Use.Text;
             }
 
             SqlCommand Cmd = new SqlCommand();

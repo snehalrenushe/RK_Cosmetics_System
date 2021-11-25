@@ -120,6 +120,7 @@
             this.cb_Brand_Name.Name = "cb_Brand_Name";
             this.cb_Brand_Name.Size = new System.Drawing.Size(301, 39);
             this.cb_Brand_Name.TabIndex = 2;
+            this.cb_Brand_Name.SelectedIndexChanged += new System.EventHandler(this.cb_Brand_Name_SelectedIndexChanged);
             // 
             // tb_Selling_Price
             // 

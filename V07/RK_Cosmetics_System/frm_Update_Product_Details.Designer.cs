@@ -85,12 +85,13 @@
             this.gb_Update_Or_Search_Product_Details.TabIndex = 41;
             this.gb_Update_Or_Search_Product_Details.TabStop = false;
             this.gb_Update_Or_Search_Product_Details.Text = "Update or Search Product";
+            
             // 
             // tb_Product_Name
             // 
             this.tb_Product_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.tb_Product_Name.Location = new System.Drawing.Point(492, 349);
-            this.tb_Product_Name.MaxLength = 10;
+            this.tb_Product_Name.MaxLength = 20;
             this.tb_Product_Name.Multiline = true;
             this.tb_Product_Name.Name = "tb_Product_Name";
             this.tb_Product_Name.Size = new System.Drawing.Size(301, 40);

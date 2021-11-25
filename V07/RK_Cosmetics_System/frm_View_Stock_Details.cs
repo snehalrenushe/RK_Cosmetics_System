@@ -49,11 +49,13 @@ namespace RK_Cosmetics_System
         {
             Con_Open();
 
+            string Stat = "In Use";
+
             SqlCommand Cmd = new SqlCommand();
 
             Cmd.Connection = Con;
 
-            Cmd.CommandText = "Select Distinct(Brand_Name) from Brand_Details where Status = '" + 1 + "'";
+            Cmd.CommandText = "Select Distinct(Brand_Name) from Brand_Details where Status = '" + Stat + "'";
 
             var Obj = Cmd.ExecuteReader();
 

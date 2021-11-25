@@ -37,6 +37,8 @@ namespace RK_Cosmetics_System
 
         void Clear_Controls()
         {
+            cb_Brand_Name.Enabled = true;
+            cb_Brand_Name.Focus();
             tb_Product_ID.Text = "";
             cb_Brand_Name.SelectedIndex = -1;
             cb_Product_Name.SelectedIndex = -1;
@@ -47,13 +49,15 @@ namespace RK_Cosmetics_System
 
         void Bind_Brand_Name_To_Combobox()
         {
+            string Stat = "In Use";
+
             Con_Open();
 
             SqlCommand Cmd = new SqlCommand();
 
             Cmd.Connection = Con;
 
-            Cmd.CommandText = "Select Distinct(Brand_Name) from Brand_Details where Status = '" + 1 + "'";
+            Cmd.CommandText = "Select Distinct(Brand_Name) from Brand_Details where Status = '" + Stat + "'";
 
             var Obj = Cmd.ExecuteReader();
 
@@ -62,7 +66,7 @@ namespace RK_Cosmetics_System
                 cb_Brand_Name.Items.Add(Obj.GetString(Obj.GetOrdinal("Brand_Name")));
             }
 
-            Cmd.Dispose();
+            Obj.Dispose();
 
             Con_Close();
         }
@@ -100,6 +104,8 @@ namespace RK_Cosmetics_System
         private void cb_Product_Name_SelectedIndexChanged(object sender, EventArgs e)
         {
             Con_Open();
+
+            cb_Brand_Name.Enabled = false;
 
             SqlCommand Cmd = new SqlCommand("Select Product_ID from Product_Details where Product_Name = '" + cb_Product_Name.Text + "' ", Con);
 
@@ -150,6 +156,11 @@ namespace RK_Cosmetics_System
             }
 
             Con_Close();
+        }
+
+        private void btn_Refresh_Click(object sender, EventArgs e)
+        {
+            Clear_Controls();
         }
     }
 }

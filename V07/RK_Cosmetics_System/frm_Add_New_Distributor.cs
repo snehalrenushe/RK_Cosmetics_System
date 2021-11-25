@@ -36,8 +36,8 @@ namespace RK_Cosmetics_System
         }
 
         int Auto_Increament_ID()
-        {
-            Con_Open();
+        { 
+           Con_Open();
 
             int Cnt = -1;
 

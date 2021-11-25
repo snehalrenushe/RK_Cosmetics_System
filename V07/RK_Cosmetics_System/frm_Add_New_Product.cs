@@ -87,23 +87,24 @@ namespace RK_Cosmetics_System
 
         void Bind_Brand_Name_To_Combobox()
         {
+            string Stat = "In Use";
             Con_Open();
 
             SqlCommand Cmd = new SqlCommand();
 
             Cmd.Connection = Con;
 
-            Cmd.CommandText = "Select Distinct(Brand_Name) from Brand_Details where Status = '" + 1 + "'";
+            Cmd.CommandText = "Select Distinct(Brand_Name) from Brand_Details where Status = '" + Stat + "'";
 
             var Obj = Cmd.ExecuteReader();
 
             while (Obj.Read())
             {
-                cb_Brand_Name.Items.Add(Obj.GetString(Obj.GetOrdinal("Brand_Name")));  
+                cb_Brand_Name.Items.Add(Obj.GetString(Obj.GetOrdinal("Brand_Name")));                                                          
             }
 
             Obj.Dispose();
-            Con_Close();
+            Con_Close(); 
         }
 
         void Bind_Distributor_Name_To_Combobox()
@@ -189,6 +190,11 @@ namespace RK_Cosmetics_System
         private void btn_Refresh_Click(object sender, EventArgs e)
         {
             Clear_Controls();
+        }
+
+        private void cb_Brand_Name_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }        
     }
 }

@@ -121,7 +121,7 @@
             this.DeleteUsertoolStripMenuItem2});
             this.menuStrip3.Location = new System.Drawing.Point(1166, 95);
             this.menuStrip3.Name = "menuStrip3";
-            this.menuStrip3.Size = new System.Drawing.Size(303, 52);
+            this.menuStrip3.Size = new System.Drawing.Size(211, 52);
             this.menuStrip3.TabIndex = 42;
             this.menuStrip3.Text = "menuStrip3";
             this.menuStrip3.UseWaitCursor = true;
@@ -220,6 +220,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "User Management";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frm_MDI_User_Management_Load);
             this.pnl_User_Management.ResumeLayout(false);
             this.pnl_User_Management.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

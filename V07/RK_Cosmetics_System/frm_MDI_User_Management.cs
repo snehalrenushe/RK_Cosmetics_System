@@ -51,6 +51,11 @@ namespace RK_Cosmetics_System
             DU.Show();
         }
 
+        private void frm_MDI_User_Management_Load(object sender, EventArgs e)
+        {
+
+        }
+
         
     }
 }
