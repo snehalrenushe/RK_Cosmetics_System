@@ -182,16 +182,6 @@ namespace RK_Cosmetics_System
             Clear_Controls();
         }
 
-        private void cb_Brand_Name_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void gb_Product_Details_Enter(object sender, EventArgs e)
-        {
-
-        }
-
         private void cb_Distributor_Name_SelectedIndexChanged(object sender, EventArgs e)
         {
             Con_Open();

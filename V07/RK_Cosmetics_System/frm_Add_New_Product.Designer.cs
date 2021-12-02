@@ -84,7 +84,7 @@
             this.gb_Product_Details.TabIndex = 2;
             this.gb_Product_Details.TabStop = false;
             this.gb_Product_Details.Text = "Product Details";
-            this.gb_Product_Details.Enter += new System.EventHandler(this.gb_Product_Details_Enter);
+           
             // 
             // tb_Product_Name
             // 
@@ -114,7 +114,6 @@
             this.cb_Brand_Name.Name = "cb_Brand_Name";
             this.cb_Brand_Name.Size = new System.Drawing.Size(301, 39);
             this.cb_Brand_Name.TabIndex = 2;
-            this.cb_Brand_Name.SelectedIndexChanged += new System.EventHandler(this.cb_Brand_Name_SelectedIndexChanged);
             // 
             // tb_Selling_Price
             // 
