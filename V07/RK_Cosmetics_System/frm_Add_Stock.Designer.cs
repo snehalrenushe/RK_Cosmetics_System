@@ -59,7 +59,7 @@
             this.gb_Stock_Details.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gb_Stock_Details.Location = new System.Drawing.Point(63, 123);
             this.gb_Stock_Details.Name = "gb_Stock_Details";
-            this.gb_Stock_Details.Size = new System.Drawing.Size(1765, 543);
+            this.gb_Stock_Details.Size = new System.Drawing.Size(1765, 565);
             this.gb_Stock_Details.TabIndex = 3;
             this.gb_Stock_Details.TabStop = false;
             this.gb_Stock_Details.Text = "Stock Details";
@@ -74,6 +74,7 @@
             this.tb_New_Stock_Added.Size = new System.Drawing.Size(301, 40);
             this.tb_New_Stock_Added.TabIndex = 6;
             this.tb_New_Stock_Added.Text = "0";
+            this.tb_New_Stock_Added.TextChanged += new System.EventHandler(this.tb_New_Stock_Added_TextChanged);
             // 
             // tb_Currect_Stock_Quantity
             // 
@@ -84,6 +85,7 @@
             this.tb_Currect_Stock_Quantity.Name = "tb_Currect_Stock_Quantity";
             this.tb_Currect_Stock_Quantity.Size = new System.Drawing.Size(301, 40);
             this.tb_Currect_Stock_Quantity.TabIndex = 5;
+            this.tb_Currect_Stock_Quantity.TextChanged += new System.EventHandler(this.tb_Currect_Stock_Quantity_TextChanged);
             // 
             // lbl_Currect_Stock_Quantity
             // 
@@ -181,6 +183,7 @@
             this.tb_Product_ID.Name = "tb_Product_ID";
             this.tb_Product_ID.Size = new System.Drawing.Size(301, 40);
             this.tb_Product_ID.TabIndex = 4;
+            this.tb_Product_ID.TextChanged += new System.EventHandler(this.tb_Product_ID_TextChanged);
             // 
             // dtp_Date
             // 

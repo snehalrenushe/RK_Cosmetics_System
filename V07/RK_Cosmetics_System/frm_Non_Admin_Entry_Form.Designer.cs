@@ -176,6 +176,7 @@
             this.btn_Logout.TabIndex = 15;
             this.btn_Logout.Text = "Logout";
             this.btn_Logout.UseVisualStyleBackColor = true;
+            this.btn_Logout.Click += new System.EventHandler(this.btn_Logout_Click);
             // 
             // frm_Non_Admin_Entry_Form
             // 

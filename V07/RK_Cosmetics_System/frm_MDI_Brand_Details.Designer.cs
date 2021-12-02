@@ -74,6 +74,7 @@
             this.btn_Logout.TabIndex = 3;
             this.btn_Logout.Text = "Logout";
             this.btn_Logout.UseVisualStyleBackColor = true;
+            this.btn_Logout.Click += new System.EventHandler(this.btn_Logout_Click);
             // 
             // btn_Back
             // 
@@ -143,7 +144,7 @@
             this.toolStripMenuItem2});
             this.ViewBrandDetailsmenuStrip3.Location = new System.Drawing.Point(1209, 106);
             this.ViewBrandDetailsmenuStrip3.Name = "ViewBrandDetailsmenuStrip3";
-            this.ViewBrandDetailsmenuStrip3.Size = new System.Drawing.Size(418, 52);
+            this.ViewBrandDetailsmenuStrip3.Size = new System.Drawing.Size(326, 52);
             this.ViewBrandDetailsmenuStrip3.TabIndex = 20;
             this.ViewBrandDetailsmenuStrip3.Text = "menuStrip3";
             this.ViewBrandDetailsmenuStrip3.UseWaitCursor = true;

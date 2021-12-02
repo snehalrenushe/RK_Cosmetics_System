@@ -37,25 +37,17 @@ namespace RK_Cosmetics_System
 
         void Clear_Controls()
         {
+            tb_Brand_ID.Text = "";
+            tb_Brand_ID.Enabled = true;
+            btn_Search.Enabled = false;
             tb_Brand_Name.Text = "";
+            cb_Status.ResetText();
             tb_Brand_ID.Focus();
         }
 
         private void btn_Search_Click(object sender, EventArgs e)
         {
             Con_Open();
-
-            string Stat = " ";
-
-            if (rb_In_Use.Checked)
-            {
-                Stat = rb_In_Use.Text;
-
-            }
-            else if (rb_Not_In_Use.Checked)
-            {
-                Stat = rb_Not_In_Use.Text;
-            }
 
             SqlCommand Cmd = new SqlCommand();
 
@@ -68,8 +60,7 @@ namespace RK_Cosmetics_System
             if (Obj.Read())
             {
                 tb_Brand_Name.Text = Obj.GetString(Obj.GetOrdinal("Brand_Name"));
-                rb_In_Use.Text = Obj.GetString(Obj.GetOrdinal("Status"));
-                rb_Not_In_Use.Text = Obj.GetString(Obj.GetOrdinal("Status"));
+                cb_Status.Text = Obj.GetString(Obj.GetOrdinal("Status"));
 
             }
             else
@@ -78,12 +69,48 @@ namespace RK_Cosmetics_System
                 Clear_Controls();
             }
 
+            btn_Search.Enabled = false;
+            tb_Brand_ID.Enabled = false;
             Con_Close();
         }
 
         private void btn_Update_Click(object sender, EventArgs e)
         {
+            if (tb_Brand_Name.Text != "" && cb_Status.Text != "")
+            { 
+                Con_Open();
 
+                SqlCommand Cmd = new SqlCommand();
+
+                Cmd.Connection = Con;
+
+                Cmd.CommandText = "Update Brand_Details set Brand_Name = @B_Name,Status = @Stat where Brand_ID = @B_ID";
+
+                Cmd.Parameters.Add("B_ID",SqlDbType.Int).Value = tb_Brand_ID.Text;
+                Cmd.Parameters.Add("B_Name",SqlDbType.NVarChar).Value = tb_Brand_Name.Text;
+                Cmd.Parameters.Add("Stat",SqlDbType.NVarChar).Value = cb_Status.Text;
+
+                Cmd.ExecuteNonQuery();
+
+                MessageBox.Show("Brand Details Updated Successfully !!!", "Updating", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                Clear_Controls();
+
+            }
+            else
+            {
+                MessageBox.Show("Incomplete Information !!!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void btn_Refresh_Click(object sender, EventArgs e)
+        {
+            Clear_Controls();
+        }
+
+        private void tb_Brand_ID_TextChanged(object sender, EventArgs e)
+        {
+            btn_Search.Enabled = true;
         }
     }
 }

@@ -69,6 +69,7 @@
             this.btn_Logout.TabIndex = 3;
             this.btn_Logout.Text = "Logout";
             this.btn_Logout.UseVisualStyleBackColor = true;
+            this.btn_Logout.Click += new System.EventHandler(this.btn_Logout_Click);
             // 
             // btn_Back
             // 
@@ -138,7 +139,7 @@
             this.VieworSearchStockDetailstoolStripMenuItem2});
             this.menuStrip3.Location = new System.Drawing.Point(804, 106);
             this.menuStrip3.Name = "menuStrip3";
-            this.menuStrip3.Size = new System.Drawing.Size(556, 52);
+            this.menuStrip3.Size = new System.Drawing.Size(464, 52);
             this.menuStrip3.TabIndex = 20;
             this.menuStrip3.Text = "menuStrip3";
             this.menuStrip3.UseWaitCursor = true;
@@ -177,6 +178,7 @@
             this.Name = "frm_MDI_Stock_Details";
             this.Text = "Stock Details";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frm_MDI_Stock_Details_Load);
             this.pnl_Stock_Details.ResumeLayout(false);
             this.pnl_Stock_Details.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

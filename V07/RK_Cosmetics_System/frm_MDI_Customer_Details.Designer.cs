@@ -70,6 +70,7 @@
             this.btn_Logout.TabIndex = 3;
             this.btn_Logout.Text = "Logout";
             this.btn_Logout.UseVisualStyleBackColor = true;
+            this.btn_Logout.Click += new System.EventHandler(this.btn_Logout_Click);
             // 
             // btn_Back
             // 
@@ -151,7 +152,7 @@
             this.ViewCustomerDetailstoolStripMenuItem1});
             this.menuStrip2.Location = new System.Drawing.Point(708, 106);
             this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Size = new System.Drawing.Size(471, 52);
+            this.menuStrip2.Size = new System.Drawing.Size(379, 52);
             this.menuStrip2.TabIndex = 7;
             this.menuStrip2.Text = "menuStrip2";
             this.menuStrip2.UseWaitCursor = true;

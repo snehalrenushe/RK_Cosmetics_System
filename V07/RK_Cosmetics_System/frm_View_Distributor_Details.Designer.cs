@@ -40,17 +40,17 @@
             this.tieUpDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mobileNo1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.distributorDetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dB_RK_Cosmetics_SystemDataSet4 = new RK_Cosmetics_System.DB_RK_Cosmetics_SystemDataSet4();
+            //this.dB_RK_Cosmetics_SystemDataSet4 = new RK_Cosmetics_System.DB_RK_Cosmetics_SystemDataSet4();
             this.pnl_Distributor_Details = new System.Windows.Forms.Panel();
             this.tb_Distributor_ID = new System.Windows.Forms.TextBox();
             this.lbl_Distributor_ID = new System.Windows.Forms.Label();
             this.btn_Search = new System.Windows.Forms.Button();
             this.btn_Refresh = new System.Windows.Forms.Button();
-            this.distributor_DetailsTableAdapter = new RK_Cosmetics_System.DB_RK_Cosmetics_SystemDataSet4TableAdapters.Distributor_DetailsTableAdapter();
+            //this.distributor_DetailsTableAdapter = new RK_Cosmetics_System.DB_RK_Cosmetics_SystemDataSet4TableAdapters.Distributor_DetailsTableAdapter();
             this.gb_Distributor_Details.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_View_Distributor_Details)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.distributorDetailsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dB_RK_Cosmetics_SystemDataSet4)).BeginInit();
+            //((System.ComponentModel.ISupportInitialize)(this.dB_RK_Cosmetics_SystemDataSet4)).BeginInit();
             this.pnl_Distributor_Details.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -150,12 +150,12 @@
             // distributorDetailsBindingSource
             // 
             this.distributorDetailsBindingSource.DataMember = "Distributor_Details";
-            this.distributorDetailsBindingSource.DataSource = this.dB_RK_Cosmetics_SystemDataSet4;
+            //this.distributorDetailsBindingSource.DataSource = this.dB_RK_Cosmetics_SystemDataSet4;
             // 
             // dB_RK_Cosmetics_SystemDataSet4
             // 
-            this.dB_RK_Cosmetics_SystemDataSet4.DataSetName = "DB_RK_Cosmetics_SystemDataSet4";
-            this.dB_RK_Cosmetics_SystemDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            //this.dB_RK_Cosmetics_SystemDataSet4.DataSetName = "DB_RK_Cosmetics_SystemDataSet4";
+            //this.dB_RK_Cosmetics_SystemDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // pnl_Distributor_Details
             // 
@@ -224,7 +224,7 @@
             // 
             // distributor_DetailsTableAdapter
             // 
-            this.distributor_DetailsTableAdapter.ClearBeforeFill = true;
+            //this.distributor_DetailsTableAdapter.ClearBeforeFill = true;
             // 
             // frm_View_Distributor_Details
             // 
@@ -241,7 +241,7 @@
             this.gb_Distributor_Details.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_View_Distributor_Details)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.distributorDetailsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dB_RK_Cosmetics_SystemDataSet4)).EndInit();
+            //((System.ComponentModel.ISupportInitialize)(this.dB_RK_Cosmetics_SystemDataSet4)).EndInit();
             this.pnl_Distributor_Details.ResumeLayout(false);
             this.pnl_Distributor_Details.PerformLayout();
             this.ResumeLayout(false);
@@ -257,9 +257,9 @@
         private System.Windows.Forms.TextBox tb_Distributor_ID;
         private System.Windows.Forms.Label lbl_Distributor_ID;
         private System.Windows.Forms.DataGridView dgv_View_Distributor_Details;
-        private DB_RK_Cosmetics_SystemDataSet4 dB_RK_Cosmetics_SystemDataSet4;
+        //private DB_RK_Cosmetics_SystemDataSet4 dB_RK_Cosmetics_SystemDataSet4;
         private System.Windows.Forms.BindingSource distributorDetailsBindingSource;
-        private DB_RK_Cosmetics_SystemDataSet4TableAdapters.Distributor_DetailsTableAdapter distributor_DetailsTableAdapter;
+        //private DB_RK_Cosmetics_SystemDataSet4TableAdapters.Distributor_DetailsTableAdapter distributor_DetailsTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn distributorIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn addressDataGridViewTextBoxColumn;

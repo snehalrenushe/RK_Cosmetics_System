@@ -98,6 +98,7 @@ namespace RK_Cosmetics_System
             Bind_Brand_Name_To_Combobox();
             Bind_Product_Name_To_Combobox();
 
+            //tb_Currect_Stock_Quantity.Text = "0";
             tb_New_Stock_Added.Text = "0";
         }
 
@@ -135,7 +136,7 @@ namespace RK_Cosmetics_System
 
                 Cmd.Connection = Con;
 
-                Cmd.CommandText = "Insert into Stock_Detail(Product_ID,Brand_Name,Product_Name,Date,Current_Stock_Quantity,New_Added_Stock) VALUES (@P_ID,@B_Name,@P_Name,@Date,@CSQ,@NSA)";
+                Cmd.CommandText = "Insert into Stock_Details(Product_ID,Brand_Name,Product_Name,Date,Current_Stock_Quantity,New_Added_Stock) VALUES (@P_ID,@B_Name,@P_Name,@Date,@CSQ,@NSA)";
 
                 Cmd.Parameters.Add("P_ID", SqlDbType.Int).Value = tb_Product_ID.Text;
                 Cmd.Parameters.Add("B_Name", SqlDbType.NVarChar).Value = cb_Brand_Name.Text;
@@ -161,6 +162,21 @@ namespace RK_Cosmetics_System
         private void btn_Refresh_Click(object sender, EventArgs e)
         {
             Clear_Controls();
+        }
+
+        private void tb_New_Stock_Added_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tb_Currect_Stock_Quantity_TextChanged(object sender, EventArgs e)
+        {
+            tb_New_Stock_Added.Text = "";
+        }
+
+        private void tb_Product_ID_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

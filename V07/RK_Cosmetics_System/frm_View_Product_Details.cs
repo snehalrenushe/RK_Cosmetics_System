@@ -44,11 +44,13 @@ namespace RK_Cosmetics_System
         {
             Con_Open();
 
+            string Stat = "In Use";
+
             SqlCommand Cmd = new SqlCommand();
 
             Cmd.Connection = Con;
 
-            Cmd.CommandText = "Select Distinct(Brand_Name) from Brand_Details where Status = '"+ 1 +"' ";
+            Cmd.CommandText = "Select Distinct(Brand_Name) from Brand_Details where Status = '"+ Stat +"' ";
 
             var Obj = Cmd.ExecuteReader();
 
@@ -59,13 +61,13 @@ namespace RK_Cosmetics_System
 
             Obj.Dispose();
 
-            SqlDataAdapter Sda = new SqlDataAdapter("Select * from Product_Details",Con);
+            /*SqlDataAdapter Sda = new SqlDataAdapter("Select * from Product_Details",Con);
 
             DataTable dt = new DataTable();
 
             Sda.Fill(dt);
 
-            dgv_View_Product_Details.DataSource = dt;
+            dgv_View_Product_Details.DataSource = dt;*/
 
             Con_Close();
         }
@@ -110,6 +112,8 @@ namespace RK_Cosmetics_System
 
             btn_Search.Enabled = false;
             cb_Brand_Name.Enabled = true;
+            cb_Brand_Name.ResetText();
+            //this.dgv_View_Product_Details.DataSource = null;
         }
 
         private void cb_Brand_Name_SelectedIndexChanged(object sender, EventArgs e)

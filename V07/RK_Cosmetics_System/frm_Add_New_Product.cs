@@ -80,9 +80,6 @@ namespace RK_Cosmetics_System
             tb_Description.Text = "";
             cb_Distributor_Name.SelectedIndex = -1;
             dtp_Date.ResetText();
-            dtp_Expiry_Date.ResetText();
-            dtp_Mfg_Date.ResetText();
-           
         }
 
         void Bind_Brand_Name_To_Combobox()
@@ -132,13 +129,13 @@ namespace RK_Cosmetics_System
         {
             Con_Open();
 
-            if (tb_Product_ID.Text != "" && cb_Brand_Name.Text != "" && tb_Product_Name.Text != "" && tb_Purchase_Price.Text != "" && tb_Selling_Price.Text != "" && tb_Stock.Text != "" && cb_Distributor_Name.Text != "" && dtp_Mfg_Date.Text != "" && dtp_Expiry_Date.Text != "" && dtp_Date.Text != "" && tb_GST.Text != "" && tb_Description.Text != "")
+            if (tb_Product_ID.Text != "" && cb_Brand_Name.Text != "" && tb_Product_Name.Text != "" && tb_Purchase_Price.Text != "" && tb_Selling_Price.Text != "" && tb_Stock.Text != "" && cb_Distributor_Name.Text != "" && dtp_Date.Text != "" && tb_GST.Text != "" && tb_Description.Text != "")
             {
                 SqlCommand Cmd = new SqlCommand();
 
                 Cmd.Connection = Con;
 
-                Cmd.CommandText = "Insert into Product_Details(Product_ID,Brand_Name,Product_Name,Purchase_Price,Selling_Price,Stock,Distributor_Name,Mfg_Date,Expiry_Date,Date,GST,Description) VALUES (@P_ID,@B_Name,@P_Name,@P_Price,@S_Price,@Stock,@D_Name,@M_Date,@E_Date,@Date,@GST,@Des)";
+                Cmd.CommandText = "Insert into Product_Details(Product_ID,Brand_Name,Product_Name,Purchase_Price,Selling_Price,Stock,Distributor_Name,Date,GST,Description) VALUES (@P_ID,@B_Name,@P_Name,@P_Price,@S_Price,@Stock,@D_Name,@Date,@GST,@Des)";
 
                 Cmd.Parameters.Add("P_ID",SqlDbType.Int).Value = tb_Product_ID.Text;
                 Cmd.Parameters.Add("B_Name",SqlDbType.NVarChar).Value = cb_Brand_Name.Text;
@@ -147,8 +144,6 @@ namespace RK_Cosmetics_System
                 Cmd.Parameters.Add("S_Price",SqlDbType.Money).Value = tb_Selling_Price.Text;
                 Cmd.Parameters.Add("Stock",SqlDbType.Int).Value = tb_Stock.Text;
                 Cmd.Parameters.Add("D_Name",SqlDbType.VarChar).Value = cb_Distributor_Name.Text;
-                Cmd.Parameters.Add("M_Date",SqlDbType.Date).Value = dtp_Mfg_Date.Text;
-                Cmd.Parameters.Add("E_Date",SqlDbType.Date).Value = dtp_Expiry_Date.Text;
                 Cmd.Parameters.Add("Date",SqlDbType.Date).Value = dtp_Date.Text;
                 Cmd.Parameters.Add("GST", SqlDbType.Float).Value = tb_GST.Text;
                 Cmd.Parameters.Add("Des",SqlDbType.NVarChar).Value = tb_Description.Text;
@@ -182,11 +177,6 @@ namespace RK_Cosmetics_System
             Clear_Controls();
         }
 
-        private void tb_Purchase_Price_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btn_Refresh_Click(object sender, EventArgs e)
         {
             Clear_Controls();
@@ -195,6 +185,22 @@ namespace RK_Cosmetics_System
         private void cb_Brand_Name_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void gb_Product_Details_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cb_Distributor_Name_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Con_Open();
+
+            SqlCommand Cmd = new SqlCommand("Select Current_Stock_Quantity from Stock_Details where Product_ID = " + tb_Product_ID.Text + " ", Con);
+
+            tb_Stock.Text = Convert.ToString(Cmd.ExecuteScalar());
+
+            Con_Close();
         }        
     }
 }

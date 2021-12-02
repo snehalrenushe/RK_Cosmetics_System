@@ -66,13 +66,13 @@ namespace RK_Cosmetics_System
 
             Obj.Dispose();
 
-            SqlDataAdapter Sda = new SqlDataAdapter("Select * from Product_Details", Con);
+            /*SqlDataAdapter Sda = new SqlDataAdapter("Select * from Product_Details", Con);
 
             DataTable dt = new DataTable();
 
             Sda.Fill(dt);
 
-            dgv_View_Stock_Details.DataSource = dt;
+            dgv_View_Stock_Details.DataSource = dt;*/
 
             Con_Close();
         }
@@ -95,14 +95,6 @@ namespace RK_Cosmetics_System
             }
 
             Obj.Dispose();
-
-            /*SqlDataAdapter Sda = new SqlDataAdapter("Select * from Stock_Detail", Con);
-
-            DataTable dt = new DataTable();
-
-            Sda.Fill(dt);
-
-            dgv_View_Stock_Details.DataSource = dt;*/
 
             Con_Close();
         }
@@ -128,7 +120,7 @@ namespace RK_Cosmetics_System
 
             cb_Brand_Name.Enabled = false;
 
-            SqlDataAdapter SDA1 = new SqlDataAdapter("Select * from Stock_Detail where Product_Name = '" + cb_Product_Name.Text + "' ", Con);
+            SqlDataAdapter SDA1 = new SqlDataAdapter("Select * from Stock_Details where Product_Name = '" + cb_Product_Name.Text + "' ", Con);
 
             DataTable dt1 = new DataTable();
 
@@ -137,6 +129,14 @@ namespace RK_Cosmetics_System
             dgv_View_Stock_Details.DataSource = dt1;
 
             cb_Product_Name.Enabled = false;
+
+            SqlDataAdapter SDA2 = new SqlDataAdapter("Select Total_Stock from Stock_Details where Current_Stock_Quantity + New_Added_Stock ", Con);
+
+            DataTable dt2 = new DataTable();
+
+            SDA1.Fill(dt2);
+
+            dgv_View_Stock_Details.DataSource = dt2;
 
             Con_Close();
         }
