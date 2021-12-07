@@ -164,19 +164,9 @@ namespace RK_Cosmetics_System
             Clear_Controls();
         }
 
-        private void tb_New_Stock_Added_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void tb_Currect_Stock_Quantity_TextChanged(object sender, EventArgs e)
         {
             tb_New_Stock_Added.Text = "";
-        }
-
-        private void tb_Product_ID_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

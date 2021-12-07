@@ -74,7 +74,6 @@
             this.tb_New_Stock_Added.Size = new System.Drawing.Size(301, 40);
             this.tb_New_Stock_Added.TabIndex = 6;
             this.tb_New_Stock_Added.Text = "0";
-            this.tb_New_Stock_Added.TextChanged += new System.EventHandler(this.tb_New_Stock_Added_TextChanged);
             // 
             // tb_Currect_Stock_Quantity
             // 
@@ -183,7 +182,6 @@
             this.tb_Product_ID.Name = "tb_Product_ID";
             this.tb_Product_ID.Size = new System.Drawing.Size(301, 40);
             this.tb_Product_ID.TabIndex = 4;
-            this.tb_Product_ID.TextChanged += new System.EventHandler(this.tb_Product_ID_TextChanged);
             // 
             // dtp_Date
             // 
