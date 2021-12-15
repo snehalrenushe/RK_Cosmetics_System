@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
-using System.Data.SqlClient;
+﻿using System;                       
+using System.Collections.Generic;         
+using System.ComponentModel;          
+using System.Data;                   
+using System.Drawing;           
+using System.Linq;                    
+using System.Text;                   
+using System.Windows.Forms;        
+using System.Data.SqlClient;        
 
 namespace RK_Cosmetics_System
 {
@@ -98,7 +98,6 @@ namespace RK_Cosmetics_System
             Bind_Brand_Name_To_Combobox();
             Bind_Product_Name_To_Combobox();
 
-             //tb_Currect_Stock_Quantity.Text = "0";
             tb_New_Stock_Added.Text = "0";
         }
 
