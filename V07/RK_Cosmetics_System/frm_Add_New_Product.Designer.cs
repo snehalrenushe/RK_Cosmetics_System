@@ -84,7 +84,7 @@
             this.gb_Product_Details.TabIndex = 2;
             this.gb_Product_Details.TabStop = false;
             this.gb_Product_Details.Text = "Product Details";
-           
+            this.gb_Product_Details.Enter += new System.EventHandler(this.gb_Product_Details_Enter);
             // 
             // tb_Product_Name
             // 
@@ -223,7 +223,6 @@
             this.tb_Purchase_Price.Name = "tb_Purchase_Price";
             this.tb_Purchase_Price.Size = new System.Drawing.Size(301, 40);
             this.tb_Purchase_Price.TabIndex = 4;
-      
             this.tb_Purchase_Price.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Numeric);
             // 
             // lbl_Purchase_Price
@@ -340,7 +339,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LavenderBlush;
-            this.ClientSize = new System.Drawing.Size(1777, 882);
+            this.ClientSize = new System.Drawing.Size(1924, 882);
             this.ControlBox = false;
             this.Controls.Add(this.btn_Refresh);
             this.Controls.Add(this.btn_Save);

@@ -95,6 +95,7 @@
             this.gb_Employee_Details.TabIndex = 1;
             this.gb_Employee_Details.TabStop = false;
             this.gb_Employee_Details.Text = "Employee Details";
+            this.gb_Employee_Details.Enter += new System.EventHandler(this.gb_Employee_Details_Enter);
             // 
             // gb_Gender
             // 

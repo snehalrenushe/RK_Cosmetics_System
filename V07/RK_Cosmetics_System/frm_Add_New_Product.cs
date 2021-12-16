@@ -191,6 +191,11 @@ namespace RK_Cosmetics_System
             tb_Stock.Text = Convert.ToString(Cmd.ExecuteScalar());
 
             Con_Close();
+        }
+
+        private void gb_Product_Details_Enter(object sender, EventArgs e)
+        {
+
         }        
     }
 }
