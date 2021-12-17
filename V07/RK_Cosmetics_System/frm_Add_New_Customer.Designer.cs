@@ -92,7 +92,7 @@
             this.dtp_Date.Location = new System.Drawing.Point(1353, 56);
             this.dtp_Date.Name = "dtp_Date";
             this.dtp_Date.Size = new System.Drawing.Size(301, 39);
-            this.dtp_Date.TabIndex = 20;
+            this.dtp_Date.TabIndex = 3;
             // 
             // tb_Mobile_No
             // 
@@ -102,7 +102,7 @@
             this.tb_Mobile_No.Multiline = true;
             this.tb_Mobile_No.Name = "tb_Mobile_No";
             this.tb_Mobile_No.Size = new System.Drawing.Size(301, 44);
-            this.tb_Mobile_No.TabIndex = 19;
+            this.tb_Mobile_No.TabIndex = 4;
             // 
             // lbl_Mobile_No
             // 
@@ -137,6 +137,7 @@
             this.tb_Customer_Name.Name = "tb_Customer_Name";
             this.tb_Customer_Name.Size = new System.Drawing.Size(301, 40);
             this.tb_Customer_Name.TabIndex = 14;
+            this.tb_Customer_Name.Text = "2";
             // 
             // tb_Customer_ID
             // 
@@ -146,7 +147,7 @@
             this.tb_Customer_ID.Multiline = true;
             this.tb_Customer_ID.Name = "tb_Customer_ID";
             this.tb_Customer_ID.Size = new System.Drawing.Size(301, 40);
-            this.tb_Customer_ID.TabIndex = 13;
+            this.tb_Customer_ID.TabIndex = 1;
             // 
             // lbl_Customer_Name
             // 
@@ -217,7 +218,7 @@
             this.btn_Add.Location = new System.Drawing.Point(735, 296);
             this.btn_Add.Name = "btn_Add";
             this.btn_Add.Size = new System.Drawing.Size(112, 56);
-            this.btn_Add.TabIndex = 27;
+            this.btn_Add.TabIndex = 11;
             this.btn_Add.Text = "Add";
             this.btn_Add.UseVisualStyleBackColor = false;
             // 
@@ -227,7 +228,7 @@
             this.cb_Product_Name.Location = new System.Drawing.Point(399, 100);
             this.cb_Product_Name.Name = "cb_Product_Name";
             this.cb_Product_Name.Size = new System.Drawing.Size(301, 33);
-            this.cb_Product_Name.TabIndex = 26;
+            this.cb_Product_Name.TabIndex = 6;
             // 
             // cb_Brand_Name
             // 
@@ -235,7 +236,7 @@
             this.cb_Brand_Name.Location = new System.Drawing.Point(399, 50);
             this.cb_Brand_Name.Name = "cb_Brand_Name";
             this.cb_Brand_Name.Size = new System.Drawing.Size(301, 33);
-            this.cb_Brand_Name.TabIndex = 25;
+            this.cb_Brand_Name.TabIndex = 5;
             // 
             // tb_Price
             // 
@@ -245,7 +246,7 @@
             this.tb_Price.Multiline = true;
             this.tb_Price.Name = "tb_Price";
             this.tb_Price.Size = new System.Drawing.Size(301, 40);
-            this.tb_Price.TabIndex = 22;
+            this.tb_Price.TabIndex = 10;
             // 
             // tb_GST_Applied
             // 
@@ -255,7 +256,7 @@
             this.tb_GST_Applied.Multiline = true;
             this.tb_GST_Applied.Name = "tb_GST_Applied";
             this.tb_GST_Applied.Size = new System.Drawing.Size(301, 40);
-            this.tb_GST_Applied.TabIndex = 21;
+            this.tb_GST_Applied.TabIndex = 9;
             // 
             // lbl_Price
             // 
@@ -289,7 +290,7 @@
             this.tb_Quantity.Multiline = true;
             this.tb_Quantity.Name = "tb_Quantity";
             this.tb_Quantity.Size = new System.Drawing.Size(301, 40);
-            this.tb_Quantity.TabIndex = 18;
+            this.tb_Quantity.TabIndex = 8;
             // 
             // tb_Net_Weight
             // 
@@ -299,7 +300,7 @@
             this.tb_Net_Weight.Multiline = true;
             this.tb_Net_Weight.Name = "tb_Net_Weight";
             this.tb_Net_Weight.Size = new System.Drawing.Size(301, 40);
-            this.tb_Net_Weight.TabIndex = 17;
+            this.tb_Net_Weight.TabIndex = 7;
             // 
             // lbl_Quantity
             // 
@@ -374,7 +375,7 @@
             this.tb_Final_Bill.Multiline = true;
             this.tb_Final_Bill.Name = "tb_Final_Bill";
             this.tb_Final_Bill.Size = new System.Drawing.Size(301, 44);
-            this.tb_Final_Bill.TabIndex = 19;
+            this.tb_Final_Bill.TabIndex = 14;
             // 
             // lbl_Final_Bill
             // 
@@ -407,7 +408,7 @@
             this.tb_Discount.Multiline = true;
             this.tb_Discount.Name = "tb_Discount";
             this.tb_Discount.Size = new System.Drawing.Size(301, 40);
-            this.tb_Discount.TabIndex = 14;
+            this.tb_Discount.TabIndex = 13;
             // 
             // tb_Bill
             // 
@@ -417,7 +418,7 @@
             this.tb_Bill.Multiline = true;
             this.tb_Bill.Name = "tb_Bill";
             this.tb_Bill.Size = new System.Drawing.Size(301, 40);
-            this.tb_Bill.TabIndex = 13;
+            this.tb_Bill.TabIndex = 12;
             // 
             // lbl_Discount
             // 
@@ -452,7 +453,7 @@
             this.btn_Save.Location = new System.Drawing.Point(237, 815);
             this.btn_Save.Name = "btn_Save";
             this.btn_Save.Size = new System.Drawing.Size(131, 56);
-            this.btn_Save.TabIndex = 32;
+            this.btn_Save.TabIndex = 15;
             this.btn_Save.Text = "Save";
             this.btn_Save.UseVisualStyleBackColor = false;
             // 
@@ -465,7 +466,7 @@
             this.btn_Refresh.Location = new System.Drawing.Point(939, 815);
             this.btn_Refresh.Name = "btn_Refresh";
             this.btn_Refresh.Size = new System.Drawing.Size(151, 56);
-            this.btn_Refresh.TabIndex = 31;
+            this.btn_Refresh.TabIndex = 16;
             this.btn_Refresh.Text = "Refresh";
             this.btn_Refresh.UseVisualStyleBackColor = false;
             // 

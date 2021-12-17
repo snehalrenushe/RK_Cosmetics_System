@@ -74,7 +74,7 @@
             this.btn_Refresh.Location = new System.Drawing.Point(684, 669);
             this.btn_Refresh.Name = "btn_Refresh";
             this.btn_Refresh.Size = new System.Drawing.Size(175, 58);
-            this.btn_Refresh.TabIndex = 30;
+            this.btn_Refresh.TabIndex = 3;
             this.btn_Refresh.Text = "Refresh";
             this.btn_Refresh.UseVisualStyleBackColor = false;
             this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
@@ -157,7 +157,7 @@
             this.tb_Brand_ID.Multiline = true;
             this.tb_Brand_ID.Name = "tb_Brand_ID";
             this.tb_Brand_ID.Size = new System.Drawing.Size(301, 40);
-            this.tb_Brand_ID.TabIndex = 29;
+            this.tb_Brand_ID.TabIndex = 1;
             this.tb_Brand_ID.TextChanged += new System.EventHandler(this.tb_Brand_ID_TextChanged);
             this.tb_Brand_ID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Numeric);
             // 
@@ -185,7 +185,7 @@
             this.btn_Search.Location = new System.Drawing.Point(942, 25);
             this.btn_Search.Name = "btn_Search";
             this.btn_Search.Size = new System.Drawing.Size(165, 56);
-            this.btn_Search.TabIndex = 28;
+            this.btn_Search.TabIndex = 2;
             this.btn_Search.Text = "Search";
             this.btn_Search.UseVisualStyleBackColor = false;
             this.btn_Search.Click += new System.EventHandler(this.btn_Search_Click);

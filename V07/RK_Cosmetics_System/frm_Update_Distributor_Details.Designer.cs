@@ -90,7 +90,7 @@
             this.tb_Email_ID.Multiline = true;
             this.tb_Email_ID.Name = "tb_Email_ID";
             this.tb_Email_ID.Size = new System.Drawing.Size(301, 40);
-            this.tb_Email_ID.TabIndex = 6;
+            this.tb_Email_ID.TabIndex = 7;
             // 
             // lbl_Email_ID
             // 
@@ -112,7 +112,7 @@
             this.tb_Addres.Multiline = true;
             this.tb_Addres.Name = "tb_Addres";
             this.tb_Addres.Size = new System.Drawing.Size(301, 40);
-            this.tb_Addres.TabIndex = 3;
+            this.tb_Addres.TabIndex = 4;
             // 
             // lbl_Addres
             // 
@@ -134,7 +134,7 @@
             this.tb_Name.Multiline = true;
             this.tb_Name.Name = "tb_Name";
             this.tb_Name.Size = new System.Drawing.Size(301, 40);
-            this.tb_Name.TabIndex = 2;
+            this.tb_Name.TabIndex = 3;
             this.tb_Name.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Char);
             // 
             // lbl_Name
@@ -172,7 +172,7 @@
             this.btn_Update.Location = new System.Drawing.Point(1174, 21);
             this.btn_Update.Name = "btn_Update";
             this.btn_Update.Size = new System.Drawing.Size(138, 56);
-            this.btn_Update.TabIndex = 9;
+            this.btn_Update.TabIndex = 8;
             this.btn_Update.Text = "Update";
             this.btn_Update.UseVisualStyleBackColor = false;
             this.btn_Update.Click += new System.EventHandler(this.btn_Update_Click);
@@ -282,7 +282,7 @@
             this.tb_Alternate_Mobile_No.Multiline = true;
             this.tb_Alternate_Mobile_No.Name = "tb_Alternate_Mobile_No";
             this.tb_Alternate_Mobile_No.Size = new System.Drawing.Size(301, 44);
-            this.tb_Alternate_Mobile_No.TabIndex = 5;
+            this.tb_Alternate_Mobile_No.TabIndex = 6;
             this.tb_Alternate_Mobile_No.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Numeric);
             // 
             // lbl_Alternate_Mobile_No
@@ -317,7 +317,7 @@
             this.tb_Mobile_No_1.Multiline = true;
             this.tb_Mobile_No_1.Name = "tb_Mobile_No_1";
             this.tb_Mobile_No_1.Size = new System.Drawing.Size(301, 44);
-            this.tb_Mobile_No_1.TabIndex = 4;
+            this.tb_Mobile_No_1.TabIndex = 5;
             this.tb_Mobile_No_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Numeric);
             // 
             // lbl_Mobile_No_1
@@ -341,7 +341,7 @@
             this.btn_Refresh.Location = new System.Drawing.Point(587, 749);
             this.btn_Refresh.Name = "btn_Refresh";
             this.btn_Refresh.Size = new System.Drawing.Size(148, 56);
-            this.btn_Refresh.TabIndex = 10;
+            this.btn_Refresh.TabIndex = 9;
             this.btn_Refresh.Text = "Refresh";
             this.btn_Refresh.UseVisualStyleBackColor = false;
             this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);

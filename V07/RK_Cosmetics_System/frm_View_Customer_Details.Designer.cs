@@ -66,7 +66,7 @@
             this.btn_Refresh.Location = new System.Drawing.Point(859, 695);
             this.btn_Refresh.Name = "btn_Refresh";
             this.btn_Refresh.Size = new System.Drawing.Size(138, 56);
-            this.btn_Refresh.TabIndex = 30;
+            this.btn_Refresh.TabIndex = 3;
             this.btn_Refresh.Text = "Refresh";
             this.btn_Refresh.UseVisualStyleBackColor = false;
             // 
@@ -107,7 +107,6 @@
             this.btn_Search.TabIndex = 28;
             this.btn_Search.Text = "Search";
             this.btn_Search.UseVisualStyleBackColor = false;
-            
             // 
             // lbl_From_Date
             // 
@@ -127,7 +126,7 @@
             this.dtp_From_Date.Location = new System.Drawing.Point(257, 32);
             this.dtp_From_Date.Name = "dtp_From_Date";
             this.dtp_From_Date.Size = new System.Drawing.Size(301, 39);
-            this.dtp_From_Date.TabIndex = 21;
+            this.dtp_From_Date.TabIndex = 1;
             // 
             // dtp_To_Date
             // 
@@ -135,7 +134,7 @@
             this.dtp_To_Date.Location = new System.Drawing.Point(870, 32);
             this.dtp_To_Date.Name = "dtp_To_Date";
             this.dtp_To_Date.Size = new System.Drawing.Size(301, 39);
-            this.dtp_To_Date.TabIndex = 23;
+            this.dtp_To_Date.TabIndex = 2;
             // 
             // lbl_To_Date
             // 

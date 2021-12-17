@@ -69,7 +69,7 @@
             this.cb_Status.Location = new System.Drawing.Point(569, 347);
             this.cb_Status.Name = "cb_Status";
             this.cb_Status.Size = new System.Drawing.Size(301, 34);
-            this.cb_Status.TabIndex = 51;
+            this.cb_Status.TabIndex = 4;
             // 
             // btn_Search
             // 
@@ -80,7 +80,7 @@
             this.btn_Search.Location = new System.Drawing.Point(912, 93);
             this.btn_Search.Name = "btn_Search";
             this.btn_Search.Size = new System.Drawing.Size(149, 50);
-            this.btn_Search.TabIndex = 50;
+            this.btn_Search.TabIndex = 2;
             this.btn_Search.Text = "Search";
             this.btn_Search.UseVisualStyleBackColor = false;
             this.btn_Search.Click += new System.EventHandler(this.btn_Search_Click);
@@ -105,7 +105,7 @@
             this.tb_Brand_Name.Multiline = true;
             this.tb_Brand_Name.Name = "tb_Brand_Name";
             this.tb_Brand_Name.Size = new System.Drawing.Size(301, 40);
-            this.tb_Brand_Name.TabIndex = 45;
+            this.tb_Brand_Name.TabIndex = 3;
             // 
             // tb_Brand_ID
             // 
@@ -115,7 +115,7 @@
             this.tb_Brand_ID.Multiline = true;
             this.tb_Brand_ID.Name = "tb_Brand_ID";
             this.tb_Brand_ID.Size = new System.Drawing.Size(301, 40);
-            this.tb_Brand_ID.TabIndex = 13;
+            this.tb_Brand_ID.TabIndex = 1;
             this.tb_Brand_ID.TextChanged += new System.EventHandler(this.tb_Brand_ID_TextChanged);
             // 
             // lbl_Brand_Name
@@ -150,7 +150,7 @@
             this.btn_Update.Location = new System.Drawing.Point(623, 658);
             this.btn_Update.Name = "btn_Update";
             this.btn_Update.Size = new System.Drawing.Size(149, 66);
-            this.btn_Update.TabIndex = 34;
+            this.btn_Update.TabIndex = 5;
             this.btn_Update.Text = "Update";
             this.btn_Update.UseVisualStyleBackColor = false;
             this.btn_Update.Click += new System.EventHandler(this.btn_Update_Click);
@@ -163,7 +163,7 @@
             this.btn_Refresh.Location = new System.Drawing.Point(1123, 658);
             this.btn_Refresh.Name = "btn_Refresh";
             this.btn_Refresh.Size = new System.Drawing.Size(149, 66);
-            this.btn_Refresh.TabIndex = 35;
+            this.btn_Refresh.TabIndex = 6;
             this.btn_Refresh.Text = "Refresh";
             this.btn_Refresh.UseVisualStyleBackColor = false;
             this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);

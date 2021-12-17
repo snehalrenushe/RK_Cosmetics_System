@@ -47,7 +47,7 @@
             this.btn_Close.Location = new System.Drawing.Point(1046, 687);
             this.btn_Close.Name = "btn_Close";
             this.btn_Close.Size = new System.Drawing.Size(184, 64);
-            this.btn_Close.TabIndex = 37;
+            this.btn_Close.TabIndex = 5;
             this.btn_Close.Text = "Close";
             this.btn_Close.UseVisualStyleBackColor = false;
             // 
@@ -59,7 +59,7 @@
             this.btn_Update.Location = new System.Drawing.Point(646, 687);
             this.btn_Update.Name = "btn_Update";
             this.btn_Update.Size = new System.Drawing.Size(184, 64);
-            this.btn_Update.TabIndex = 36;
+            this.btn_Update.TabIndex = 4;
             this.btn_Update.Text = "Update";
             this.btn_Update.UseVisualStyleBackColor = false;
             // 
@@ -82,7 +82,7 @@
             this.tb_New_Password.Multiline = true;
             this.tb_New_Password.Name = "tb_New_Password";
             this.tb_New_Password.Size = new System.Drawing.Size(383, 45);
-            this.tb_New_Password.TabIndex = 33;
+            this.tb_New_Password.TabIndex = 3;
             // 
             // lbl_New_Password
             // 
@@ -103,7 +103,7 @@
             this.tb_Current_Password.Multiline = true;
             this.tb_Current_Password.Name = "tb_Current_Password";
             this.tb_Current_Password.Size = new System.Drawing.Size(383, 45);
-            this.tb_Current_Password.TabIndex = 30;
+            this.tb_Current_Password.TabIndex = 2;
             // 
             // tb_Username
             // 
@@ -113,7 +113,7 @@
             this.tb_Username.Multiline = true;
             this.tb_Username.Name = "tb_Username";
             this.tb_Username.Size = new System.Drawing.Size(383, 43);
-            this.tb_Username.TabIndex = 29;
+            this.tb_Username.TabIndex = 1;
             // 
             // lbl_Current_Password
             // 

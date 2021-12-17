@@ -401,7 +401,7 @@
             this.btn_Refresh.Location = new System.Drawing.Point(844, 790);
             this.btn_Refresh.Name = "btn_Refresh";
             this.btn_Refresh.Size = new System.Drawing.Size(148, 56);
-            this.btn_Refresh.TabIndex = 33;
+            this.btn_Refresh.TabIndex = 14;
             this.btn_Refresh.Text = "Refresh";
             this.btn_Refresh.UseVisualStyleBackColor = false;
             this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
@@ -415,7 +415,7 @@
             this.btn_Save.Location = new System.Drawing.Point(295, 790);
             this.btn_Save.Name = "btn_Save";
             this.btn_Save.Size = new System.Drawing.Size(131, 56);
-            this.btn_Save.TabIndex = 34;
+            this.btn_Save.TabIndex = 13;
             this.btn_Save.Text = "Save";
             this.btn_Save.UseVisualStyleBackColor = false;
             this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);

@@ -144,7 +144,7 @@
             this.rb_Male.Location = new System.Drawing.Point(35, 22);
             this.rb_Male.Name = "rb_Male";
             this.rb_Male.Size = new System.Drawing.Size(91, 29);
-            this.rb_Male.TabIndex = 0;
+            this.rb_Male.TabIndex = 4;
             this.rb_Male.TabStop = true;
             this.rb_Male.Text = "Male";
             this.rb_Male.UseVisualStyleBackColor = true;
@@ -371,7 +371,7 @@
             this.btn_Refresh.Location = new System.Drawing.Point(891, 791);
             this.btn_Refresh.Name = "btn_Refresh";
             this.btn_Refresh.Size = new System.Drawing.Size(138, 56);
-            this.btn_Refresh.TabIndex = 14;
+            this.btn_Refresh.TabIndex = 13;
             this.btn_Refresh.Text = "Refresh";
             this.btn_Refresh.UseVisualStyleBackColor = false;
             this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
@@ -385,7 +385,7 @@
             this.btn_Save.Location = new System.Drawing.Point(325, 791);
             this.btn_Save.Name = "btn_Save";
             this.btn_Save.Size = new System.Drawing.Size(138, 56);
-            this.btn_Save.TabIndex = 13;
+            this.btn_Save.TabIndex = 12;
             this.btn_Save.Text = "Save";
             this.btn_Save.UseVisualStyleBackColor = false;
             this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);

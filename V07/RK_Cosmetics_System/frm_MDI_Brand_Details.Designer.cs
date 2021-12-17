@@ -71,7 +71,7 @@
             this.btn_Logout.Location = new System.Drawing.Point(1314, 21);
             this.btn_Logout.Name = "btn_Logout";
             this.btn_Logout.Size = new System.Drawing.Size(151, 55);
-            this.btn_Logout.TabIndex = 3;
+            this.btn_Logout.TabIndex = 5;
             this.btn_Logout.Text = "Logout";
             this.btn_Logout.UseVisualStyleBackColor = true;
             this.btn_Logout.Click += new System.EventHandler(this.btn_Logout_Click);
@@ -83,7 +83,7 @@
             this.btn_Back.Location = new System.Drawing.Point(30, 21);
             this.btn_Back.Name = "btn_Back";
             this.btn_Back.Size = new System.Drawing.Size(128, 55);
-            this.btn_Back.TabIndex = 2;
+            this.btn_Back.TabIndex = 4;
             this.btn_Back.Text = "Back";
             this.btn_Back.UseVisualStyleBackColor = true;
             this.btn_Back.Click += new System.EventHandler(this.btn_Back_Click);
@@ -123,7 +123,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(97, 106);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(280, 52);
-            this.menuStrip1.TabIndex = 16;
+            this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.UseWaitCursor = true;
             // 
@@ -145,7 +145,7 @@
             this.ViewBrandDetailsmenuStrip3.Location = new System.Drawing.Point(1209, 106);
             this.ViewBrandDetailsmenuStrip3.Name = "ViewBrandDetailsmenuStrip3";
             this.ViewBrandDetailsmenuStrip3.Size = new System.Drawing.Size(326, 52);
-            this.ViewBrandDetailsmenuStrip3.TabIndex = 20;
+            this.ViewBrandDetailsmenuStrip3.TabIndex = 3;
             this.ViewBrandDetailsmenuStrip3.Text = "menuStrip3";
             this.ViewBrandDetailsmenuStrip3.UseWaitCursor = true;
             this.ViewBrandDetailsmenuStrip3.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.ViewBrandDetailsmenuStrip3_ItemClicked);
@@ -191,7 +191,7 @@
             this.menuStrip2.Location = new System.Drawing.Point(619, 106);
             this.menuStrip2.Name = "menuStrip2";
             this.menuStrip2.Size = new System.Drawing.Size(357, 52);
-            this.menuStrip2.TabIndex = 21;
+            this.menuStrip2.TabIndex = 2;
             this.menuStrip2.Text = "menuStrip2";
             this.menuStrip2.UseWaitCursor = true;
             // 

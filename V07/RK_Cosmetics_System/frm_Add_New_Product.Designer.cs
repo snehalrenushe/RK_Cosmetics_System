@@ -34,12 +34,10 @@
             this.cb_Brand_Name = new System.Windows.Forms.ComboBox();
             this.tb_Selling_Price = new System.Windows.Forms.TextBox();
             this.tb_Stock = new System.Windows.Forms.TextBox();
-            this.dtp_Date = new System.Windows.Forms.DateTimePicker();
             this.tb_Description = new System.Windows.Forms.TextBox();
             this.lbl_Description = new System.Windows.Forms.Label();
             this.tb_GST = new System.Windows.Forms.TextBox();
             this.lbl_GST = new System.Windows.Forms.Label();
-            this.lbl_Date = new System.Windows.Forms.Label();
             this.lbl_Stock = new System.Windows.Forms.Label();
             this.tb_Purchase_Price = new System.Windows.Forms.TextBox();
             this.lbl_Purchase_Price = new System.Windows.Forms.Label();
@@ -51,23 +49,25 @@
             this.lbl_Product_ID = new System.Windows.Forms.Label();
             this.btn_Save = new System.Windows.Forms.Button();
             this.btn_Refresh = new System.Windows.Forms.Button();
+            this.dtp_Date = new System.Windows.Forms.DateTimePicker();
+            this.lbl_Date = new System.Windows.Forms.Label();
             this.gb_Product_Details.SuspendLayout();
             this.SuspendLayout();
             // 
             // gb_Product_Details
             // 
             this.gb_Product_Details.BackColor = System.Drawing.Color.LavenderBlush;
+            this.gb_Product_Details.Controls.Add(this.dtp_Date);
+            this.gb_Product_Details.Controls.Add(this.lbl_Date);
             this.gb_Product_Details.Controls.Add(this.tb_Product_Name);
             this.gb_Product_Details.Controls.Add(this.cb_Distributor_Name);
             this.gb_Product_Details.Controls.Add(this.cb_Brand_Name);
             this.gb_Product_Details.Controls.Add(this.tb_Selling_Price);
             this.gb_Product_Details.Controls.Add(this.tb_Stock);
-            this.gb_Product_Details.Controls.Add(this.dtp_Date);
             this.gb_Product_Details.Controls.Add(this.tb_Description);
             this.gb_Product_Details.Controls.Add(this.lbl_Description);
             this.gb_Product_Details.Controls.Add(this.tb_GST);
             this.gb_Product_Details.Controls.Add(this.lbl_GST);
-            this.gb_Product_Details.Controls.Add(this.lbl_Date);
             this.gb_Product_Details.Controls.Add(this.lbl_Stock);
             this.gb_Product_Details.Controls.Add(this.tb_Purchase_Price);
             this.gb_Product_Details.Controls.Add(this.lbl_Purchase_Price);
@@ -100,10 +100,10 @@
             // 
             this.cb_Distributor_Name.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.cb_Distributor_Name.FormattingEnabled = true;
-            this.cb_Distributor_Name.Location = new System.Drawing.Point(1348, 63);
+            this.cb_Distributor_Name.Location = new System.Drawing.Point(1348, 258);
             this.cb_Distributor_Name.Name = "cb_Distributor_Name";
             this.cb_Distributor_Name.Size = new System.Drawing.Size(301, 39);
-            this.cb_Distributor_Name.TabIndex = 7;
+            this.cb_Distributor_Name.TabIndex = 8;
             this.cb_Distributor_Name.SelectedIndexChanged += new System.EventHandler(this.cb_Distributor_Name_SelectedIndexChanged);
             // 
             // cb_Brand_Name
@@ -134,17 +134,9 @@
             this.tb_Stock.Multiline = true;
             this.tb_Stock.Name = "tb_Stock";
             this.tb_Stock.Size = new System.Drawing.Size(301, 40);
-            this.tb_Stock.TabIndex = 6;
+            this.tb_Stock.TabIndex = 7;
             this.tb_Stock.Text = "0";
             this.tb_Stock.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Numeric);
-            // 
-            // dtp_Date
-            // 
-            this.dtp_Date.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.dtp_Date.Location = new System.Drawing.Point(1349, 241);
-            this.dtp_Date.Name = "dtp_Date";
-            this.dtp_Date.Size = new System.Drawing.Size(301, 39);
-            this.dtp_Date.TabIndex = 10;
             // 
             // tb_Description
             // 
@@ -154,7 +146,7 @@
             this.tb_Description.Multiline = true;
             this.tb_Description.Name = "tb_Description";
             this.tb_Description.Size = new System.Drawing.Size(301, 97);
-            this.tb_Description.TabIndex = 12;
+            this.tb_Description.TabIndex = 10;
             // 
             // lbl_Description
             // 
@@ -176,7 +168,7 @@
             this.tb_GST.Multiline = true;
             this.tb_GST.Name = "tb_GST";
             this.tb_GST.Size = new System.Drawing.Size(301, 40);
-            this.tb_GST.TabIndex = 11;
+            this.tb_GST.TabIndex = 9;
             // 
             // lbl_GST
             // 
@@ -189,18 +181,6 @@
             this.lbl_GST.Size = new System.Drawing.Size(68, 36);
             this.lbl_GST.TabIndex = 32;
             this.lbl_GST.Text = "GST";
-            // 
-            // lbl_Date
-            // 
-            this.lbl_Date.AutoSize = true;
-            this.lbl_Date.BackColor = System.Drawing.Color.Pink;
-            this.lbl_Date.Font = new System.Drawing.Font("Microsoft YaHei", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Date.ForeColor = System.Drawing.Color.Maroon;
-            this.lbl_Date.Location = new System.Drawing.Point(995, 254);
-            this.lbl_Date.Name = "lbl_Date";
-            this.lbl_Date.Size = new System.Drawing.Size(77, 36);
-            this.lbl_Date.TabIndex = 31;
-            this.lbl_Date.Text = "Date";
             // 
             // lbl_Stock
             // 
@@ -267,7 +247,7 @@
             this.lbl_Distributor_Name.BackColor = System.Drawing.Color.Pink;
             this.lbl_Distributor_Name.Font = new System.Drawing.Font("Microsoft YaHei", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Distributor_Name.ForeColor = System.Drawing.Color.Maroon;
-            this.lbl_Distributor_Name.Location = new System.Drawing.Point(995, 62);
+            this.lbl_Distributor_Name.Location = new System.Drawing.Point(995, 257);
             this.lbl_Distributor_Name.Name = "lbl_Distributor_Name";
             this.lbl_Distributor_Name.Size = new System.Drawing.Size(246, 36);
             this.lbl_Distributor_Name.TabIndex = 17;
@@ -334,6 +314,26 @@
             this.btn_Refresh.UseVisualStyleBackColor = false;
             this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
             // 
+            // dtp_Date
+            // 
+            this.dtp_Date.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.dtp_Date.Location = new System.Drawing.Point(1349, 49);
+            this.dtp_Date.Name = "dtp_Date";
+            this.dtp_Date.Size = new System.Drawing.Size(301, 39);
+            this.dtp_Date.TabIndex = 6;
+            // 
+            // lbl_Date
+            // 
+            this.lbl_Date.AutoSize = true;
+            this.lbl_Date.BackColor = System.Drawing.Color.Pink;
+            this.lbl_Date.Font = new System.Drawing.Font("Microsoft YaHei", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Date.ForeColor = System.Drawing.Color.Maroon;
+            this.lbl_Date.Location = new System.Drawing.Point(995, 62);
+            this.lbl_Date.Name = "lbl_Date";
+            this.lbl_Date.Size = new System.Drawing.Size(77, 36);
+            this.lbl_Date.TabIndex = 37;
+            this.lbl_Date.Text = "Date";
+            // 
             // frm_Add_New_Product
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -360,12 +360,10 @@
         private System.Windows.Forms.ComboBox cb_Brand_Name;
         private System.Windows.Forms.TextBox tb_Selling_Price;
         private System.Windows.Forms.TextBox tb_Stock;
-        private System.Windows.Forms.DateTimePicker dtp_Date;
         private System.Windows.Forms.TextBox tb_Description;
         private System.Windows.Forms.Label lbl_Description;
         private System.Windows.Forms.TextBox tb_GST;
         private System.Windows.Forms.Label lbl_GST;
-        private System.Windows.Forms.Label lbl_Date;
         private System.Windows.Forms.Label lbl_Stock;
         private System.Windows.Forms.TextBox tb_Purchase_Price;
         private System.Windows.Forms.Label lbl_Purchase_Price;
@@ -378,5 +376,7 @@
         private System.Windows.Forms.Button btn_Save;
         private System.Windows.Forms.Button btn_Refresh;
         private System.Windows.Forms.TextBox tb_Product_Name;
+        private System.Windows.Forms.DateTimePicker dtp_Date;
+        private System.Windows.Forms.Label lbl_Date;
     }
 }

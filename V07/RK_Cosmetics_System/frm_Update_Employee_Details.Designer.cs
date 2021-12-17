@@ -94,7 +94,7 @@
             this.tb_Addres.Multiline = true;
             this.tb_Addres.Name = "tb_Addres";
             this.tb_Addres.Size = new System.Drawing.Size(301, 40);
-            this.tb_Addres.TabIndex = 7;
+            this.tb_Addres.TabIndex = 6;
             // 
             // lbl_Addres
             // 
@@ -132,7 +132,7 @@
             this.btn_Update.Location = new System.Drawing.Point(1174, 21);
             this.btn_Update.Name = "btn_Update";
             this.btn_Update.Size = new System.Drawing.Size(138, 56);
-            this.btn_Update.TabIndex = 3;
+            this.btn_Update.TabIndex = 9;
             this.btn_Update.Text = "Update";
             this.btn_Update.UseVisualStyleBackColor = false;
             this.btn_Update.Click += new System.EventHandler(this.btn_Update_Click);
@@ -242,7 +242,7 @@
             this.tb_Mobile_No_2.Multiline = true;
             this.tb_Mobile_No_2.Name = "tb_Mobile_No_2";
             this.tb_Mobile_No_2.Size = new System.Drawing.Size(301, 44);
-            this.tb_Mobile_No_2.TabIndex = 9;
+            this.tb_Mobile_No_2.TabIndex = 8;
             this.tb_Mobile_No_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Numeric);
             // 
             // lbl_Mobile_No_2
@@ -277,7 +277,7 @@
             this.tb_Last_Name.Multiline = true;
             this.tb_Last_Name.Name = "tb_Last_Name";
             this.tb_Last_Name.Size = new System.Drawing.Size(301, 40);
-            this.tb_Last_Name.TabIndex = 6;
+            this.tb_Last_Name.TabIndex = 5;
             this.tb_Last_Name.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Char);
             // 
             // tb_Middle_Name
@@ -288,7 +288,7 @@
             this.tb_Middle_Name.Multiline = true;
             this.tb_Middle_Name.Name = "tb_Middle_Name";
             this.tb_Middle_Name.Size = new System.Drawing.Size(301, 40);
-            this.tb_Middle_Name.TabIndex = 5;
+            this.tb_Middle_Name.TabIndex = 4;
             this.tb_Middle_Name.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Char);
             // 
             // lbl_Last_Name
@@ -323,7 +323,7 @@
             this.tb_Mobile_No_1.Multiline = true;
             this.tb_Mobile_No_1.Name = "tb_Mobile_No_1";
             this.tb_Mobile_No_1.Size = new System.Drawing.Size(301, 44);
-            this.tb_Mobile_No_1.TabIndex = 8;
+            this.tb_Mobile_No_1.TabIndex = 7;
             this.tb_Mobile_No_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Numeric);
             // 
             // lbl_Mobile_No_1
@@ -346,7 +346,7 @@
             this.tb_First_Name.Multiline = true;
             this.tb_First_Name.Name = "tb_First_Name";
             this.tb_First_Name.Size = new System.Drawing.Size(301, 40);
-            this.tb_First_Name.TabIndex = 4;
+            this.tb_First_Name.TabIndex = 3;
             this.tb_First_Name.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Char);
             // 
             // lbl_First_Name

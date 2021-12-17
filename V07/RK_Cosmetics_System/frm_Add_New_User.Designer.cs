@@ -58,7 +58,7 @@
             this.tb_Confirm_Password.Multiline = true;
             this.tb_Confirm_Password.Name = "tb_Confirm_Password";
             this.tb_Confirm_Password.Size = new System.Drawing.Size(383, 45);
-            this.tb_Confirm_Password.TabIndex = 24;
+            this.tb_Confirm_Password.TabIndex = 3;
             // 
             // lbl_Confirm_Password
             // 
@@ -79,7 +79,7 @@
             this.tb_Password.Multiline = true;
             this.tb_Password.Name = "tb_Password";
             this.tb_Password.Size = new System.Drawing.Size(383, 45);
-            this.tb_Password.TabIndex = 21;
+            this.tb_Password.TabIndex = 2;
             // 
             // tb_Username
             // 
@@ -89,7 +89,7 @@
             this.tb_Username.Multiline = true;
             this.tb_Username.Name = "tb_Username";
             this.tb_Username.Size = new System.Drawing.Size(383, 43);
-            this.tb_Username.TabIndex = 20;
+            this.tb_Username.TabIndex = 1;
             // 
             // lbl_Password
             // 
@@ -121,7 +121,7 @@
             this.btn_Save.Location = new System.Drawing.Point(648, 689);
             this.btn_Save.Name = "btn_Save";
             this.btn_Save.Size = new System.Drawing.Size(184, 64);
-            this.btn_Save.TabIndex = 27;
+            this.btn_Save.TabIndex = 4;
             this.btn_Save.Text = "Save";
             this.btn_Save.UseVisualStyleBackColor = false;
             // 
@@ -133,7 +133,7 @@
             this.btn_Close.Location = new System.Drawing.Point(1048, 689);
             this.btn_Close.Name = "btn_Close";
             this.btn_Close.Size = new System.Drawing.Size(184, 64);
-            this.btn_Close.TabIndex = 28;
+            this.btn_Close.TabIndex = 5;
             this.btn_Close.Text = "Close";
             this.btn_Close.UseVisualStyleBackColor = false;
             // 

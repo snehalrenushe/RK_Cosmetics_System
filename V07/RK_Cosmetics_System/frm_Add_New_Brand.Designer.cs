@@ -77,7 +77,7 @@
             this.rb_In_Use.Location = new System.Drawing.Point(8, 15);
             this.rb_In_Use.Name = "rb_In_Use";
             this.rb_In_Use.Size = new System.Drawing.Size(120, 36);
-            this.rb_In_Use.TabIndex = 47;
+            this.rb_In_Use.TabIndex = 3;
             this.rb_In_Use.TabStop = true;
             this.rb_In_Use.Text = "In Use";
             this.rb_In_Use.UseVisualStyleBackColor = true;
@@ -89,7 +89,7 @@
             this.rb_Not_In_Use.Location = new System.Drawing.Point(138, 15);
             this.rb_Not_In_Use.Name = "rb_Not_In_Use";
             this.rb_Not_In_Use.Size = new System.Drawing.Size(171, 36);
-            this.rb_Not_In_Use.TabIndex = 48;
+            this.rb_Not_In_Use.TabIndex = 4;
             this.rb_Not_In_Use.TabStop = true;
             this.rb_Not_In_Use.Text = "Not In Use\r\n";
             this.rb_Not_In_Use.UseVisualStyleBackColor = true;
@@ -114,7 +114,7 @@
             this.tb_Brand_Name.Multiline = true;
             this.tb_Brand_Name.Name = "tb_Brand_Name";
             this.tb_Brand_Name.Size = new System.Drawing.Size(301, 40);
-            this.tb_Brand_Name.TabIndex = 45;
+            this.tb_Brand_Name.TabIndex = 2;
             this.tb_Brand_Name.TextChanged += new System.EventHandler(this.tb_Brand_Name_TextChanged);
             // 
             // tb_Brand_ID
@@ -126,7 +126,7 @@
             this.tb_Brand_ID.Multiline = true;
             this.tb_Brand_ID.Name = "tb_Brand_ID";
             this.tb_Brand_ID.Size = new System.Drawing.Size(301, 40);
-            this.tb_Brand_ID.TabIndex = 13;
+            this.tb_Brand_ID.TabIndex = 1;
             // 
             // lbl_Brand_Name
             // 
@@ -161,7 +161,7 @@
             this.btn_Save.Location = new System.Drawing.Point(962, 647);
             this.btn_Save.Name = "btn_Save";
             this.btn_Save.Size = new System.Drawing.Size(149, 66);
-            this.btn_Save.TabIndex = 34;
+            this.btn_Save.TabIndex = 5;
             this.btn_Save.Text = "Save";
             this.btn_Save.UseVisualStyleBackColor = false;
             this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click_1);

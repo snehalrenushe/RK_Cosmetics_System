@@ -129,7 +129,7 @@
             this.btn_User_Management.Location = new System.Drawing.Point(744, 812);
             this.btn_User_Management.Name = "btn_User_Management";
             this.btn_User_Management.Size = new System.Drawing.Size(351, 61);
-            this.btn_User_Management.TabIndex = 5;
+            this.btn_User_Management.TabIndex = 6;
             this.btn_User_Management.Text = "User Management";
             this.btn_User_Management.UseVisualStyleBackColor = false;
             this.btn_User_Management.Click += new System.EventHandler(this.btn_User_Management_Click);
@@ -229,7 +229,7 @@
             this.btn_Customer.Location = new System.Drawing.Point(485, 393);
             this.btn_Customer.Name = "btn_Customer";
             this.btn_Customer.Size = new System.Drawing.Size(184, 56);
-            this.btn_Customer.TabIndex = 10;
+            this.btn_Customer.TabIndex = 1;
             this.btn_Customer.Text = "Customer";
             this.btn_Customer.UseVisualStyleBackColor = false;
             this.btn_Customer.Click += new System.EventHandler(this.btn_Customer_Click);
@@ -242,7 +242,7 @@
             this.btn_Employee.Location = new System.Drawing.Point(823, 393);
             this.btn_Employee.Name = "btn_Employee";
             this.btn_Employee.Size = new System.Drawing.Size(184, 56);
-            this.btn_Employee.TabIndex = 11;
+            this.btn_Employee.TabIndex = 2;
             this.btn_Employee.Text = "Employee";
             this.btn_Employee.UseVisualStyleBackColor = false;
             this.btn_Employee.Click += new System.EventHandler(this.btn_Employee_Click);
@@ -255,7 +255,7 @@
             this.btn_Distributor.Location = new System.Drawing.Point(1166, 393);
             this.btn_Distributor.Name = "btn_Distributor";
             this.btn_Distributor.Size = new System.Drawing.Size(208, 56);
-            this.btn_Distributor.TabIndex = 12;
+            this.btn_Distributor.TabIndex = 3;
             this.btn_Distributor.Text = "Distributor";
             this.btn_Distributor.UseVisualStyleBackColor = false;
             this.btn_Distributor.Click += new System.EventHandler(this.btn_Distributor_Click);
@@ -268,7 +268,7 @@
             this.btn_Product.Location = new System.Drawing.Point(473, 812);
             this.btn_Product.Name = "btn_Product";
             this.btn_Product.Size = new System.Drawing.Size(184, 56);
-            this.btn_Product.TabIndex = 13;
+            this.btn_Product.TabIndex = 5;
             this.btn_Product.Text = "Product";
             this.btn_Product.UseVisualStyleBackColor = false;
             this.btn_Product.Click += new System.EventHandler(this.btn_Product_Click);
@@ -281,7 +281,7 @@
             this.btn_Brand.Location = new System.Drawing.Point(1486, 396);
             this.btn_Brand.Name = "btn_Brand";
             this.btn_Brand.Size = new System.Drawing.Size(208, 56);
-            this.btn_Brand.TabIndex = 15;
+            this.btn_Brand.TabIndex = 4;
             this.btn_Brand.Text = "Brand";
             this.btn_Brand.UseVisualStyleBackColor = false;
             this.btn_Brand.Click += new System.EventHandler(this.btn_Brand_Click);
@@ -304,7 +304,7 @@
             this.btn_Expenses.Location = new System.Drawing.Point(1486, 812);
             this.btn_Expenses.Name = "btn_Expenses";
             this.btn_Expenses.Size = new System.Drawing.Size(208, 56);
-            this.btn_Expenses.TabIndex = 17;
+            this.btn_Expenses.TabIndex = 8;
             this.btn_Expenses.Text = "Expenses";
             this.btn_Expenses.UseVisualStyleBackColor = false;
             // 
