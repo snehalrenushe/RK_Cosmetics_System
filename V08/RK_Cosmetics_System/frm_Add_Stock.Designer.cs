@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.gb_Stock_Details = new System.Windows.Forms.GroupBox();
             this.dtp_Expiry_Date = new System.Windows.Forms.DateTimePicker();
             this.lbl_Expiry_Date = new System.Windows.Forms.Label();
@@ -48,6 +49,7 @@
             this.tb_Currect_Stock_Quantity = new System.Windows.Forms.TextBox();
             this.btn_Refresh = new System.Windows.Forms.Button();
             this.btn_Submit = new System.Windows.Forms.Button();
+            this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.gb_Stock_Details.SuspendLayout();
             this.pnl_Stock_Details.SuspendLayout();
             this.SuspendLayout();
@@ -71,6 +73,7 @@
             this.gb_Stock_Details.TabIndex = 3;
             this.gb_Stock_Details.TabStop = false;
             this.gb_Stock_Details.Text = "Stock Details";
+            this.gb_Stock_Details.Enter += new System.EventHandler(this.gb_Stock_Details_Enter);
             // 
             // dtp_Expiry_Date
             // 
@@ -332,5 +335,6 @@
         private System.Windows.Forms.Label lbl_Expiry_Date;
         private System.Windows.Forms.DateTimePicker dtp_Manufacturing_Date;
         private System.Windows.Forms.Label lbl_Manufacturing_Date;
+        private System.IO.Ports.SerialPort serialPort1;
     }
 }

@@ -103,34 +103,57 @@ namespace RK_Cosmetics_System
                 Gender = rb_Female.Text;
             }
 
+            if (tb_First_Name.Text == "")
+            {
+                Warn_First_Name.Visible = true;
+                Warn_First_Name.Text = "*Required";
+            }  
+
+            if (tb_Middle_Name.Text == "")
+            {
+                Warn_Middle_Name.Visible = true;
+                Warn_Middle_Name.Text = "*Required";
+            }
+
+            if (tb_Last_Name.Text == "")
+            {
+                Warn_Last_Name.Visible = true;
+                Warn_Last_Name.Text = "*Required";
+            }
+
+            /*if (!rb_Female.Checked || !rb_Male.Checked)
+            {
+                Warn_Gender.Visible = true;
+                Warn_Gender.Text = "*Required";
+            }*/
+
             if (tb_Mobile_No_1.TextLength < 10)
             {
-                MessageBox.Show("Invalid Mobile Number!!! Please Enter Valid Mobile Number.","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
-                tb_Mobile_No_1.Focus();
-                
+                Warn_Mobile_No.Visible = true;
+                Warn_Mobile_No.Text = "*Mobile Number Should be Valid";
                 goto DWN;
             }
 
-            if (tb_Mobile_No_2.TextLength < 10)
+            else if (tb_Mobile_No_2.TextLength < 10)
             {
-                MessageBox.Show("Invalid Mobile Number!!! Please Enter Valid Mobile Number.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                tb_Mobile_No_1.Focus();
+                Warn_Alternate_Mobile_No.Visible = true;
+                Warn_Alternate_Mobile_No.Text = "*Mobile Number Should be Valid";
 
                 goto DWN;
             }
 
             if (tb_Aadhar_No.TextLength < 12)
             {
-                MessageBox.Show("Invalid Aadhar Number!!! Please Enter Valid Aadhar Number.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                tb_Aadhar_No.Focus();
+                Warn_Aadhar_No.Visible = true;
+                Warn_Aadhar_No.Text = "*Aadhar Number Should be Valid";
 
                 goto DWN;
             }
 
             if (tb_Pan_No.TextLength < 10)
             {
-                MessageBox.Show("Invalid Pan Number!!! Please Enter Valid PAN Number.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                tb_Pan_No.Focus();
+                Warn_PAN_No.Visible = true;
+                Warn_PAN_No.Text = "*PAN Number Should be Valid";
 
                 goto DWN;
             }
@@ -150,7 +173,7 @@ namespace RK_Cosmetics_System
                 Cmd.Parameters.Add("M_Name", SqlDbType.VarChar).Value = tb_Middle_Name.Text;
                 Cmd.Parameters.Add("L_Name", SqlDbType.VarChar).Value = tb_Last_Name.Text;
                 Cmd.Parameters.Add("DOB", SqlDbType.Date).Value = dtp_Date_Of_Birth.Text;
-                //Cmd.Parameters.Add("Gender", SqlDbType.VarChar).Value = gb_Gender.Text;
+                //Cmd.Parameters.Add("Gender", SqlDbType.VarChar).Value = gb_Gender.Text;  
                 Cmd.Parameters.Add("J_Date", SqlDbType.Date).Value = dtp_Joining_Date.Text;
                 Cmd.Parameters.Add("Mob1", SqlDbType.Decimal).Value = tb_Mobile_No_1.Text;
                 Cmd.Parameters.Add("Mob2", SqlDbType.Decimal).Value = tb_Mobile_No_2.Text;
@@ -165,10 +188,7 @@ namespace RK_Cosmetics_System
                 Clear_Controls();
 
             }
-            else
-            {
-                MessageBox.Show("Incomplete Information !!!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
+            
 
             DWN:
             Con_Close();
@@ -206,28 +226,10 @@ namespace RK_Cosmetics_System
             Clear_Controls();
         }
 
-        private void tb_Pan_No_TextChanged(object sender, EventArgs e)
+        private void dtp_Date_Of_Birth_ValueChanged(object sender, EventArgs e)
         {
 
         }
-
-        private void lbl_Pan_No_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tb_Mobile_No_1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void gb_Employee_Details_Enter(object sender, EventArgs e)
-        {
-
-        }
-       
-
-
 
     }
 }

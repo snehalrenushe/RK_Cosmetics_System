@@ -127,10 +127,7 @@ namespace RK_Cosmetics_System
 
         private void btn_Submit_Click(object sender, EventArgs e)
         {
-            if ()
-            {
-                
-            }
+           
         }
 
         private void btn_Refresh_Click(object sender, EventArgs e)
@@ -141,6 +138,11 @@ namespace RK_Cosmetics_System
         private void tb_Currect_Stock_Quantity_TextChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void gb_Stock_Details_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }
