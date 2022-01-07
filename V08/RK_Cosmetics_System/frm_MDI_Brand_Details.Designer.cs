@@ -217,6 +217,8 @@
             this.Controls.Add(this.pnl_Brand_Details);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frm_MDI_Brand_Details";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Brand Details";

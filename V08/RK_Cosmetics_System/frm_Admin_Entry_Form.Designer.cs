@@ -343,6 +343,8 @@
             this.Controls.Add(this.btn_Logout);
             this.Controls.Add(this.pnl_Admin_Entry_Form);
             this.ForeColor = System.Drawing.Color.MintCream;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frm_Admin_Entry_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin Entry Form";

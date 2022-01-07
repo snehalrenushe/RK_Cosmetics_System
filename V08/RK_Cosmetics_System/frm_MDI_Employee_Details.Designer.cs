@@ -216,6 +216,8 @@
             this.Controls.Add(this.pnl_Employee_Details);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frm_MDI_Employee_Details";
             this.Text = "Employee Details";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

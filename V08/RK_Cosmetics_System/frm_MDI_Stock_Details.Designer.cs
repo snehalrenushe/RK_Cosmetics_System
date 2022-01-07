@@ -175,6 +175,8 @@
             this.Controls.Add(this.pnl_Stock_Details);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frm_MDI_Stock_Details";
             this.Text = "Stock Details";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

@@ -65,6 +65,7 @@
             this.lbl_Employee_ID = new System.Windows.Forms.Label();
             this.btn_Refresh = new System.Windows.Forms.Button();
             this.btn_Save = new System.Windows.Forms.Button();
+            this.Warn_Address = new System.Windows.Forms.Label();
             this.gb_Employee_Details.SuspendLayout();
             this.gb_Gender.SuspendLayout();
             this.SuspendLayout();
@@ -72,6 +73,7 @@
             // gb_Employee_Details
             // 
             this.gb_Employee_Details.BackColor = System.Drawing.Color.LavenderBlush;
+            this.gb_Employee_Details.Controls.Add(this.Warn_Address);
             this.gb_Employee_Details.Controls.Add(this.Warn_PAN_No);
             this.gb_Employee_Details.Controls.Add(this.Warn_Gender);
             this.gb_Employee_Details.Controls.Add(this.Warn_Mobile_No);
@@ -530,6 +532,18 @@
             this.btn_Save.UseVisualStyleBackColor = false;
             this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
             // 
+            // Warn_Address
+            // 
+            this.Warn_Address.AutoSize = true;
+            this.Warn_Address.Font = new System.Drawing.Font("Mongolian Baiti", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Warn_Address.ForeColor = System.Drawing.Color.Red;
+            this.Warn_Address.Location = new System.Drawing.Point(1416, 591);
+            this.Warn_Address.Name = "Warn_Address";
+            this.Warn_Address.Size = new System.Drawing.Size(84, 21);
+            this.Warn_Address.TabIndex = 45;
+            this.Warn_Address.Text = "Required";
+            this.Warn_Address.Visible = false;
+            // 
             // frm_Add_New_Employee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -590,5 +604,6 @@
         private System.Windows.Forms.Label Warn_Mobile_No;
         private System.Windows.Forms.Label Warn_Alternate_Mobile_No;
         private System.Windows.Forms.Label Warn_Aadhar_No;
+        private System.Windows.Forms.Label Warn_Address;
     }
 }

@@ -83,6 +83,15 @@ namespace RK_Cosmetics_System
             tb_Aadhar_No.Text = "";
             tb_Pan_No.Text = "";
             tb_Address.Text = "";
+            Warn_First_Name.Visible = false;
+            Warn_Middle_Name.Visible = false;
+            Warn_Last_Name.Visible = false;
+            Warn_Gender.Visible = false;
+            Warn_Mobile_No.Visible = false;
+            Warn_Alternate_Mobile_No.Visible = false;
+            Warn_Aadhar_No.Visible = false;
+            Warn_PAN_No.Visible = false;
+            Warn_Address.Visible = false;
 
             tb_First_Name.Focus();
         }
@@ -93,12 +102,12 @@ namespace RK_Cosmetics_System
 
             string Gender = " ";
 
-            if (rb_Male.Checked)
+            if (rb_Male.Checked == true)
             {
                 Gender = rb_Male.Text;
             }
 
-            else if (rb_Female.Checked)
+            else if (rb_Female.Checked == true)
             {
                 Gender = rb_Female.Text;
             }
@@ -114,51 +123,50 @@ namespace RK_Cosmetics_System
                 Warn_Middle_Name.Visible = true;
                 Warn_Middle_Name.Text = "*Required";
             }
-
+            
             if (tb_Last_Name.Text == "")
             {
                 Warn_Last_Name.Visible = true;
                 Warn_Last_Name.Text = "*Required";
             }
 
-            /*if (!rb_Female.Checked || !rb_Male.Checked)
+            if (!rb_Female.Checked || !rb_Male.Checked)
             {
                 Warn_Gender.Visible = true;
                 Warn_Gender.Text = "*Required";
-            }*/
+            }
 
             if (tb_Mobile_No_1.TextLength < 10)
             {
                 Warn_Mobile_No.Visible = true;
                 Warn_Mobile_No.Text = "*Mobile Number Should be Valid";
-                goto DWN;
             }
 
-            else if (tb_Mobile_No_2.TextLength < 10)
+            if (tb_Mobile_No_2.TextLength < 10)
             {
                 Warn_Alternate_Mobile_No.Visible = true;
                 Warn_Alternate_Mobile_No.Text = "*Mobile Number Should be Valid";
-
-                goto DWN;
             }
-
+            
             if (tb_Aadhar_No.TextLength < 12)
             {
                 Warn_Aadhar_No.Visible = true;
                 Warn_Aadhar_No.Text = "*Aadhar Number Should be Valid";
-
-                goto DWN;
             }
 
             if (tb_Pan_No.TextLength < 10)
             {
                 Warn_PAN_No.Visible = true;
                 Warn_PAN_No.Text = "*PAN Number Should be Valid";
-
-                goto DWN;
             }
 
-            if (tb_Employee_ID.Text != "" && tb_First_Name.Text != "" && tb_Middle_Name.Text != "" && tb_Last_Name.Text != "" && tb_Mobile_No_1.Text != "" && tb_Aadhar_No.Text != "" && tb_Pan_No.Text != "" && tb_Address.Text != "")
+            if (tb_Address.Text == "")
+            {
+                Warn_Address.Visible = true;
+                Warn_Address.Text = "*Required";
+            }
+
+            if (tb_Employee_ID.Text != "" && tb_First_Name.Text != "" && tb_Middle_Name.Text != "" && tb_Last_Name.Text != "" && tb_Mobile_No_1.Text != "" && tb_Aadhar_No.Text != "" && tb_Pan_No.Text != "" && tb_Address.Text != "" && Gender != "")
             {
                 Con_Open();
 
@@ -189,8 +197,6 @@ namespace RK_Cosmetics_System
 
             }
             
-
-            DWN:
             Con_Close();
         }
 

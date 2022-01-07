@@ -217,6 +217,8 @@
             this.Controls.Add(this.pnl_Customer_Details);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frm_MDI_Distributor_Details";
             this.Text = "Distributor Details";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

@@ -177,6 +177,8 @@
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frm_MDI_Customer_Details";
             this.Text = "Customer Details";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
