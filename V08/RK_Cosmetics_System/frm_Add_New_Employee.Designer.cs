@@ -33,7 +33,6 @@
             this.Warn_PAN_No = new System.Windows.Forms.Label();
             this.Warn_Gender = new System.Windows.Forms.Label();
             this.Warn_Mobile_No = new System.Windows.Forms.Label();
-            this.Warn_Alternate_Mobile_No = new System.Windows.Forms.Label();
             this.Warn_Aadhar_No = new System.Windows.Forms.Label();
             this.Warn_Last_Name = new System.Windows.Forms.Label();
             this.Warn_Middle_Name = new System.Windows.Forms.Label();
@@ -70,6 +69,7 @@
             this.lbl_Age = new System.Windows.Forms.Label();
             this.tb_Email_ID = new System.Windows.Forms.TextBox();
             this.lbl_Email_ID = new System.Windows.Forms.Label();
+            this.Warn_Alternate_Mobile_No = new System.Windows.Forms.Label();
             this.gb_Employee_Details.SuspendLayout();
             this.gb_Gender.SuspendLayout();
             this.SuspendLayout();
@@ -77,6 +77,7 @@
             // gb_Employee_Details
             // 
             this.gb_Employee_Details.BackColor = System.Drawing.Color.LavenderBlush;
+            this.gb_Employee_Details.Controls.Add(this.Warn_Alternate_Mobile_No);
             this.gb_Employee_Details.Controls.Add(this.tb_Email_ID);
             this.gb_Employee_Details.Controls.Add(this.lbl_Email_ID);
             this.gb_Employee_Details.Controls.Add(this.tb_Age);
@@ -85,7 +86,6 @@
             this.gb_Employee_Details.Controls.Add(this.Warn_PAN_No);
             this.gb_Employee_Details.Controls.Add(this.Warn_Gender);
             this.gb_Employee_Details.Controls.Add(this.Warn_Mobile_No);
-            this.gb_Employee_Details.Controls.Add(this.Warn_Alternate_Mobile_No);
             this.gb_Employee_Details.Controls.Add(this.Warn_Aadhar_No);
             this.gb_Employee_Details.Controls.Add(this.Warn_Last_Name);
             this.gb_Employee_Details.Controls.Add(this.Warn_Middle_Name);
@@ -170,18 +170,6 @@
             this.Warn_Mobile_No.Text = "Required";
             this.Warn_Mobile_No.Visible = false;
             // 
-            // Warn_Alternate_Mobile_No
-            // 
-            this.Warn_Alternate_Mobile_No.AutoSize = true;
-            this.Warn_Alternate_Mobile_No.Font = new System.Drawing.Font("Mongolian Baiti", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Warn_Alternate_Mobile_No.ForeColor = System.Drawing.Color.Red;
-            this.Warn_Alternate_Mobile_No.Location = new System.Drawing.Point(1416, 268);
-            this.Warn_Alternate_Mobile_No.Name = "Warn_Alternate_Mobile_No";
-            this.Warn_Alternate_Mobile_No.Size = new System.Drawing.Size(84, 21);
-            this.Warn_Alternate_Mobile_No.TabIndex = 40;
-            this.Warn_Alternate_Mobile_No.Text = "Required";
-            this.Warn_Alternate_Mobile_No.Visible = false;
-            // 
             // Warn_Aadhar_No
             // 
             this.Warn_Aadhar_No.AutoSize = true;
@@ -238,7 +226,7 @@
             this.gb_Gender.Location = new System.Drawing.Point(444, 571);
             this.gb_Gender.Name = "gb_Gender";
             this.gb_Gender.Size = new System.Drawing.Size(302, 62);
-            this.gb_Gender.TabIndex = 6;
+            this.gb_Gender.TabIndex = 7;
             this.gb_Gender.TabStop = false;
             // 
             // rb_Female
@@ -259,7 +247,7 @@
             this.rb_Male.Location = new System.Drawing.Point(1, 17);
             this.rb_Male.Name = "rb_Male";
             this.rb_Male.Size = new System.Drawing.Size(95, 35);
-            this.rb_Male.TabIndex = 0;
+            this.rb_Male.TabIndex = 7;
             this.rb_Male.Text = "Male";
             this.rb_Male.UseVisualStyleBackColor = true;
             // 
@@ -280,7 +268,7 @@
             this.tb_Address.Multiline = true;
             this.tb_Address.Name = "tb_Address";
             this.tb_Address.Size = new System.Drawing.Size(301, 40);
-            this.tb_Address.TabIndex = 12;
+            this.tb_Address.TabIndex = 13;
             // 
             // lbl_Address
             // 
@@ -378,7 +366,7 @@
             // 
             this.tb_Last_Name.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.tb_Last_Name.Location = new System.Drawing.Point(444, 310);
-            this.tb_Last_Name.MaxLength = 10;
+            this.tb_Last_Name.MaxLength = 20;
             this.tb_Last_Name.Multiline = true;
             this.tb_Last_Name.Name = "tb_Last_Name";
             this.tb_Last_Name.Size = new System.Drawing.Size(301, 40);
@@ -389,7 +377,7 @@
             // 
             this.tb_Middle_Name.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.tb_Middle_Name.Location = new System.Drawing.Point(445, 222);
-            this.tb_Middle_Name.MaxLength = 10;
+            this.tb_Middle_Name.MaxLength = 20;
             this.tb_Middle_Name.Multiline = true;
             this.tb_Middle_Name.Name = "tb_Middle_Name";
             this.tb_Middle_Name.Size = new System.Drawing.Size(301, 40);
@@ -479,7 +467,7 @@
             // 
             this.tb_First_Name.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.tb_First_Name.Location = new System.Drawing.Point(445, 132);
-            this.tb_First_Name.MaxLength = 10;
+            this.tb_First_Name.MaxLength = 20;
             this.tb_First_Name.Multiline = true;
             this.tb_First_Name.Name = "tb_First_Name";
             this.tb_First_Name.Size = new System.Drawing.Size(301, 40);
@@ -558,7 +546,8 @@
             this.tb_Age.Multiline = true;
             this.tb_Age.Name = "tb_Age";
             this.tb_Age.Size = new System.Drawing.Size(301, 40);
-            this.tb_Age.TabIndex = 46;
+            this.tb_Age.TabIndex = 6;
+            this.tb_Age.TextChanged += new System.EventHandler(this.tb_Age_TextChanged);
             // 
             // lbl_Age
             // 
@@ -576,11 +565,11 @@
             // 
             this.tb_Email_ID.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.tb_Email_ID.Location = new System.Drawing.Point(1348, 496);
-            this.tb_Email_ID.MaxLength = 10;
+            this.tb_Email_ID.MaxLength = 30;
             this.tb_Email_ID.Multiline = true;
             this.tb_Email_ID.Name = "tb_Email_ID";
             this.tb_Email_ID.Size = new System.Drawing.Size(301, 40);
-            this.tb_Email_ID.TabIndex = 48;
+            this.tb_Email_ID.TabIndex = 12;
             // 
             // lbl_Email_ID
             // 
@@ -593,6 +582,18 @@
             this.lbl_Email_ID.Size = new System.Drawing.Size(122, 36);
             this.lbl_Email_ID.TabIndex = 49;
             this.lbl_Email_ID.Text = "Email ID";
+            // 
+            // Warn_Alternate_Mobile_No
+            // 
+            this.Warn_Alternate_Mobile_No.AutoSize = true;
+            this.Warn_Alternate_Mobile_No.Font = new System.Drawing.Font("Mongolian Baiti", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Warn_Alternate_Mobile_No.ForeColor = System.Drawing.Color.Red;
+            this.Warn_Alternate_Mobile_No.Location = new System.Drawing.Point(1416, 268);
+            this.Warn_Alternate_Mobile_No.Name = "Warn_Alternate_Mobile_No";
+            this.Warn_Alternate_Mobile_No.Size = new System.Drawing.Size(84, 21);
+            this.Warn_Alternate_Mobile_No.TabIndex = 50;
+            this.Warn_Alternate_Mobile_No.Text = "Required";
+            this.Warn_Alternate_Mobile_No.Visible = false;
             // 
             // frm_Add_New_Employee
             // 
@@ -651,7 +652,6 @@
         private System.Windows.Forms.Label Warn_PAN_No;
         private System.Windows.Forms.Label Warn_Gender;
         private System.Windows.Forms.Label Warn_Mobile_No;
-        private System.Windows.Forms.Label Warn_Alternate_Mobile_No;
         private System.Windows.Forms.Label Warn_Aadhar_No;
         private System.Windows.Forms.Label Warn_Address;
         private System.Windows.Forms.GroupBox gb_Gender;
@@ -659,5 +659,6 @@
         private System.Windows.Forms.Label lbl_Email_ID;
         private System.Windows.Forms.TextBox tb_Age;
         private System.Windows.Forms.Label lbl_Age;
+        private System.Windows.Forms.Label Warn_Alternate_Mobile_No;
     }
 }

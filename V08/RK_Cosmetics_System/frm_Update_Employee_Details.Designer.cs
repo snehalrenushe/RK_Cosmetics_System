@@ -53,6 +53,8 @@
             this.tb_First_Name = new System.Windows.Forms.TextBox();
             this.lbl_First_Name = new System.Windows.Forms.Label();
             this.btn_Refresh = new System.Windows.Forms.Button();
+            this.tb_Email_ID = new System.Windows.Forms.TextBox();
+            this.lbl_Email_ID = new System.Windows.Forms.Label();
             this.gb_Update_Or_Search_Employee_Details.SuspendLayout();
             this.pnl_Update_or_Search_Employee.SuspendLayout();
             this.gb_Gender.SuspendLayout();
@@ -61,6 +63,8 @@
             // gb_Update_Or_Search_Employee_Details
             // 
             this.gb_Update_Or_Search_Employee_Details.BackColor = System.Drawing.Color.LavenderBlush;
+            this.gb_Update_Or_Search_Employee_Details.Controls.Add(this.tb_Email_ID);
+            this.gb_Update_Or_Search_Employee_Details.Controls.Add(this.lbl_Email_ID);
             this.gb_Update_Or_Search_Employee_Details.Controls.Add(this.tb_Addres);
             this.gb_Update_Or_Search_Employee_Details.Controls.Add(this.lbl_Addres);
             this.gb_Update_Or_Search_Employee_Details.Controls.Add(this.pnl_Update_or_Search_Employee);
@@ -89,7 +93,7 @@
             // tb_Addres
             // 
             this.tb_Addres.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.tb_Addres.Location = new System.Drawing.Point(1340, 245);
+            this.tb_Addres.Location = new System.Drawing.Point(1340, 219);
             this.tb_Addres.MaxLength = 30;
             this.tb_Addres.Multiline = true;
             this.tb_Addres.Name = "tb_Addres";
@@ -102,7 +106,7 @@
             this.lbl_Addres.BackColor = System.Drawing.Color.Pink;
             this.lbl_Addres.Font = new System.Drawing.Font("Microsoft YaHei", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Addres.ForeColor = System.Drawing.Color.Maroon;
-            this.lbl_Addres.Location = new System.Drawing.Point(1012, 249);
+            this.lbl_Addres.Location = new System.Drawing.Point(1012, 223);
             this.lbl_Addres.Name = "lbl_Addres";
             this.lbl_Addres.Size = new System.Drawing.Size(124, 36);
             this.lbl_Addres.TabIndex = 44;
@@ -237,7 +241,7 @@
             // tb_Mobile_No_2
             // 
             this.tb_Mobile_No_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.tb_Mobile_No_2.Location = new System.Drawing.Point(1340, 437);
+            this.tb_Mobile_No_2.Location = new System.Drawing.Point(1340, 376);
             this.tb_Mobile_No_2.MaxLength = 10;
             this.tb_Mobile_No_2.Multiline = true;
             this.tb_Mobile_No_2.Name = "tb_Mobile_No_2";
@@ -251,7 +255,7 @@
             this.lbl_Mobile_No_2.BackColor = System.Drawing.Color.Pink;
             this.lbl_Mobile_No_2.Font = new System.Drawing.Font("Microsoft YaHei", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Mobile_No_2.ForeColor = System.Drawing.Color.Maroon;
-            this.lbl_Mobile_No_2.Location = new System.Drawing.Point(1012, 441);
+            this.lbl_Mobile_No_2.Location = new System.Drawing.Point(1012, 380);
             this.lbl_Mobile_No_2.Name = "lbl_Mobile_No_2";
             this.lbl_Mobile_No_2.Size = new System.Drawing.Size(287, 36);
             this.lbl_Mobile_No_2.TabIndex = 29;
@@ -272,7 +276,7 @@
             // tb_Last_Name
             // 
             this.tb_Last_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.tb_Last_Name.Location = new System.Drawing.Point(438, 444);
+            this.tb_Last_Name.Location = new System.Drawing.Point(438, 383);
             this.tb_Last_Name.MaxLength = 10;
             this.tb_Last_Name.Multiline = true;
             this.tb_Last_Name.Name = "tb_Last_Name";
@@ -283,7 +287,7 @@
             // tb_Middle_Name
             // 
             this.tb_Middle_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.tb_Middle_Name.Location = new System.Drawing.Point(438, 345);
+            this.tb_Middle_Name.Location = new System.Drawing.Point(438, 302);
             this.tb_Middle_Name.MaxLength = 10;
             this.tb_Middle_Name.Multiline = true;
             this.tb_Middle_Name.Name = "tb_Middle_Name";
@@ -297,7 +301,7 @@
             this.lbl_Last_Name.BackColor = System.Drawing.Color.Pink;
             this.lbl_Last_Name.Font = new System.Drawing.Font("Microsoft YaHei", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Last_Name.ForeColor = System.Drawing.Color.Maroon;
-            this.lbl_Last_Name.Location = new System.Drawing.Point(129, 441);
+            this.lbl_Last_Name.Location = new System.Drawing.Point(129, 380);
             this.lbl_Last_Name.Name = "lbl_Last_Name";
             this.lbl_Last_Name.Size = new System.Drawing.Size(155, 36);
             this.lbl_Last_Name.TabIndex = 24;
@@ -309,7 +313,7 @@
             this.lbl_Middle_Name.BackColor = System.Drawing.Color.Pink;
             this.lbl_Middle_Name.Font = new System.Drawing.Font("Microsoft YaHei", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Middle_Name.ForeColor = System.Drawing.Color.Maroon;
-            this.lbl_Middle_Name.Location = new System.Drawing.Point(129, 345);
+            this.lbl_Middle_Name.Location = new System.Drawing.Point(129, 302);
             this.lbl_Middle_Name.Name = "lbl_Middle_Name";
             this.lbl_Middle_Name.Size = new System.Drawing.Size(196, 36);
             this.lbl_Middle_Name.TabIndex = 23;
@@ -318,7 +322,7 @@
             // tb_Mobile_No_1
             // 
             this.tb_Mobile_No_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.tb_Mobile_No_1.Location = new System.Drawing.Point(1340, 337);
+            this.tb_Mobile_No_1.Location = new System.Drawing.Point(1340, 294);
             this.tb_Mobile_No_1.MaxLength = 10;
             this.tb_Mobile_No_1.Multiline = true;
             this.tb_Mobile_No_1.Name = "tb_Mobile_No_1";
@@ -332,7 +336,7 @@
             this.lbl_Mobile_No_1.BackColor = System.Drawing.Color.Pink;
             this.lbl_Mobile_No_1.Font = new System.Drawing.Font("Microsoft YaHei", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Mobile_No_1.ForeColor = System.Drawing.Color.Maroon;
-            this.lbl_Mobile_No_1.Location = new System.Drawing.Point(1013, 345);
+            this.lbl_Mobile_No_1.Location = new System.Drawing.Point(1013, 302);
             this.lbl_Mobile_No_1.Name = "lbl_Mobile_No_1";
             this.lbl_Mobile_No_1.Size = new System.Drawing.Size(157, 36);
             this.lbl_Mobile_No_1.TabIndex = 18;
@@ -341,7 +345,7 @@
             // tb_First_Name
             // 
             this.tb_First_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.tb_First_Name.Location = new System.Drawing.Point(438, 243);
+            this.tb_First_Name.Location = new System.Drawing.Point(438, 217);
             this.tb_First_Name.MaxLength = 10;
             this.tb_First_Name.Multiline = true;
             this.tb_First_Name.Name = "tb_First_Name";
@@ -355,7 +359,7 @@
             this.lbl_First_Name.BackColor = System.Drawing.Color.Pink;
             this.lbl_First_Name.Font = new System.Drawing.Font("Microsoft YaHei", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_First_Name.ForeColor = System.Drawing.Color.Maroon;
-            this.lbl_First_Name.Location = new System.Drawing.Point(129, 243);
+            this.lbl_First_Name.Location = new System.Drawing.Point(129, 217);
             this.lbl_First_Name.Name = "lbl_First_Name";
             this.lbl_First_Name.Size = new System.Drawing.Size(159, 36);
             this.lbl_First_Name.TabIndex = 16;
@@ -374,6 +378,28 @@
             this.btn_Refresh.Text = "Refresh";
             this.btn_Refresh.UseVisualStyleBackColor = false;
             this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
+            // 
+            // tb_Email_ID
+            // 
+            this.tb_Email_ID.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.tb_Email_ID.Location = new System.Drawing.Point(911, 466);
+            this.tb_Email_ID.MaxLength = 30;
+            this.tb_Email_ID.Multiline = true;
+            this.tb_Email_ID.Name = "tb_Email_ID";
+            this.tb_Email_ID.Size = new System.Drawing.Size(301, 40);
+            this.tb_Email_ID.TabIndex = 50;
+            // 
+            // lbl_Email_ID
+            // 
+            this.lbl_Email_ID.AutoSize = true;
+            this.lbl_Email_ID.BackColor = System.Drawing.Color.Pink;
+            this.lbl_Email_ID.Font = new System.Drawing.Font("Microsoft YaHei", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Email_ID.ForeColor = System.Drawing.Color.Maroon;
+            this.lbl_Email_ID.Location = new System.Drawing.Point(563, 465);
+            this.lbl_Email_ID.Name = "lbl_Email_ID";
+            this.lbl_Email_ID.Size = new System.Drawing.Size(122, 36);
+            this.lbl_Email_ID.TabIndex = 51;
+            this.lbl_Email_ID.Text = "Email ID";
             // 
             // frm_Update_Employee_Details
             // 
@@ -424,5 +450,7 @@
         private System.Windows.Forms.TextBox tb_Addres;
         private System.Windows.Forms.Label lbl_Addres;
         private System.Windows.Forms.Button btn_Refresh;
+        private System.Windows.Forms.TextBox tb_Email_ID;
+        private System.Windows.Forms.Label lbl_Email_ID;
     }
 }
