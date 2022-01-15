@@ -39,15 +39,26 @@ namespace RK_Cosmetics_System
         {
             Con_Open();
 
-            SqlDataAdapter SDA = new SqlDataAdapter("Select * from Employee_Details where Employee_ID = " + tb_Employee_ID.Text + " ", Con);
+            if (tb_Employee_ID.Text == "")
+            {
+                Warn_Employee_ID.Visible = true;
+                Warn_Employee_ID.Text = "*Required";
+            }
+            else
+            {
+                Warn_Employee_ID.Visible = false;
+            }
 
-            DataTable dt = new DataTable();
+            if (tb_Employee_ID.Text != "")
+            {
+                SqlDataAdapter SDA = new SqlDataAdapter("Select First_Name,Last_Name,Gender,Date_Of_Birth,Joining_Date,Mobile_No,Address from Employee_Details where Employee_ID = " + tb_Employee_ID.Text + " ", Con);
 
-            SDA.Fill(dt);
+                DataTable dt = new DataTable();
 
-            dgv_View_Employee_Details.DataSource = dt;
+                SDA.Fill(dt);
 
-            tb_Employee_ID.Enabled = false;
+                dgv_View_Employee_Details.DataSource = dt;
+            }
 
             Con_Close();
         }
@@ -55,28 +66,28 @@ namespace RK_Cosmetics_System
         private void frm_View_Employee_Details_Load(object sender, EventArgs e)
         {
             tb_Employee_ID.Focus();
-        }
-
-        private void btn_Refresh_Click(object sender, EventArgs e)
-        {
-            tb_Employee_ID.Text = "";
-            tb_Employee_ID.Focus();
-
-            SqlDataAdapter SDA = new SqlDataAdapter("Select * from Employee_Details",Con);
+            SqlDataAdapter SDA = new SqlDataAdapter("Select Employee_ID,First_Name,Date_Of_Birth,Gender,Joining_Date,Mobile_No,Address from Employee_Details", Con);
 
             DataTable dt = new DataTable();
 
             SDA.Fill(dt);
 
             dgv_View_Employee_Details.DataSource = dt;
-
-            btn_Search.Enabled = false;
-            tb_Employee_ID.Enabled = true;
         }
 
-        private void tb_Employee_ID_TextChanged(object sender, EventArgs e)
+        private void btn_Refresh_Click(object sender, EventArgs e)
         {
-            btn_Search.Enabled = true;
+            tb_Employee_ID.Text = "";
+            Warn_Employee_ID.Text = "";
+            tb_Employee_ID.Focus();
+
+            SqlDataAdapter SDA = new SqlDataAdapter("Select * from Employee_Details", Con);
+
+            DataTable dt = new DataTable();
+
+            SDA.Fill(dt);
+
+            dgv_View_Employee_Details.DataSource = dt;
         }
 
         private void Only_Numeric(object sender, KeyPressEventArgs e)

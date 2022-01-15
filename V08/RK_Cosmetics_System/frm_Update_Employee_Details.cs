@@ -17,6 +17,9 @@ namespace RK_Cosmetics_System
             InitializeComponent();
         }
 
+        long Mob_No_2;
+        string Email = " ";
+
         SqlConnection Con = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=DB_RK_Cosmetics_System;Integrated Security=True");
 
         void Con_Open()
@@ -39,55 +42,160 @@ namespace RK_Cosmetics_System
         {
             tb_Employee_ID.Focus();
             tb_Employee_ID.Enabled = true;
-            btn_Search.Enabled = false;
             btn_Update.Enabled = false;
             tb_Employee_ID.Text = "";
             tb_First_Name.Text = "";
             tb_Middle_Name.Text = "";
             tb_Last_Name.Text = "";
-            tb_Mobile_No_1.Text = "";
-            tb_Mobile_No_2.Text = "";
+            tb_Mobile_No.Text = "";
+            tb_Alternate_Mobile_No.Text = "";
+            tb_Email_ID.Text = "";
             tb_Addres.Text = "";
 
-            tb_Employee_ID.Enabled = true;
+            Warn_Employee_ID.Visible = false;
+            Warn_First_Name.Visible = false;
+            Warn_Middle_Name.Visible = false;
+            Warn_Last_Name.Visible = false;
+            Warn_Mobile_No.Visible = false;
+            Warn_Alternate_Mobile_No.Visible = false;
+            Warn_Address.Visible = false;
         }
 
-        private void btn_Save_Click(object sender, EventArgs e)
+        void Warning()
         {
+            if (tb_Employee_ID.Text == "")
+            {
+                Warn_Employee_ID.Visible = true;
+                Warn_Employee_ID.Text = "*Required";
+            }
+            else
+            {
+                Warn_Employee_ID.Visible = false;
+            }
 
+            if (tb_First_Name.Text == "")
+            {
+                Warn_First_Name.Visible = true;
+                Warn_First_Name.Text = "*Required";
+            }
+            else
+            {
+                Warn_First_Name.Visible = false;
+            }
+
+            if (tb_Middle_Name.Text == "")
+            {
+                Warn_Middle_Name.Visible = true;
+                Warn_Middle_Name.Text = "*Required";
+            }
+            else
+            {
+                Warn_Middle_Name.Visible = false;
+            }
+
+            if (tb_Last_Name.Text == "")
+            {
+                Warn_Last_Name.Visible = true;
+                Warn_Last_Name.Text = "*Required";
+            }
+            else
+            {
+                Warn_Last_Name.Visible = false;
+            }
+
+            if (tb_Addres.Text == "")
+            {
+                Warn_Address.Visible = true;
+                Warn_Address.Text = "*Required";
+            }
+            else
+            {
+                Warn_Address.Visible = false;
+            }
+
+            if (tb_Mobile_No.TextLength < 10)
+            {
+                Warn_Mobile_No.Visible = true;
+                Warn_Mobile_No.Text = "*Mobile Number Should be Valid";
+            }
+            else
+            {
+                Warn_Mobile_No.Visible = false;
+            }
+
+            if (tb_Alternate_Mobile_No.TextLength < 10)
+            {
+                Warn_Alternate_Mobile_No.Visible = true;
+                Warn_Alternate_Mobile_No.Text = "*Mobile Number Should be Valid";
+            }
+            else
+            {
+                Warn_Alternate_Mobile_No.Visible = false;
+            }
+
+            if (tb_Alternate_Mobile_No.Text != "")
+            {
+                Mob_No_2 = Convert.ToInt64(tb_Alternate_Mobile_No.Text);
+            }
+            else
+            {
+                Warn_Alternate_Mobile_No.Visible = false;
+            }
+
+            if (tb_Email_ID.Text != "")
+            {
+                Email = Convert.ToString(tb_Email_ID.Text);
+            }
         }
 
         private void btn_Search_Click(object sender, EventArgs e)
         {
-            tb_Employee_ID.Enabled = false;
             Con_Open();
-
-            SqlCommand Cmd = new SqlCommand();
-
-            Cmd.Connection = Con;
-
-            Cmd.CommandText = "Select * from Employee_Details where Employee_ID = " + tb_Employee_ID.Text + " ";
-
-            var Obj = Cmd.ExecuteReader();
-
-            if (Obj.Read())
+            if (tb_Employee_ID.Text == "")
             {
-                tb_First_Name.Text = Obj.GetString(Obj.GetOrdinal("First_Name"));
-                tb_Middle_Name.Text = Obj.GetString(Obj.GetOrdinal("Middle_Name"));
-                tb_Last_Name.Text = Obj.GetString(Obj.GetOrdinal("Last_Name"));
-                tb_Addres.Text = Obj.GetString(Obj.GetOrdinal("Address"));
-                tb_Mobile_No_1.Text = (Obj["Mobile_No_1"].ToString());
-                tb_Mobile_No_2.Text = (Obj["Mobile_No_2"].ToString());
-
-                btn_Update.Enabled = true;
+                Warn_Employee_ID.Visible = true;
+                Warn_Employee_ID.Text = "*Required";
             }
             else
             {
-                MessageBox.Show("Information is not Available...", "No Record Found", MessageBoxButtons.OK, MessageBoxIcon.Question);
-                Clear_Controls();
+                Warn_Employee_ID.Visible = false;
             }
 
+            if (tb_Employee_ID.Text != "")
+            {
+                Con_Open();
+
+                SqlCommand Cmd = new SqlCommand();
+
+                Cmd.Connection = Con;
+
+                Cmd.CommandText = "Select * from Employee_Details where Employee_ID = " + tb_Employee_ID.Text + " ";
+
+                var Obj = Cmd.ExecuteReader();
+                //SqlDataReader Obj = Cmd.ExecuteReader(); 
+
+                if (Obj.Read())
+                {
+                    tb_First_Name.Text = Obj.GetString(Obj.GetOrdinal("First_Name"));
+                    tb_Middle_Name.Text = Obj.GetString(Obj.GetOrdinal("Middle_Name"));
+                    tb_Last_Name.Text = Obj.GetString(Obj.GetOrdinal("Last_Name"));
+                    tb_Addres.Text = Obj.GetString(Obj.GetOrdinal("Address"));
+                    tb_Mobile_No.Text = (Obj["Mobile_No"].ToString());
+                    tb_Alternate_Mobile_No.Text = (Obj["Alternate_Mobile_No"].ToString());
+                    tb_Email_ID.Text = Obj.GetString(Obj.GetOrdinal("Email_ID"));
+
+                    btn_Update.Enabled = true;
+                }
+                else
+                {
+                    MessageBox.Show("Information is not Available...", "No Record Found", MessageBoxButtons.OK, MessageBoxIcon.Question);
+                    Clear_Controls();
+                }
+
+                Con_Close();
+            }
             Con_Close();
+            
         }
 
         private void tb_Employee_ID_TextChanged(object sender, EventArgs e)
@@ -99,60 +207,56 @@ namespace RK_Cosmetics_System
         {
             tb_Employee_ID.Focus();
             Clear_Controls();
-            //this.reportViewer1.RefreshReport();
         }
 
         private void btn_Update_Click(object sender, EventArgs e)
         {
-            if (tb_Mobile_No_1.TextLength < 10)
-            {
-                MessageBox.Show("Invalid Mobile Number!!! Please Enter Valid Mobile Number.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                tb_Mobile_No_1.Focus();
-
-                goto DWN;
-            }
-
-            if (tb_Mobile_No_2.TextLength < 10)
-            {
-                MessageBox.Show("Invalid Mobile Number!!! Please Enter Valid Mobile Number.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                tb_Mobile_No_1.Focus();
-
-                goto DWN;
-            }
-
             Con_Open();
 
-            if (tb_Employee_ID.Text != "" && tb_First_Name.Text != "" && tb_Middle_Name.Text != "" && tb_Last_Name.Text != "" && tb_Mobile_No_1.Text != "" && tb_Addres.Text != "")
-            {
-                Con_Open();
+            Warning();
 
+            if (tb_Employee_ID.Text != "" && tb_First_Name.Text != "" && tb_Middle_Name.Text != "" && tb_Last_Name.Text != "" && tb_Mobile_No.TextLength == 10 && tb_Addres.Text != "")
+            {
                 SqlCommand Cmd = new SqlCommand();
 
                 Cmd.Connection = Con;
 
-                Cmd.CommandText = "Update Employee_Details Set First_Name = @F_Name, Middle_Name = @M_Name, Last_Name = @L_Name, Mobile_No_1 = @Mob1, Mobile_No_2 = @Mob2, Address = @Add Where Employee_ID = @Emp_ID";
+                Cmd.CommandText = "Update Employee_Details Set First_Name = @F_Name , Middle_Name = @M_Name , Last_Name = @L_Name , Address = @Add , Mobile_No = @Mob1 , Alternate_Mobile_No = " + Mob_No_2 + " , Email_ID = '" + Email + "' Where Employee_ID = @Emp_ID";
 
                 Cmd.Parameters.Add("Emp_ID", SqlDbType.Int).Value = tb_Employee_ID.Text;
                 Cmd.Parameters.Add("F_Name", SqlDbType.VarChar).Value = tb_First_Name.Text;
                 Cmd.Parameters.Add("M_Name", SqlDbType.VarChar).Value = tb_Middle_Name.Text;
                 Cmd.Parameters.Add("L_Name", SqlDbType.VarChar).Value = tb_Last_Name.Text;
-                Cmd.Parameters.Add("Mob1", SqlDbType.Money).Value = tb_Mobile_No_1.Text;
-                Cmd.Parameters.Add("Mob2", SqlDbType.Money).Value = tb_Mobile_No_2.Text;
                 Cmd.Parameters.Add("Add", SqlDbType.NVarChar).Value = tb_Addres.Text;
+                Cmd.Parameters.Add("Mob1", SqlDbType.Decimal).Value = tb_Mobile_No.Text;
+                Cmd.Parameters.Add("Mob2", SqlDbType.Decimal).Value = Mob_No_2;
+                Cmd.Parameters.Add("Email", SqlDbType.NVarChar).Value = Email;
+                
 
-                Cmd.ExecuteNonQuery();
+                if (tb_Mobile_No.Text == tb_Alternate_Mobile_No.Text)
+                {
+                    MessageBox.Show("You can't insert same mobile no !!!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    Warning();
+                }
+                else if (tb_Alternate_Mobile_No.TextLength <= 10 && tb_Alternate_Mobile_No.TextLength > 0)
+                {
+                    Warn_Alternate_Mobile_No.Visible = true;
+                    Warn_Alternate_Mobile_No.Text = "Enter Valid Mobile No";
+                }
+                else
+                {
+                    Cmd.ExecuteNonQuery();
 
-                MessageBox.Show("Employee Details Updated Successfully !!!", "Updating", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Employee Details Updated Successfully !!!", "Saving", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                Clear_Controls();
-
+                    Clear_Controls();
+                }
             }
             else
             {
-                MessageBox.Show("Incomplete Information !!!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                Warning();
             }
 
-            DWN:
             Con_Close();
         }
 

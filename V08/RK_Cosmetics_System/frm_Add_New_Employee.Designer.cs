@@ -547,7 +547,6 @@
             this.tb_Age.Name = "tb_Age";
             this.tb_Age.Size = new System.Drawing.Size(301, 40);
             this.tb_Age.TabIndex = 6;
-            this.tb_Age.TextChanged += new System.EventHandler(this.tb_Age_TextChanged);
             // 
             // lbl_Age
             // 

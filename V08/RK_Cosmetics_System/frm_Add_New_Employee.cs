@@ -168,16 +168,6 @@ namespace RK_Cosmetics_System
                 Warn_Mobile_No.Visible = false;
             }
 
-            if (tb_Alternate_Mobile_No.TextLength < 10)
-            {
-                Warn_Alternate_Mobile_No.Visible = true;
-                Warn_Alternate_Mobile_No.Text = "*Mobile Number Should be Valid";
-            }
-            else
-            {
-                Warn_Alternate_Mobile_No.Visible = false;
-            }
-
             if (tb_Alternate_Mobile_No.Text != "")
             {
                 Mob_No_2 = Convert.ToInt64(tb_Alternate_Mobile_No.Text);
@@ -269,11 +259,15 @@ namespace RK_Cosmetics_System
                     MessageBox.Show(tb_First_Name.Text + " is Not Eligible for these Job !!!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     Warning();
                 }
-
                 else if (tb_Mobile_No.Text == tb_Alternate_Mobile_No.Text)
                 {
                     MessageBox.Show("You can't insert same mobile no !!!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     Warning();
+                }
+                else if (tb_Alternate_Mobile_No.TextLength <= 10 && tb_Alternate_Mobile_No.TextLength > 0)
+                {
+                    Warn_Alternate_Mobile_No.Visible = true;
+                    Warn_Alternate_Mobile_No.Text = "Enter Valid Mobile No";
                 }
                 else
                 {
