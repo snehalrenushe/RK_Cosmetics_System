@@ -18,8 +18,7 @@ namespace RK_Cosmetics_System
         }
 
         string Gender = " ";
-        long Mob_No_2;
-        string Email = " ";
+        long Mob_No_2 = 0;
 
         SqlConnection Con = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=DB_RK_Cosmetics_System;Integrated Security=True");
 
@@ -168,14 +167,6 @@ namespace RK_Cosmetics_System
                 Warn_Mobile_No.Visible = false;
             }
 
-            if (tb_Alternate_Mobile_No.Text != "")
-            {
-                Mob_No_2 = Convert.ToInt64(tb_Alternate_Mobile_No.Text);
-            }
-            else
-            {
-                Warn_Alternate_Mobile_No.Visible = false;
-            }
 
             if (tb_Aadhar_No.TextLength < 12)
             {
@@ -207,11 +198,6 @@ namespace RK_Cosmetics_System
                 Warn_Address.Visible = false;
             }
 
-            if (tb_Email_ID.Text != "")
-            {
-                Email = Convert.ToString(tb_Email_ID.Text);
-            }
-
         }
 
         private void btn_Save_Click(object sender, EventArgs e)
@@ -238,7 +224,7 @@ namespace RK_Cosmetics_System
 
                 Cmd.Connection = Con;
 
-                Cmd.CommandText = "Insert into Employee_Details (Employee_ID,First_Name,Middle_Name,Last_Name,Date_Of_Birth,Gender,Joining_Date,Mobile_No,Alternate_Mobile_No,Aadhar_No,Pan_No,Email_ID,Address) VALUES (@Emp_ID,@F_Name,@M_Name,@L_Name,@DOB,'" + Gender + "',@J_Date,@Mob1," + Mob_No_2 + ",@Aadhar_No,@Pan_No,'" + Email + "',@Add)";
+                Cmd.CommandText = "Insert into Employee_Details (Employee_ID,First_Name,Middle_Name,Last_Name,Date_Of_Birth,Gender,Joining_Date,Mobile_No,Alternate_Mobile_No,Aadhar_No,Pan_No,Email_ID,Address) VALUES (@Emp_ID,@F_Name,@M_Name,@L_Name,@DOB,'" + Gender + "',@J_Date,@Mob1,@Mob2,@Aadhar_No,@Pan_No,@email,@Add)";
 
                 Cmd.Parameters.Add("Emp_ID", SqlDbType.Int).Value = tb_Employee_ID.Text;
                 Cmd.Parameters.Add("F_Name", SqlDbType.VarChar).Value = tb_First_Name.Text;
@@ -248,13 +234,37 @@ namespace RK_Cosmetics_System
                 //Cmd.Parameters.Add("Gender", SqlDbType.VarChar).Value = gb_Gender.Text;  
                 Cmd.Parameters.Add("J_Date", SqlDbType.Date).Value = dtp_Joining_Date.Text;
                 Cmd.Parameters.Add("Mob1", SqlDbType.Decimal).Value = tb_Mobile_No.Text;
-                Cmd.Parameters.Add("Mob2", SqlDbType.Decimal).Value = Mob_No_2;
+                //Cmd.Parameters.Add("Mob2", SqlDbType.Decimal).Value = Mob_No_2;
                 Cmd.Parameters.Add("Aadhar_No", SqlDbType.NVarChar).Value = tb_Aadhar_No.Text;
                 Cmd.Parameters.Add("Pan_No", SqlDbType.NVarChar).Value = tb_Pan_No.Text;
-                Cmd.Parameters.Add("Email",SqlDbType.NVarChar).Value = Email;
                 Cmd.Parameters.Add("Add", SqlDbType.NVarChar).Value = tb_Address.Text;
 
-                if (Convert.ToInt32(tb_Age.Text) < 18)
+                if (tb_Alternate_Mobile_No.Text != "")
+                {
+                    Cmd.Parameters.Add("Mob2", SqlDbType.Decimal).Value = tb_Alternate_Mobile_No.Text;
+                }
+                else if (tb_Alternate_Mobile_No.Text == "")
+                {
+                    Cmd.Parameters.Add("Mob2", SqlDbType.Decimal).Value = "0";
+                    Warn_Alternate_Mobile_No.Visible = false;
+                }
+                else
+                {
+                    Warn_Alternate_Mobile_No.Visible = false;
+                }
+
+
+
+                if (tb_Email_ID.Text != "")
+                {
+                    Cmd.Parameters.Add("email", SqlDbType.NVarChar).Value = tb_Email_ID.Text;
+                }
+                else
+                {
+                    Cmd.Parameters.Add("email", SqlDbType.NVarChar).Value = "Annonymous";
+                }
+
+                if ((Convert.ToInt32(tb_Age.Text) < 18) || (Convert.ToInt32(tb_Age.Text) > 60))
                 {
                     MessageBox.Show(tb_First_Name.Text + " is Not Eligible for these Job !!!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     Warning();
@@ -264,7 +274,7 @@ namespace RK_Cosmetics_System
                     MessageBox.Show("You can't insert same mobile no !!!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     Warning();
                 }
-                else if (tb_Alternate_Mobile_No.TextLength <= 10 && tb_Alternate_Mobile_No.TextLength > 0)
+                else if (tb_Alternate_Mobile_No.TextLength < 10 && tb_Alternate_Mobile_No.TextLength > 0)
                 {
                     Warn_Alternate_Mobile_No.Visible = true;
                     Warn_Alternate_Mobile_No.Text = "Enter Valid Mobile No";

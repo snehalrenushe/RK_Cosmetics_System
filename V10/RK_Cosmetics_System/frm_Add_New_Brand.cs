@@ -88,41 +88,49 @@ namespace RK_Cosmetics_System
 
         private void btn_Save_Click_1(object sender, EventArgs e)
         {
-            Con_Open();
-            string Stat = " ";
-
-            if (rb_In_Use.Checked)
+            try
             {
-                Stat = rb_In_Use.Text;        
+                Con_Open();
+                string Stat = " ";
+
+                if (rb_In_Use.Checked)
+                {
+                    Stat = rb_In_Use.Text;
+                }
+                else if (rb_Not_In_Use.Checked)
+                {
+                    Stat = rb_Not_In_Use.Text;
+                }
+
+                if (tb_Brand_Name.Text != "" && (rb_In_Use.Checked || rb_Not_In_Use.Checked))
+                {
+                    SqlCommand Cmd = new SqlCommand();
+
+                    Cmd.Connection = Con;
+
+                    Cmd.CommandText = "Insert into Brand_Details (Brand_ID,Brand_Name,Status) VALUES (@B_ID,@B_Name,'" + Stat + "')";
+
+                    Cmd.Parameters.Add("B_ID", SqlDbType.Int).Value = tb_Brand_ID.Text;
+                    Cmd.Parameters.Add("B_Name", SqlDbType.NVarChar).Value = tb_Brand_Name.Text;
+
+                    Cmd.ExecuteNonQuery();
+
+                    MessageBox.Show("Brands Saved Successfully !!!", "Saving", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    Clear_Controls();
+                }
+                else
+                {
+                    MessageBox.Show("Incomplete Information !!!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+
+                Con_Close();
             }
-            else if (rb_Not_In_Use.Checked)
+            catch (Exception Ex)
             {
-                Stat = rb_Not_In_Use.Text;
+                MessageBox.Show(Ex.Message);
             }
-
-            if (tb_Brand_Name.Text != "" && (rb_In_Use.Checked || rb_Not_In_Use.Checked))
-            {
-                SqlCommand Cmd = new SqlCommand();
-
-                Cmd.Connection = Con;
-
-                Cmd.CommandText = "Insert into Brand_Details (Brand_ID,Brand_Name,Status) VALUES (@B_ID,@B_Name,'" + Stat + "')";
-
-                Cmd.Parameters.Add("B_ID", SqlDbType.Int).Value = tb_Brand_ID.Text;
-                Cmd.Parameters.Add("B_Name", SqlDbType.NVarChar).Value = tb_Brand_Name.Text;
-
-                Cmd.ExecuteNonQuery();
-
-                MessageBox.Show("Brands Saved Successfully !!!", "Saving", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                Clear_Controls();
-            }
-            else
-            {
-                MessageBox.Show("Incomplete Information !!!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-
-            Con_Close();
+            
         }
 
     }
