@@ -17,9 +17,6 @@ namespace RK_Cosmetics_System
             InitializeComponent();
         }
 
-        string Gender = " ";
-        long Mob_No_2 = 0;
-
         SqlConnection Con = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=DB_RK_Cosmetics_System;Integrated Security=True");
 
         void Con_Open()
@@ -202,6 +199,8 @@ namespace RK_Cosmetics_System
 
         private void btn_Save_Click(object sender, EventArgs e)
         {
+            string Gender = " ";
+
             Con_Open();
 
             if (rb_Male.Checked == true)
@@ -254,7 +253,6 @@ namespace RK_Cosmetics_System
                 }
 
 
-
                 if (tb_Email_ID.Text != "")
                 {
                     Cmd.Parameters.Add("email", SqlDbType.NVarChar).Value = tb_Email_ID.Text;
@@ -264,11 +262,13 @@ namespace RK_Cosmetics_System
                     Cmd.Parameters.Add("email", SqlDbType.NVarChar).Value = "Annonymous";
                 }
 
+
                 if ((Convert.ToInt32(tb_Age.Text) < 18) || (Convert.ToInt32(tb_Age.Text) > 60))
                 {
                     MessageBox.Show(tb_First_Name.Text + " is Not Eligible for these Job !!!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     Warning();
                 }
+
                 else if (tb_Mobile_No.Text == tb_Alternate_Mobile_No.Text)
                 {
                     MessageBox.Show("You can't insert same mobile no !!!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);

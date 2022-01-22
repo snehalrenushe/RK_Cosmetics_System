@@ -17,9 +17,6 @@ namespace RK_Cosmetics_System
             InitializeComponent();
         }
 
-        long Mob_No_2;
-        string Email = " ";
-
         SqlConnection Con = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=DB_RK_Cosmetics_System;Integrated Security=True");
 
         void Con_Open()
@@ -123,29 +120,6 @@ namespace RK_Cosmetics_System
                 Warn_Mobile_No.Visible = false;
             }
 
-            if (tb_Alternate_Mobile_No.TextLength < 10)
-            {
-                Warn_Alternate_Mobile_No.Visible = true;
-                Warn_Alternate_Mobile_No.Text = "*Mobile Number Should be Valid";
-            }
-            else
-            {
-                Warn_Alternate_Mobile_No.Visible = false;
-            }
-
-            if (tb_Alternate_Mobile_No.Text != "")
-            {
-                Mob_No_2 = Convert.ToInt64(tb_Alternate_Mobile_No.Text);
-            }
-            else
-            {
-                Warn_Alternate_Mobile_No.Visible = false;
-            }
-
-            if (tb_Email_ID.Text != "")
-            {
-                Email = Convert.ToString(tb_Email_ID.Text);
-            }
         }
 
         private void btn_Search_Click(object sender, EventArgs e)
@@ -221,7 +195,7 @@ namespace RK_Cosmetics_System
 
                 Cmd.Connection = Con;
 
-                Cmd.CommandText = "Update Employee_Details Set First_Name = @F_Name , Middle_Name = @M_Name , Last_Name = @L_Name , Address = @Add , Mobile_No = @Mob , Alternate_Mobile_No = " + Mob_No_2 + " , Email_ID = '" + Email + "' Where Employee_ID = @Emp_ID";
+                Cmd.CommandText = "Update Employee_Details Set First_Name = @F_Name , Middle_Name = @M_Name , Last_Name = @L_Name , Address = @Add , Mobile_No = @Mob , Alternate_Mobile_No = @Mob2 , Email_ID = @email Where Employee_ID = @Emp_ID";
 
                 Cmd.Parameters.Add("Emp_ID", SqlDbType.Int).Value = tb_Employee_ID.Text;
                 Cmd.Parameters.Add("F_Name", SqlDbType.VarChar).Value = tb_First_Name.Text;
@@ -229,8 +203,29 @@ namespace RK_Cosmetics_System
                 Cmd.Parameters.Add("L_Name", SqlDbType.VarChar).Value = tb_Last_Name.Text;
                 Cmd.Parameters.Add("Add", SqlDbType.NVarChar).Value = tb_Addres.Text;
                 Cmd.Parameters.Add("Mob", SqlDbType.Decimal).Value = tb_Mobile_No.Text;
-                Cmd.Parameters.Add("Mob_No_2", SqlDbType.Decimal).Value = Mob_No_2;
-                Cmd.Parameters.Add("Email", SqlDbType.NVarChar).Value = Email;
+
+                if (tb_Alternate_Mobile_No.Text != "")
+                {
+                    Cmd.Parameters.Add("Mob2", SqlDbType.Decimal).Value = tb_Alternate_Mobile_No.Text;
+                }
+                else if (tb_Alternate_Mobile_No.Text == "")
+                {
+                    Cmd.Parameters.Add("Mob2", SqlDbType.Decimal).Value = "0";
+                    Warn_Alternate_Mobile_No.Visible = false;
+                }
+                else
+                {
+                    Warn_Alternate_Mobile_No.Visible = false;
+                }
+
+                if (tb_Email_ID.Text != "")
+                {
+                    Cmd.Parameters.Add("email", SqlDbType.NVarChar).Value = tb_Email_ID.Text;
+                }
+                else
+                {
+                    Cmd.Parameters.Add("email", SqlDbType.NVarChar).Value = "Annonymous";
+                }
                 
 
                 if (tb_Mobile_No.Text == tb_Alternate_Mobile_No.Text)

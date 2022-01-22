@@ -28,25 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gb_Brand_Details = new System.Windows.Forms.GroupBox();
             this.btn_Refresh = new System.Windows.Forms.Button();
             this.dgv_View_Brand_Details = new System.Windows.Forms.DataGridView();
-            this.brandIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.brandNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.brandDetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dB_RK_Cosmetics_SystemDataSet1 = new RK_Cosmetics_System.DB_RK_Cosmetics_SystemDataSet1();
             this.pnl_Brand_Details = new System.Windows.Forms.Panel();
+            this.Warn_Brand_ID = new System.Windows.Forms.Label();
             this.tb_Brand_ID = new System.Windows.Forms.TextBox();
             this.lbl_Brand_ID = new System.Windows.Forms.Label();
             this.btn_Search = new System.Windows.Forms.Button();
-            this.brand_DetailsTableAdapter = new RK_Cosmetics_System.DB_RK_Cosmetics_SystemDataSet1TableAdapters.Brand_DetailsTableAdapter();
             this.gb_Brand_Details.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_View_Brand_Details)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.brandDetailsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dB_RK_Cosmetics_SystemDataSet1)).BeginInit();
             this.pnl_Brand_Details.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -83,7 +75,6 @@
             // 
             this.dgv_View_Brand_Details.AllowUserToAddRows = false;
             this.dgv_View_Brand_Details.AllowUserToDeleteRows = false;
-            this.dgv_View_Brand_Details.AutoGenerateColumns = false;
             this.dgv_View_Brand_Details.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_View_Brand_Details.BackgroundColor = System.Drawing.Color.PeachPuff;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -95,11 +86,6 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgv_View_Brand_Details.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_View_Brand_Details.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_View_Brand_Details.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.brandIDDataGridViewTextBoxColumn,
-            this.brandNameDataGridViewTextBoxColumn,
-            this.statusDataGridViewTextBoxColumn});
-            this.dgv_View_Brand_Details.DataSource = this.brandDetailsBindingSource;
             this.dgv_View_Brand_Details.Location = new System.Drawing.Point(46, 206);
             this.dgv_View_Brand_Details.Name = "dgv_View_Brand_Details";
             this.dgv_View_Brand_Details.ReadOnly = true;
@@ -107,40 +93,10 @@
             this.dgv_View_Brand_Details.Size = new System.Drawing.Size(1341, 457);
             this.dgv_View_Brand_Details.TabIndex = 29;
             // 
-            // brandIDDataGridViewTextBoxColumn
-            // 
-            this.brandIDDataGridViewTextBoxColumn.DataPropertyName = "Brand_ID";
-            this.brandIDDataGridViewTextBoxColumn.HeaderText = "Brand_ID";
-            this.brandIDDataGridViewTextBoxColumn.Name = "brandIDDataGridViewTextBoxColumn";
-            this.brandIDDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // brandNameDataGridViewTextBoxColumn
-            // 
-            this.brandNameDataGridViewTextBoxColumn.DataPropertyName = "Brand_Name";
-            this.brandNameDataGridViewTextBoxColumn.HeaderText = "Brand_Name";
-            this.brandNameDataGridViewTextBoxColumn.Name = "brandNameDataGridViewTextBoxColumn";
-            this.brandNameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // statusDataGridViewTextBoxColumn
-            // 
-            this.statusDataGridViewTextBoxColumn.DataPropertyName = "Status";
-            this.statusDataGridViewTextBoxColumn.HeaderText = "Status";
-            this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
-            this.statusDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // brandDetailsBindingSource
-            // 
-            this.brandDetailsBindingSource.DataMember = "Brand_Details";
-            this.brandDetailsBindingSource.DataSource = this.dB_RK_Cosmetics_SystemDataSet1;
-            // 
-            // dB_RK_Cosmetics_SystemDataSet1
-            // 
-            this.dB_RK_Cosmetics_SystemDataSet1.DataSetName = "DB_RK_Cosmetics_SystemDataSet1";
-            this.dB_RK_Cosmetics_SystemDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // pnl_Brand_Details
             // 
             this.pnl_Brand_Details.BackColor = System.Drawing.Color.MistyRose;
+            this.pnl_Brand_Details.Controls.Add(this.Warn_Brand_ID);
             this.pnl_Brand_Details.Controls.Add(this.tb_Brand_ID);
             this.pnl_Brand_Details.Controls.Add(this.lbl_Brand_ID);
             this.pnl_Brand_Details.Controls.Add(this.btn_Search);
@@ -148,6 +104,18 @@
             this.pnl_Brand_Details.Name = "pnl_Brand_Details";
             this.pnl_Brand_Details.Size = new System.Drawing.Size(1249, 100);
             this.pnl_Brand_Details.TabIndex = 0;
+            // 
+            // Warn_Brand_ID
+            // 
+            this.Warn_Brand_ID.AutoSize = true;
+            this.Warn_Brand_ID.Font = new System.Drawing.Font("Mongolian Baiti", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Warn_Brand_ID.ForeColor = System.Drawing.Color.Red;
+            this.Warn_Brand_ID.Location = new System.Drawing.Point(713, 71);
+            this.Warn_Brand_ID.Name = "Warn_Brand_ID";
+            this.Warn_Brand_ID.Size = new System.Drawing.Size(84, 21);
+            this.Warn_Brand_ID.TabIndex = 62;
+            this.Warn_Brand_ID.Text = "Required";
+            this.Warn_Brand_ID.Visible = false;
             // 
             // tb_Brand_ID
             // 
@@ -158,7 +126,6 @@
             this.tb_Brand_ID.Name = "tb_Brand_ID";
             this.tb_Brand_ID.Size = new System.Drawing.Size(301, 40);
             this.tb_Brand_ID.TabIndex = 1;
-            this.tb_Brand_ID.TextChanged += new System.EventHandler(this.tb_Brand_ID_TextChanged);
             this.tb_Brand_ID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Numeric);
             // 
             // lbl_Brand_ID
@@ -179,7 +146,6 @@
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Search.BackColor = System.Drawing.Color.Yellow;
-            this.btn_Search.Enabled = false;
             this.btn_Search.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Search.ForeColor = System.Drawing.Color.Black;
             this.btn_Search.Location = new System.Drawing.Point(942, 25);
@@ -189,10 +155,6 @@
             this.btn_Search.Text = "Search";
             this.btn_Search.UseVisualStyleBackColor = false;
             this.btn_Search.Click += new System.EventHandler(this.btn_Search_Click);
-            // 
-            // brand_DetailsTableAdapter
-            // 
-            this.brand_DetailsTableAdapter.ClearBeforeFill = true;
             // 
             // frm_View_Brand_Details
             // 
@@ -208,8 +170,6 @@
             this.Load += new System.EventHandler(this.frm_View_Brand_Details_Load);
             this.gb_Brand_Details.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_View_Brand_Details)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.brandDetailsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dB_RK_Cosmetics_SystemDataSet1)).EndInit();
             this.pnl_Brand_Details.ResumeLayout(false);
             this.pnl_Brand_Details.PerformLayout();
             this.ResumeLayout(false);
@@ -225,11 +185,6 @@
         private System.Windows.Forms.Button btn_Search;
         private System.Windows.Forms.TextBox tb_Brand_ID;
         private System.Windows.Forms.Label lbl_Brand_ID;
-        private DB_RK_Cosmetics_SystemDataSet1 dB_RK_Cosmetics_SystemDataSet1;
-        private System.Windows.Forms.BindingSource brandDetailsBindingSource;
-        private DB_RK_Cosmetics_SystemDataSet1TableAdapters.Brand_DetailsTableAdapter brand_DetailsTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn brandIDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn brandNameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn statusDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label Warn_Brand_ID;
     }
 }

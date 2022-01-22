@@ -39,7 +39,6 @@ namespace RK_Cosmetics_System
         {
             tb_Brand_ID.Text = "";
             tb_Brand_ID.Enabled = true;
-            btn_Search.Enabled = false;
             tb_Brand_Name.Text = "";
             cb_Status.ResetText();
             tb_Brand_ID.Focus();
@@ -49,28 +48,40 @@ namespace RK_Cosmetics_System
         {
             Con_Open();
 
-            SqlCommand Cmd = new SqlCommand();
-
-            Cmd.Connection = Con;
-
-            Cmd.CommandText = "Select * from Brand_Details Where Brand_ID = " + tb_Brand_ID.Text + "";
-
-            var Obj = Cmd.ExecuteReader();
-
-            if (Obj.Read())
+            if (tb_Brand_ID.Text == "")
             {
-                tb_Brand_Name.Text = Obj.GetString(Obj.GetOrdinal("Brand_Name"));
-                cb_Status.Text = Obj.GetString(Obj.GetOrdinal("Status"));
-
+                Warn_Brand_ID.Visible = true;
+                Warn_Brand_ID.Text = "*Required";
             }
             else
             {
-                MessageBox.Show("Information is not Available...", "No Record Found", MessageBoxButtons.OK, MessageBoxIcon.Question);
-                Clear_Controls();
+                Warn_Brand_ID.Visible = false;
             }
 
-            btn_Search.Enabled = false;
-            tb_Brand_ID.Enabled = false;
+            if (tb_Brand_ID.Text != "")
+            {
+                SqlCommand Cmd = new SqlCommand();
+
+                Cmd.Connection = Con;
+
+                Cmd.CommandText = "Select * from Brand_Details Where Brand_ID = " + tb_Brand_ID.Text + "";
+
+                var Obj = Cmd.ExecuteReader();
+
+                if (Obj.Read())
+                {
+                    tb_Brand_Name.Text = Obj.GetString(Obj.GetOrdinal("Brand_Name"));
+                    cb_Status.Text = Obj.GetString(Obj.GetOrdinal("Status"));
+
+                }
+                else
+                {
+                    MessageBox.Show("Information is not Available...", "No Record Found", MessageBoxButtons.OK, MessageBoxIcon.Question);
+                    Clear_Controls();
+                }
+
+            }
+            
             Con_Close();
         }
 
@@ -106,11 +117,6 @@ namespace RK_Cosmetics_System
         private void btn_Refresh_Click(object sender, EventArgs e)
         {
             Clear_Controls();
-        }
-
-        private void tb_Brand_ID_TextChanged(object sender, EventArgs e)
-        {
-            btn_Search.Enabled = true;
         }
     }
 }

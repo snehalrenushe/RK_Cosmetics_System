@@ -126,7 +126,7 @@ namespace RK_Cosmetics_System
         {
             Con_Open();
 
-            if (tb_Product_ID.Text != "" && cb_Brand_Name.Text != "" && tb_Product_Name.Text != "" && tb_Purchase_Price.Text != "" && tb_Selling_Price.Text != "" && tb_Stock.Text != "" && tb_Description.Text != "")
+            if (tb_Product_ID.Text != "" && cb_Brand_Name.Text != "" && tb_Product_Name.Text != "" && tb_Purchase_Price.Text != "" && tb_Selling_Price.Text != "" && tb_Stock.Text != "")
             {
                 SqlCommand Cmd = new SqlCommand();
 
@@ -140,7 +140,7 @@ namespace RK_Cosmetics_System
                 Cmd.Parameters.Add("P_Price", SqlDbType.Money).Value = tb_Purchase_Price.Text;
                 Cmd.Parameters.Add("S_Price", SqlDbType.Money).Value = tb_Selling_Price.Text;
                 Cmd.Parameters.Add("Stock", SqlDbType.Int).Value = tb_Stock.Text;
-                Cmd.Parameters.Add("Des", SqlDbType.NVarChar).Value = tb_Description.Text;
+                Cmd.Parameters.Add("Des",SqlDbType.NVarChar).Value = tb_Description.Text;
 
                 Cmd.ExecuteNonQuery();
 

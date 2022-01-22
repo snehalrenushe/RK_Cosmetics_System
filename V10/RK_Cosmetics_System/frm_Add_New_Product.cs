@@ -129,7 +129,7 @@ namespace RK_Cosmetics_System
         {
             Con_Open();
 
-            if (tb_Product_ID.Text != "" && cb_Brand_Name.Text != "" && tb_Product_Name.Text != "" && tb_Purchase_Price.Text != "" && tb_Selling_Price.Text != "" && tb_Stock.Text != "" && cb_Distributor_Name.Text != "" && dtp_Date.Text != "" && tb_GST.Text != "" && tb_Description.Text != "")
+            if (tb_Product_ID.Text != "" && cb_Brand_Name.Text != "" && tb_Product_Name.Text != "" && tb_Purchase_Price.Text != "" && tb_Selling_Price.Text != "" && tb_Stock.Text != "" && cb_Distributor_Name.Text != "" && dtp_Date.Text != "" && tb_GST.Text != "")
             {
                 SqlCommand Cmd = new SqlCommand();
 
@@ -146,7 +146,7 @@ namespace RK_Cosmetics_System
                 Cmd.Parameters.Add("D_Name",SqlDbType.VarChar).Value = cb_Distributor_Name.Text;
                 Cmd.Parameters.Add("Date",SqlDbType.Date).Value = dtp_Date.Text;
                 Cmd.Parameters.Add("GST", SqlDbType.Float).Value = tb_GST.Text;
-                Cmd.Parameters.Add("Des",SqlDbType.NVarChar).Value = tb_Description.Text;
+                Cmd.Parameters.Add("Des", SqlDbType.NVarChar).Value = tb_Description.Text;
 
                 Cmd.ExecuteNonQuery();
 

@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.gb_Brand_Details = new System.Windows.Forms.GroupBox();
+            this.Warn_Brand_ID = new System.Windows.Forms.Label();
+            this.cb_Status = new System.Windows.Forms.ComboBox();
             this.btn_Search = new System.Windows.Forms.Button();
             this.lbl_Status = new System.Windows.Forms.Label();
             this.tb_Brand_Name = new System.Windows.Forms.TextBox();
@@ -37,13 +39,13 @@
             this.lbl_Brand_ID = new System.Windows.Forms.Label();
             this.btn_Update = new System.Windows.Forms.Button();
             this.btn_Refresh = new System.Windows.Forms.Button();
-            this.cb_Status = new System.Windows.Forms.ComboBox();
             this.gb_Brand_Details.SuspendLayout();
             this.SuspendLayout();
             // 
             // gb_Brand_Details
             // 
             this.gb_Brand_Details.BackColor = System.Drawing.Color.LavenderBlush;
+            this.gb_Brand_Details.Controls.Add(this.Warn_Brand_ID);
             this.gb_Brand_Details.Controls.Add(this.cb_Status);
             this.gb_Brand_Details.Controls.Add(this.btn_Search);
             this.gb_Brand_Details.Controls.Add(this.lbl_Status);
@@ -59,15 +61,38 @@
             this.gb_Brand_Details.TabStop = false;
             this.gb_Brand_Details.Text = "Brand Details";
             // 
+            // Warn_Brand_ID
+            // 
+            this.Warn_Brand_ID.AutoSize = true;
+            this.Warn_Brand_ID.Font = new System.Drawing.Font("Mongolian Baiti", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Warn_Brand_ID.ForeColor = System.Drawing.Color.Red;
+            this.Warn_Brand_ID.Location = new System.Drawing.Point(742, 139);
+            this.Warn_Brand_ID.Name = "Warn_Brand_ID";
+            this.Warn_Brand_ID.Size = new System.Drawing.Size(84, 21);
+            this.Warn_Brand_ID.TabIndex = 61;
+            this.Warn_Brand_ID.Text = "Required";
+            this.Warn_Brand_ID.Visible = false;
+            // 
+            // cb_Status
+            // 
+            this.cb_Status.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.cb_Status.FormattingEnabled = true;
+            this.cb_Status.Items.AddRange(new object[] {
+            "In Use",
+            "Not In Use"});
+            this.cb_Status.Location = new System.Drawing.Point(569, 347);
+            this.cb_Status.Name = "cb_Status";
+            this.cb_Status.Size = new System.Drawing.Size(301, 34);
+            this.cb_Status.TabIndex = 4;
+            // 
             // btn_Search
             // 
             this.btn_Search.BackColor = System.Drawing.Color.Yellow;
-            this.btn_Search.Enabled = false;
             this.btn_Search.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Search.ForeColor = System.Drawing.Color.Black;
             this.btn_Search.Location = new System.Drawing.Point(912, 93);
             this.btn_Search.Name = "btn_Search";
-            this.btn_Search.Size = new System.Drawing.Size(149, 50);
+            this.btn_Search.Size = new System.Drawing.Size(149, 55);
             this.btn_Search.TabIndex = 2;
             this.btn_Search.Text = "Search";
             this.btn_Search.UseVisualStyleBackColor = false;
@@ -104,7 +129,6 @@
             this.tb_Brand_ID.Name = "tb_Brand_ID";
             this.tb_Brand_ID.Size = new System.Drawing.Size(301, 40);
             this.tb_Brand_ID.TabIndex = 1;
-            this.tb_Brand_ID.TextChanged += new System.EventHandler(this.tb_Brand_ID_TextChanged);
             // 
             // lbl_Brand_Name
             // 
@@ -156,18 +180,6 @@
             this.btn_Refresh.UseVisualStyleBackColor = false;
             this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
             // 
-            // cb_Status
-            // 
-            this.cb_Status.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.cb_Status.FormattingEnabled = true;
-            this.cb_Status.Items.AddRange(new object[] {
-            "In Use",
-            "Not In Use"});
-            this.cb_Status.Location = new System.Drawing.Point(569, 347);
-            this.cb_Status.Name = "cb_Status";
-            this.cb_Status.Size = new System.Drawing.Size(301, 34);
-            this.cb_Status.TabIndex = 4;
-            // 
             // frm_Update_Brand_Details
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -199,5 +211,6 @@
         private System.Windows.Forms.Button btn_Update;
         private System.Windows.Forms.Button btn_Refresh;
         private System.Windows.Forms.ComboBox cb_Status;
+        private System.Windows.Forms.Label Warn_Brand_ID;
     }
 }

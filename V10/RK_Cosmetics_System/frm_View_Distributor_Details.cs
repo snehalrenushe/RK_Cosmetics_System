@@ -62,13 +62,16 @@ namespace RK_Cosmetics_System
                 Warn_Distributor_ID.Visible = false;
             }
 
-            SqlDataAdapter SDA = new SqlDataAdapter("Select Distributor_ID,Name,Address,Gender,Registration_No,Tie_Up_Date,Mobile_No,Email_ID from Distributor_Details Where Distributor_ID = " + tb_Distributor_ID.Text + " ", Con);
+            if (tb_Distributor_ID.Text != "")
+            {
+                SqlDataAdapter SDA = new SqlDataAdapter("Select Distributor_ID,Name,Address,Gender,Registration_No,Tie_Up_Date,Mobile_No,Email_ID from Distributor_Details Where Distributor_ID = " + tb_Distributor_ID.Text + " ", Con);
 
-            DataTable dt = new DataTable();
+                DataTable dt = new DataTable();
 
-            SDA.Fill(dt);
+                SDA.Fill(dt);
 
-            dgv_View_Distributor_Details.DataSource = dt;
+                dgv_View_Distributor_Details.DataSource = dt;
+            }
 
             Con_Close();
         }

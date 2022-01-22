@@ -17,10 +17,6 @@ namespace RK_Cosmetics_System
             InitializeComponent();
         }
 
-        string Gender = " ";
-        long Mob_No_2;
-        string Email = " ";
-
         SqlConnection Con = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=DB_RK_Cosmetics_System;Integrated Security=True");
 
         void Con_Open()
@@ -85,6 +81,16 @@ namespace RK_Cosmetics_System
             tb_Aadhar_No.Text = "";
             tb_Pan_No.Text = "";
             tb_Email_ID.Text = "";
+
+            Warn_Name.Visible = false;
+            Warn_Gender.Visible = false;
+            Warn_Mobile_No.Visible = false;
+            Warn_Alternate_Mobile_No.Visible = false;
+            Warn_Aadhar_No.Visible = false;
+            Warn_PAN_No.Visible = false;
+            Warn_Address.Visible = false;
+
+            tb_Name.Focus();
         }
 
         void Warning()
@@ -129,15 +135,6 @@ namespace RK_Cosmetics_System
                 Warn_Mobile_No.Visible = false;
             }
 
-            if (tb_Alternate_Mobile_No.Text != "")
-            {
-                Mob_No_2 = Convert.ToInt64(tb_Alternate_Mobile_No.Text);
-            }
-            else
-            {
-                Warn_Alternate_Mobile_No.Visible = false;
-            }
-
             if (tb_Aadhar_No.TextLength < 12)
             {
                 Warn_Aadhar_No.Visible = true;
@@ -168,15 +165,12 @@ namespace RK_Cosmetics_System
                 Warn_Address.Visible = false;
             }
 
-            if (tb_Email_ID.Text != "")
-            {
-                Email = Convert.ToString(tb_Email_ID.Text);
-            }
-
         }
 
         private void btn_Save_Click(object sender, EventArgs e)
         {
+            string Gender = " ";
+
             Con_Open();
 
             if (rb_Male.Checked == true)
@@ -199,7 +193,7 @@ namespace RK_Cosmetics_System
 
                 Cmd.Connection = Con;
 
-                Cmd.CommandText = "Insert into Distributor_Details (Distributor_ID,Name,Address,Gender,Registration_No,Tie_Up_Date,Mobile_No,Alternate_Mobile_No,Aadhar_No,PAN_No,Email_ID) VALUES (@D_ID,@Nm,@Add,'" + Gender + "',@R_No,@Tie_Date,@Mob1," + Mob_No_2 + ",@A_No,@P_No,'" + Email + "')";
+                Cmd.CommandText = "Insert into Distributor_Details (Distributor_ID,Name,Address,Gender,Registration_No,Tie_Up_Date,Mobile_No,Alternate_Mobile_No,Aadhar_No,PAN_No,Email_ID) VALUES (@D_ID,@Nm,@Add,'" + Gender + "',@R_No,@Tie_Date,@Mob1,@Mob2,@A_No,@P_No,@email)";
 
                 Cmd.Parameters.Add("D_ID",SqlDbType.Int).Value = tb_Distributor_ID.Text;
                 Cmd.Parameters.Add("Nm",SqlDbType.NVarChar).Value = tb_Name.Text;
@@ -207,17 +201,40 @@ namespace RK_Cosmetics_System
                 Cmd.Parameters.Add("R_No",SqlDbType.Int).Value = tb_Registration_No.Text;
                 Cmd.Parameters.Add("Tie_Date",SqlDbType.Date).Value = dtp_Tieup_Date.Text;
                 Cmd.Parameters.Add("Mob1",SqlDbType.Decimal).Value = tb_Mobile_No.Text;
-                Cmd.Parameters.Add("Mob2", SqlDbType.Decimal).Value = Mob_No_2;
                 Cmd.Parameters.Add("A_No", SqlDbType.NVarChar).Value = tb_Aadhar_No.Text;
                 Cmd.Parameters.Add("P_No", SqlDbType.NVarChar).Value = tb_Pan_No.Text;
-                Cmd.Parameters.Add("Email",SqlDbType.NVarChar).Value = Email;
+
+                if (tb_Alternate_Mobile_No.Text != "")
+                {
+                    Cmd.Parameters.Add("Mob2", SqlDbType.Decimal).Value = tb_Alternate_Mobile_No.Text;
+                }
+                else if (tb_Alternate_Mobile_No.Text == "")
+                {
+                    Cmd.Parameters.Add("Mob2", SqlDbType.Decimal).Value = "0";
+                    Warn_Alternate_Mobile_No.Visible = false;
+                }
+                else
+                {
+                    Warn_Alternate_Mobile_No.Visible = false;
+                }
+
+
+                if (tb_Email_ID.Text != "")
+                {
+                    Cmd.Parameters.Add("email", SqlDbType.NVarChar).Value = tb_Email_ID.Text;
+                }
+                else
+                {
+                    Cmd.Parameters.Add("email", SqlDbType.NVarChar).Value = "Annonymous";
+                }
+
 
                 if (tb_Mobile_No.Text == tb_Alternate_Mobile_No.Text)
                 {
                     MessageBox.Show("You can't insert same mobile no !!!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     Warning();
                 }
-                else if (tb_Alternate_Mobile_No.TextLength <= 10 && tb_Alternate_Mobile_No.TextLength > 0)
+                else if (tb_Alternate_Mobile_No.TextLength < 10 && tb_Alternate_Mobile_No.TextLength > 0)
                 {
                     Warn_Alternate_Mobile_No.Visible = true;
                     Warn_Alternate_Mobile_No.Text = "Enter Valid Mobile No";

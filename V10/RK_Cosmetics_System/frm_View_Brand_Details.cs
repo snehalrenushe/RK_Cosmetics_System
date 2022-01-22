@@ -39,22 +39,39 @@ namespace RK_Cosmetics_System
         {
             Con_Open();
 
-            SqlDataAdapter SDA = new SqlDataAdapter("Select * from Brand_Details where Brand_ID = " + tb_Brand_ID.Text + " ", Con);
+            if (tb_Brand_ID.Text == "")
+            {
+                Warn_Brand_ID.Visible = true;
+                Warn_Brand_ID.Text = "*Required";
+            }
+            else
+            {
+                Warn_Brand_ID.Visible = false;
+            }
+
+            if (tb_Brand_ID.Text != "")
+            {
+                SqlDataAdapter SDA = new SqlDataAdapter("Select * from Brand_Details where Brand_ID = " + tb_Brand_ID.Text + " ", Con);
+
+                DataTable dt = new DataTable();
+
+                SDA.Fill(dt);
+
+                dgv_View_Brand_Details.DataSource = dt;
+            }
+            
+            Con_Close();
+        }
+
+        private void frm_View_Brand_Details_Load(object sender, EventArgs e)
+        {
+            SqlDataAdapter SDA = new SqlDataAdapter("Select * from Brand_Details", Con);
 
             DataTable dt = new DataTable();
 
             SDA.Fill(dt);
 
             dgv_View_Brand_Details.DataSource = dt;
-
-            tb_Brand_ID.Enabled = false;
-            Con_Close();
-        }
-
-        private void frm_View_Brand_Details_Load(object sender, EventArgs e)
-        {
-            // TODO: This line of code loads data into the 'dB_RK_Cosmetics_SystemDataSet1.Brand_Details' table. You can move, or remove it, as needed.
-            //this.brand_DetailsTableAdapter.Fill(this.dB_RK_Cosmetics_SystemDataSet1.Brand_Details);
 
         }
 
@@ -71,13 +88,6 @@ namespace RK_Cosmetics_System
 
             dgv_View_Brand_Details.DataSource = dt;
 
-            btn_Search.Enabled = false;
-            tb_Brand_ID.Enabled = true;
-        }
-
-        private void tb_Brand_ID_TextChanged(object sender, EventArgs e)
-        {
-            btn_Search.Enabled = true;
         }
 
         private void Only_Numeric(object sender, KeyPressEventArgs e)
