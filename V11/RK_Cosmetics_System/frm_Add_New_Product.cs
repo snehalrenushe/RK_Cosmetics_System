@@ -207,10 +207,22 @@ namespace RK_Cosmetics_System
 
         private void tb_GST_MouseLeave(object sender, EventArgs e)
         {
-            if ((Convert.ToInt32(tb_GST.Text)) > 5)
+            try
             {
-                MessageBox.Show("GST Must be Less than 5%!!","Warning",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                if ((Convert.ToInt32(tb_GST.Text)) > 5)
+                {
+                    MessageBox.Show("GST Must be Less than 5%!!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    Warn_Selling_Price.Visible = false;
+                }
             }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message);
+            }
+            
         }
 
         private void tb_Selling_Price_MouseLeave(object sender, EventArgs e)
@@ -219,7 +231,10 @@ namespace RK_Cosmetics_System
             {
                 MessageBox.Show("Selling Price must not be less than or equal to Purchase Price", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-        }
-                                                                          
+            else
+            {
+                Warn_Selling_Price.Visible = false;
+            }
+        }                                                                     
     }
 }

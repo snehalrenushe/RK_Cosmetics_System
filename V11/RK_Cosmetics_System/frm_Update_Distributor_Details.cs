@@ -108,8 +108,6 @@ namespace RK_Cosmetics_System
 
             if (tb_Distributor_ID.Text != "")
             {
-                Con_Open();
-
                 SqlCommand Cmd = new SqlCommand();
 
                 Cmd.Connection = Con;
@@ -133,8 +131,6 @@ namespace RK_Cosmetics_System
                     MessageBox.Show("Information is not Available...", "No Record Found", MessageBoxButtons.OK, MessageBoxIcon.Question);
                     Clear_Controls();
                 }
-
-                Con_Close();
             }
 
             Con_Close();

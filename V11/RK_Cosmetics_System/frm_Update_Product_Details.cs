@@ -62,9 +62,6 @@ namespace RK_Cosmetics_System
         void Clear_Controls()
         {
             tb_Product_ID.Focus();
-            tb_Product_ID.Enabled = true;
-            btn_Search.Enabled = false;
-            btn_Update.Enabled = false;
             tb_Product_ID.Text = "";
             cb_Brand_Name.SelectedIndex = -1;
             tb_Product_Name.Text = "";
@@ -77,32 +74,44 @@ namespace RK_Cosmetics_System
 
         private void btn_Search_Click(object sender, EventArgs e)
         {
-            tb_Product_ID.Enabled = false;
             Con_Open();
 
-            SqlCommand Cmd = new SqlCommand();
-
-            Cmd.Connection = Con;
-
-            Cmd.CommandText = "Select * from Product_Details where Product_ID = " + tb_Product_ID.Text + " ";
-
-            var Obj = Cmd.ExecuteReader();
-
-            if (Obj.Read())
+            if (tb_Product_ID.Text == "")
             {
-                cb_Brand_Name.Text = Obj.GetString(Obj.GetOrdinal("Brand_Name"));
-                tb_Product_Name.Text = Obj.GetString(Obj.GetOrdinal("Product_Name"));
-                tb_Purchase_Price.Text = (Obj["Purchase_Price"].ToString());
-                tb_Selling_Price.Text = (Obj["Selling_Price"].ToString());
-                tb_Stock.Text = (Obj["Stock"].ToString());
-                tb_Description.Text = Obj.GetString(Obj.GetOrdinal("Description"));
-
-                btn_Update.Enabled = true;
+                Warn_Product_ID.Visible = true;
+                Warn_Product_ID.Text = "*Required";
             }
             else
             {
-                MessageBox.Show("Information is not Available...", "No Record Found", MessageBoxButtons.OK, MessageBoxIcon.Question);
-                Clear_Controls();
+                Warn_Product_ID.Visible = false;
+            }
+
+            if (tb_Product_ID.Text != "")
+            {
+                SqlCommand Cmd = new SqlCommand();
+
+                Cmd.Connection = Con;
+
+                Cmd.CommandText = "Select * from Product_Details where Product_ID = " + tb_Product_ID.Text + " ";
+
+                var Obj = Cmd.ExecuteReader();
+
+                if (Obj.Read())
+                {
+                    cb_Brand_Name.Text = Obj.GetString(Obj.GetOrdinal("Brand_Name"));
+                    tb_Product_Name.Text = Obj.GetString(Obj.GetOrdinal("Product_Name"));
+                    tb_Purchase_Price.Text = (Obj["Purchase_Price"].ToString());
+                    tb_Selling_Price.Text = (Obj["Selling_Price"].ToString());
+                    tb_Stock.Text = (Obj["Stock"].ToString());
+                    tb_Description.Text = Obj.GetString(Obj.GetOrdinal("Description"));
+
+                    btn_Update.Enabled = true;
+                }
+                else
+                {
+                    MessageBox.Show("Information is not Available...", "No Record Found", MessageBoxButtons.OK, MessageBoxIcon.Question);
+                    Clear_Controls();
+                }
             }
 
             Con_Close();
@@ -159,12 +168,11 @@ namespace RK_Cosmetics_System
         private void btn_Refresh_Click(object sender, EventArgs e)
         {
             Clear_Controls();
-            btn_Search.Enabled = false;
         }
 
         private void tb_Product_ID_TextChanged(object sender, EventArgs e)
         {
-            btn_Search.Enabled = true;
+
         }
     }
 }

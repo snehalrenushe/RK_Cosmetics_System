@@ -158,7 +158,6 @@
             this.pnl_Product_Details.Name = "pnl_Product_Details";
             this.pnl_Product_Details.Size = new System.Drawing.Size(1351, 102);
             this.pnl_Product_Details.TabIndex = 0;
-            this.pnl_Product_Details.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_Product_Details_Paint);
             // 
             // cb_Brand_Name
             // 

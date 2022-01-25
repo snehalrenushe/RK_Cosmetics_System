@@ -51,12 +51,14 @@
             this.lbl_Product_ID = new System.Windows.Forms.Label();
             this.btn_Save = new System.Windows.Forms.Button();
             this.btn_Refresh = new System.Windows.Forms.Button();
+            this.Warn_Selling_Price = new System.Windows.Forms.Label();
             this.gb_Product_Details.SuspendLayout();
             this.SuspendLayout();
             // 
             // gb_Product_Details
             // 
             this.gb_Product_Details.BackColor = System.Drawing.Color.LavenderBlush;
+            this.gb_Product_Details.Controls.Add(this.Warn_Selling_Price);
             this.gb_Product_Details.Controls.Add(this.dtp_Date);
             this.gb_Product_Details.Controls.Add(this.lbl_Date);
             this.gb_Product_Details.Controls.Add(this.tb_Product_Name);
@@ -143,6 +145,7 @@
             this.tb_Selling_Price.Name = "tb_Selling_Price";
             this.tb_Selling_Price.Size = new System.Drawing.Size(301, 40);
             this.tb_Selling_Price.TabIndex = 5;
+            this.tb_Selling_Price.TabIndexChanged += new System.EventHandler(this.tb_Selling_Price_TabIndexChanged);
             this.tb_Selling_Price.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Numeric);
             this.tb_Selling_Price.MouseLeave += new System.EventHandler(this.tb_Selling_Price_MouseLeave);
             // 
@@ -335,6 +338,18 @@
             this.btn_Refresh.UseVisualStyleBackColor = false;
             this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
             // 
+            // Warn_Selling_Price
+            // 
+            this.Warn_Selling_Price.AutoSize = true;
+            this.Warn_Selling_Price.Font = new System.Drawing.Font("Mongolian Baiti", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Warn_Selling_Price.ForeColor = System.Drawing.Color.Red;
+            this.Warn_Selling_Price.Location = new System.Drawing.Point(677, 493);
+            this.Warn_Selling_Price.Name = "Warn_Selling_Price";
+            this.Warn_Selling_Price.Size = new System.Drawing.Size(84, 21);
+            this.Warn_Selling_Price.TabIndex = 38;
+            this.Warn_Selling_Price.Text = "Required";
+            this.Warn_Selling_Price.Visible = false;
+            // 
             // frm_Add_New_Product
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -379,5 +394,6 @@
         private System.Windows.Forms.TextBox tb_Product_Name;
         private System.Windows.Forms.DateTimePicker dtp_Date;
         private System.Windows.Forms.Label lbl_Date;
+        private System.Windows.Forms.Label Warn_Selling_Price;
     }
 }

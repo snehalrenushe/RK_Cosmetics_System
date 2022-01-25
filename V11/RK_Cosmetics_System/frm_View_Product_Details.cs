@@ -35,11 +35,6 @@ namespace RK_Cosmetics_System
             }
         }
 
-        private void pnl_Product_Details_Paint(object sender, PaintEventArgs e)
-        {
-            
-        }
-
         void Bind_Brand_Name_To_Combobox()
         {
             Con_Open();
@@ -60,14 +55,6 @@ namespace RK_Cosmetics_System
             }
 
             Obj.Dispose();
-
-            /*SqlDataAdapter Sda = new SqlDataAdapter("Select * from Product_Details",Con);
-
-            DataTable dt = new DataTable();
-
-            Sda.Fill(dt);
-
-            dgv_View_Product_Details.DataSource = dt;*/
 
             Con_Close();
         }

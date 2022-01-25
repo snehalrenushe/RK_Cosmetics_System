@@ -53,6 +53,7 @@
             this.lbl_Address = new System.Windows.Forms.Label();
             this.lbl_Gender = new System.Windows.Forms.Label();
             this.btn_Refresh = new System.Windows.Forms.Button();
+            this.Warn_Product_ID = new System.Windows.Forms.Label();
             this.gb_Update_Or_Search_Product_Details.SuspendLayout();
             this.pnl_Update_or_Search_Product.SuspendLayout();
             this.gb_Gender.SuspendLayout();
@@ -223,6 +224,7 @@
             // pnl_Update_or_Search_Product
             // 
             this.pnl_Update_or_Search_Product.BackColor = System.Drawing.Color.MistyRose;
+            this.pnl_Update_or_Search_Product.Controls.Add(this.Warn_Product_ID);
             this.pnl_Update_or_Search_Product.Controls.Add(this.btn_Update);
             this.pnl_Update_or_Search_Product.Controls.Add(this.btn_Search);
             this.pnl_Update_or_Search_Product.Controls.Add(this.lbl_Product_ID);
@@ -238,7 +240,6 @@
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Update.BackColor = System.Drawing.Color.Yellow;
-            this.btn_Update.Enabled = false;
             this.btn_Update.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Update.ForeColor = System.Drawing.Color.Black;
             this.btn_Update.Location = new System.Drawing.Point(1174, 21);
@@ -255,7 +256,6 @@
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Search.BackColor = System.Drawing.Color.Yellow;
-            this.btn_Search.Enabled = false;
             this.btn_Search.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Search.ForeColor = System.Drawing.Color.Black;
             this.btn_Search.Location = new System.Drawing.Point(853, 21);
@@ -280,7 +280,6 @@
             // 
             // tb_Product_ID
             // 
-            this.tb_Product_ID.Enabled = false;
             this.tb_Product_ID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.tb_Product_ID.Location = new System.Drawing.Point(375, 32);
             this.tb_Product_ID.MaxLength = 15;
@@ -373,6 +372,18 @@
             this.btn_Refresh.UseVisualStyleBackColor = false;
             this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
             // 
+            // Warn_Product_ID
+            // 
+            this.Warn_Product_ID.AutoSize = true;
+            this.Warn_Product_ID.Font = new System.Drawing.Font("Mongolian Baiti", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Warn_Product_ID.ForeColor = System.Drawing.Color.Red;
+            this.Warn_Product_ID.Location = new System.Drawing.Point(550, 75);
+            this.Warn_Product_ID.Name = "Warn_Product_ID";
+            this.Warn_Product_ID.Size = new System.Drawing.Size(84, 21);
+            this.Warn_Product_ID.TabIndex = 37;
+            this.Warn_Product_ID.Text = "Required";
+            this.Warn_Product_ID.Visible = false;
+            // 
             // frm_Update_Product_Details
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -422,6 +433,7 @@
         private System.Windows.Forms.Label lbl_Description;
         private System.Windows.Forms.Button btn_Refresh;
         private System.Windows.Forms.TextBox tb_Product_Name;
+        private System.Windows.Forms.Label Warn_Product_ID;
 
     }
 }
