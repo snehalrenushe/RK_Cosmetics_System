@@ -145,7 +145,6 @@
             this.tb_Selling_Price.Name = "tb_Selling_Price";
             this.tb_Selling_Price.Size = new System.Drawing.Size(301, 40);
             this.tb_Selling_Price.TabIndex = 5;
-            this.tb_Selling_Price.TabIndexChanged += new System.EventHandler(this.tb_Selling_Price_TabIndexChanged);
             this.tb_Selling_Price.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Numeric);
             this.tb_Selling_Price.MouseLeave += new System.EventHandler(this.tb_Selling_Price_MouseLeave);
             // 

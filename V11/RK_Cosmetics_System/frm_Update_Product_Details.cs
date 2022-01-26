@@ -169,10 +169,5 @@ namespace RK_Cosmetics_System
         {
             Clear_Controls();
         }
-
-        private void tb_Product_ID_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }
