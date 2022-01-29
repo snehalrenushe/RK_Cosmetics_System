@@ -146,7 +146,7 @@
             this.tb_Selling_Price.Size = new System.Drawing.Size(301, 40);
             this.tb_Selling_Price.TabIndex = 5;
             this.tb_Selling_Price.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Numeric);
-            this.tb_Selling_Price.MouseLeave += new System.EventHandler(this.tb_Selling_Price_MouseLeave);
+      
             // 
             // tb_Stock
             // 
@@ -191,7 +191,6 @@
             this.tb_GST.Name = "tb_GST";
             this.tb_GST.Size = new System.Drawing.Size(301, 40);
             this.tb_GST.TabIndex = 9;
-            this.tb_GST.MouseLeave += new System.EventHandler(this.tb_GST_MouseLeave);
             // 
             // lbl_GST
             // 

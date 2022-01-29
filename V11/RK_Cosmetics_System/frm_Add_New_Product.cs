@@ -197,44 +197,12 @@ namespace RK_Cosmetics_System
         {
             Con_Open();
 
-            
             //SqlCommand Cmd = new SqlCommand("Select Current_Stock_Quantity from Stock_Details where Product_ID = " + tb_Product_ID.Text + " ", Con);
 
             //tb_Stock.Text = Convert.ToString(Cmd.ExecuteScalar());
 
             Con_Close();
         }
-
-        private void tb_GST_MouseLeave(object sender, EventArgs e)
-        {
-            try
-            {
-                if ((Convert.ToInt32(tb_GST.Text)) > 5)
-                {
-                    MessageBox.Show("GST Must be Less than 5%!!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                }
-                else
-                {
-                    Warn_Selling_Price.Visible = false;
-                }
-            }
-            catch (Exception Ex)
-            {
-                MessageBox.Show(Ex.Message);
-            }
-            
-        }
-
-        private void tb_Selling_Price_MouseLeave(object sender, EventArgs e)
-        {
-            if ((Convert.ToInt32(tb_Selling_Price.Text)) <= (Convert.ToInt32(tb_Purchase_Price.Text)))
-            {
-                MessageBox.Show("Selling Price must not be less than or equal to Purchase Price", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-            else
-            {
-                Warn_Selling_Price.Visible = false;
-            }
-        }                                                                     
+                                                                   
     }
 }

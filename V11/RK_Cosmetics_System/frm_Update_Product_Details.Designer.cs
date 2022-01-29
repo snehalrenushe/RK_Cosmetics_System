@@ -287,7 +287,6 @@
             this.tb_Product_ID.Name = "tb_Product_ID";
             this.tb_Product_ID.Size = new System.Drawing.Size(301, 40);
             this.tb_Product_ID.TabIndex = 1;
-            this.tb_Product_ID.TextChanged += new System.EventHandler(this.tb_Product_ID_TextChanged);
             this.tb_Product_ID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Numeric);
             // 
             // gb_Gender
