@@ -322,10 +322,5 @@ namespace RK_Cosmetics_System
         {
             dtp_Joining_Date.MinDate = dtp_Joining_Date.MaxDate = DateTime.Now;
         }
-
-        private void Warn_First_Name_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -274,7 +274,6 @@
             this.Warn_First_Name.TabIndex = 36;
             this.Warn_First_Name.Text = "Required";
             this.Warn_First_Name.Visible = false;
-            this.Warn_First_Name.Click += new System.EventHandler(this.Warn_First_Name_Click);
             // 
             // gb_Gender
             // 
