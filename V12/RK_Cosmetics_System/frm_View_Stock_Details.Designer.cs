@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnl_View_Stock_Details = new System.Windows.Forms.Panel();
@@ -39,21 +38,10 @@
             this.lbl_Product_Name = new System.Windows.Forms.Label();
             this.gb_Stock_Details = new System.Windows.Forms.GroupBox();
             this.dgv_View_Stock_Details = new System.Windows.Forms.DataGridView();
-            this.productIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.brandNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.currentStockQuantityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.newAddedStockDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.stockDetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dB_RK_Cosmetics_SystemDataSet3 = new RK_Cosmetics_System.DB_RK_Cosmetics_SystemDataSet3();
             this.btn_Refresh = new System.Windows.Forms.Button();
-            this.stock_DetailsTableAdapter = new RK_Cosmetics_System.DB_RK_Cosmetics_SystemDataSet3TableAdapters.Stock_DetailsTableAdapter();
             this.pnl_View_Stock_Details.SuspendLayout();
             this.gb_Stock_Details.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_View_Stock_Details)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.stockDetailsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dB_RK_Cosmetics_SystemDataSet3)).BeginInit();
             this.SuspendLayout();
             // 
             // pnl_View_Stock_Details
@@ -148,7 +136,6 @@
             // 
             this.dgv_View_Stock_Details.AllowUserToAddRows = false;
             this.dgv_View_Stock_Details.AllowUserToDeleteRows = false;
-            this.dgv_View_Stock_Details.AutoGenerateColumns = false;
             this.dgv_View_Stock_Details.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_View_Stock_Details.BackgroundColor = System.Drawing.Color.PeachPuff;
             this.dgv_View_Stock_Details.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
@@ -161,14 +148,6 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgv_View_Stock_Details.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_View_Stock_Details.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_View_Stock_Details.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.productIDDataGridViewTextBoxColumn,
-            this.brandNameDataGridViewTextBoxColumn,
-            this.productNameDataGridViewTextBoxColumn,
-            this.dateDataGridViewTextBoxColumn,
-            this.currentStockQuantityDataGridViewTextBoxColumn,
-            this.newAddedStockDataGridViewTextBoxColumn});
-            this.dgv_View_Stock_Details.DataSource = this.stockDetailsBindingSource;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -184,58 +163,6 @@
             this.dgv_View_Stock_Details.Size = new System.Drawing.Size(1680, 335);
             this.dgv_View_Stock_Details.TabIndex = 31;
             // 
-            // productIDDataGridViewTextBoxColumn
-            // 
-            this.productIDDataGridViewTextBoxColumn.DataPropertyName = "Product_ID";
-            this.productIDDataGridViewTextBoxColumn.HeaderText = "Product_ID";
-            this.productIDDataGridViewTextBoxColumn.Name = "productIDDataGridViewTextBoxColumn";
-            this.productIDDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // brandNameDataGridViewTextBoxColumn
-            // 
-            this.brandNameDataGridViewTextBoxColumn.DataPropertyName = "Brand_Name";
-            this.brandNameDataGridViewTextBoxColumn.HeaderText = "Brand_Name";
-            this.brandNameDataGridViewTextBoxColumn.Name = "brandNameDataGridViewTextBoxColumn";
-            this.brandNameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // productNameDataGridViewTextBoxColumn
-            // 
-            this.productNameDataGridViewTextBoxColumn.DataPropertyName = "Product_Name";
-            this.productNameDataGridViewTextBoxColumn.HeaderText = "Product_Name";
-            this.productNameDataGridViewTextBoxColumn.Name = "productNameDataGridViewTextBoxColumn";
-            this.productNameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // dateDataGridViewTextBoxColumn
-            // 
-            this.dateDataGridViewTextBoxColumn.DataPropertyName = "Date";
-            this.dateDataGridViewTextBoxColumn.HeaderText = "Date";
-            this.dateDataGridViewTextBoxColumn.Name = "dateDataGridViewTextBoxColumn";
-            this.dateDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // currentStockQuantityDataGridViewTextBoxColumn
-            // 
-            this.currentStockQuantityDataGridViewTextBoxColumn.DataPropertyName = "Current_Stock_Quantity";
-            this.currentStockQuantityDataGridViewTextBoxColumn.HeaderText = "Current_Stock_Quantity";
-            this.currentStockQuantityDataGridViewTextBoxColumn.Name = "currentStockQuantityDataGridViewTextBoxColumn";
-            this.currentStockQuantityDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // newAddedStockDataGridViewTextBoxColumn
-            // 
-            this.newAddedStockDataGridViewTextBoxColumn.DataPropertyName = "New_Added_Stock";
-            this.newAddedStockDataGridViewTextBoxColumn.HeaderText = "New_Added_Stock";
-            this.newAddedStockDataGridViewTextBoxColumn.Name = "newAddedStockDataGridViewTextBoxColumn";
-            this.newAddedStockDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // stockDetailsBindingSource
-            // 
-            this.stockDetailsBindingSource.DataMember = "Stock_Details";
-            this.stockDetailsBindingSource.DataSource = this.dB_RK_Cosmetics_SystemDataSet3;
-            // 
-            // dB_RK_Cosmetics_SystemDataSet3
-            // 
-            this.dB_RK_Cosmetics_SystemDataSet3.DataSetName = "DB_RK_Cosmetics_SystemDataSet3";
-            this.dB_RK_Cosmetics_SystemDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // btn_Refresh
             // 
             this.btn_Refresh.BackColor = System.Drawing.Color.Yellow;
@@ -248,10 +175,6 @@
             this.btn_Refresh.Text = "Refresh";
             this.btn_Refresh.UseVisualStyleBackColor = false;
             this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
-            // 
-            // stock_DetailsTableAdapter
-            // 
-            this.stock_DetailsTableAdapter.ClearBeforeFill = true;
             // 
             // frm_View_Stock_Details
             // 
@@ -270,8 +193,6 @@
             this.pnl_View_Stock_Details.PerformLayout();
             this.gb_Stock_Details.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_View_Stock_Details)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.stockDetailsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dB_RK_Cosmetics_SystemDataSet3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -287,15 +208,6 @@
         private System.Windows.Forms.GroupBox gb_Stock_Details;
         private System.Windows.Forms.Button btn_Refresh;
         private System.Windows.Forms.DataGridView dgv_View_Stock_Details;
-        private DB_RK_Cosmetics_SystemDataSet3 dB_RK_Cosmetics_SystemDataSet3;
-        private System.Windows.Forms.BindingSource stockDetailsBindingSource;
-        private DB_RK_Cosmetics_SystemDataSet3TableAdapters.Stock_DetailsTableAdapter stock_DetailsTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn productIDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn brandNameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn productNameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dateDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn currentStockQuantityDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn newAddedStockDataGridViewTextBoxColumn;
         //private DB_RK_Cosmetics_SystemDataSet8 dB_RK_Cosmetics_SystemDataSet8;
         //private DB_RK_Cosmetics_SystemDataSet8TableAdapters.Stock_DetailsTableAdapter stock_DetailsTableAdapter;
         //private System.Windows.Forms.DataGridViewTextBoxColumn productIDDataGridViewTextBoxColumn;

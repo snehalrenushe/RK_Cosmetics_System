@@ -66,7 +66,7 @@ namespace RK_Cosmetics_System
         private void frm_View_Employee_Details_Load(object sender, EventArgs e)
         {
             tb_Employee_ID.Focus();
-            SqlDataAdapter SDA = new SqlDataAdapter("Select Employee_ID,First_Name,Date_Of_Birth,Gender,Joining_Date,Mobile_No,Alternate_Mobile_No,Address from Employee_Details", Con);
+            SqlDataAdapter SDA = new SqlDataAdapter("Select Employee_ID,First_Name,Date_Of_Birth,Age,Gender,Joining_Date,Mobile_No,Alternate_Mobile_No,Address from Employee_Details", Con);
 
             DataTable dt = new DataTable();
 

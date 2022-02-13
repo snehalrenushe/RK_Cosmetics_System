@@ -88,8 +88,7 @@ namespace RK_Cosmetics_System
 
         private void btn_Save_Click_1(object sender, EventArgs e)
         {
-            try
-            {
+           
                 Con_Open();
                 string Stat = " ";
 
@@ -125,11 +124,6 @@ namespace RK_Cosmetics_System
                 }
 
                 Con_Close();
-            }
-            catch (Exception Ex)
-            {
-                MessageBox.Show(Ex.Message);
-            }
             
         }
 

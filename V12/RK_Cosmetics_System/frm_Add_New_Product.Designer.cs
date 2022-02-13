@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.gb_Product_Details = new System.Windows.Forms.GroupBox();
-            this.Warn_Selling_Price = new System.Windows.Forms.Label();
             this.dtp_Date = new System.Windows.Forms.DateTimePicker();
             this.lbl_Date = new System.Windows.Forms.Label();
             this.tb_Product_Name = new System.Windows.Forms.TextBox();
@@ -58,7 +57,6 @@
             // gb_Product_Details
             // 
             this.gb_Product_Details.BackColor = System.Drawing.Color.LavenderBlush;
-            this.gb_Product_Details.Controls.Add(this.Warn_Selling_Price);
             this.gb_Product_Details.Controls.Add(this.dtp_Date);
             this.gb_Product_Details.Controls.Add(this.lbl_Date);
             this.gb_Product_Details.Controls.Add(this.tb_Product_Name);
@@ -86,18 +84,6 @@
             this.gb_Product_Details.TabIndex = 2;
             this.gb_Product_Details.TabStop = false;
             this.gb_Product_Details.Text = "Product Details";
-            // 
-            // Warn_Selling_Price
-            // 
-            this.Warn_Selling_Price.AutoSize = true;
-            this.Warn_Selling_Price.Font = new System.Drawing.Font("Mongolian Baiti", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Warn_Selling_Price.ForeColor = System.Drawing.Color.Red;
-            this.Warn_Selling_Price.Location = new System.Drawing.Point(677, 493);
-            this.Warn_Selling_Price.Name = "Warn_Selling_Price";
-            this.Warn_Selling_Price.Size = new System.Drawing.Size(84, 21);
-            this.Warn_Selling_Price.TabIndex = 38;
-            this.Warn_Selling_Price.Text = "Required";
-            this.Warn_Selling_Price.Visible = false;
             // 
             // dtp_Date
             // 
@@ -393,6 +379,5 @@
         private System.Windows.Forms.TextBox tb_Product_Name;
         private System.Windows.Forms.DateTimePicker dtp_Date;
         private System.Windows.Forms.Label lbl_Date;
-        private System.Windows.Forms.Label Warn_Selling_Price;
     }
 }

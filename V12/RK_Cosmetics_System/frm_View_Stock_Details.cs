@@ -102,15 +102,35 @@ namespace RK_Cosmetics_System
 
         private void frm_View_Stock_Details_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dB_RK_Cosmetics_SystemDataSet3.Stock_Details' table. You can move, or remove it, as needed.
-            //this.stock_DetailsTableAdapter.Fill(this.dB_RK_Cosmetics_SystemDataSet3.Stock_Details);
-            btn_Search.Enabled = true;
+            cb_Brand_Name.Text = "";
+            cb_Product_Name.Text = "";
+            cb_Brand_Name.Focus();
+
+            SqlDataAdapter SDA = new SqlDataAdapter("Select P.Product_ID,P.Brand_Name,P.Product_Name,S.Manufacturing_Date,S.Expiry_Date,S.New_Stock From Product_Details P INNER JOIN Product_Stock_Details S ON P.Product_ID = S.Product_ID", Con);
+
+            DataTable dt = new DataTable();
+
+            SDA.Fill(dt);
+
+            dgv_View_Stock_Details.DataSource = dt;
+
+            btn_Search.Enabled = false;
+            cb_Brand_Name.Enabled = true;
             Clear_Control();
         }
 
         private void btn_Search_Click(object sender, EventArgs e)
         {
-            
+            SqlDataAdapter SDA = new SqlDataAdapter("Select P.Product_ID,P.Brand_Name,P.Product_Name,S.Manufacturing_Date,S.Expiry_Date,S.New_Stock From Product_Details P INNER JOIN Product_Stock_Details S ON P.Product_ID = S.Product_ID where Brand_Name = '" + cb_Brand_Name.Text + "' And Product_Name = '" + cb_Product_Name.Text + "'", Con);
+
+            DataTable dt = new DataTable();
+
+            SDA.Fill(dt);
+
+            dgv_View_Stock_Details.DataSource = dt;
+
+            cb_Product_Name.Text = "";
+            cb_Brand_Name.Text = "";
         }
 
         private void cb_Brand_Name_SelectedIndexChanged(object sender, EventArgs e)
@@ -127,9 +147,10 @@ namespace RK_Cosmetics_System
         {
             cb_Brand_Name.Text = "";
             cb_Product_Name.Text = "";
+
             cb_Brand_Name.Focus();
 
-            SqlDataAdapter SDA = new SqlDataAdapter("Select * from Product_Details", Con);
+            SqlDataAdapter SDA = new SqlDataAdapter("Select P.Product_ID,P.Brand_Name,P.Product_Name,S.Manufacturing_Date,S.Expiry_Date,S.New_Stock From Product_Details P INNER JOIN Product_Stock_Details S ON P.Product_ID = S.Product_ID", Con);
 
             DataTable dt = new DataTable();
 

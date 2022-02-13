@@ -100,7 +100,6 @@ namespace RK_Cosmetics_System
 
             Obj.Dispose();
             Con_Close();
-
         }
 
         private void cb_Product_Name_SelectedIndexChanged(object sender, EventArgs e)
@@ -187,7 +186,6 @@ namespace RK_Cosmetics_System
                 }
 
                 Con_Close();
-       
             }
             catch (Exception Ex)
             {

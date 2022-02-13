@@ -223,7 +223,7 @@ namespace RK_Cosmetics_System
 
                 Cmd.Connection = Con;
 
-                Cmd.CommandText = "Insert into Employee_Details (Employee_ID,First_Name,Middle_Name,Last_Name,Date_Of_Birth,Gender,Joining_Date,Mobile_No,Alternate_Mobile_No,Aadhar_No,Pan_No,Email_ID,Address) VALUES (@Emp_ID,@F_Name,@M_Name,@L_Name,@DOB,'" + Gender + "',@J_Date,@Mob1,@Mob2,@Aadhar_No,@Pan_No,@email,@Add)";
+                Cmd.CommandText = "Insert into Employee_Details (Employee_ID,First_Name,Middle_Name,Last_Name,Date_Of_Birth,Age,Gender,Joining_Date,Mobile_No,Alternate_Mobile_No,Aadhar_No,Pan_No,Email_ID,Address) VALUES (@Emp_ID,@F_Name,@M_Name,@L_Name,@DOB,@Age,'" + Gender + "',@J_Date,@Mob1,@Mob2,@Aadhar_No,@Pan_No,@email,@Add)";
 
                 Cmd.Parameters.Add("Emp_ID", SqlDbType.Int).Value = tb_Employee_ID.Text;
                 Cmd.Parameters.Add("F_Name", SqlDbType.VarChar).Value = tb_First_Name.Text;
@@ -237,6 +237,7 @@ namespace RK_Cosmetics_System
                 Cmd.Parameters.Add("Aadhar_No", SqlDbType.NVarChar).Value = tb_Aadhar_No.Text;
                 Cmd.Parameters.Add("Pan_No", SqlDbType.NVarChar).Value = tb_Pan_No.Text;
                 Cmd.Parameters.Add("Add", SqlDbType.NVarChar).Value = tb_Address.Text;
+                Cmd.Parameters.Add("Age",SqlDbType.Int).Value = tb_Age.Text;
 
                 if (tb_Alternate_Mobile_No.Text != "")
                 {
