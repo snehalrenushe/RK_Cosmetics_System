@@ -47,9 +47,9 @@
             this.lbl_Price = new System.Windows.Forms.Label();
             this.lbl_GST_Applied = new System.Windows.Forms.Label();
             this.tb_Quantity = new System.Windows.Forms.TextBox();
-            this.tb_Net_Weight = new System.Windows.Forms.TextBox();
+            this.tb_Per_Price = new System.Windows.Forms.TextBox();
             this.lbl_Quantity = new System.Windows.Forms.Label();
-            this.lbl_Net_Weight = new System.Windows.Forms.Label();
+            this.lbl_Per_Price = new System.Windows.Forms.Label();
             this.lbl_Product_Name = new System.Windows.Forms.Label();
             this.lbl_Brand_Name = new System.Windows.Forms.Label();
             this.gb_Bill_Details = new System.Windows.Forms.GroupBox();
@@ -183,9 +183,9 @@
             this.gb_Purchase_Details.Controls.Add(this.lbl_Price);
             this.gb_Purchase_Details.Controls.Add(this.lbl_GST_Applied);
             this.gb_Purchase_Details.Controls.Add(this.tb_Quantity);
-            this.gb_Purchase_Details.Controls.Add(this.tb_Net_Weight);
+            this.gb_Purchase_Details.Controls.Add(this.tb_Per_Price);
             this.gb_Purchase_Details.Controls.Add(this.lbl_Quantity);
-            this.gb_Purchase_Details.Controls.Add(this.lbl_Net_Weight);
+            this.gb_Purchase_Details.Controls.Add(this.lbl_Per_Price);
             this.gb_Purchase_Details.Controls.Add(this.lbl_Product_Name);
             this.gb_Purchase_Details.Controls.Add(this.lbl_Brand_Name);
             this.gb_Purchase_Details.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -291,15 +291,15 @@
             this.tb_Quantity.Size = new System.Drawing.Size(301, 40);
             this.tb_Quantity.TabIndex = 8;
             // 
-            // tb_Net_Weight
+            // tb_Per_Price
             // 
-            this.tb_Net_Weight.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_Net_Weight.Location = new System.Drawing.Point(399, 152);
-            this.tb_Net_Weight.MaxLength = 15;
-            this.tb_Net_Weight.Multiline = true;
-            this.tb_Net_Weight.Name = "tb_Net_Weight";
-            this.tb_Net_Weight.Size = new System.Drawing.Size(301, 40);
-            this.tb_Net_Weight.TabIndex = 7;
+            this.tb_Per_Price.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Per_Price.Location = new System.Drawing.Point(399, 152);
+            this.tb_Per_Price.MaxLength = 15;
+            this.tb_Per_Price.Multiline = true;
+            this.tb_Per_Price.Name = "tb_Per_Price";
+            this.tb_Per_Price.Size = new System.Drawing.Size(301, 40);
+            this.tb_Per_Price.TabIndex = 7;
             // 
             // lbl_Quantity
             // 
@@ -313,17 +313,17 @@
             this.lbl_Quantity.TabIndex = 20;
             this.lbl_Quantity.Text = "Quantity";
             // 
-            // lbl_Net_Weight
+            // lbl_Per_Price
             // 
-            this.lbl_Net_Weight.AutoSize = true;
-            this.lbl_Net_Weight.BackColor = System.Drawing.Color.Pink;
-            this.lbl_Net_Weight.Font = new System.Drawing.Font("Microsoft YaHei", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Net_Weight.ForeColor = System.Drawing.Color.Maroon;
-            this.lbl_Net_Weight.Location = new System.Drawing.Point(135, 147);
-            this.lbl_Net_Weight.Name = "lbl_Net_Weight";
-            this.lbl_Net_Weight.Size = new System.Drawing.Size(169, 36);
-            this.lbl_Net_Weight.TabIndex = 19;
-            this.lbl_Net_Weight.Text = "Net Weight";
+            this.lbl_Per_Price.AutoSize = true;
+            this.lbl_Per_Price.BackColor = System.Drawing.Color.Pink;
+            this.lbl_Per_Price.Font = new System.Drawing.Font("Microsoft YaHei", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Per_Price.ForeColor = System.Drawing.Color.Maroon;
+            this.lbl_Per_Price.Location = new System.Drawing.Point(135, 147);
+            this.lbl_Per_Price.Name = "lbl_Per_Price";
+            this.lbl_Per_Price.Size = new System.Drawing.Size(169, 36);
+            this.lbl_Per_Price.TabIndex = 19;
+            this.lbl_Per_Price.Text = "Net Weight";
             // 
             // lbl_Product_Name
             // 
@@ -511,9 +511,9 @@
         private System.Windows.Forms.Label lbl_Price;
         private System.Windows.Forms.Label lbl_GST_Applied;
         private System.Windows.Forms.TextBox tb_Quantity;
-        private System.Windows.Forms.TextBox tb_Net_Weight;
+        private System.Windows.Forms.TextBox tb_Per_Price;
         private System.Windows.Forms.Label lbl_Quantity;
-        private System.Windows.Forms.Label lbl_Net_Weight;
+        private System.Windows.Forms.Label lbl_Per_Price;
         private System.Windows.Forms.Label lbl_Product_Name;
         private System.Windows.Forms.Label lbl_Brand_Name;
         private System.Windows.Forms.ComboBox cb_Product_Name;
