@@ -27,6 +27,14 @@ namespace RK_Cosmetics_System
             }
         }
 
+        void Con_Close()
+        {
+            if (Con.State != ConnectionState.Open)
+            {
+                Con.Close();
+            }
+        }
+
         void Clear_Controls()
         {
 
@@ -34,7 +42,7 @@ namespace RK_Cosmetics_System
 
         private void btn_Add_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btn_Refresh_Click(object sender, EventArgs e)
