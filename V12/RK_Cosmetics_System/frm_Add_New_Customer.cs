@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace RK_Cosmetics_System
 {
@@ -14,6 +15,16 @@ namespace RK_Cosmetics_System
         public frm_Add_New_Customer()
         {
             InitializeComponent();
+        }
+
+        SqlConnection Con = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=DB_RK_Cosmetics_System;Integrated Security=True");
+
+        void Con_Open()
+        {
+            if (Con.State != ConnectionState.Closed)
+            {
+                Con.Open();                
+            }
         }
 
         void Clear_Controls()
