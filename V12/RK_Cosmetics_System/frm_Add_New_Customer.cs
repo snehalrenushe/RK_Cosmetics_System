@@ -40,14 +40,25 @@ namespace RK_Cosmetics_System
 
         }
 
-        private void btn_Add_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void btn_Refresh_Click(object sender, EventArgs e)
         {
             Clear_Controls();
+        }
+
+        private void btn_Add_Click(object sender, EventArgs e)
+        {
+            Con_Open();
+
+
+            Con_Close();
+        }
+
+        private void btn_Save_Click(object sender, EventArgs e)
+        {
+            Con_Open();
+
+
+            Con_Close();
         }
     }
 }
