@@ -220,6 +220,7 @@
             this.btn_Add.TabIndex = 11;
             this.btn_Add.Text = "Add";
             this.btn_Add.UseVisualStyleBackColor = false;
+            this.btn_Add.Click += new System.EventHandler(this.btn_Add_Click);
             // 
             // cb_Product_Name
             // 
@@ -468,6 +469,7 @@
             this.btn_Refresh.TabIndex = 16;
             this.btn_Refresh.Text = "Refresh";
             this.btn_Refresh.UseVisualStyleBackColor = false;
+            this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
             // 
             // frm_Add_New_Customer
             // 

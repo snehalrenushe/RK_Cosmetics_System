@@ -15,5 +15,20 @@ namespace RK_Cosmetics_System
         {
             InitializeComponent();
         }
+
+        void Clear_Controls()
+        {
+
+        }
+
+        private void btn_Add_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Refresh_Click(object sender, EventArgs e)
+        {
+            Clear_Controls();
+        }
     }
 }
