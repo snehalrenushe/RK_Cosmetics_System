@@ -49,14 +49,12 @@ namespace RK_Cosmetics_System
         {
             Con_Open();
 
-
             Con_Close();
         }
 
         private void btn_Save_Click(object sender, EventArgs e)
         {
             Con_Open();
-
 
             Con_Close();
         }
