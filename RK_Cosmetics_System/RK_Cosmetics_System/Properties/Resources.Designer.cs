@@ -59,15 +59,5 @@ namespace RK_Cosmetics_System.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap angle_down_solid {
-            get {
-                object obj = ResourceManager.GetObject("angle-down-solid", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }

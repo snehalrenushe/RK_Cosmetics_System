@@ -350,7 +350,7 @@
             this.pnl_Child.Controls.Add(this.sliderimg);
             this.pnl_Child.Location = new System.Drawing.Point(-2, 121);
             this.pnl_Child.Name = "pnl_Child";
-            this.pnl_Child.Size = new System.Drawing.Size(1928, 926);
+            this.pnl_Child.Size = new System.Drawing.Size(1928, 912);
             this.pnl_Child.TabIndex = 10;
             this.pnl_Child.Visible = false;
             this.pnl_Child.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_Child_Paint);
@@ -606,6 +606,7 @@
             this.btn_View_Product_List.TabIndex = 10;
             this.btn_View_Product_List.Text = "View Product List";
             this.btn_View_Product_List.UseVisualStyleBackColor = true;
+            this.btn_View_Product_List.Click += new System.EventHandler(this.btn_View_Product_List_Click);
             // 
             // btn_Update_Product_Details
             // 
@@ -621,6 +622,7 @@
             this.btn_Update_Product_Details.TabIndex = 9;
             this.btn_Update_Product_Details.Text = "Update Product Details";
             this.btn_Update_Product_Details.UseVisualStyleBackColor = true;
+            this.btn_Update_Product_Details.Click += new System.EventHandler(this.btn_Update_Product_Details_Click);
             // 
             // btn_Add_New_Product
             // 

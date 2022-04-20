@@ -200,11 +200,16 @@ namespace RK_Cosmetics_System
             pnl_Update_Submenu.Visible = false;
         }
 
-        private void btn_Add_New_Product_Click(object sender, EventArgs e)
+        private void btn_Home_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new frm_Add_New_Product());
+            MDI m = new MDI();
+            this.Hide();
+            m.Show();
+        }
 
-            pnl_Main.Visible = false;
+        private void pnl_Child_Paint(object sender, PaintEventArgs e)
+        {
+            this.BackColor = Color.FromArgb(26, 26, 26);
         }
 
         private Form activeForm = null;
@@ -225,16 +230,25 @@ namespace RK_Cosmetics_System
             ChildForm.Show();
         }
 
-        private void btn_Home_Click(object sender, EventArgs e)
+        private void btn_Add_New_Product_Click(object sender, EventArgs e)
         {
-            MDI m = new MDI();
-            this.Hide();
-            m.Show();
+            OpenChildForm(new frm_Add_New_Product());
+
+            pnl_Main.Visible = false;
         }
 
-        private void pnl_Child_Paint(object sender, PaintEventArgs e)
+        private void btn_Update_Product_Details_Click(object sender, EventArgs e)
         {
-            this.BackColor = Color.FromArgb(26,26,26);
+            OpenChildForm(new frm_Update_Product_Details());
+
+            pnl_Main.Visible = false;
+        }
+
+        private void btn_View_Product_List_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frm_View_Product_List());
+
+            pnl_Main.Visible = false;
         }
     }
 }
