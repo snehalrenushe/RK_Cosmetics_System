@@ -30,6 +30,8 @@
         {
             this.lbl_Add_New_Product = new System.Windows.Forms.Label();
             this.pnl_Product_Back = new System.Windows.Forms.Panel();
+            this.btn_Refresh = new System.Windows.Forms.Button();
+            this.btn_Save = new System.Windows.Forms.Button();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.cb_Distributor_Name = new System.Windows.Forms.ComboBox();
             this.lbl_Description = new System.Windows.Forms.Label();
@@ -38,8 +40,10 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.lbl_Purchase_Price = new System.Windows.Forms.Label();
             this.tb_Selling_Price = new System.Windows.Forms.TextBox();
+            this.lbl_For_Date = new System.Windows.Forms.Label();
             this.tb_Purchase_Price = new System.Windows.Forms.TextBox();
             this.lbl_Selling_Price = new System.Windows.Forms.Label();
+            this.lbl_Date = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.lbl_GST = new System.Windows.Forms.Label();
             this.lbl_Stock = new System.Windows.Forms.Label();
@@ -52,10 +56,6 @@
             this.lbl_Product_Name = new System.Windows.Forms.Label();
             this.tb_Product_Name = new System.Windows.Forms.TextBox();
             this.cb_Brand_Name = new System.Windows.Forms.ComboBox();
-            this.lbl_Date = new System.Windows.Forms.Label();
-            this.btn_Save = new System.Windows.Forms.Button();
-            this.btn_Refresh = new System.Windows.Forms.Button();
-            this.lbl_For_Date = new System.Windows.Forms.Label();
             this.pnl_Product_Back.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -83,11 +83,38 @@
             this.pnl_Product_Back.Controls.Add(this.tableLayoutPanel2);
             this.pnl_Product_Back.Controls.Add(this.tableLayoutPanel3);
             this.pnl_Product_Back.Controls.Add(this.tableLayoutPanel1);
+            this.pnl_Product_Back.ForeColor = System.Drawing.Color.White;
             this.pnl_Product_Back.Location = new System.Drawing.Point(114, 90);
             this.pnl_Product_Back.Name = "pnl_Product_Back";
             this.pnl_Product_Back.Size = new System.Drawing.Size(1712, 790);
             this.pnl_Product_Back.TabIndex = 1;
             this.pnl_Product_Back.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_Product_Back_Paint);
+            // 
+            // btn_Refresh
+            // 
+            this.btn_Refresh.FlatAppearance.BorderSize = 0;
+            this.btn_Refresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Refresh.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16F);
+            this.btn_Refresh.ForeColor = System.Drawing.Color.White;
+            this.btn_Refresh.Location = new System.Drawing.Point(1002, 662);
+            this.btn_Refresh.Name = "btn_Refresh";
+            this.btn_Refresh.Size = new System.Drawing.Size(173, 54);
+            this.btn_Refresh.TabIndex = 11;
+            this.btn_Refresh.Text = "Refresh";
+            this.btn_Refresh.UseVisualStyleBackColor = true;
+            // 
+            // btn_Save
+            // 
+            this.btn_Save.FlatAppearance.BorderSize = 0;
+            this.btn_Save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Save.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16F);
+            this.btn_Save.ForeColor = System.Drawing.Color.White;
+            this.btn_Save.Location = new System.Drawing.Point(558, 662);
+            this.btn_Save.Name = "btn_Save";
+            this.btn_Save.Size = new System.Drawing.Size(131, 54);
+            this.btn_Save.TabIndex = 10;
+            this.btn_Save.Text = "Save";
+            this.btn_Save.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel4
             // 
@@ -113,7 +140,7 @@
             this.cb_Distributor_Name.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cb_Distributor_Name.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14F);
             this.cb_Distributor_Name.FormattingEnabled = true;
-            this.cb_Distributor_Name.Location = new System.Drawing.Point(3, 47);
+            this.cb_Distributor_Name.Location = new System.Drawing.Point(3, 46);
             this.cb_Distributor_Name.Name = "cb_Distributor_Name";
             this.cb_Distributor_Name.Size = new System.Drawing.Size(299, 40);
             this.cb_Distributor_Name.TabIndex = 9;
@@ -122,7 +149,7 @@
             // 
             this.lbl_Description.AutoSize = true;
             this.lbl_Description.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Description.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.lbl_Description.ForeColor = System.Drawing.Color.White;
             this.lbl_Description.Location = new System.Drawing.Point(487, 0);
             this.lbl_Description.Name = "lbl_Description";
             this.lbl_Description.Size = new System.Drawing.Size(147, 28);
@@ -133,7 +160,7 @@
             // 
             this.lbl_Distributor_Name.AutoSize = true;
             this.lbl_Distributor_Name.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Distributor_Name.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.lbl_Distributor_Name.ForeColor = System.Drawing.Color.White;
             this.lbl_Distributor_Name.Location = new System.Drawing.Point(3, 0);
             this.lbl_Distributor_Name.Name = "lbl_Distributor_Name";
             this.lbl_Distributor_Name.Size = new System.Drawing.Size(211, 28);
@@ -145,7 +172,7 @@
             this.tb_Description.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tb_Description.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Description.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.tb_Description.Location = new System.Drawing.Point(487, 47);
+            this.tb_Description.Location = new System.Drawing.Point(487, 46);
             this.tb_Description.Multiline = true;
             this.tb_Description.Name = "tb_Description";
             this.tb_Description.Size = new System.Drawing.Size(299, 134);
@@ -158,7 +185,7 @@
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.42826F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.57174F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 419F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 420F));
             this.tableLayoutPanel2.Controls.Add(this.lbl_Purchase_Price, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.tb_Selling_Price, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.lbl_For_Date, 2, 1);
@@ -178,7 +205,7 @@
             // 
             this.lbl_Purchase_Price.AutoSize = true;
             this.lbl_Purchase_Price.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Purchase_Price.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.lbl_Purchase_Price.ForeColor = System.Drawing.Color.White;
             this.lbl_Purchase_Price.Location = new System.Drawing.Point(3, 0);
             this.lbl_Purchase_Price.Name = "lbl_Purchase_Price";
             this.lbl_Purchase_Price.Size = new System.Drawing.Size(190, 28);
@@ -190,13 +217,25 @@
             this.tb_Selling_Price.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tb_Selling_Price.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Selling_Price.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.tb_Selling_Price.Location = new System.Drawing.Point(474, 42);
+            this.tb_Selling_Price.Location = new System.Drawing.Point(473, 42);
             this.tb_Selling_Price.Multiline = true;
             this.tb_Selling_Price.Name = "tb_Selling_Price";
             this.tb_Selling_Price.Size = new System.Drawing.Size(299, 41);
             this.tb_Selling_Price.TabIndex = 7;
             this.tb_Selling_Price.Text = "Ex.1500 Rs.";
             this.tb_Selling_Price.Click += new System.EventHandler(this.tb_Selling_Price_Click);
+            // 
+            // lbl_For_Date
+            // 
+            this.lbl_For_Date.AutoSize = true;
+            this.lbl_For_Date.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F);
+            this.lbl_For_Date.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.lbl_For_Date.Location = new System.Drawing.Point(936, 39);
+            this.lbl_For_Date.Name = "lbl_For_Date";
+            this.lbl_For_Date.Padding = new System.Windows.Forms.Padding(8);
+            this.lbl_For_Date.Size = new System.Drawing.Size(99, 44);
+            this.lbl_For_Date.TabIndex = 13;
+            this.lbl_For_Date.Text = "label1";
             // 
             // tb_Purchase_Price
             // 
@@ -215,12 +254,23 @@
             // 
             this.lbl_Selling_Price.AutoSize = true;
             this.lbl_Selling_Price.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Selling_Price.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.lbl_Selling_Price.Location = new System.Drawing.Point(474, 0);
+            this.lbl_Selling_Price.ForeColor = System.Drawing.Color.White;
+            this.lbl_Selling_Price.Location = new System.Drawing.Point(473, 0);
             this.lbl_Selling_Price.Name = "lbl_Selling_Price";
             this.lbl_Selling_Price.Size = new System.Drawing.Size(160, 28);
             this.lbl_Selling_Price.TabIndex = 6;
             this.lbl_Selling_Price.Text = "Selling Price";
+            // 
+            // lbl_Date
+            // 
+            this.lbl_Date.AutoSize = true;
+            this.lbl_Date.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Date.ForeColor = System.Drawing.Color.White;
+            this.lbl_Date.Location = new System.Drawing.Point(936, 0);
+            this.lbl_Date.Name = "lbl_Date";
+            this.lbl_Date.Size = new System.Drawing.Size(66, 28);
+            this.lbl_Date.TabIndex = 8;
+            this.lbl_Date.Text = "Date";
             // 
             // tableLayoutPanel3
             // 
@@ -244,8 +294,8 @@
             // 
             this.lbl_GST.AutoSize = true;
             this.lbl_GST.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_GST.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.lbl_GST.Location = new System.Drawing.Point(486, 0);
+            this.lbl_GST.ForeColor = System.Drawing.Color.White;
+            this.lbl_GST.Location = new System.Drawing.Point(485, 0);
             this.lbl_GST.Name = "lbl_GST";
             this.lbl_GST.Size = new System.Drawing.Size(62, 28);
             this.lbl_GST.TabIndex = 4;
@@ -255,7 +305,7 @@
             // 
             this.lbl_Stock.AutoSize = true;
             this.lbl_Stock.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Stock.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.lbl_Stock.ForeColor = System.Drawing.Color.White;
             this.lbl_Stock.Location = new System.Drawing.Point(3, 0);
             this.lbl_Stock.Name = "lbl_Stock";
             this.lbl_Stock.Size = new System.Drawing.Size(78, 28);
@@ -267,7 +317,7 @@
             this.tb_GST.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tb_GST.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_GST.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.tb_GST.Location = new System.Drawing.Point(486, 42);
+            this.tb_GST.Location = new System.Drawing.Point(485, 42);
             this.tb_GST.Multiline = true;
             this.tb_GST.Name = "tb_GST";
             this.tb_GST.Size = new System.Drawing.Size(299, 41);
@@ -293,7 +343,7 @@
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.48129F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.51871F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 420F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 421F));
             this.tableLayoutPanel1.Controls.Add(this.tb_Product_ID, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.lbl_Product_ID, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.lbl_Brand_Name, 1, 0);
@@ -314,7 +364,7 @@
             this.tb_Product_ID.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tb_Product_ID.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Product_ID.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.tb_Product_ID.Location = new System.Drawing.Point(936, 42);
+            this.tb_Product_ID.Location = new System.Drawing.Point(935, 42);
             this.tb_Product_ID.Multiline = true;
             this.tb_Product_ID.Name = "tb_Product_ID";
             this.tb_Product_ID.Size = new System.Drawing.Size(299, 41);
@@ -326,8 +376,8 @@
             // 
             this.lbl_Product_ID.AutoSize = true;
             this.lbl_Product_ID.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Product_ID.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.lbl_Product_ID.Location = new System.Drawing.Point(936, 0);
+            this.lbl_Product_ID.ForeColor = System.Drawing.Color.White;
+            this.lbl_Product_ID.Location = new System.Drawing.Point(935, 0);
             this.lbl_Product_ID.Name = "lbl_Product_ID";
             this.lbl_Product_ID.Size = new System.Drawing.Size(136, 28);
             this.lbl_Product_ID.TabIndex = 6;
@@ -337,8 +387,8 @@
             // 
             this.lbl_Brand_Name.AutoSize = true;
             this.lbl_Brand_Name.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Brand_Name.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.lbl_Brand_Name.Location = new System.Drawing.Point(474, 0);
+            this.lbl_Brand_Name.ForeColor = System.Drawing.Color.White;
+            this.lbl_Brand_Name.Location = new System.Drawing.Point(473, 0);
             this.lbl_Brand_Name.Name = "lbl_Brand_Name";
             this.lbl_Brand_Name.Size = new System.Drawing.Size(156, 28);
             this.lbl_Brand_Name.TabIndex = 4;
@@ -348,7 +398,7 @@
             // 
             this.lbl_Product_Name.AutoSize = true;
             this.lbl_Product_Name.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Product_Name.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.lbl_Product_Name.ForeColor = System.Drawing.Color.White;
             this.lbl_Product_Name.Location = new System.Drawing.Point(3, 0);
             this.lbl_Product_Name.Name = "lbl_Product_Name";
             this.lbl_Product_Name.Size = new System.Drawing.Size(177, 28);
@@ -382,59 +432,10 @@
             "klj",
             "kj",
             "iu"});
-            this.cb_Brand_Name.Location = new System.Drawing.Point(474, 42);
+            this.cb_Brand_Name.Location = new System.Drawing.Point(473, 42);
             this.cb_Brand_Name.Name = "cb_Brand_Name";
             this.cb_Brand_Name.Size = new System.Drawing.Size(299, 40);
             this.cb_Brand_Name.TabIndex = 8;
-            // 
-            // lbl_Date
-            // 
-            this.lbl_Date.AutoSize = true;
-            this.lbl_Date.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Date.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.lbl_Date.Location = new System.Drawing.Point(937, 0);
-            this.lbl_Date.Name = "lbl_Date";
-            this.lbl_Date.Size = new System.Drawing.Size(66, 28);
-            this.lbl_Date.TabIndex = 8;
-            this.lbl_Date.Text = "Date";
-            // 
-            // btn_Save
-            // 
-            this.btn_Save.FlatAppearance.BorderSize = 0;
-            this.btn_Save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Save.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16F);
-            this.btn_Save.ForeColor = System.Drawing.Color.White;
-            this.btn_Save.Location = new System.Drawing.Point(558, 662);
-            this.btn_Save.Name = "btn_Save";
-            this.btn_Save.Size = new System.Drawing.Size(131, 54);
-            this.btn_Save.TabIndex = 10;
-            this.btn_Save.Text = "Save";
-            this.btn_Save.UseVisualStyleBackColor = true;
-            // 
-            // btn_Refresh
-            // 
-            this.btn_Refresh.FlatAppearance.BorderSize = 0;
-            this.btn_Refresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Refresh.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16F);
-            this.btn_Refresh.ForeColor = System.Drawing.Color.White;
-            this.btn_Refresh.Location = new System.Drawing.Point(1002, 662);
-            this.btn_Refresh.Name = "btn_Refresh";
-            this.btn_Refresh.Size = new System.Drawing.Size(173, 54);
-            this.btn_Refresh.TabIndex = 11;
-            this.btn_Refresh.Text = "Refresh";
-            this.btn_Refresh.UseVisualStyleBackColor = true;
-            // 
-            // lbl_For_Date
-            // 
-            this.lbl_For_Date.AutoSize = true;
-            this.lbl_For_Date.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F);
-            this.lbl_For_Date.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.lbl_For_Date.Location = new System.Drawing.Point(937, 39);
-            this.lbl_For_Date.Name = "lbl_For_Date";
-            this.lbl_For_Date.Padding = new System.Windows.Forms.Padding(8);
-            this.lbl_For_Date.Size = new System.Drawing.Size(99, 44);
-            this.lbl_For_Date.TabIndex = 13;
-            this.lbl_For_Date.Text = "label1";
             // 
             // frm_Add_New_Product
             // 

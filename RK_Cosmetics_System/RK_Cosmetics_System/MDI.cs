@@ -250,5 +250,16 @@ namespace RK_Cosmetics_System
 
             pnl_Main.Visible = false;
         }
+
+        private void btn_Customer_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frm_Add_New_Customer());
+
+            pnl_Main.Visible = false;
+
+            pnl_New_Submenu.Visible = false;
+
+            pnl_Update_Submenu.Visible = false;
+        }
     }
 }

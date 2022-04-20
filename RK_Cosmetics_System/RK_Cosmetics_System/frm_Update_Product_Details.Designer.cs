@@ -122,7 +122,7 @@
             // 
             this.lbl_Product_Name.AutoSize = true;
             this.lbl_Product_Name.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Product_Name.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.lbl_Product_Name.ForeColor = System.Drawing.Color.White;
             this.lbl_Product_Name.Location = new System.Drawing.Point(575, 0);
             this.lbl_Product_Name.Name = "lbl_Product_Name";
             this.lbl_Product_Name.Size = new System.Drawing.Size(183, 28);
@@ -157,7 +157,7 @@
             // 
             this.lbl_Brand_Name.AutoSize = true;
             this.lbl_Brand_Name.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Brand_Name.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.lbl_Brand_Name.ForeColor = System.Drawing.Color.White;
             this.lbl_Brand_Name.Location = new System.Drawing.Point(3, 0);
             this.lbl_Brand_Name.Name = "lbl_Brand_Name";
             this.lbl_Brand_Name.Size = new System.Drawing.Size(156, 28);
@@ -199,7 +199,7 @@
             // 
             this.lbl_Purchase_Price.AutoSize = true;
             this.lbl_Purchase_Price.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Purchase_Price.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.lbl_Purchase_Price.ForeColor = System.Drawing.Color.White;
             this.lbl_Purchase_Price.Location = new System.Drawing.Point(3, 0);
             this.lbl_Purchase_Price.Name = "lbl_Purchase_Price";
             this.lbl_Purchase_Price.Size = new System.Drawing.Size(190, 28);
@@ -234,7 +234,7 @@
             // 
             this.lbl_Selling_Price.AutoSize = true;
             this.lbl_Selling_Price.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Selling_Price.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.lbl_Selling_Price.ForeColor = System.Drawing.Color.White;
             this.lbl_Selling_Price.Location = new System.Drawing.Point(577, 0);
             this.lbl_Selling_Price.Name = "lbl_Selling_Price";
             this.lbl_Selling_Price.Size = new System.Drawing.Size(160, 28);
@@ -262,7 +262,7 @@
             // 
             this.lbl_Description.AutoSize = true;
             this.lbl_Description.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Description.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.lbl_Description.ForeColor = System.Drawing.Color.White;
             this.lbl_Description.Location = new System.Drawing.Point(577, 0);
             this.lbl_Description.Name = "lbl_Description";
             this.lbl_Description.Size = new System.Drawing.Size(147, 28);
@@ -273,7 +273,7 @@
             // 
             this.lbl_Stock.AutoSize = true;
             this.lbl_Stock.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Stock.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.lbl_Stock.ForeColor = System.Drawing.Color.White;
             this.lbl_Stock.Location = new System.Drawing.Point(3, 0);
             this.lbl_Stock.Name = "lbl_Stock";
             this.lbl_Stock.Size = new System.Drawing.Size(78, 28);
@@ -323,7 +323,7 @@
             // 
             this.lbl_Product_ID.AutoSize = true;
             this.lbl_Product_ID.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Product_ID.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.lbl_Product_ID.ForeColor = System.Drawing.Color.White;
             this.lbl_Product_ID.Location = new System.Drawing.Point(3, 0);
             this.lbl_Product_ID.Name = "lbl_Product_ID";
             this.lbl_Product_ID.Size = new System.Drawing.Size(136, 28);
@@ -361,6 +361,7 @@
             this.Controls.Add(this.lbl_Update_Product_Details);
             this.Controls.Add(this.pnl_Update_Product_Back);
             this.Name = "frm_Update_Product_Details";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Update Product Details";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frm_Update_Product_Details_Load);

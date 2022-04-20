@@ -53,6 +53,7 @@ namespace RK_Cosmetics_System
 
         private void tb_Product_Name_Enter(object sender, EventArgs e)
         {
+
         }
 
         private void tb_Product_Name_Click(object sender, EventArgs e)

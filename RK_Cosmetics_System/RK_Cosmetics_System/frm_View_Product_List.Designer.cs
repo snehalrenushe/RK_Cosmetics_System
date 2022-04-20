@@ -30,15 +30,15 @@
         {
             this.lbl_View_Product_List = new System.Windows.Forms.Label();
             this.pnl_View_Product_Back = new System.Windows.Forms.Panel();
+            this.dgv_Product_List = new System.Windows.Forms.DataGridView();
             this.btn_Refresh = new System.Windows.Forms.Button();
             this.btn_Search = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.lbl_Brand_Name = new System.Windows.Forms.Label();
             this.cb_Brand_Name = new System.Windows.Forms.ComboBox();
-            this.dgv_Product_List = new System.Windows.Forms.DataGridView();
             this.pnl_View_Product_Back.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Product_List)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbl_View_Product_List
@@ -61,8 +61,17 @@
             this.pnl_View_Product_Back.Controls.Add(this.tableLayoutPanel1);
             this.pnl_View_Product_Back.Location = new System.Drawing.Point(106, 130);
             this.pnl_View_Product_Back.Name = "pnl_View_Product_Back";
-            this.pnl_View_Product_Back.Size = new System.Drawing.Size(1712, 790);
+            this.pnl_View_Product_Back.Size = new System.Drawing.Size(1712, 717);
             this.pnl_View_Product_Back.TabIndex = 2;
+            // 
+            // dgv_Product_List
+            // 
+            this.dgv_Product_List.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_Product_List.Location = new System.Drawing.Point(228, 167);
+            this.dgv_Product_List.Name = "dgv_Product_List";
+            this.dgv_Product_List.RowTemplate.Height = 28;
+            this.dgv_Product_List.Size = new System.Drawing.Size(1252, 428);
+            this.dgv_Product_List.TabIndex = 12;
             // 
             // btn_Refresh
             // 
@@ -70,7 +79,7 @@
             this.btn_Refresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Refresh.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16F);
             this.btn_Refresh.ForeColor = System.Drawing.Color.White;
-            this.btn_Refresh.Location = new System.Drawing.Point(822, 667);
+            this.btn_Refresh.Location = new System.Drawing.Point(807, 624);
             this.btn_Refresh.Name = "btn_Refresh";
             this.btn_Refresh.Size = new System.Drawing.Size(173, 54);
             this.btn_Refresh.TabIndex = 11;
@@ -109,7 +118,7 @@
             // 
             this.lbl_Brand_Name.AutoSize = true;
             this.lbl_Brand_Name.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Brand_Name.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.lbl_Brand_Name.ForeColor = System.Drawing.Color.White;
             this.lbl_Brand_Name.Location = new System.Drawing.Point(3, 0);
             this.lbl_Brand_Name.Name = "lbl_Brand_Name";
             this.lbl_Brand_Name.Size = new System.Drawing.Size(210, 37);
@@ -134,15 +143,6 @@
             this.cb_Brand_Name.Size = new System.Drawing.Size(299, 40);
             this.cb_Brand_Name.TabIndex = 8;
             // 
-            // dgv_Product_List
-            // 
-            this.dgv_Product_List.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_Product_List.Location = new System.Drawing.Point(228, 167);
-            this.dgv_Product_List.Name = "dgv_Product_List";
-            this.dgv_Product_List.RowTemplate.Height = 28;
-            this.dgv_Product_List.Size = new System.Drawing.Size(1252, 428);
-            this.dgv_Product_List.TabIndex = 12;
-            // 
             // frm_View_Product_List
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -151,13 +151,14 @@
             this.Controls.Add(this.pnl_View_Product_Back);
             this.Controls.Add(this.lbl_View_Product_List);
             this.Name = "frm_View_Product_List";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "View Product List";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frm_View_Product_List_Load);
             this.pnl_View_Product_Back.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Product_List)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_Product_List)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
