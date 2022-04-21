@@ -231,6 +231,7 @@
             this.btn_Employee.TabIndex = 9;
             this.btn_Employee.Text = "Employee";
             this.btn_Employee.UseVisualStyleBackColor = true;
+            this.btn_Employee.Click += new System.EventHandler(this.btn_Employee_Click);
             // 
             // btn_Distributor
             // 
@@ -245,6 +246,7 @@
             this.btn_Distributor.TabIndex = 10;
             this.btn_Distributor.Text = "Distributor";
             this.btn_Distributor.UseVisualStyleBackColor = true;
+            this.btn_Distributor.Click += new System.EventHandler(this.btn_Distributor_Click);
             // 
             // btn_brand
             // 
@@ -259,6 +261,7 @@
             this.btn_brand.TabIndex = 11;
             this.btn_brand.Text = "Brand";
             this.btn_brand.UseVisualStyleBackColor = true;
+            this.btn_brand.Click += new System.EventHandler(this.btn_brand_Click);
             // 
             // pnl_New_Submenu
             // 
@@ -288,6 +291,7 @@
             this.btn_Update_Employee.TabIndex = 9;
             this.btn_Update_Employee.Text = "Employee";
             this.btn_Update_Employee.UseVisualStyleBackColor = true;
+            this.btn_Update_Employee.Click += new System.EventHandler(this.btn_Update_Employee_Click);
             // 
             // btn_Update_Distributor
             // 
@@ -302,6 +306,7 @@
             this.btn_Update_Distributor.TabIndex = 10;
             this.btn_Update_Distributor.Text = "Distributor";
             this.btn_Update_Distributor.UseVisualStyleBackColor = true;
+            this.btn_Update_Distributor.Click += new System.EventHandler(this.btn_Update_Distributor_Click);
             // 
             // btn_Update_Brand
             // 
@@ -316,6 +321,7 @@
             this.btn_Update_Brand.TabIndex = 11;
             this.btn_Update_Brand.Text = "Brand";
             this.btn_Update_Brand.UseVisualStyleBackColor = true;
+            this.btn_Update_Brand.Click += new System.EventHandler(this.btn_Update_Brand_Click);
             // 
             // btn_Customer_List
             // 

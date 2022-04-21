@@ -261,5 +261,71 @@ namespace RK_Cosmetics_System
 
             pnl_Update_Submenu.Visible = false;
         }
+
+        private void btn_Employee_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frm_Add_New_Employee());
+
+            pnl_Main.Visible = false;
+
+            pnl_New_Submenu.Visible = false;
+
+            pnl_Update_Submenu.Visible = false;
+        }
+
+        private void btn_Update_Employee_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frm_Update_Employee_Details());
+
+            pnl_Main.Visible = false;
+
+            pnl_New_Submenu.Visible = false;
+
+            pnl_Update_Submenu.Visible = false;
+        }
+
+        private void btn_Distributor_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frm_Add_New_Distributor());
+
+            pnl_Main.Visible = false;
+
+            pnl_New_Submenu.Visible = false;
+
+            pnl_Update_Submenu.Visible = false;
+        }
+
+        private void btn_Update_Distributor_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frm_Update_Distributor_Details());
+
+            pnl_Main.Visible = false;
+
+            pnl_New_Submenu.Visible = false;
+
+            pnl_Update_Submenu.Visible = false;
+        }
+
+        private void btn_brand_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frm_Add_New_Brand());
+
+            pnl_Main.Visible = false;
+
+            pnl_New_Submenu.Visible = false;
+
+            pnl_Update_Submenu.Visible = false;
+        }
+
+        private void btn_Update_Brand_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frm_Update_Brand_Details());
+
+            pnl_Main.Visible = false;
+
+            pnl_New_Submenu.Visible = false;
+
+            pnl_Update_Submenu.Visible = false;
+        }
     }
 }

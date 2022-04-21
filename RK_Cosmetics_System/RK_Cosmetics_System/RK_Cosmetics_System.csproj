@@ -48,17 +48,53 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frm_Add_New_Brand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Add_New_Brand.Designer.cs">
+      <DependentUpon>frm_Add_New_Brand.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_Add_New_Customer.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_Add_New_Customer.Designer.cs">
       <DependentUpon>frm_Add_New_Customer.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_Add_New_Distributor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Add_New_Distributor.Designer.cs">
+      <DependentUpon>frm_Add_New_Distributor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Add_New_Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Add_New_Employee.Designer.cs">
+      <DependentUpon>frm_Add_New_Employee.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_Add_New_Product.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_Add_New_Product.Designer.cs">
       <DependentUpon>frm_Add_New_Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Update_Brand_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Update_Brand_Details.Designer.cs">
+      <DependentUpon>frm_Update_Brand_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Update_Distributor_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Update_Distributor_Details.Designer.cs">
+      <DependentUpon>frm_Update_Distributor_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Update_Employee_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Update_Employee_Details.Designer.cs">
+      <DependentUpon>frm_Update_Employee_Details.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_Update_Product_Details.cs">
       <SubType>Form</SubType>
@@ -80,11 +116,29 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frm_Add_New_Brand.resx">
+      <DependentUpon>frm_Add_New_Brand.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_Add_New_Customer.resx">
       <DependentUpon>frm_Add_New_Customer.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_Add_New_Distributor.resx">
+      <DependentUpon>frm_Add_New_Distributor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Add_New_Employee.resx">
+      <DependentUpon>frm_Add_New_Employee.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_Add_New_Product.resx">
       <DependentUpon>frm_Add_New_Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Update_Brand_Details.resx">
+      <DependentUpon>frm_Update_Brand_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Update_Distributor_Details.resx">
+      <DependentUpon>frm_Update_Distributor_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Update_Employee_Details.resx">
+      <DependentUpon>frm_Update_Employee_Details.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Update_Product_Details.resx">
       <DependentUpon>frm_Update_Product_Details.cs</DependentUpon>
