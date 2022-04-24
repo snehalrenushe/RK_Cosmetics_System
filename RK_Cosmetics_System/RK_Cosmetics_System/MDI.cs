@@ -327,5 +327,82 @@ namespace RK_Cosmetics_System
 
             pnl_Update_Submenu.Visible = false;
         }
+
+        private void btn_Add_New_User_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frm_Add_New_User());
+
+            pnl_Main.Visible = false;
+
+            pnl_New_Submenu.Visible = false;
+
+            pnl_Update_Submenu.Visible = false;
+        }
+
+        private void btn_Change_Password_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frm_Change_Password());
+
+            pnl_Main.Visible = false;
+
+            pnl_New_Submenu.Visible = false;
+
+            pnl_Update_Submenu.Visible = false;
+        }
+
+        private void btn_Delete_Password_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frm_Delete_User());
+
+            pnl_Main.Visible = false;
+
+            pnl_New_Submenu.Visible = false;
+
+            pnl_Update_Submenu.Visible = false;
+        }
+
+        private void btn_Add_Stock_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frm_Add_Stock());
+
+            pnl_Main.Visible = false;
+
+            pnl_New_Submenu.Visible = false;
+
+            pnl_Update_Submenu.Visible = false;
+        }
+
+        private void btn_View_Stock_List_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frm_View_Stock_List());
+
+            pnl_Main.Visible = false;
+
+            pnl_New_Submenu.Visible = false;
+
+            pnl_Update_Submenu.Visible = false;
+        }
+
+        private void btn_Add_New_Expenses_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frm_Add_Expenses());
+
+            pnl_Main.Visible = false;
+
+            pnl_New_Submenu.Visible = false;
+
+            pnl_Update_Submenu.Visible = false;
+        }
+
+        private void btn_View_Expenses_List_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frm_View_Expense_Details());
+
+            pnl_Main.Visible = false;
+
+            pnl_New_Submenu.Visible = false;
+
+            pnl_Update_Submenu.Visible = false;
+        }
     }
 }

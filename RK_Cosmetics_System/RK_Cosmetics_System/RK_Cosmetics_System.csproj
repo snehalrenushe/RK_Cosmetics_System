@@ -48,6 +48,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frm_Add_Expenses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Add_Expenses.Designer.cs">
+      <DependentUpon>frm_Add_Expenses.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_Add_New_Brand.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +84,30 @@
     <Compile Include="frm_Add_New_Product.Designer.cs">
       <DependentUpon>frm_Add_New_Product.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_Add_New_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Add_New_User.Designer.cs">
+      <DependentUpon>frm_Add_New_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Add_Stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Add_Stock.Designer.cs">
+      <DependentUpon>frm_Add_Stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Change_Password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Change_Password.Designer.cs">
+      <DependentUpon>frm_Change_Password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Delete_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Delete_User.Designer.cs">
+      <DependentUpon>frm_Delete_User.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_Update_Brand_Details.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,11 +132,23 @@
     <Compile Include="frm_Update_Product_Details.Designer.cs">
       <DependentUpon>frm_Update_Product_Details.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_View_Expense_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_View_Expense_Details.Designer.cs">
+      <DependentUpon>frm_View_Expense_Details.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_View_Product_List.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_View_Product_List.Designer.cs">
       <DependentUpon>frm_View_Product_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_View_Stock_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_View_Stock_List.Designer.cs">
+      <DependentUpon>frm_View_Stock_List.cs</DependentUpon>
     </Compile>
     <Compile Include="MDI.cs">
       <SubType>Form</SubType>
@@ -116,6 +158,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frm_Add_Expenses.resx">
+      <DependentUpon>frm_Add_Expenses.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_Add_New_Brand.resx">
       <DependentUpon>frm_Add_New_Brand.cs</DependentUpon>
     </EmbeddedResource>
@@ -131,6 +176,18 @@
     <EmbeddedResource Include="frm_Add_New_Product.resx">
       <DependentUpon>frm_Add_New_Product.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_Add_New_User.resx">
+      <DependentUpon>frm_Add_New_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Add_Stock.resx">
+      <DependentUpon>frm_Add_Stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Change_Password.resx">
+      <DependentUpon>frm_Change_Password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Delete_User.resx">
+      <DependentUpon>frm_Delete_User.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_Update_Brand_Details.resx">
       <DependentUpon>frm_Update_Brand_Details.cs</DependentUpon>
     </EmbeddedResource>
@@ -143,8 +200,14 @@
     <EmbeddedResource Include="frm_Update_Product_Details.resx">
       <DependentUpon>frm_Update_Product_Details.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_View_Expense_Details.resx">
+      <DependentUpon>frm_View_Expense_Details.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_View_Product_List.resx">
       <DependentUpon>frm_View_Product_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_View_Stock_List.resx">
+      <DependentUpon>frm_View_Stock_List.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MDI.resx">
       <DependentUpon>MDI.cs</DependentUpon>

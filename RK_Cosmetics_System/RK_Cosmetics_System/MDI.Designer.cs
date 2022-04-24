@@ -431,6 +431,7 @@
             this.btn_View_Expenses_List.TabIndex = 10;
             this.btn_View_Expenses_List.Text = "View Expenses List";
             this.btn_View_Expenses_List.UseVisualStyleBackColor = true;
+            this.btn_View_Expenses_List.Click += new System.EventHandler(this.btn_View_Expenses_List_Click);
             // 
             // btn_Add_New_Expenses
             // 
@@ -446,6 +447,7 @@
             this.btn_Add_New_Expenses.TabIndex = 9;
             this.btn_Add_New_Expenses.Text = "Add Expenses";
             this.btn_Add_New_Expenses.UseVisualStyleBackColor = true;
+            this.btn_Add_New_Expenses.Click += new System.EventHandler(this.btn_Add_New_Expenses_Click);
             // 
             // btn_Expenses
             // 
@@ -486,6 +488,7 @@
             this.btn_View_Stock_List.TabIndex = 10;
             this.btn_View_Stock_List.Text = "View Stock List";
             this.btn_View_Stock_List.UseVisualStyleBackColor = true;
+            this.btn_View_Stock_List.Click += new System.EventHandler(this.btn_View_Stock_List_Click);
             // 
             // btn_Add_Stock
             // 
@@ -501,6 +504,7 @@
             this.btn_Add_Stock.TabIndex = 9;
             this.btn_Add_Stock.Text = "Add Stock";
             this.btn_Add_Stock.UseVisualStyleBackColor = true;
+            this.btn_Add_Stock.Click += new System.EventHandler(this.btn_Add_Stock_Click);
             // 
             // btn_Stock
             // 
@@ -542,6 +546,7 @@
             this.btn_Delete_Password.TabIndex = 11;
             this.btn_Delete_Password.Text = "Delete Password";
             this.btn_Delete_Password.UseVisualStyleBackColor = true;
+            this.btn_Delete_Password.Click += new System.EventHandler(this.btn_Delete_Password_Click);
             // 
             // btn_Change_Password
             // 
@@ -557,6 +562,7 @@
             this.btn_Change_Password.TabIndex = 10;
             this.btn_Change_Password.Text = "Change Password";
             this.btn_Change_Password.UseVisualStyleBackColor = true;
+            this.btn_Change_Password.Click += new System.EventHandler(this.btn_Change_Password_Click);
             // 
             // btn_Add_New_User
             // 
@@ -572,6 +578,7 @@
             this.btn_Add_New_User.TabIndex = 9;
             this.btn_Add_New_User.Text = "Add New User";
             this.btn_Add_New_User.UseVisualStyleBackColor = true;
+            this.btn_Add_New_User.Click += new System.EventHandler(this.btn_Add_New_User_Click);
             // 
             // btn_User_Management
             // 
