@@ -33,7 +33,6 @@
             this.btn_Update = new System.Windows.Forms.Button();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.lbl_Product_Name = new System.Windows.Forms.Label();
-            this.tb_Brand_Name = new System.Windows.Forms.TextBox();
             this.tb_Product_Name = new System.Windows.Forms.TextBox();
             this.lbl_Brand_Name = new System.Windows.Forms.Label();
             this.btn_Search = new System.Windows.Forms.Button();
@@ -51,6 +50,7 @@
             this.lbl_Product_ID = new System.Windows.Forms.Label();
             this.tb_Product_ID = new System.Windows.Forms.TextBox();
             this.lbl_Update_Product_Details = new System.Windows.Forms.Label();
+            this.cb_Brand_Name = new System.Windows.Forms.ComboBox();
             this.pnl_Update_Product_Back.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -72,7 +72,6 @@
             this.pnl_Update_Product_Back.Name = "pnl_Update_Product_Back";
             this.pnl_Update_Product_Back.Size = new System.Drawing.Size(1712, 790);
             this.pnl_Update_Product_Back.TabIndex = 2;
-            this.pnl_Update_Product_Back.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_Update_Product_Back_Paint);
             // 
             // btn_Refresh
             // 
@@ -105,8 +104,8 @@
             this.tableLayoutPanel4.ColumnCount = 2;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45F));
+            this.tableLayoutPanel4.Controls.Add(this.cb_Brand_Name, 0, 1);
             this.tableLayoutPanel4.Controls.Add(this.lbl_Product_Name, 1, 0);
-            this.tableLayoutPanel4.Controls.Add(this.tb_Brand_Name, 0, 1);
             this.tableLayoutPanel4.Controls.Add(this.tb_Product_Name, 1, 1);
             this.tableLayoutPanel4.Controls.Add(this.lbl_Brand_Name, 0, 0);
             this.tableLayoutPanel4.Location = new System.Drawing.Point(374, 195);
@@ -128,18 +127,6 @@
             this.lbl_Product_Name.Size = new System.Drawing.Size(183, 28);
             this.lbl_Product_Name.TabIndex = 1;
             this.lbl_Product_Name.Text = "Product_Name";
-            // 
-            // tb_Brand_Name
-            // 
-            this.tb_Brand_Name.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tb_Brand_Name.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_Brand_Name.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.tb_Brand_Name.Location = new System.Drawing.Point(3, 53);
-            this.tb_Brand_Name.Multiline = true;
-            this.tb_Brand_Name.Name = "tb_Brand_Name";
-            this.tb_Brand_Name.Size = new System.Drawing.Size(384, 41);
-            this.tb_Brand_Name.TabIndex = 7;
-            this.tb_Brand_Name.Text = "Ex.Lakme";
             // 
             // tb_Product_Name
             // 
@@ -353,6 +340,24 @@
             this.lbl_Update_Product_Details.TabIndex = 3;
             this.lbl_Update_Product_Details.Text = "Update Product Details";
             // 
+            // cb_Brand_Name
+            // 
+            this.cb_Brand_Name.BackColor = System.Drawing.Color.White;
+            this.cb_Brand_Name.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_Brand_Name.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cb_Brand_Name.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14F);
+            this.cb_Brand_Name.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.cb_Brand_Name.FormattingEnabled = true;
+            this.cb_Brand_Name.Items.AddRange(new object[] {
+            "kjh",
+            "klj",
+            "kj",
+            "iu"});
+            this.cb_Brand_Name.Location = new System.Drawing.Point(3, 53);
+            this.cb_Brand_Name.Name = "cb_Brand_Name";
+            this.cb_Brand_Name.Size = new System.Drawing.Size(299, 40);
+            this.cb_Brand_Name.TabIndex = 11;
+            // 
             // frm_Update_Product_Details
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -401,8 +406,8 @@
         private System.Windows.Forms.Button btn_Search;
         private System.Windows.Forms.Button btn_Update;
         private System.Windows.Forms.TextBox tb_Product_Name;
-        private System.Windows.Forms.TextBox tb_Brand_Name;
         private System.Windows.Forms.Label lbl_Product_Name;
         private System.Windows.Forms.Label lbl_Brand_Name;
+        private System.Windows.Forms.ComboBox cb_Brand_Name;
     }
 }

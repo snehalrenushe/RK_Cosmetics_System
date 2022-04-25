@@ -73,6 +73,7 @@
             this.btn_Add_New_Product = new System.Windows.Forms.Button();
             this.btn_Product = new System.Windows.Forms.Button();
             this.btn_Home = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -87,11 +88,13 @@
             this.pnl_Stock_Submenu.SuspendLayout();
             this.pnl_User_Submenu.SuspendLayout();
             this.pnl_Product_Submenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.btn_Update);
             this.panel1.Controls.Add(this.btn_New);
             this.panel1.Controls.Add(this.pictureBox5);
@@ -117,6 +120,7 @@
             this.btn_Update.TabIndex = 8;
             this.btn_Update.Text = "Update";
             this.btn_Update.UseVisualStyleBackColor = true;
+            this.btn_Update.Click += new System.EventHandler(this.btn_Update_Click);
             this.btn_Update.MouseEnter += new System.EventHandler(this.btn_Update_MouseEnter);
             // 
             // btn_New
@@ -200,7 +204,7 @@
             // timer1
             // 
             this.timer1.Enabled = true;
-            this.timer1.Interval = 2000;
+            this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // btn_Customer
@@ -681,6 +685,17 @@
             this.btn_Home.UseVisualStyleBackColor = true;
             this.btn_Home.Click += new System.EventHandler(this.btn_Home_Click);
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(1752, 13);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(74, 74);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 9;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
             // MDI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -712,6 +727,7 @@
             this.pnl_Stock_Submenu.ResumeLayout(false);
             this.pnl_User_Submenu.ResumeLayout(false);
             this.pnl_Product_Submenu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -761,6 +777,7 @@
         private System.Windows.Forms.Button btn_Add_New_Product;
         private System.Windows.Forms.Button btn_Product;
         private System.Windows.Forms.Button btn_Home;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
 

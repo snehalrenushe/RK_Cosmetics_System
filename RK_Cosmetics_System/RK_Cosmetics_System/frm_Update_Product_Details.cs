@@ -24,14 +24,17 @@ namespace RK_Cosmetics_System
 
             pnl_Update_Product_Back.BackColor = Color.FromArgb(42, 42, 54);
 
+            tb_Product_ID.BackColor = Color.FromArgb(33, 33, 55);
+            cb_Brand_Name.BackColor = Color.FromArgb(33, 33, 55);
+            tb_Product_Name.BackColor = Color.FromArgb(33, 33, 55);
+            tb_Description.BackColor = Color.FromArgb(33, 33, 55);
+            tb_Purchase_Price.BackColor = Color.FromArgb(33, 33, 55);
+            tb_Selling_Price.BackColor = Color.FromArgb(33, 33, 55);
+            tb_Stock.BackColor = Color.FromArgb(33, 33, 55);
+
             btn_Search.BackColor = Color.FromArgb(255, 0, 111);
             btn_Update.BackColor = Color.FromArgb(255, 0, 111);
             btn_Refresh.BackColor = Color.FromArgb(255, 0, 111);
-        }
-
-        private void pnl_Update_Product_Back_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

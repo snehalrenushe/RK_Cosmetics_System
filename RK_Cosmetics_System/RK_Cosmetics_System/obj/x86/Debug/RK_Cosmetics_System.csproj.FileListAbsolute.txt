@@ -33,3 +33,5 @@ C:\Users\91842\Desktop\Git_Upload\Git C#\RK_Cosmetics_System\RK_Cosmetics_System
 C:\Users\91842\Desktop\Git_Upload\Git C#\RK_Cosmetics_System\RK_Cosmetics_System\obj\x86\Debug\RK_Cosmetics_System.frm_View_Stock_List.resources
 C:\Users\91842\Desktop\Git_Upload\Git C#\RK_Cosmetics_System\RK_Cosmetics_System\obj\x86\Debug\RK_Cosmetics_System.frm_Add_Expenses.resources
 C:\Users\91842\Desktop\Git_Upload\Git C#\RK_Cosmetics_System\RK_Cosmetics_System\obj\x86\Debug\RK_Cosmetics_System.frm_View_Expense_Details.resources
+C:\Users\91842\Desktop\Git_Upload\Git C#\RK_Cosmetics_System\RK_Cosmetics_System\obj\x86\Debug\RK_Cosmetics_System.frm_Login_Page.resources
+C:\Users\91842\Desktop\Git_Upload\Git C#\RK_Cosmetics_System\RK_Cosmetics_System\bin\Debug\RK_Cosmetics_System.exe.config

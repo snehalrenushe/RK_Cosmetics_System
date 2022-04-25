@@ -94,5 +94,10 @@ namespace RK_Cosmetics_System
         {
 
         }
+
+        private void tb_Product_Name_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -15,7 +15,7 @@ namespace RK_Cosmetics_System
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MDI());
+            Application.Run(new frm_Login_Page());
         }
     }
 }

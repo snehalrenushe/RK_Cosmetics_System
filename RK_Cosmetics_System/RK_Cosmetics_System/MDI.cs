@@ -404,5 +404,17 @@ namespace RK_Cosmetics_System
 
             pnl_Update_Submenu.Visible = false;
         }
+
+        private void btn_Update_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            frm_Login_Page LP = new frm_Login_Page();
+            this.Hide();
+            LP.Show();
+        }
     }
 }

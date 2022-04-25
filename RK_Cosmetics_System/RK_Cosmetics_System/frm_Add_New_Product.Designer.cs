@@ -185,7 +185,7 @@
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.42826F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.57174F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 420F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 421F));
             this.tableLayoutPanel2.Controls.Add(this.lbl_Purchase_Price, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.tb_Selling_Price, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.lbl_For_Date, 2, 1);
@@ -230,7 +230,7 @@
             this.lbl_For_Date.AutoSize = true;
             this.lbl_For_Date.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F);
             this.lbl_For_Date.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.lbl_For_Date.Location = new System.Drawing.Point(936, 39);
+            this.lbl_For_Date.Location = new System.Drawing.Point(935, 39);
             this.lbl_For_Date.Name = "lbl_For_Date";
             this.lbl_For_Date.Padding = new System.Windows.Forms.Padding(8);
             this.lbl_For_Date.Size = new System.Drawing.Size(99, 44);
@@ -266,7 +266,7 @@
             this.lbl_Date.AutoSize = true;
             this.lbl_Date.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Date.ForeColor = System.Drawing.Color.White;
-            this.lbl_Date.Location = new System.Drawing.Point(936, 0);
+            this.lbl_Date.Location = new System.Drawing.Point(935, 0);
             this.lbl_Date.Name = "lbl_Date";
             this.lbl_Date.Size = new System.Drawing.Size(66, 28);
             this.lbl_Date.TabIndex = 8;
@@ -343,7 +343,7 @@
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.48129F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.51871F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 421F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 422F));
             this.tableLayoutPanel1.Controls.Add(this.tb_Product_ID, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.lbl_Product_ID, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.lbl_Brand_Name, 1, 0);
@@ -364,7 +364,7 @@
             this.tb_Product_ID.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tb_Product_ID.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Product_ID.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.tb_Product_ID.Location = new System.Drawing.Point(935, 42);
+            this.tb_Product_ID.Location = new System.Drawing.Point(934, 42);
             this.tb_Product_ID.Multiline = true;
             this.tb_Product_ID.Name = "tb_Product_ID";
             this.tb_Product_ID.Size = new System.Drawing.Size(299, 41);
@@ -377,7 +377,7 @@
             this.lbl_Product_ID.AutoSize = true;
             this.lbl_Product_ID.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Product_ID.ForeColor = System.Drawing.Color.White;
-            this.lbl_Product_ID.Location = new System.Drawing.Point(935, 0);
+            this.lbl_Product_ID.Location = new System.Drawing.Point(934, 0);
             this.lbl_Product_ID.Name = "lbl_Product_ID";
             this.lbl_Product_ID.Size = new System.Drawing.Size(136, 28);
             this.lbl_Product_ID.TabIndex = 6;
@@ -417,6 +417,7 @@
             this.tb_Product_Name.TabIndex = 3;
             this.tb_Product_Name.Text = "Ex.Foundation\r\n";
             this.tb_Product_Name.Click += new System.EventHandler(this.tb_Product_Name_Click);
+            this.tb_Product_Name.TextChanged += new System.EventHandler(this.tb_Product_Name_TextChanged);
             this.tb_Product_Name.Enter += new System.EventHandler(this.tb_Product_Name_Enter);
             // 
             // cb_Brand_Name
