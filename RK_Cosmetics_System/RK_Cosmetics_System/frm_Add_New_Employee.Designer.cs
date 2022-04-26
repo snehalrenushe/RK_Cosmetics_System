@@ -97,7 +97,7 @@
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 54.73684F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(1307, 125);
-            this.tableLayoutPanel4.TabIndex = 14;
+            this.tableLayoutPanel4.TabIndex = 4;
             // 
             // lbl_Email_ID
             // 
@@ -113,20 +113,20 @@
             // tb_Address
             // 
             this.tb_Address.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tb_Address.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Address.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Address.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.tb_Address.Location = new System.Drawing.Point(761, 48);
             this.tb_Address.Multiline = true;
             this.tb_Address.Name = "tb_Address";
             this.tb_Address.Size = new System.Drawing.Size(395, 48);
-            this.tb_Address.TabIndex = 5;
+            this.tb_Address.TabIndex = 7;
             this.tb_Address.Text = "Ex.LA";
             this.tb_Address.Click += new System.EventHandler(this.tb_Address_Click);
             // 
             // tb_Email_ID
             // 
             this.tb_Email_ID.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tb_Email_ID.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Email_ID.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Email_ID.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.tb_Email_ID.Location = new System.Drawing.Point(3, 48);
             this.tb_Email_ID.Multiline = true;
@@ -144,7 +144,7 @@
             this.lbl_Address.Location = new System.Drawing.Point(761, 0);
             this.lbl_Address.Name = "lbl_Address";
             this.lbl_Address.Size = new System.Drawing.Size(110, 28);
-            this.lbl_Address.TabIndex = 4;
+            this.lbl_Address.TabIndex = 0;
             this.lbl_Address.Text = "Address";
             // 
             // tableLayoutPanel3
@@ -163,7 +163,7 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 54.73684F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 13F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(1307, 125);
-            this.tableLayoutPanel3.TabIndex = 13;
+            this.tableLayoutPanel3.TabIndex = 2;
             // 
             // pnl_Joining_Date_Back
             // 
@@ -171,7 +171,7 @@
             this.pnl_Joining_Date_Back.Location = new System.Drawing.Point(761, 53);
             this.pnl_Joining_Date_Back.Name = "pnl_Joining_Date_Back";
             this.pnl_Joining_Date_Back.Size = new System.Drawing.Size(395, 52);
-            this.pnl_Joining_Date_Back.TabIndex = 10;
+            this.pnl_Joining_Date_Back.TabIndex = 0;
             // 
             // lbl_For_Joining_Date
             // 
@@ -198,15 +198,17 @@
             // tb_Mobile_No
             // 
             this.tb_Mobile_No.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tb_Mobile_No.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Mobile_No.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Mobile_No.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.tb_Mobile_No.Location = new System.Drawing.Point(3, 53);
+            this.tb_Mobile_No.MaxLength = 10;
             this.tb_Mobile_No.Multiline = true;
             this.tb_Mobile_No.Name = "tb_Mobile_No";
             this.tb_Mobile_No.Size = new System.Drawing.Size(395, 52);
-            this.tb_Mobile_No.TabIndex = 6;
+            this.tb_Mobile_No.TabIndex = 2;
             this.tb_Mobile_No.Text = "Ex.9848783455";
             this.tb_Mobile_No.Click += new System.EventHandler(this.tb_Mobile_No_Click);
+            this.tb_Mobile_No.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Numeric);
             // 
             // lbl_Joining_Date
             // 
@@ -216,7 +218,7 @@
             this.lbl_Joining_Date.Location = new System.Drawing.Point(761, 0);
             this.lbl_Joining_Date.Name = "lbl_Joining_Date";
             this.lbl_Joining_Date.Size = new System.Drawing.Size(157, 28);
-            this.lbl_Joining_Date.TabIndex = 4;
+            this.lbl_Joining_Date.TabIndex = 0;
             this.lbl_Joining_Date.Text = "Joining Date";
             // 
             // tableLayoutPanel1
@@ -235,7 +237,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 54.73684F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 19F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1307, 125);
-            this.tableLayoutPanel1.TabIndex = 12;
+            this.tableLayoutPanel1.TabIndex = 1;
             // 
             // lbl_Name
             // 
@@ -251,28 +253,27 @@
             // tb_Employee_ID
             // 
             this.tb_Employee_ID.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tb_Employee_ID.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Employee_ID.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Employee_ID.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.tb_Employee_ID.Location = new System.Drawing.Point(761, 50);
             this.tb_Employee_ID.Multiline = true;
             this.tb_Employee_ID.Name = "tb_Employee_ID";
             this.tb_Employee_ID.Size = new System.Drawing.Size(395, 52);
-            this.tb_Employee_ID.TabIndex = 5;
-            this.tb_Employee_ID.Text = "Ex.101";
-            this.tb_Employee_ID.Click += new System.EventHandler(this.tb_Employee_ID_Click);
+            this.tb_Employee_ID.TabIndex = 0;
             // 
             // tb_Name
             // 
             this.tb_Name.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tb_Name.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Name.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Name.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.tb_Name.Location = new System.Drawing.Point(3, 50);
             this.tb_Name.Multiline = true;
             this.tb_Name.Name = "tb_Name";
             this.tb_Name.Size = new System.Drawing.Size(395, 52);
-            this.tb_Name.TabIndex = 6;
+            this.tb_Name.TabIndex = 1;
             this.tb_Name.Text = "Ex.John";
             this.tb_Name.Click += new System.EventHandler(this.tb_Name_Click);
+            this.tb_Name.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Char);
             // 
             // lbl_Employee_ID
             // 
@@ -282,7 +283,7 @@
             this.lbl_Employee_ID.Location = new System.Drawing.Point(761, 0);
             this.lbl_Employee_ID.Name = "lbl_Employee_ID";
             this.lbl_Employee_ID.Size = new System.Drawing.Size(158, 28);
-            this.lbl_Employee_ID.TabIndex = 4;
+            this.lbl_Employee_ID.TabIndex = 0;
             this.lbl_Employee_ID.Text = "Employee ID";
             // 
             // btn_Refresh
@@ -294,9 +295,10 @@
             this.btn_Refresh.Location = new System.Drawing.Point(1058, 638);
             this.btn_Refresh.Name = "btn_Refresh";
             this.btn_Refresh.Size = new System.Drawing.Size(173, 54);
-            this.btn_Refresh.TabIndex = 11;
+            this.btn_Refresh.TabIndex = 9;
             this.btn_Refresh.Text = "Refresh";
             this.btn_Refresh.UseVisualStyleBackColor = true;
+            this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
             // 
             // btn_Save
             // 
@@ -307,16 +309,17 @@
             this.btn_Save.Location = new System.Drawing.Point(582, 638);
             this.btn_Save.Name = "btn_Save";
             this.btn_Save.Size = new System.Drawing.Size(131, 54);
-            this.btn_Save.TabIndex = 10;
+            this.btn_Save.TabIndex = 8;
             this.btn_Save.Text = "Save";
             this.btn_Save.UseVisualStyleBackColor = true;
+            this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
             // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.42826F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.57174F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 452F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 456F));
             this.tableLayoutPanel2.Controls.Add(this.lbl_Aadhar_No, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.tb_Age, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.tb_Aadhar_No, 0, 1);
@@ -330,7 +333,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 54.73684F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(1307, 125);
-            this.tableLayoutPanel2.TabIndex = 8;
+            this.tableLayoutPanel2.TabIndex = 3;
             // 
             // lbl_Aadhar_No
             // 
@@ -340,44 +343,47 @@
             this.lbl_Aadhar_No.Location = new System.Drawing.Point(3, 0);
             this.lbl_Aadhar_No.Name = "lbl_Aadhar_No";
             this.lbl_Aadhar_No.Size = new System.Drawing.Size(135, 28);
-            this.lbl_Aadhar_No.TabIndex = 4;
+            this.lbl_Aadhar_No.TabIndex = 0;
             this.lbl_Aadhar_No.Text = "Aadhar No";
             // 
             // tb_Age
             // 
             this.tb_Age.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tb_Age.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Age.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Age.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.tb_Age.Location = new System.Drawing.Point(434, 52);
+            this.tb_Age.Location = new System.Drawing.Point(432, 52);
             this.tb_Age.Multiline = true;
             this.tb_Age.Name = "tb_Age";
             this.tb_Age.Size = new System.Drawing.Size(299, 52);
-            this.tb_Age.TabIndex = 7;
+            this.tb_Age.TabIndex = 4;
             this.tb_Age.Text = "Ex.21";
             this.tb_Age.Click += new System.EventHandler(this.tb_Age_Click);
+            this.tb_Age.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Numeric);
             // 
             // tb_Aadhar_No
             // 
             this.tb_Aadhar_No.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tb_Aadhar_No.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Aadhar_No.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Aadhar_No.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.tb_Aadhar_No.Location = new System.Drawing.Point(3, 52);
+            this.tb_Aadhar_No.MaxLength = 12;
             this.tb_Aadhar_No.Multiline = true;
             this.tb_Aadhar_No.Name = "tb_Aadhar_No";
             this.tb_Aadhar_No.Size = new System.Drawing.Size(299, 52);
-            this.tb_Aadhar_No.TabIndex = 5;
+            this.tb_Aadhar_No.TabIndex = 3;
             this.tb_Aadhar_No.Text = "Ex.135984***********";
             this.tb_Aadhar_No.Click += new System.EventHandler(this.tb_Aadhar_No_Click);
+            this.tb_Aadhar_No.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Numeric);
             // 
             // lbl_Age
             // 
             this.lbl_Age.AutoSize = true;
             this.lbl_Age.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Age.ForeColor = System.Drawing.Color.White;
-            this.lbl_Age.Location = new System.Drawing.Point(434, 0);
+            this.lbl_Age.Location = new System.Drawing.Point(432, 0);
             this.lbl_Age.Name = "lbl_Age";
             this.lbl_Age.Size = new System.Drawing.Size(58, 28);
-            this.lbl_Age.TabIndex = 6;
+            this.lbl_Age.TabIndex = 0;
             this.lbl_Age.Text = "Age";
             // 
             // lbl_Gender
@@ -385,20 +391,20 @@
             this.lbl_Gender.AutoSize = true;
             this.lbl_Gender.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Gender.ForeColor = System.Drawing.Color.White;
-            this.lbl_Gender.Location = new System.Drawing.Point(857, 0);
+            this.lbl_Gender.Location = new System.Drawing.Point(853, 0);
             this.lbl_Gender.Name = "lbl_Gender";
             this.lbl_Gender.Size = new System.Drawing.Size(99, 28);
-            this.lbl_Gender.TabIndex = 8;
+            this.lbl_Gender.TabIndex = 0;
             this.lbl_Gender.Text = "Gender";
             // 
             // pnl_Back_Gender
             // 
             this.pnl_Back_Gender.Controls.Add(this.rb_Male);
             this.pnl_Back_Gender.Controls.Add(this.rb_Female);
-            this.pnl_Back_Gender.Location = new System.Drawing.Point(857, 52);
+            this.pnl_Back_Gender.Location = new System.Drawing.Point(853, 52);
             this.pnl_Back_Gender.Name = "pnl_Back_Gender";
             this.pnl_Back_Gender.Size = new System.Drawing.Size(299, 52);
-            this.pnl_Back_Gender.TabIndex = 9;
+            this.pnl_Back_Gender.TabIndex = 5;
             // 
             // rb_Male
             // 
@@ -408,7 +414,7 @@
             this.rb_Male.Location = new System.Drawing.Point(181, 5);
             this.rb_Male.Name = "rb_Male";
             this.rb_Male.Size = new System.Drawing.Size(105, 36);
-            this.rb_Male.TabIndex = 1;
+            this.rb_Male.TabIndex = 0;
             this.rb_Male.TabStop = true;
             this.rb_Male.Text = "Male";
             this.rb_Male.UseVisualStyleBackColor = true;
