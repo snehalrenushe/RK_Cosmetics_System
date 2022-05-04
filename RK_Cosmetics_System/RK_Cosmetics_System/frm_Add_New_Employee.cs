@@ -70,6 +70,7 @@ namespace RK_Cosmetics_System
 
             btn_Save.BackColor = Color.FromArgb(255, 0, 111);
             btn_Refresh.BackColor = Color.FromArgb(255, 0, 111);
+
         }
 
         void Clear_Controls()
@@ -81,6 +82,8 @@ namespace RK_Cosmetics_System
             tb_Age.Text = "Ex.21";
             tb_Email_ID.Text = "Ex.John@gmail.com";
             tb_Address.Text = "Ex.LA";
+
+            lbl_note_age.Visible = false;
         }
 
         private void tb_Name_Click(object sender, EventArgs e)
@@ -170,9 +173,9 @@ namespace RK_Cosmetics_System
 
         private void btn_Save_Click(object sender, EventArgs e)
         {
-            string Gender = " ";
-
             Con_Open();
+
+            string Gender = " ";
 
             if (rb_Male.Checked == true)
             {
@@ -186,20 +189,20 @@ namespace RK_Cosmetics_System
 
             if (tb_Employee_ID.Text != "" && tb_Name.Text != "" && tb_Mobile_No.TextLength == 10 && tb_Aadhar_No.TextLength == 12  && tb_Address.Text != "" && (rb_Female.Checked || rb_Male.Checked) && tb_Age.Text != "")
             {
-                Con_Open();
-
                 SqlCommand Cmd = new SqlCommand();
 
                 Cmd.Connection = Con;
 
-                Cmd.CommandText = "Insert into Employee_Details (Name,Employee_ID,Mobile_No,Aadhar_No,Age,Gender,Email_ID,Address) VALUES (@Name,@Emp_ID,@Mob,@Aadhar_No,@Age,'" + Gender + "',@email,@Add)";
+                Cmd.CommandText = "Insert into Employee_Details (Name,Employee_ID,Mobile_No,Joining_Date,Aadhar_No,Age,Gender,Email_ID,Address) VALUES (@Name,@Emp_ID,@Mob,@J_Date,@Aadhar_No,@Age,'" + Gender + "',@email,@Add)";
 
                 Cmd.Parameters.Add("Name", SqlDbType.VarChar).Value = tb_Name.Text;
                 Cmd.Parameters.Add("Emp_ID", SqlDbType.Int).Value = tb_Employee_ID.Text;
                 Cmd.Parameters.Add("Mob", SqlDbType.Decimal).Value = tb_Mobile_No.Text;
+                Cmd.Parameters.Add("J_Date",SqlDbType.NVarChar).Value = (string)lbl_For_Joining_Date.Text;
                 Cmd.Parameters.Add("Aadhar_No", SqlDbType.NVarChar).Value = tb_Aadhar_No.Text;
                 Cmd.Parameters.Add("Age", SqlDbType.Int).Value = tb_Age.Text;
                 Cmd.Parameters.Add("Add", SqlDbType.NVarChar).Value = tb_Address.Text;
+
 
                 if (tb_Email_ID.Text != "")
                 {
@@ -210,23 +213,27 @@ namespace RK_Cosmetics_System
                     Cmd.Parameters.Add("email", SqlDbType.NVarChar).Value = "Annonymous";
                 }
 
-                //if ((Convert.ToInt32(tb_Age.Text) < 18) || (Convert.ToInt32(tb_Age.Text) > 60))
-                //{
-                //    MessageBox.Show(tb_Name.Text + " is Not Eligible for these Job !!!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                //}
+                if ((Convert.ToInt32(tb_Age.Text) < 18) || (Convert.ToInt32(tb_Age.Text) > 60))
+                {
+                    MessageBox.Show(tb_Name.Text + " is Not Eligible for these Job !!!", "Warning", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
+                    lbl_note_age.Visible = true;
+                }
+                else
+                {
+                    Cmd.ExecuteNonQuery();
 
-                Cmd.ExecuteNonQuery();
+                    MessageBox.Show("Employee Details Saved Successfully !!!", "Saving", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                MessageBox.Show("Employee Details Saved Successfully !!!", "Saving", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                Clear_Controls();
+                    Clear_Controls();
+                }
 
             }
             else
             {
                 MessageBox.Show("Incomplete Details !!!", "Error", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
             }
-        }
 
+            Con_Close();
+        }
     }
 }

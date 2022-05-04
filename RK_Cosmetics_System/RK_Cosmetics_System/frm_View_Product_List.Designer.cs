@@ -99,6 +99,7 @@
             this.btn_Search.TabIndex = 10;
             this.btn_Search.Text = "Search";
             this.btn_Search.UseVisualStyleBackColor = true;
+            this.btn_Search.Click += new System.EventHandler(this.btn_Search_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -133,11 +134,6 @@
             this.cb_Brand_Name.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14F);
             this.cb_Brand_Name.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.cb_Brand_Name.FormattingEnabled = true;
-            this.cb_Brand_Name.Items.AddRange(new object[] {
-            "kjh",
-            "klj",
-            "kj",
-            "iu"});
             this.cb_Brand_Name.Location = new System.Drawing.Point(438, 3);
             this.cb_Brand_Name.Name = "cb_Brand_Name";
             this.cb_Brand_Name.Size = new System.Drawing.Size(299, 40);

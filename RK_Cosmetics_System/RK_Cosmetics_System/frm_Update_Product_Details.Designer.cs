@@ -32,6 +32,7 @@
             this.btn_Refresh = new System.Windows.Forms.Button();
             this.btn_Update = new System.Windows.Forms.Button();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.cb_Brand_Name = new System.Windows.Forms.ComboBox();
             this.lbl_Product_Name = new System.Windows.Forms.Label();
             this.tb_Product_Name = new System.Windows.Forms.TextBox();
             this.lbl_Brand_Name = new System.Windows.Forms.Label();
@@ -50,7 +51,6 @@
             this.lbl_Product_ID = new System.Windows.Forms.Label();
             this.tb_Product_ID = new System.Windows.Forms.TextBox();
             this.lbl_Update_Product_Details = new System.Windows.Forms.Label();
-            this.cb_Brand_Name = new System.Windows.Forms.ComboBox();
             this.pnl_Update_Product_Back.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -82,12 +82,14 @@
             this.btn_Refresh.Location = new System.Drawing.Point(809, 682);
             this.btn_Refresh.Name = "btn_Refresh";
             this.btn_Refresh.Size = new System.Drawing.Size(173, 54);
-            this.btn_Refresh.TabIndex = 11;
+            this.btn_Refresh.TabIndex = 9;
             this.btn_Refresh.Text = "Refresh";
             this.btn_Refresh.UseVisualStyleBackColor = true;
+            this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
             // 
             // btn_Update
             // 
+            this.btn_Update.Enabled = false;
             this.btn_Update.FlatAppearance.BorderSize = 0;
             this.btn_Update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Update.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14F);
@@ -95,9 +97,10 @@
             this.btn_Update.Location = new System.Drawing.Point(1158, 76);
             this.btn_Update.Name = "btn_Update";
             this.btn_Update.Size = new System.Drawing.Size(175, 52);
-            this.btn_Update.TabIndex = 12;
+            this.btn_Update.TabIndex = 8;
             this.btn_Update.Text = "Update";
             this.btn_Update.UseVisualStyleBackColor = true;
+            this.btn_Update.Click += new System.EventHandler(this.btn_Update_Click);
             // 
             // tableLayoutPanel4
             // 
@@ -115,7 +118,20 @@
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 54.73684F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(1040, 111);
-            this.tableLayoutPanel4.TabIndex = 9;
+            this.tableLayoutPanel4.TabIndex = 0;
+            // 
+            // cb_Brand_Name
+            // 
+            this.cb_Brand_Name.BackColor = System.Drawing.Color.White;
+            this.cb_Brand_Name.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_Brand_Name.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cb_Brand_Name.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14F);
+            this.cb_Brand_Name.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.cb_Brand_Name.FormattingEnabled = true;
+            this.cb_Brand_Name.Location = new System.Drawing.Point(3, 53);
+            this.cb_Brand_Name.Name = "cb_Brand_Name";
+            this.cb_Brand_Name.Size = new System.Drawing.Size(299, 40);
+            this.cb_Brand_Name.TabIndex = 2;
             // 
             // lbl_Product_Name
             // 
@@ -137,7 +153,7 @@
             this.tb_Product_Name.Multiline = true;
             this.tb_Product_Name.Name = "tb_Product_Name";
             this.tb_Product_Name.Size = new System.Drawing.Size(384, 41);
-            this.tb_Product_Name.TabIndex = 10;
+            this.tb_Product_Name.TabIndex = 3;
             this.tb_Product_Name.Text = "Ex.Foundation";
             // 
             // lbl_Brand_Name
@@ -153,6 +169,7 @@
             // 
             // btn_Search
             // 
+            this.btn_Search.Enabled = false;
             this.btn_Search.FlatAppearance.BorderSize = 0;
             this.btn_Search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Search.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14F);
@@ -160,9 +177,10 @@
             this.btn_Search.Location = new System.Drawing.Point(900, 76);
             this.btn_Search.Name = "btn_Search";
             this.btn_Search.Size = new System.Drawing.Size(169, 51);
-            this.btn_Search.TabIndex = 11;
+            this.btn_Search.TabIndex = 1;
             this.btn_Search.Text = "Search";
             this.btn_Search.UseVisualStyleBackColor = true;
+            this.btn_Search.Click += new System.EventHandler(this.btn_Search_Click);
             // 
             // tableLayoutPanel2
             // 
@@ -180,7 +198,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 54.73684F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(1040, 125);
-            this.tableLayoutPanel2.TabIndex = 8;
+            this.tableLayoutPanel2.TabIndex = 0;
             // 
             // lbl_Purchase_Price
             // 
@@ -202,7 +220,7 @@
             this.tb_Selling_Price.Multiline = true;
             this.tb_Selling_Price.Name = "tb_Selling_Price";
             this.tb_Selling_Price.Size = new System.Drawing.Size(384, 41);
-            this.tb_Selling_Price.TabIndex = 7;
+            this.tb_Selling_Price.TabIndex = 5;
             this.tb_Selling_Price.Text = "Ex.1500 Rs.";
             // 
             // tb_Purchase_Price
@@ -214,7 +232,7 @@
             this.tb_Purchase_Price.Multiline = true;
             this.tb_Purchase_Price.Name = "tb_Purchase_Price";
             this.tb_Purchase_Price.Size = new System.Drawing.Size(384, 41);
-            this.tb_Purchase_Price.TabIndex = 5;
+            this.tb_Purchase_Price.TabIndex = 4;
             this.tb_Purchase_Price.Text = "Ex.1200 Rs.";
             // 
             // lbl_Selling_Price
@@ -243,7 +261,7 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30.66667F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 69.33334F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(1040, 150);
-            this.tableLayoutPanel3.TabIndex = 6;
+            this.tableLayoutPanel3.TabIndex = 0;
             // 
             // lbl_Description
             // 
@@ -288,7 +306,7 @@
             this.tb_Description.Multiline = true;
             this.tb_Description.Name = "tb_Description";
             this.tb_Description.Size = new System.Drawing.Size(384, 99);
-            this.tb_Description.TabIndex = 5;
+            this.tb_Description.TabIndex = 7;
             this.tb_Description.Text = "Ex..kaljdsk";
             // 
             // tableLayoutPanel1
@@ -304,7 +322,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 54.73684F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(485, 125);
-            this.tableLayoutPanel1.TabIndex = 4;
+            this.tableLayoutPanel1.TabIndex = 0;
             // 
             // lbl_Product_ID
             // 
@@ -320,6 +338,7 @@
             // tb_Product_ID
             // 
             this.tb_Product_ID.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tb_Product_ID.Enabled = false;
             this.tb_Product_ID.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Product_ID.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.tb_Product_ID.Location = new System.Drawing.Point(3, 42);
@@ -328,6 +347,8 @@
             this.tb_Product_ID.Size = new System.Drawing.Size(384, 41);
             this.tb_Product_ID.TabIndex = 3;
             this.tb_Product_ID.Text = "Ex.101";
+            this.tb_Product_ID.Click += new System.EventHandler(this.tb_Product_ID_Click);
+            this.tb_Product_ID.TextChanged += new System.EventHandler(this.tb_Product_ID_TextChanged);
             // 
             // lbl_Update_Product_Details
             // 
@@ -339,24 +360,6 @@
             this.lbl_Update_Product_Details.Size = new System.Drawing.Size(635, 60);
             this.lbl_Update_Product_Details.TabIndex = 3;
             this.lbl_Update_Product_Details.Text = "Update Product Details";
-            // 
-            // cb_Brand_Name
-            // 
-            this.cb_Brand_Name.BackColor = System.Drawing.Color.White;
-            this.cb_Brand_Name.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cb_Brand_Name.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cb_Brand_Name.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14F);
-            this.cb_Brand_Name.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.cb_Brand_Name.FormattingEnabled = true;
-            this.cb_Brand_Name.Items.AddRange(new object[] {
-            "kjh",
-            "klj",
-            "kj",
-            "iu"});
-            this.cb_Brand_Name.Location = new System.Drawing.Point(3, 53);
-            this.cb_Brand_Name.Name = "cb_Brand_Name";
-            this.cb_Brand_Name.Size = new System.Drawing.Size(299, 40);
-            this.cb_Brand_Name.TabIndex = 11;
             // 
             // frm_Update_Product_Details
             // 

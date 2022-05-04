@@ -108,7 +108,7 @@
             this.pnl_Back_Status.Location = new System.Drawing.Point(3, 50);
             this.pnl_Back_Status.Name = "pnl_Back_Status";
             this.pnl_Back_Status.Size = new System.Drawing.Size(395, 52);
-            this.pnl_Back_Status.TabIndex = 10;
+            this.pnl_Back_Status.TabIndex = 3;
             // 
             // rb_Not_In_Use
             // 
@@ -118,7 +118,7 @@
             this.rb_Not_In_Use.Location = new System.Drawing.Point(175, 5);
             this.rb_Not_In_Use.Name = "rb_Not_In_Use";
             this.rb_Not_In_Use.Size = new System.Drawing.Size(199, 36);
-            this.rb_Not_In_Use.TabIndex = 1;
+            this.rb_Not_In_Use.TabIndex = 0;
             this.rb_Not_In_Use.TabStop = true;
             this.rb_Not_In_Use.Text = "Not In Used";
             this.rb_Not_In_Use.UseVisualStyleBackColor = true;
@@ -165,14 +165,14 @@
             // tb_Brand_ID
             // 
             this.tb_Brand_ID.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tb_Brand_ID.Enabled = false;
             this.tb_Brand_ID.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Brand_ID.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.tb_Brand_ID.Location = new System.Drawing.Point(3, 50);
             this.tb_Brand_ID.Multiline = true;
             this.tb_Brand_ID.Name = "tb_Brand_ID";
             this.tb_Brand_ID.Size = new System.Drawing.Size(395, 43);
-            this.tb_Brand_ID.TabIndex = 6;
-            this.tb_Brand_ID.Text = "Ex.101";
+            this.tb_Brand_ID.TabIndex = 2;
             this.tb_Brand_ID.Click += new System.EventHandler(this.tb_Brand_ID_Click);
             // 
             // tableLayoutPanel1
@@ -210,7 +210,7 @@
             this.tb_Brand_Name.Multiline = true;
             this.tb_Brand_Name.Name = "tb_Brand_Name";
             this.tb_Brand_Name.Size = new System.Drawing.Size(395, 42);
-            this.tb_Brand_Name.TabIndex = 6;
+            this.tb_Brand_Name.TabIndex = 1;
             this.tb_Brand_Name.Text = "Ex.Lakme";
             this.tb_Brand_Name.Click += new System.EventHandler(this.tb_Brand_Name_Click);
             // 
@@ -223,9 +223,10 @@
             this.btn_Refresh.Location = new System.Drawing.Point(698, 549);
             this.btn_Refresh.Name = "btn_Refresh";
             this.btn_Refresh.Size = new System.Drawing.Size(173, 54);
-            this.btn_Refresh.TabIndex = 11;
+            this.btn_Refresh.TabIndex = 5;
             this.btn_Refresh.Text = "Refresh";
             this.btn_Refresh.UseVisualStyleBackColor = true;
+            this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
             // 
             // btn_Save
             // 
@@ -236,9 +237,10 @@
             this.btn_Save.Location = new System.Drawing.Point(430, 549);
             this.btn_Save.Name = "btn_Save";
             this.btn_Save.Size = new System.Drawing.Size(131, 54);
-            this.btn_Save.TabIndex = 10;
+            this.btn_Save.TabIndex = 4;
             this.btn_Save.Text = "Save";
             this.btn_Save.UseVisualStyleBackColor = true;
+            this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
             // 
             // frm_Add_New_Brand
             // 
