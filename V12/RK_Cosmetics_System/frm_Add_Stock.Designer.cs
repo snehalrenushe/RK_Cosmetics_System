@@ -301,7 +301,7 @@
             this.Controls.Add(this.btn_Submit);
             this.Controls.Add(this.gb_Stock_Details);
             this.Name = "frm_Add_Stock";
-            this.Text = "Add Stock";
+            this.Text = "   ";
             this.Load += new System.EventHandler(this.frm_Add_Stock_Load);
             this.gb_Stock_Details.ResumeLayout(false);
             this.gb_Stock_Details.PerformLayout();

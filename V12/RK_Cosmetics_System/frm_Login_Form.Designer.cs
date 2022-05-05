@@ -76,9 +76,10 @@
             // 
             // btn_Sign_In
             // 
-            this.btn_Sign_In.BackColor = System.Drawing.Color.Black;
+            this.btn_Sign_In.BackColor = System.Drawing.Color.BlanchedAlmond;
+            this.btn_Sign_In.Enabled = false;
             this.btn_Sign_In.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Sign_In.ForeColor = System.Drawing.Color.White;
+            this.btn_Sign_In.ForeColor = System.Drawing.Color.Black;
             this.btn_Sign_In.Location = new System.Drawing.Point(846, 554);
             this.btn_Sign_In.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Sign_In.Name = "btn_Sign_In";
@@ -90,14 +91,17 @@
             // 
             // tb_Password
             // 
+            this.tb_Password.Enabled = false;
             this.tb_Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Password.Location = new System.Drawing.Point(878, 439);
             this.tb_Password.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_Password.MaxLength = 10;
             this.tb_Password.Multiline = true;
             this.tb_Password.Name = "tb_Password";
+            this.tb_Password.PasswordChar = '*';
             this.tb_Password.Size = new System.Drawing.Size(266, 45);
             this.tb_Password.TabIndex = 2;
+            this.tb_Password.TextChanged += new System.EventHandler(this.tb_Password_TextChanged);
             // 
             // tb_Username
             // 
@@ -109,6 +113,7 @@
             this.tb_Username.Name = "tb_Username";
             this.tb_Username.Size = new System.Drawing.Size(266, 43);
             this.tb_Username.TabIndex = 1;
+            this.tb_Username.TextChanged += new System.EventHandler(this.tb_Username_TextChanged);
             // 
             // lbl_Password
             // 
@@ -175,7 +180,6 @@
             this.Name = "frm_Login_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login Form";
-            this.Load += new System.EventHandler(this.frm_Login_Form_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pb_Login_Form)).EndInit();
             this.pnl_Login.ResumeLayout(false);
             this.pnl_Login.PerformLayout();

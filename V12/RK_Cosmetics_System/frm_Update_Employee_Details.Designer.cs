@@ -29,18 +29,11 @@
         private void InitializeComponent()
         {
             this.gb_Update_Or_Search_Employee_Details = new System.Windows.Forms.GroupBox();
-            this.Warn_Alternate_Mobile_No = new System.Windows.Forms.Label();
-            this.Warn_Last_Name = new System.Windows.Forms.Label();
             this.pnl_Update_or_Search_Employee = new System.Windows.Forms.Panel();
-            this.Warn_Employee_ID = new System.Windows.Forms.Label();
             this.btn_Update = new System.Windows.Forms.Button();
             this.btn_Search = new System.Windows.Forms.Button();
             this.lbl_Employee_ID = new System.Windows.Forms.Label();
             this.tb_Employee_ID = new System.Windows.Forms.TextBox();
-            this.Warn_Middle_Name = new System.Windows.Forms.Label();
-            this.Warn_First_Name = new System.Windows.Forms.Label();
-            this.Warn_Address = new System.Windows.Forms.Label();
-            this.Warn_Mobile_No = new System.Windows.Forms.Label();
             this.tb_Email_ID = new System.Windows.Forms.TextBox();
             this.lbl_Email_ID = new System.Windows.Forms.Label();
             this.tb_Addres = new System.Windows.Forms.TextBox();
@@ -70,13 +63,7 @@
             // gb_Update_Or_Search_Employee_Details
             // 
             this.gb_Update_Or_Search_Employee_Details.BackColor = System.Drawing.Color.LavenderBlush;
-            this.gb_Update_Or_Search_Employee_Details.Controls.Add(this.Warn_Alternate_Mobile_No);
-            this.gb_Update_Or_Search_Employee_Details.Controls.Add(this.Warn_Last_Name);
             this.gb_Update_Or_Search_Employee_Details.Controls.Add(this.pnl_Update_or_Search_Employee);
-            this.gb_Update_Or_Search_Employee_Details.Controls.Add(this.Warn_Middle_Name);
-            this.gb_Update_Or_Search_Employee_Details.Controls.Add(this.Warn_First_Name);
-            this.gb_Update_Or_Search_Employee_Details.Controls.Add(this.Warn_Address);
-            this.gb_Update_Or_Search_Employee_Details.Controls.Add(this.Warn_Mobile_No);
             this.gb_Update_Or_Search_Employee_Details.Controls.Add(this.tb_Email_ID);
             this.gb_Update_Or_Search_Employee_Details.Controls.Add(this.lbl_Email_ID);
             this.gb_Update_Or_Search_Employee_Details.Controls.Add(this.tb_Addres);
@@ -103,34 +90,9 @@
             this.gb_Update_Or_Search_Employee_Details.TabStop = false;
             this.gb_Update_Or_Search_Employee_Details.Text = "Update Or Search Employee";
             // 
-            // Warn_Alternate_Mobile_No
-            // 
-            this.Warn_Alternate_Mobile_No.AutoSize = true;
-            this.Warn_Alternate_Mobile_No.Font = new System.Drawing.Font("Mongolian Baiti", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Warn_Alternate_Mobile_No.ForeColor = System.Drawing.Color.Red;
-            this.Warn_Alternate_Mobile_No.Location = new System.Drawing.Point(1440, 426);
-            this.Warn_Alternate_Mobile_No.Name = "Warn_Alternate_Mobile_No";
-            this.Warn_Alternate_Mobile_No.Size = new System.Drawing.Size(84, 21);
-            this.Warn_Alternate_Mobile_No.TabIndex = 58;
-            this.Warn_Alternate_Mobile_No.Text = "Required";
-            this.Warn_Alternate_Mobile_No.Visible = false;
-            // 
-            // Warn_Last_Name
-            // 
-            this.Warn_Last_Name.AutoSize = true;
-            this.Warn_Last_Name.Font = new System.Drawing.Font("Mongolian Baiti", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Warn_Last_Name.ForeColor = System.Drawing.Color.Red;
-            this.Warn_Last_Name.Location = new System.Drawing.Point(578, 426);
-            this.Warn_Last_Name.Name = "Warn_Last_Name";
-            this.Warn_Last_Name.Size = new System.Drawing.Size(84, 21);
-            this.Warn_Last_Name.TabIndex = 57;
-            this.Warn_Last_Name.Text = "Required";
-            this.Warn_Last_Name.Visible = false;
-            // 
             // pnl_Update_or_Search_Employee
             // 
             this.pnl_Update_or_Search_Employee.BackColor = System.Drawing.Color.MistyRose;
-            this.pnl_Update_or_Search_Employee.Controls.Add(this.Warn_Employee_ID);
             this.pnl_Update_or_Search_Employee.Controls.Add(this.btn_Update);
             this.pnl_Update_or_Search_Employee.Controls.Add(this.btn_Search);
             this.pnl_Update_or_Search_Employee.Controls.Add(this.lbl_Employee_ID);
@@ -139,18 +101,6 @@
             this.pnl_Update_or_Search_Employee.Name = "pnl_Update_or_Search_Employee";
             this.pnl_Update_or_Search_Employee.Size = new System.Drawing.Size(1590, 100);
             this.pnl_Update_or_Search_Employee.TabIndex = 39;
-            // 
-            // Warn_Employee_ID
-            // 
-            this.Warn_Employee_ID.AutoSize = true;
-            this.Warn_Employee_ID.Font = new System.Drawing.Font("Mongolian Baiti", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Warn_Employee_ID.ForeColor = System.Drawing.Color.Red;
-            this.Warn_Employee_ID.Location = new System.Drawing.Point(527, 75);
-            this.Warn_Employee_ID.Name = "Warn_Employee_ID";
-            this.Warn_Employee_ID.Size = new System.Drawing.Size(84, 21);
-            this.Warn_Employee_ID.TabIndex = 58;
-            this.Warn_Employee_ID.Text = "Required";
-            this.Warn_Employee_ID.Visible = false;
             // 
             // btn_Update
             // 
@@ -208,54 +158,6 @@
             this.tb_Employee_ID.TabIndex = 1;
             this.tb_Employee_ID.TextChanged += new System.EventHandler(this.tb_Employee_ID_TextChanged);
             this.tb_Employee_ID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Numeric);
-            // 
-            // Warn_Middle_Name
-            // 
-            this.Warn_Middle_Name.AutoSize = true;
-            this.Warn_Middle_Name.Font = new System.Drawing.Font("Mongolian Baiti", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Warn_Middle_Name.ForeColor = System.Drawing.Color.Red;
-            this.Warn_Middle_Name.Location = new System.Drawing.Point(578, 345);
-            this.Warn_Middle_Name.Name = "Warn_Middle_Name";
-            this.Warn_Middle_Name.Size = new System.Drawing.Size(84, 21);
-            this.Warn_Middle_Name.TabIndex = 56;
-            this.Warn_Middle_Name.Text = "Required";
-            this.Warn_Middle_Name.Visible = false;
-            // 
-            // Warn_First_Name
-            // 
-            this.Warn_First_Name.AutoSize = true;
-            this.Warn_First_Name.Font = new System.Drawing.Font("Mongolian Baiti", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Warn_First_Name.ForeColor = System.Drawing.Color.Red;
-            this.Warn_First_Name.Location = new System.Drawing.Point(578, 262);
-            this.Warn_First_Name.Name = "Warn_First_Name";
-            this.Warn_First_Name.Size = new System.Drawing.Size(84, 21);
-            this.Warn_First_Name.TabIndex = 55;
-            this.Warn_First_Name.Text = "Required";
-            this.Warn_First_Name.Visible = false;
-            // 
-            // Warn_Address
-            // 
-            this.Warn_Address.AutoSize = true;
-            this.Warn_Address.Font = new System.Drawing.Font("Mongolian Baiti", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Warn_Address.ForeColor = System.Drawing.Color.Red;
-            this.Warn_Address.Location = new System.Drawing.Point(1440, 262);
-            this.Warn_Address.Name = "Warn_Address";
-            this.Warn_Address.Size = new System.Drawing.Size(84, 21);
-            this.Warn_Address.TabIndex = 53;
-            this.Warn_Address.Text = "Required";
-            this.Warn_Address.Visible = false;
-            // 
-            // Warn_Mobile_No
-            // 
-            this.Warn_Mobile_No.AutoSize = true;
-            this.Warn_Mobile_No.Font = new System.Drawing.Font("Mongolian Baiti", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Warn_Mobile_No.ForeColor = System.Drawing.Color.Red;
-            this.Warn_Mobile_No.Location = new System.Drawing.Point(1440, 341);
-            this.Warn_Mobile_No.Name = "Warn_Mobile_No";
-            this.Warn_Mobile_No.Size = new System.Drawing.Size(84, 21);
-            this.Warn_Mobile_No.TabIndex = 52;
-            this.Warn_Mobile_No.Text = "Required";
-            this.Warn_Mobile_No.Visible = false;
             // 
             // tb_Email_ID
             // 
@@ -549,12 +451,5 @@
         private System.Windows.Forms.Button btn_Refresh;
         private System.Windows.Forms.TextBox tb_Email_ID;
         private System.Windows.Forms.Label lbl_Email_ID;
-        private System.Windows.Forms.Label Warn_Mobile_No;
-        private System.Windows.Forms.Label Warn_Address;
-        private System.Windows.Forms.Label Warn_First_Name;
-        private System.Windows.Forms.Label Warn_Middle_Name;
-        private System.Windows.Forms.Label Warn_Last_Name;
-        private System.Windows.Forms.Label Warn_Employee_ID;
-        private System.Windows.Forms.Label Warn_Alternate_Mobile_No;
     }
 }

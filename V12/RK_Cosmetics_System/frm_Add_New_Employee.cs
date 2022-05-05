@@ -90,16 +90,6 @@ namespace RK_Cosmetics_System
             tb_Email_ID.Clear();
             tb_Address.Text = "";
 
-            Warn_First_Name.Visible = false;
-            Warn_Middle_Name.Visible = false;
-            Warn_Last_Name.Visible = false;
-            Warn_Gender.Visible = false;
-            Warn_Mobile_No.Visible = false;
-            Warn_Alternate_Mobile_No.Visible = false;
-            Warn_Aadhar_No.Visible = false;
-            Warn_PAN_No.Visible = false;
-            Warn_Address.Visible = false;
-
             tb_First_Name.Focus();
         }
 
@@ -110,91 +100,6 @@ namespace RK_Cosmetics_System
             TimeSpan tspan = to - from;
             double days = tspan.TotalDays;
             tb_Age.Text = (days / 365).ToString("0");
-        }
-
-        void Warning()
-        {
-            if (tb_First_Name.Text == "")
-            {
-                Warn_First_Name.Visible = true;
-                Warn_First_Name.Text = "*Required";
-            }
-            else
-            {
-                Warn_First_Name.Visible = false;
-            }
-
-            if (tb_Middle_Name.Text == "")
-            {
-                Warn_Middle_Name.Visible = true;
-                Warn_Middle_Name.Text = "*Required";
-            }
-            else
-            {
-                Warn_Middle_Name.Visible = false;
-            }
-
-            if (tb_Last_Name.Text == "")
-            {
-                Warn_Last_Name.Visible = true;
-                Warn_Last_Name.Text = "*Required";
-            }
-            else
-            {
-                Warn_Last_Name.Visible = false;
-            }
-
-            if (!rb_Female.Checked && !rb_Male.Checked)
-            {
-                Warn_Gender.Visible = true;
-                Warn_Gender.Text = "*Required";
-            }
-            else
-            {
-                Warn_Gender.Visible = false;
-            }
-
-            if (tb_Mobile_No.TextLength < 10)
-            {
-                Warn_Mobile_No.Visible = true;
-                Warn_Mobile_No.Text = "*Mobile Number Should be Valid";
-            }
-            else
-            {
-                Warn_Mobile_No.Visible = false;
-            }
-
-
-            if (tb_Aadhar_No.TextLength < 12)
-            {
-                Warn_Aadhar_No.Visible = true;
-                Warn_Aadhar_No.Text = "*Aadhar Number Should be Valid";
-            }
-            else
-            {
-                Warn_Aadhar_No.Visible = false;
-            }
-
-            if (tb_Pan_No.TextLength < 10)
-            {
-                Warn_PAN_No.Visible = true;
-                Warn_PAN_No.Text = "*PAN Number Should be Valid";
-            }
-            else
-            {
-                Warn_PAN_No.Visible = false;
-            }
-
-            if (tb_Address.Text == "")
-            {
-                Warn_Address.Visible = true;
-                Warn_Address.Text = "*Required";
-            }
-            else
-            {
-                Warn_Address.Visible = false;
-            }
-
         }
 
         private void btn_Save_Click(object sender, EventArgs e)
@@ -213,7 +118,6 @@ namespace RK_Cosmetics_System
                 Gender = rb_Female.Text;
             }
 
-            Warning();
 
             if (tb_Employee_ID.Text != "" && tb_First_Name.Text != "" && tb_Middle_Name.Text != "" && tb_Last_Name.Text != "" && tb_Mobile_No.TextLength == 10 && tb_Aadhar_No.TextLength == 12 && tb_Pan_No.TextLength == 10 && tb_Address.Text != "" && (rb_Female.Checked || rb_Male.Checked))
             {
@@ -237,7 +141,7 @@ namespace RK_Cosmetics_System
                 Cmd.Parameters.Add("Aadhar_No", SqlDbType.NVarChar).Value = tb_Aadhar_No.Text;
                 Cmd.Parameters.Add("Pan_No", SqlDbType.NVarChar).Value = tb_Pan_No.Text;
                 Cmd.Parameters.Add("Add", SqlDbType.NVarChar).Value = tb_Address.Text;
-                Cmd.Parameters.Add("Age",SqlDbType.Int).Value = tb_Age.Text;
+                Cmd.Parameters.Add("Age", SqlDbType.Int).Value = tb_Age.Text;
 
                 if (tb_Alternate_Mobile_No.Text != "")
                 {
@@ -246,13 +150,7 @@ namespace RK_Cosmetics_System
                 else if (tb_Alternate_Mobile_No.Text == "")
                 {
                     Cmd.Parameters.Add("Mob2", SqlDbType.Decimal).Value = "0";
-                    Warn_Alternate_Mobile_No.Visible = false;
                 }
-                else
-                {
-                    Warn_Alternate_Mobile_No.Visible = false;
-                }
-
 
                 if (tb_Email_ID.Text != "")
                 {
@@ -267,18 +165,11 @@ namespace RK_Cosmetics_System
                 if ((Convert.ToInt32(tb_Age.Text) < 18) || (Convert.ToInt32(tb_Age.Text) > 60))
                 {
                     MessageBox.Show(tb_First_Name.Text + " is Not Eligible for these Job !!!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    Warning();
                 }
 
                 else if (tb_Mobile_No.Text == tb_Alternate_Mobile_No.Text)
                 {
                     MessageBox.Show("You can't insert same mobile no !!!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    Warning();
-                }
-                else if (tb_Alternate_Mobile_No.TextLength < 10 && tb_Alternate_Mobile_No.TextLength > 0)
-                {
-                    Warn_Alternate_Mobile_No.Visible = true;
-                    Warn_Alternate_Mobile_No.Text = "Enter Valid Mobile No";
                 }
                 else
                 {
@@ -287,14 +178,14 @@ namespace RK_Cosmetics_System
                     MessageBox.Show("Employee Details Saved Successfully !!!", "Saving", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     Clear_Controls();
-                }
+                } 
+
+                Con_Close();
             }
             else
             {
-                Warning();
+                MessageBox.Show("Incomplete Information !!!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-
-            Con_Close();
         }
 
         private void Only_Numeric(object sender, KeyPressEventArgs e)

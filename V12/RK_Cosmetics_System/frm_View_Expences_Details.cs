@@ -10,9 +10,9 @@ using System.Data.SqlClient;
 
 namespace RK_Cosmetics_System
 {
-    public partial class frm_View_Customer_Details : Form
+    public partial class frm_View_Expences_Details : Form
     {
-        public frm_View_Customer_Details()
+        public frm_View_Expences_Details()
         {
             InitializeComponent();
         }
@@ -35,52 +35,42 @@ namespace RK_Cosmetics_System
             }
         }
 
-        void Clear_Control()
+        private void frm_View_Expences_Details_Load(object sender, EventArgs e)
         {
-            dtp_From_Date.ResetText();
-            dtp_To_Date.ResetText();
-            btn_Search.Enabled = false;
-            dtp_From_Date.Focus();
-        }
+            // TODO: This line of code loads data into the 'dB_RK_Cosmetics_SystemDataSet4.Expences_Details' table. You can move, or remove it, as needed.
+            this.expences_DetailsTableAdapter.Fill(this.dB_RK_Cosmetics_SystemDataSet4.Expences_Details);
 
-        private void frm_View_Customer_Details_Load(object sender, EventArgs e)
-        {
-            Clear_Control();
         }
 
         private void btn_Search_Click(object sender, EventArgs e)
         {
             Con_Open();
 
-            SqlDataAdapter SDA = new SqlDataAdapter("Select * from Customer_Basic_Details where Date Between '" + dtp_From_Date.Text + "' And '" + dtp_To_Date.Text + "'", Con);
+            SqlDataAdapter SDA = new SqlDataAdapter("Select * from Expences_Details where Date Between '" + dtp_From_Date.Text + "' And '" + dtp_To_Date.Text + "' ", Con);
 
             DataTable dt = new DataTable();
 
             SDA.Fill(dt);
 
-            dgv_View_Customer_Details.DataSource = dt;
+            dgv_View_Expences_Details.DataSource = dt;
 
-            btn_Search.Enabled = false;
 
             Con_Close();
         }
 
         private void btn_Refresh_Click(object sender, EventArgs e)
         {
-            SqlDataAdapter SDA = new SqlDataAdapter("Select * from Customer_Basic_Details", Con);
+            dtp_From_Date.ResetText();
+            dtp_To_Date.ResetText();
+            dtp_From_Date.Focus();
+
+            SqlDataAdapter SDA = new SqlDataAdapter("Select * from Expences_Details", Con);
 
             DataTable dt = new DataTable();
 
             SDA.Fill(dt);
 
-            dgv_View_Customer_Details.DataSource = dt;
-
-            btn_Search.Enabled = false;
-        }
-
-        private void dtp_To_Date_ValueChanged(object sender, EventArgs e)
-        {
-            btn_Search.Enabled = true;
+            dgv_View_Expences_Details.DataSource = dt;
         }
     }
 }

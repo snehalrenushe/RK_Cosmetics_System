@@ -48,63 +48,10 @@ namespace RK_Cosmetics_System
             tb_Email_ID.Text = "";
         }
 
-        void Warning()
-        {
-            if (tb_Distributor_ID.Text == "")
-            {
-                Warn_Distributor_ID.Visible = true;
-                Warn_Distributor_ID.Text = "*Required";
-            }
-            else
-            {
-                Warn_Distributor_ID.Visible = false;
-            }
-
-            if (tb_Name.Text == "")
-            {
-                Warn_Name.Visible = true;
-                Warn_Name.Text = "*Required";
-            }
-            else
-            {
-                Warn_Name.Visible = false;
-            }
-
-            if (tb_Addres.Text == "")
-            {
-                Warn_Address.Visible = true;
-                Warn_Address.Text = "*Required";
-            }
-            else
-            {
-                Warn_Address.Visible = false;
-            }
-
-            if (tb_Mobile_No.TextLength < 10)
-            {
-                Warn_Mobile_No.Visible = true;
-                Warn_Mobile_No.Text = "*Mobile Number Should be Valid";
-            }
-            else
-            {
-                Warn_Mobile_No.Visible = false;
-            }
-
-        }
-
 
         private void btn_Search_Click(object sender, EventArgs e)
         {
             Con_Open();
-            if (tb_Distributor_ID.Text == "")
-            {
-                Warn_Distributor_ID.Visible = true;
-                Warn_Distributor_ID.Text = "*Required";
-            }
-            else
-            {
-                Warn_Distributor_ID.Visible = false;
-            }
 
             if (tb_Distributor_ID.Text != "")
             {
@@ -140,7 +87,6 @@ namespace RK_Cosmetics_System
         {
             Con_Open();
 
-            Warning();
 
             if (tb_Distributor_ID.Text != "" && tb_Name.Text != "" && tb_Mobile_No.TextLength == 10 && tb_Addres.Text != "")
             {
@@ -164,11 +110,6 @@ namespace RK_Cosmetics_System
                 else if (tb_Alternate_Mobile_No.Text == "")
                 {
                     Cmd.Parameters.Add("Mob2", SqlDbType.Decimal).Value = "0";
-                    Warn_Alternate_Mobile_No.Visible = false;
-                }
-                else
-                {
-                    Warn_Alternate_Mobile_No.Visible = false;
                 }
 
                 if (tb_Email_ID.Text != "")
@@ -184,12 +125,11 @@ namespace RK_Cosmetics_System
                 if (tb_Mobile_No.Text == tb_Alternate_Mobile_No.Text)
                 {
                     MessageBox.Show("You can't insert same mobile no !!!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    Warning();
+                   
                 }
                 else if (tb_Alternate_Mobile_No.TextLength < 10 && tb_Alternate_Mobile_No.TextLength > 0)
                 {
-                    Warn_Alternate_Mobile_No.Visible = true;
-                    Warn_Alternate_Mobile_No.Text = "Enter Valid Mobile No";
+                    MessageBox.Show("Mobile no Should be 10 Digit !!!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {
@@ -203,7 +143,7 @@ namespace RK_Cosmetics_System
             }
             else
             {
-                Warning();
+                MessageBox.Show("Incomplete Information !!!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
         
@@ -222,7 +162,7 @@ namespace RK_Cosmetics_System
 
         private void frm_Update_Distributor_Details_Load(object sender, EventArgs e)
         {
-            Clear_Controls();
+              Clear_Controls();
         }
 
         private void Only_Numeric(object sender, KeyPressEventArgs e)
@@ -241,7 +181,5 @@ namespace RK_Cosmetics_System
 
             }
         }
-
-       
     }
 }

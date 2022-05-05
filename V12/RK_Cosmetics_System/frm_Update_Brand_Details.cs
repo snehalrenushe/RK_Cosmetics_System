@@ -48,16 +48,6 @@ namespace RK_Cosmetics_System
         {
             Con_Open();
 
-            if (tb_Brand_ID.Text == "")
-            {
-                Warn_Brand_ID.Visible = true;
-                Warn_Brand_ID.Text = "*Required";
-            }
-            else
-            {
-                Warn_Brand_ID.Visible = false;
-            }
-
             if (tb_Brand_ID.Text != "")
             {
                 SqlCommand Cmd = new SqlCommand();

@@ -69,13 +69,18 @@
             this.btn_Refresh.TabIndex = 3;
             this.btn_Refresh.Text = "Refresh";
             this.btn_Refresh.UseVisualStyleBackColor = false;
+            this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
             // 
             // dgv_View_Customer_Details
             // 
+            this.dgv_View_Customer_Details.AllowUserToAddRows = false;
+            this.dgv_View_Customer_Details.AllowUserToDeleteRows = false;
+            this.dgv_View_Customer_Details.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_View_Customer_Details.BackgroundColor = System.Drawing.Color.PeachPuff;
             this.dgv_View_Customer_Details.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_View_Customer_Details.Location = new System.Drawing.Point(46, 206);
             this.dgv_View_Customer_Details.Name = "dgv_View_Customer_Details";
+            this.dgv_View_Customer_Details.ReadOnly = true;
             this.dgv_View_Customer_Details.RowTemplate.Height = 28;
             this.dgv_View_Customer_Details.Size = new System.Drawing.Size(1775, 457);
             this.dgv_View_Customer_Details.TabIndex = 29;
@@ -107,6 +112,7 @@
             this.btn_Search.TabIndex = 28;
             this.btn_Search.Text = "Search";
             this.btn_Search.UseVisualStyleBackColor = false;
+            this.btn_Search.Click += new System.EventHandler(this.btn_Search_Click);
             // 
             // lbl_From_Date
             // 
@@ -135,6 +141,7 @@
             this.dtp_To_Date.Name = "dtp_To_Date";
             this.dtp_To_Date.Size = new System.Drawing.Size(301, 39);
             this.dtp_To_Date.TabIndex = 2;
+            this.dtp_To_Date.ValueChanged += new System.EventHandler(this.dtp_To_Date_ValueChanged);
             // 
             // lbl_To_Date
             // 
@@ -159,6 +166,7 @@
             this.Name = "frm_View_Customer_Details";
             this.Text = "View Customer Details";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frm_View_Customer_Details_Load);
             this.gb_Customer_Details.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_View_Customer_Details)).EndInit();
             this.pnl_Customer_Details.ResumeLayout(false);

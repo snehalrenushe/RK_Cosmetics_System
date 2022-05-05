@@ -29,13 +29,6 @@
         private void InitializeComponent()
         {
             this.gb_Distributor_Details = new System.Windows.Forms.GroupBox();
-            this.Warn_Name = new System.Windows.Forms.Label();
-            this.Warn_Address = new System.Windows.Forms.Label();
-            this.Warn_PAN_No = new System.Windows.Forms.Label();
-            this.Warn_Aadhar_No = new System.Windows.Forms.Label();
-            this.Warn_Alternate_Mobile_No = new System.Windows.Forms.Label();
-            this.Warn_Mobile_No = new System.Windows.Forms.Label();
-            this.Warn_Gender = new System.Windows.Forms.Label();
             this.tb_Email_ID = new System.Windows.Forms.TextBox();
             this.lbl_Email_ID = new System.Windows.Forms.Label();
             this.gb_Gender = new System.Windows.Forms.GroupBox();
@@ -62,7 +55,6 @@
             this.lbl_Distributor_ID = new System.Windows.Forms.Label();
             this.btn_Refresh = new System.Windows.Forms.Button();
             this.btn_Save = new System.Windows.Forms.Button();
-            this.Warn_Registration_No = new System.Windows.Forms.Label();
             this.gb_Distributor_Details.SuspendLayout();
             this.gb_Gender.SuspendLayout();
             this.SuspendLayout();
@@ -70,14 +62,6 @@
             // gb_Distributor_Details
             // 
             this.gb_Distributor_Details.BackColor = System.Drawing.Color.LavenderBlush;
-            this.gb_Distributor_Details.Controls.Add(this.Warn_Registration_No);
-            this.gb_Distributor_Details.Controls.Add(this.Warn_Name);
-            this.gb_Distributor_Details.Controls.Add(this.Warn_Address);
-            this.gb_Distributor_Details.Controls.Add(this.Warn_PAN_No);
-            this.gb_Distributor_Details.Controls.Add(this.Warn_Aadhar_No);
-            this.gb_Distributor_Details.Controls.Add(this.Warn_Alternate_Mobile_No);
-            this.gb_Distributor_Details.Controls.Add(this.Warn_Mobile_No);
-            this.gb_Distributor_Details.Controls.Add(this.Warn_Gender);
             this.gb_Distributor_Details.Controls.Add(this.tb_Email_ID);
             this.gb_Distributor_Details.Controls.Add(this.lbl_Email_ID);
             this.gb_Distributor_Details.Controls.Add(this.gb_Gender);
@@ -107,90 +91,6 @@
             this.gb_Distributor_Details.TabIndex = 2;
             this.gb_Distributor_Details.TabStop = false;
             this.gb_Distributor_Details.Text = "Distributor Details";
-            // 
-            // Warn_Name
-            // 
-            this.Warn_Name.AutoSize = true;
-            this.Warn_Name.Font = new System.Drawing.Font("Mongolian Baiti", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Warn_Name.ForeColor = System.Drawing.Color.Red;
-            this.Warn_Name.Location = new System.Drawing.Point(568, 223);
-            this.Warn_Name.Name = "Warn_Name";
-            this.Warn_Name.Size = new System.Drawing.Size(84, 21);
-            this.Warn_Name.TabIndex = 55;
-            this.Warn_Name.Text = "Required";
-            this.Warn_Name.Visible = false;
-            // 
-            // Warn_Address
-            // 
-            this.Warn_Address.AutoSize = true;
-            this.Warn_Address.Font = new System.Drawing.Font("Mongolian Baiti", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Warn_Address.ForeColor = System.Drawing.Color.Red;
-            this.Warn_Address.Location = new System.Drawing.Point(568, 308);
-            this.Warn_Address.Name = "Warn_Address";
-            this.Warn_Address.Size = new System.Drawing.Size(84, 21);
-            this.Warn_Address.TabIndex = 54;
-            this.Warn_Address.Text = "Required";
-            this.Warn_Address.Visible = false;
-            // 
-            // Warn_PAN_No
-            // 
-            this.Warn_PAN_No.AutoSize = true;
-            this.Warn_PAN_No.Font = new System.Drawing.Font("Mongolian Baiti", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Warn_PAN_No.ForeColor = System.Drawing.Color.Red;
-            this.Warn_PAN_No.Location = new System.Drawing.Point(1483, 508);
-            this.Warn_PAN_No.Name = "Warn_PAN_No";
-            this.Warn_PAN_No.Size = new System.Drawing.Size(84, 21);
-            this.Warn_PAN_No.TabIndex = 53;
-            this.Warn_PAN_No.Text = "Required";
-            this.Warn_PAN_No.Visible = false;
-            // 
-            // Warn_Aadhar_No
-            // 
-            this.Warn_Aadhar_No.AutoSize = true;
-            this.Warn_Aadhar_No.Font = new System.Drawing.Font("Mongolian Baiti", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Warn_Aadhar_No.ForeColor = System.Drawing.Color.Red;
-            this.Warn_Aadhar_No.Location = new System.Drawing.Point(1483, 417);
-            this.Warn_Aadhar_No.Name = "Warn_Aadhar_No";
-            this.Warn_Aadhar_No.Size = new System.Drawing.Size(84, 21);
-            this.Warn_Aadhar_No.TabIndex = 52;
-            this.Warn_Aadhar_No.Text = "Required";
-            this.Warn_Aadhar_No.Visible = false;
-            // 
-            // Warn_Alternate_Mobile_No
-            // 
-            this.Warn_Alternate_Mobile_No.AutoSize = true;
-            this.Warn_Alternate_Mobile_No.Font = new System.Drawing.Font("Mongolian Baiti", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Warn_Alternate_Mobile_No.ForeColor = System.Drawing.Color.Red;
-            this.Warn_Alternate_Mobile_No.Location = new System.Drawing.Point(1483, 317);
-            this.Warn_Alternate_Mobile_No.Name = "Warn_Alternate_Mobile_No";
-            this.Warn_Alternate_Mobile_No.Size = new System.Drawing.Size(84, 21);
-            this.Warn_Alternate_Mobile_No.TabIndex = 51;
-            this.Warn_Alternate_Mobile_No.Text = "Required";
-            this.Warn_Alternate_Mobile_No.Visible = false;
-            // 
-            // Warn_Mobile_No
-            // 
-            this.Warn_Mobile_No.AutoSize = true;
-            this.Warn_Mobile_No.Font = new System.Drawing.Font("Mongolian Baiti", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Warn_Mobile_No.ForeColor = System.Drawing.Color.Red;
-            this.Warn_Mobile_No.Location = new System.Drawing.Point(1483, 218);
-            this.Warn_Mobile_No.Name = "Warn_Mobile_No";
-            this.Warn_Mobile_No.Size = new System.Drawing.Size(84, 21);
-            this.Warn_Mobile_No.TabIndex = 49;
-            this.Warn_Mobile_No.Text = "Required";
-            this.Warn_Mobile_No.Visible = false;
-            // 
-            // Warn_Gender
-            // 
-            this.Warn_Gender.AutoSize = true;
-            this.Warn_Gender.Font = new System.Drawing.Font("Mongolian Baiti", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Warn_Gender.ForeColor = System.Drawing.Color.Red;
-            this.Warn_Gender.Location = new System.Drawing.Point(568, 417);
-            this.Warn_Gender.Name = "Warn_Gender";
-            this.Warn_Gender.Size = new System.Drawing.Size(84, 21);
-            this.Warn_Gender.TabIndex = 48;
-            this.Warn_Gender.Text = "Required";
-            this.Warn_Gender.Visible = false;
             // 
             // tb_Email_ID
             // 
@@ -492,18 +392,6 @@
             this.btn_Save.UseVisualStyleBackColor = false;
             this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
             // 
-            // Warn_Registration_No
-            // 
-            this.Warn_Registration_No.AutoSize = true;
-            this.Warn_Registration_No.Font = new System.Drawing.Font("Mongolian Baiti", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Warn_Registration_No.ForeColor = System.Drawing.Color.Red;
-            this.Warn_Registration_No.Location = new System.Drawing.Point(568, 512);
-            this.Warn_Registration_No.Name = "Warn_Registration_No";
-            this.Warn_Registration_No.Size = new System.Drawing.Size(84, 21);
-            this.Warn_Registration_No.TabIndex = 56;
-            this.Warn_Registration_No.Text = "Required";
-            this.Warn_Registration_No.Visible = false;
-            // 
             // frm_Add_New_Distributor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -554,13 +442,5 @@
         private System.Windows.Forms.Label lbl_Gender;
         private System.Windows.Forms.TextBox tb_Email_ID;
         private System.Windows.Forms.Label lbl_Email_ID;
-        private System.Windows.Forms.Label Warn_Gender;
-        private System.Windows.Forms.Label Warn_Mobile_No;
-        private System.Windows.Forms.Label Warn_Alternate_Mobile_No;
-        private System.Windows.Forms.Label Warn_Aadhar_No;
-        private System.Windows.Forms.Label Warn_PAN_No;
-        private System.Windows.Forms.Label Warn_Name;
-        private System.Windows.Forms.Label Warn_Address;
-        private System.Windows.Forms.Label Warn_Registration_No;
     }
 }

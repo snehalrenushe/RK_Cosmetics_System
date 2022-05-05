@@ -84,5 +84,18 @@ namespace RK_Cosmetics_System
                 this.Hide();
             }
         }
+
+        private void frm_Admin_Entry_Form_Load(object sender, EventArgs e)
+        {
+            lbl_Admin.Text = Global_Vars.Uname;
+        }
+
+        private void btn_Expenses_Click(object sender, EventArgs e)
+        {
+            frm_MDI_Expences_Details MED = new frm_MDI_Expences_Details();
+
+            this.Hide();
+            MED.Show();
+        }
     }
 }

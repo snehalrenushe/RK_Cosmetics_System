@@ -57,6 +57,7 @@
             this.tb_Confirm_Password.MaxLength = 10;
             this.tb_Confirm_Password.Multiline = true;
             this.tb_Confirm_Password.Name = "tb_Confirm_Password";
+            this.tb_Confirm_Password.PasswordChar = '*';
             this.tb_Confirm_Password.Size = new System.Drawing.Size(383, 45);
             this.tb_Confirm_Password.TabIndex = 3;
             // 
@@ -78,6 +79,7 @@
             this.tb_Password.MaxLength = 10;
             this.tb_Password.Multiline = true;
             this.tb_Password.Name = "tb_Password";
+            this.tb_Password.PasswordChar = '*';
             this.tb_Password.Size = new System.Drawing.Size(383, 45);
             this.tb_Password.TabIndex = 2;
             // 
@@ -124,6 +126,7 @@
             this.btn_Save.TabIndex = 4;
             this.btn_Save.Text = "Save";
             this.btn_Save.UseVisualStyleBackColor = false;
+            this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
             // 
             // btn_Close
             // 
@@ -136,6 +139,7 @@
             this.btn_Close.TabIndex = 5;
             this.btn_Close.Text = "Close";
             this.btn_Close.UseVisualStyleBackColor = false;
+            this.btn_Close.Click += new System.EventHandler(this.btn_Close_Click);
             // 
             // frm_Add_New_User
             // 
@@ -155,6 +159,7 @@
             this.Controls.Add(this.lbl_Username);
             this.Name = "frm_Add_New_User";
             this.Text = "Add New User";
+            this.Load += new System.EventHandler(this.frm_Add_New_User_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

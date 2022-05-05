@@ -71,6 +71,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DB_RK_Cosmetics_SystemDataSet3.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DB_RK_Cosmetics_SystemDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_RK_Cosmetics_SystemDataSet4.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DB_RK_Cosmetics_SystemDataSet5.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -141,6 +146,12 @@
     <Compile Include="frm_Delete_User.Designer.cs">
       <DependentUpon>frm_Delete_User.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_Expences.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Expences.Designer.cs">
+      <DependentUpon>frm_Expences.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_MDI_Brand_Details.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,6 +181,12 @@
     </Compile>
     <Compile Include="frm_MDI_Customer_Details.Designer.cs">
       <DependentUpon>frm_MDI_Customer_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_MDI_Expences_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_MDI_Expences_Details.Designer.cs">
+      <DependentUpon>frm_MDI_Expences_Details.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_MDI_Product_Details.cs">
       <SubType>Form</SubType>
@@ -243,6 +260,12 @@
     <Compile Include="frm_View_Employee_Details.Designer.cs">
       <DependentUpon>frm_View_Employee_Details.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_View_Expences_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_View_Expences_Details.Designer.cs">
+      <DependentUpon>frm_View_Expences_Details.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_View_Product_Details.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -255,6 +278,7 @@
     <Compile Include="frm_View_Stock_Details.Designer.cs">
       <DependentUpon>frm_View_Stock_Details.cs</DependentUpon>
     </Compile>
+    <Compile Include="Global_Vars.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frm_Add_New_Brand.resx">
@@ -287,6 +311,9 @@
     <EmbeddedResource Include="frm_Delete_User.resx">
       <DependentUpon>frm_Delete_User.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_Expences.resx">
+      <DependentUpon>frm_Expences.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_MDI_Brand_Details.resx">
       <DependentUpon>frm_MDI_Brand_Details.cs</DependentUpon>
     </EmbeddedResource>
@@ -301,6 +328,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_MDI_Customer_Details.resx">
       <DependentUpon>frm_MDI_Customer_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_MDI_Expences_Details.resx">
+      <DependentUpon>frm_MDI_Expences_Details.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_MDI_Product_Details.resx">
       <DependentUpon>frm_MDI_Product_Details.cs</DependentUpon>
@@ -337,6 +367,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_View_Employee_Details.resx">
       <DependentUpon>frm_View_Employee_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_View_Expences_Details.resx">
+      <DependentUpon>frm_View_Expences_Details.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_View_Product_Details.resx">
       <DependentUpon>frm_View_Product_Details.cs</DependentUpon>
@@ -397,6 +430,17 @@
     </None>
     <None Include="DB_RK_Cosmetics_SystemDataSet3.xss">
       <DependentUpon>DB_RK_Cosmetics_SystemDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DB_RK_Cosmetics_SystemDataSet4.xsc">
+      <DependentUpon>DB_RK_Cosmetics_SystemDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="DB_RK_Cosmetics_SystemDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_RK_Cosmetics_SystemDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_RK_Cosmetics_SystemDataSet4.xss">
+      <DependentUpon>DB_RK_Cosmetics_SystemDataSet4.xsd</DependentUpon>
     </None>
     <None Include="DB_RK_Cosmetics_SystemDataSet5.xsc">
       <DependentUpon>DB_RK_Cosmetics_SystemDataSet5.xsd</DependentUpon>

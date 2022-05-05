@@ -39,6 +39,13 @@
             this.lbl_Customer_ID = new System.Windows.Forms.Label();
             this.gb_Purchase_Details = new System.Windows.Forms.GroupBox();
             this.dgv_Add_New_Customer = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_Add = new System.Windows.Forms.Button();
             this.cb_Product_Name = new System.Windows.Forms.ComboBox();
             this.cb_Brand_Name = new System.Windows.Forms.ComboBox();
@@ -93,6 +100,7 @@
             this.dtp_Date.Name = "dtp_Date";
             this.dtp_Date.Size = new System.Drawing.Size(301, 39);
             this.dtp_Date.TabIndex = 3;
+            this.dtp_Date.ValueChanged += new System.EventHandler(this.dtp_Date_ValueChanged);
             // 
             // tb_Mobile_No
             // 
@@ -103,6 +111,7 @@
             this.tb_Mobile_No.Name = "tb_Mobile_No";
             this.tb_Mobile_No.Size = new System.Drawing.Size(301, 44);
             this.tb_Mobile_No.TabIndex = 4;
+            this.tb_Mobile_No.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Numerics);
             // 
             // lbl_Mobile_No
             // 
@@ -137,6 +146,7 @@
             this.tb_Customer_Name.Name = "tb_Customer_Name";
             this.tb_Customer_Name.Size = new System.Drawing.Size(301, 40);
             this.tb_Customer_Name.TabIndex = 14;
+            this.tb_Customer_Name.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Text);
             // 
             // tb_Customer_ID
             // 
@@ -198,13 +208,67 @@
             // 
             // dgv_Add_New_Customer
             // 
+            this.dgv_Add_New_Customer.AllowUserToAddRows = false;
+            this.dgv_Add_New_Customer.AllowUserToDeleteRows = false;
+            this.dgv_Add_New_Customer.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_Add_New_Customer.BackgroundColor = System.Drawing.Color.PeachPuff;
             this.dgv_Add_New_Customer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_Add_New_Customer.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5,
+            this.Column6,
+            this.Column7});
             this.dgv_Add_New_Customer.Location = new System.Drawing.Point(891, 50);
             this.dgv_Add_New_Customer.Name = "dgv_Add_New_Customer";
+            this.dgv_Add_New_Customer.ReadOnly = true;
             this.dgv_Add_New_Customer.RowTemplate.Height = 28;
             this.dgv_Add_New_Customer.Size = new System.Drawing.Size(850, 302);
             this.dgv_Add_New_Customer.TabIndex = 28;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Sr.No";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Brand Name";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Product Name";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Unit Price";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Qty";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "GST";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "Total Price";
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
             // 
             // btn_Add
             // 
@@ -224,22 +288,27 @@
             // 
             // cb_Product_Name
             // 
+            this.cb_Product_Name.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_Product_Name.FormattingEnabled = true;
             this.cb_Product_Name.Location = new System.Drawing.Point(399, 100);
             this.cb_Product_Name.Name = "cb_Product_Name";
             this.cb_Product_Name.Size = new System.Drawing.Size(301, 33);
             this.cb_Product_Name.TabIndex = 6;
+            this.cb_Product_Name.SelectedIndexChanged += new System.EventHandler(this.cb_Product_Name_SelectedIndexChanged);
             // 
             // cb_Brand_Name
             // 
+            this.cb_Brand_Name.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_Brand_Name.FormattingEnabled = true;
             this.cb_Brand_Name.Location = new System.Drawing.Point(399, 50);
             this.cb_Brand_Name.Name = "cb_Brand_Name";
             this.cb_Brand_Name.Size = new System.Drawing.Size(301, 33);
             this.cb_Brand_Name.TabIndex = 5;
+            this.cb_Brand_Name.SelectedIndexChanged += new System.EventHandler(this.cb_Brand_Name_SelectedIndexChanged);
             // 
             // tb_Price
             // 
+            this.tb_Price.Enabled = false;
             this.tb_Price.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Price.Location = new System.Drawing.Point(399, 312);
             this.tb_Price.MaxLength = 10;
@@ -250,6 +319,7 @@
             // 
             // tb_GST_Applied
             // 
+            this.tb_GST_Applied.Enabled = false;
             this.tb_GST_Applied.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_GST_Applied.Location = new System.Drawing.Point(399, 259);
             this.tb_GST_Applied.MaxLength = 15;
@@ -291,9 +361,13 @@
             this.tb_Quantity.Name = "tb_Quantity";
             this.tb_Quantity.Size = new System.Drawing.Size(301, 40);
             this.tb_Quantity.TabIndex = 8;
+            this.tb_Quantity.TextChanged += new System.EventHandler(this.tb_Quantity_TextChanged);
+            this.tb_Quantity.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Only_Numerics);
+            this.tb_Quantity.Leave += new System.EventHandler(this.tb_Quantity_Leave);
             // 
             // tb_Per_Price
             // 
+            this.tb_Per_Price.Enabled = false;
             this.tb_Per_Price.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Per_Price.Location = new System.Drawing.Point(399, 152);
             this.tb_Per_Price.MaxLength = 15;
@@ -322,9 +396,9 @@
             this.lbl_Per_Price.ForeColor = System.Drawing.Color.Maroon;
             this.lbl_Per_Price.Location = new System.Drawing.Point(135, 147);
             this.lbl_Per_Price.Name = "lbl_Per_Price";
-            this.lbl_Per_Price.Size = new System.Drawing.Size(169, 36);
+            this.lbl_Per_Price.Size = new System.Drawing.Size(132, 36);
             this.lbl_Per_Price.TabIndex = 19;
-            this.lbl_Per_Price.Text = "Net Weight";
+            this.lbl_Per_Price.Text = "Per Price";
             // 
             // lbl_Product_Name
             // 
@@ -369,6 +443,7 @@
             // 
             // tb_Final_Bill
             // 
+            this.tb_Final_Bill.Enabled = false;
             this.tb_Final_Bill.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Final_Bill.Location = new System.Drawing.Point(1440, 44);
             this.tb_Final_Bill.MaxLength = 15;
@@ -409,9 +484,13 @@
             this.tb_Discount.Name = "tb_Discount";
             this.tb_Discount.Size = new System.Drawing.Size(301, 40);
             this.tb_Discount.TabIndex = 13;
+            this.tb_Discount.Text = "0";
+            this.tb_Discount.TextChanged += new System.EventHandler(this.tb_Discount_TextChanged);
+            this.tb_Discount.Leave += new System.EventHandler(this.tb_Discount_Leave);
             // 
             // tb_Bill
             // 
+            this.tb_Bill.Enabled = false;
             this.tb_Bill.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Bill.Location = new System.Drawing.Point(214, 52);
             this.tb_Bill.MaxLength = 15;
@@ -486,6 +565,7 @@
             this.Controls.Add(this.gb_Customer_Details);
             this.Name = "frm_Add_New_Customer";
             this.Text = "Add New Customer";
+            this.Load += new System.EventHandler(this.frm_Add_New_Customer_Load);
             this.gb_Customer_Details.ResumeLayout(false);
             this.gb_Customer_Details.PerformLayout();
             this.gb_Purchase_Details.ResumeLayout(false);
@@ -533,5 +613,12 @@
         private System.Windows.Forms.Label lbl_Bill;
         private System.Windows.Forms.Button btn_Save;
         private System.Windows.Forms.Button btn_Refresh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
     }
 }

@@ -29,10 +29,6 @@
         private void InitializeComponent()
         {
             this.gb_Update_Or_Search_Distributor_Details = new System.Windows.Forms.GroupBox();
-            this.Warn_Alternate_Mobile_No = new System.Windows.Forms.Label();
-            this.Warn_Mobile_No = new System.Windows.Forms.Label();
-            this.Warn_Address = new System.Windows.Forms.Label();
-            this.Warn_Name = new System.Windows.Forms.Label();
             this.tb_Email_ID = new System.Windows.Forms.TextBox();
             this.lbl_Email_ID = new System.Windows.Forms.Label();
             this.tb_Addres = new System.Windows.Forms.TextBox();
@@ -40,7 +36,6 @@
             this.tb_Name = new System.Windows.Forms.TextBox();
             this.lbl_Name = new System.Windows.Forms.Label();
             this.pnl_Update_or_Search_Distributor = new System.Windows.Forms.Panel();
-            this.Warn_Distributor_ID = new System.Windows.Forms.Label();
             this.btn_Update = new System.Windows.Forms.Button();
             this.btn_Search = new System.Windows.Forms.Button();
             this.lbl_Distributor_ID = new System.Windows.Forms.Label();
@@ -64,10 +59,6 @@
             // gb_Update_Or_Search_Distributor_Details
             // 
             this.gb_Update_Or_Search_Distributor_Details.BackColor = System.Drawing.Color.LavenderBlush;
-            this.gb_Update_Or_Search_Distributor_Details.Controls.Add(this.Warn_Alternate_Mobile_No);
-            this.gb_Update_Or_Search_Distributor_Details.Controls.Add(this.Warn_Mobile_No);
-            this.gb_Update_Or_Search_Distributor_Details.Controls.Add(this.Warn_Address);
-            this.gb_Update_Or_Search_Distributor_Details.Controls.Add(this.Warn_Name);
             this.gb_Update_Or_Search_Distributor_Details.Controls.Add(this.tb_Email_ID);
             this.gb_Update_Or_Search_Distributor_Details.Controls.Add(this.lbl_Email_ID);
             this.gb_Update_Or_Search_Distributor_Details.Controls.Add(this.tb_Addres);
@@ -90,54 +81,6 @@
             this.gb_Update_Or_Search_Distributor_Details.TabIndex = 3;
             this.gb_Update_Or_Search_Distributor_Details.TabStop = false;
             this.gb_Update_Or_Search_Distributor_Details.Text = "Update or Search Distributor";
-            // 
-            // Warn_Alternate_Mobile_No
-            // 
-            this.Warn_Alternate_Mobile_No.AutoSize = true;
-            this.Warn_Alternate_Mobile_No.Font = new System.Drawing.Font("Mongolian Baiti", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Warn_Alternate_Mobile_No.ForeColor = System.Drawing.Color.Red;
-            this.Warn_Alternate_Mobile_No.Location = new System.Drawing.Point(1520, 408);
-            this.Warn_Alternate_Mobile_No.Name = "Warn_Alternate_Mobile_No";
-            this.Warn_Alternate_Mobile_No.Size = new System.Drawing.Size(84, 21);
-            this.Warn_Alternate_Mobile_No.TabIndex = 62;
-            this.Warn_Alternate_Mobile_No.Text = "Required";
-            this.Warn_Alternate_Mobile_No.Visible = false;
-            // 
-            // Warn_Mobile_No
-            // 
-            this.Warn_Mobile_No.AutoSize = true;
-            this.Warn_Mobile_No.Font = new System.Drawing.Font("Mongolian Baiti", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Warn_Mobile_No.ForeColor = System.Drawing.Color.Red;
-            this.Warn_Mobile_No.Location = new System.Drawing.Point(1520, 282);
-            this.Warn_Mobile_No.Name = "Warn_Mobile_No";
-            this.Warn_Mobile_No.Size = new System.Drawing.Size(84, 21);
-            this.Warn_Mobile_No.TabIndex = 61;
-            this.Warn_Mobile_No.Text = "Required";
-            this.Warn_Mobile_No.Visible = false;
-            // 
-            // Warn_Address
-            // 
-            this.Warn_Address.AutoSize = true;
-            this.Warn_Address.Font = new System.Drawing.Font("Mongolian Baiti", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Warn_Address.ForeColor = System.Drawing.Color.Red;
-            this.Warn_Address.Location = new System.Drawing.Point(589, 400);
-            this.Warn_Address.Name = "Warn_Address";
-            this.Warn_Address.Size = new System.Drawing.Size(84, 21);
-            this.Warn_Address.TabIndex = 60;
-            this.Warn_Address.Text = "Required";
-            this.Warn_Address.Visible = false;
-            // 
-            // Warn_Name
-            // 
-            this.Warn_Name.AutoSize = true;
-            this.Warn_Name.Font = new System.Drawing.Font("Mongolian Baiti", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Warn_Name.ForeColor = System.Drawing.Color.Red;
-            this.Warn_Name.Location = new System.Drawing.Point(589, 278);
-            this.Warn_Name.Name = "Warn_Name";
-            this.Warn_Name.Size = new System.Drawing.Size(84, 21);
-            this.Warn_Name.TabIndex = 59;
-            this.Warn_Name.Text = "Required";
-            this.Warn_Name.Visible = false;
             // 
             // tb_Email_ID
             // 
@@ -209,7 +152,6 @@
             // pnl_Update_or_Search_Distributor
             // 
             this.pnl_Update_or_Search_Distributor.BackColor = System.Drawing.Color.MistyRose;
-            this.pnl_Update_or_Search_Distributor.Controls.Add(this.Warn_Distributor_ID);
             this.pnl_Update_or_Search_Distributor.Controls.Add(this.btn_Update);
             this.pnl_Update_or_Search_Distributor.Controls.Add(this.btn_Search);
             this.pnl_Update_or_Search_Distributor.Controls.Add(this.lbl_Distributor_ID);
@@ -218,18 +160,6 @@
             this.pnl_Update_or_Search_Distributor.Name = "pnl_Update_or_Search_Distributor";
             this.pnl_Update_or_Search_Distributor.Size = new System.Drawing.Size(1590, 100);
             this.pnl_Update_or_Search_Distributor.TabIndex = 39;
-            // 
-            // Warn_Distributor_ID
-            // 
-            this.Warn_Distributor_ID.AutoSize = true;
-            this.Warn_Distributor_ID.Font = new System.Drawing.Font("Mongolian Baiti", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Warn_Distributor_ID.ForeColor = System.Drawing.Color.Red;
-            this.Warn_Distributor_ID.Location = new System.Drawing.Point(574, 75);
-            this.Warn_Distributor_ID.Name = "Warn_Distributor_ID";
-            this.Warn_Distributor_ID.Size = new System.Drawing.Size(84, 21);
-            this.Warn_Distributor_ID.TabIndex = 60;
-            this.Warn_Distributor_ID.Text = "Required";
-            this.Warn_Distributor_ID.Visible = false;
             // 
             // btn_Update
             // 
@@ -462,10 +392,5 @@
         private System.Windows.Forms.Label lbl_Addres;
         private System.Windows.Forms.TextBox tb_Email_ID;
         private System.Windows.Forms.Label lbl_Email_ID;
-        private System.Windows.Forms.Label Warn_Name;
-        private System.Windows.Forms.Label Warn_Address;
-        private System.Windows.Forms.Label Warn_Mobile_No;
-        private System.Windows.Forms.Label Warn_Alternate_Mobile_No;
-        private System.Windows.Forms.Label Warn_Distributor_ID;
     }
 }
