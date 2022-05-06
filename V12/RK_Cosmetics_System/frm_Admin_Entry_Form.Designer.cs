@@ -71,7 +71,7 @@
             this.pnl_Admin_Entry_Form.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnl_Admin_Entry_Form.Location = new System.Drawing.Point(0, 0);
             this.pnl_Admin_Entry_Form.Name = "pnl_Admin_Entry_Form";
-            this.pnl_Admin_Entry_Form.Size = new System.Drawing.Size(418, 884);
+            this.pnl_Admin_Entry_Form.Size = new System.Drawing.Size(267, 639);
             this.pnl_Admin_Entry_Form.TabIndex = 0;
             // 
             // btn_Reports
@@ -79,9 +79,9 @@
             this.btn_Reports.BackColor = System.Drawing.Color.YellowGreen;
             this.btn_Reports.Font = new System.Drawing.Font("Palatino Linotype", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Reports.ForeColor = System.Drawing.Color.Black;
-            this.btn_Reports.Location = new System.Drawing.Point(67, 412);
+            this.btn_Reports.Location = new System.Drawing.Point(52, 338);
             this.btn_Reports.Name = "btn_Reports";
-            this.btn_Reports.Size = new System.Drawing.Size(184, 56);
+            this.btn_Reports.Size = new System.Drawing.Size(149, 41);
             this.btn_Reports.TabIndex = 6;
             this.btn_Reports.Text = "Reports";
             this.btn_Reports.UseVisualStyleBackColor = false;
@@ -90,11 +90,11 @@
             // 
             this.lbl_Admin.AutoSize = true;
             this.lbl_Admin.BackColor = System.Drawing.Color.HotPink;
-            this.lbl_Admin.Font = new System.Drawing.Font("Palatino Linotype", 26F, System.Drawing.FontStyle.Bold);
+            this.lbl_Admin.Font = new System.Drawing.Font("Palatino Linotype", 18F, System.Drawing.FontStyle.Bold);
             this.lbl_Admin.ForeColor = System.Drawing.Color.Indigo;
-            this.lbl_Admin.Location = new System.Drawing.Point(66, 487);
+            this.lbl_Admin.Location = new System.Drawing.Point(80, 273);
             this.lbl_Admin.Name = "lbl_Admin";
-            this.lbl_Admin.Size = new System.Drawing.Size(197, 71);
+            this.lbl_Admin.Size = new System.Drawing.Size(137, 49);
             this.lbl_Admin.TabIndex = 3;
             this.lbl_Admin.Text = "Admin";
             // 
@@ -103,7 +103,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(419, 304);
+            this.pictureBox1.Size = new System.Drawing.Size(267, 255);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -111,11 +111,11 @@
             // btn_User_Management
             // 
             this.btn_User_Management.BackColor = System.Drawing.Color.YellowGreen;
-            this.btn_User_Management.Font = new System.Drawing.Font("Palatino Linotype", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_User_Management.Font = new System.Drawing.Font("Palatino Linotype", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_User_Management.ForeColor = System.Drawing.Color.Black;
-            this.btn_User_Management.Location = new System.Drawing.Point(744, 812);
+            this.btn_User_Management.Location = new System.Drawing.Point(494, 548);
             this.btn_User_Management.Name = "btn_User_Management";
-            this.btn_User_Management.Size = new System.Drawing.Size(351, 61);
+            this.btn_User_Management.Size = new System.Drawing.Size(272, 42);
             this.btn_User_Management.TabIndex = 6;
             this.btn_User_Management.Text = "User Management";
             this.btn_User_Management.UseVisualStyleBackColor = false;
@@ -127,7 +127,7 @@
             this.btn_Logout.Font = new System.Drawing.Font("Rockwell Condensed", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Logout.ForeColor = System.Drawing.Color.Black;
             this.btn_Logout.Image = ((System.Drawing.Image)(resources.GetObject("btn_Logout.Image")));
-            this.btn_Logout.Location = new System.Drawing.Point(1629, 12);
+            this.btn_Logout.Location = new System.Drawing.Point(1153, 12);
             this.btn_Logout.Name = "btn_Logout";
             this.btn_Logout.Size = new System.Drawing.Size(145, 55);
             this.btn_Logout.TabIndex = 3;
@@ -138,11 +138,11 @@
             // btn_Stock
             // 
             this.btn_Stock.BackColor = System.Drawing.Color.YellowGreen;
-            this.btn_Stock.Font = new System.Drawing.Font("Palatino Linotype", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Stock.Font = new System.Drawing.Font("Palatino Linotype", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Stock.ForeColor = System.Drawing.Color.Black;
-            this.btn_Stock.Location = new System.Drawing.Point(1195, 812);
+            this.btn_Stock.Location = new System.Drawing.Point(823, 548);
             this.btn_Stock.Name = "btn_Stock";
-            this.btn_Stock.Size = new System.Drawing.Size(184, 56);
+            this.btn_Stock.Size = new System.Drawing.Size(163, 42);
             this.btn_Stock.TabIndex = 7;
             this.btn_Stock.Text = "Stock";
             this.btn_Stock.UseVisualStyleBackColor = false;
@@ -151,9 +151,9 @@
             // pb_Customer
             // 
             this.pb_Customer.Image = ((System.Drawing.Image)(resources.GetObject("pb_Customer.Image")));
-            this.pb_Customer.Location = new System.Drawing.Point(425, 132);
+            this.pb_Customer.Location = new System.Drawing.Point(302, 93);
             this.pb_Customer.Name = "pb_Customer";
-            this.pb_Customer.Size = new System.Drawing.Size(281, 255);
+            this.pb_Customer.Size = new System.Drawing.Size(154, 143);
             this.pb_Customer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_Customer.TabIndex = 4;
             this.pb_Customer.TabStop = false;
@@ -161,9 +161,9 @@
             // pb_Distributor
             // 
             this.pb_Distributor.Image = ((System.Drawing.Image)(resources.GetObject("pb_Distributor.Image")));
-            this.pb_Distributor.Location = new System.Drawing.Point(1141, 132);
+            this.pb_Distributor.Location = new System.Drawing.Point(823, 93);
             this.pb_Distributor.Name = "pb_Distributor";
-            this.pb_Distributor.Size = new System.Drawing.Size(270, 255);
+            this.pb_Distributor.Size = new System.Drawing.Size(154, 143);
             this.pb_Distributor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_Distributor.TabIndex = 5;
             this.pb_Distributor.TabStop = false;
@@ -171,9 +171,9 @@
             // pb_User_Management
             // 
             this.pb_User_Management.Image = ((System.Drawing.Image)(resources.GetObject("pb_User_Management.Image")));
-            this.pb_User_Management.Location = new System.Drawing.Point(774, 553);
+            this.pb_User_Management.Location = new System.Drawing.Point(555, 383);
             this.pb_User_Management.Name = "pb_User_Management";
-            this.pb_User_Management.Size = new System.Drawing.Size(294, 253);
+            this.pb_User_Management.Size = new System.Drawing.Size(154, 143);
             this.pb_User_Management.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_User_Management.TabIndex = 6;
             this.pb_User_Management.TabStop = false;
@@ -181,9 +181,9 @@
             // pb_Employee
             // 
             this.pb_Employee.Image = ((System.Drawing.Image)(resources.GetObject("pb_Employee.Image")));
-            this.pb_Employee.Location = new System.Drawing.Point(774, 132);
+            this.pb_Employee.Location = new System.Drawing.Point(555, 93);
             this.pb_Employee.Name = "pb_Employee";
-            this.pb_Employee.Size = new System.Drawing.Size(294, 255);
+            this.pb_Employee.Size = new System.Drawing.Size(154, 143);
             this.pb_Employee.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_Employee.TabIndex = 7;
             this.pb_Employee.TabStop = false;
@@ -191,9 +191,9 @@
             // pb_Product
             // 
             this.pb_Product.Image = ((System.Drawing.Image)(resources.GetObject("pb_Product.Image")));
-            this.pb_Product.Location = new System.Drawing.Point(425, 553);
+            this.pb_Product.Location = new System.Drawing.Point(302, 385);
             this.pb_Product.Name = "pb_Product";
-            this.pb_Product.Size = new System.Drawing.Size(283, 253);
+            this.pb_Product.Size = new System.Drawing.Size(154, 143);
             this.pb_Product.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_Product.TabIndex = 8;
             this.pb_Product.TabStop = false;
@@ -201,9 +201,9 @@
             // pb_Stock
             // 
             this.pb_Stock.Image = ((System.Drawing.Image)(resources.GetObject("pb_Stock.Image")));
-            this.pb_Stock.Location = new System.Drawing.Point(1141, 553);
+            this.pb_Stock.Location = new System.Drawing.Point(823, 383);
             this.pb_Stock.Name = "pb_Stock";
-            this.pb_Stock.Size = new System.Drawing.Size(270, 253);
+            this.pb_Stock.Size = new System.Drawing.Size(154, 143);
             this.pb_Stock.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_Stock.TabIndex = 9;
             this.pb_Stock.TabStop = false;
@@ -211,11 +211,11 @@
             // btn_Customer
             // 
             this.btn_Customer.BackColor = System.Drawing.Color.YellowGreen;
-            this.btn_Customer.Font = new System.Drawing.Font("Palatino Linotype", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Customer.Font = new System.Drawing.Font("Palatino Linotype", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Customer.ForeColor = System.Drawing.Color.Black;
-            this.btn_Customer.Location = new System.Drawing.Point(485, 393);
+            this.btn_Customer.Location = new System.Drawing.Point(293, 253);
             this.btn_Customer.Name = "btn_Customer";
-            this.btn_Customer.Size = new System.Drawing.Size(184, 56);
+            this.btn_Customer.Size = new System.Drawing.Size(163, 42);
             this.btn_Customer.TabIndex = 1;
             this.btn_Customer.Text = "Customer";
             this.btn_Customer.UseVisualStyleBackColor = false;
@@ -224,11 +224,11 @@
             // btn_Employee
             // 
             this.btn_Employee.BackColor = System.Drawing.Color.YellowGreen;
-            this.btn_Employee.Font = new System.Drawing.Font("Palatino Linotype", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Employee.Font = new System.Drawing.Font("Palatino Linotype", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Employee.ForeColor = System.Drawing.Color.Black;
-            this.btn_Employee.Location = new System.Drawing.Point(823, 393);
+            this.btn_Employee.Location = new System.Drawing.Point(555, 252);
             this.btn_Employee.Name = "btn_Employee";
-            this.btn_Employee.Size = new System.Drawing.Size(184, 56);
+            this.btn_Employee.Size = new System.Drawing.Size(163, 42);
             this.btn_Employee.TabIndex = 2;
             this.btn_Employee.Text = "Employee";
             this.btn_Employee.UseVisualStyleBackColor = false;
@@ -237,11 +237,11 @@
             // btn_Distributor
             // 
             this.btn_Distributor.BackColor = System.Drawing.Color.YellowGreen;
-            this.btn_Distributor.Font = new System.Drawing.Font("Palatino Linotype", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Distributor.Font = new System.Drawing.Font("Palatino Linotype", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Distributor.ForeColor = System.Drawing.Color.Black;
-            this.btn_Distributor.Location = new System.Drawing.Point(1166, 393);
+            this.btn_Distributor.Location = new System.Drawing.Point(813, 253);
             this.btn_Distributor.Name = "btn_Distributor";
-            this.btn_Distributor.Size = new System.Drawing.Size(208, 56);
+            this.btn_Distributor.Size = new System.Drawing.Size(173, 42);
             this.btn_Distributor.TabIndex = 3;
             this.btn_Distributor.Text = "Distributor";
             this.btn_Distributor.UseVisualStyleBackColor = false;
@@ -250,11 +250,11 @@
             // btn_Product
             // 
             this.btn_Product.BackColor = System.Drawing.Color.YellowGreen;
-            this.btn_Product.Font = new System.Drawing.Font("Palatino Linotype", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Product.Font = new System.Drawing.Font("Palatino Linotype", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Product.ForeColor = System.Drawing.Color.Black;
-            this.btn_Product.Location = new System.Drawing.Point(473, 812);
+            this.btn_Product.Location = new System.Drawing.Point(302, 548);
             this.btn_Product.Name = "btn_Product";
-            this.btn_Product.Size = new System.Drawing.Size(184, 56);
+            this.btn_Product.Size = new System.Drawing.Size(163, 42);
             this.btn_Product.TabIndex = 5;
             this.btn_Product.Text = "Product";
             this.btn_Product.UseVisualStyleBackColor = false;
@@ -263,11 +263,11 @@
             // btn_Brand
             // 
             this.btn_Brand.BackColor = System.Drawing.Color.YellowGreen;
-            this.btn_Brand.Font = new System.Drawing.Font("Palatino Linotype", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Brand.Font = new System.Drawing.Font("Palatino Linotype", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Brand.ForeColor = System.Drawing.Color.Black;
-            this.btn_Brand.Location = new System.Drawing.Point(1486, 396);
+            this.btn_Brand.Location = new System.Drawing.Point(1087, 253);
             this.btn_Brand.Name = "btn_Brand";
-            this.btn_Brand.Size = new System.Drawing.Size(208, 56);
+            this.btn_Brand.Size = new System.Drawing.Size(163, 42);
             this.btn_Brand.TabIndex = 4;
             this.btn_Brand.Text = "Brand";
             this.btn_Brand.UseVisualStyleBackColor = false;
@@ -276,11 +276,11 @@
             // btn_Expenses
             // 
             this.btn_Expenses.BackColor = System.Drawing.Color.YellowGreen;
-            this.btn_Expenses.Font = new System.Drawing.Font("Palatino Linotype", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Expenses.Font = new System.Drawing.Font("Palatino Linotype", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Expenses.ForeColor = System.Drawing.Color.Black;
-            this.btn_Expenses.Location = new System.Drawing.Point(1486, 812);
+            this.btn_Expenses.Location = new System.Drawing.Point(1087, 548);
             this.btn_Expenses.Name = "btn_Expenses";
-            this.btn_Expenses.Size = new System.Drawing.Size(208, 56);
+            this.btn_Expenses.Size = new System.Drawing.Size(163, 42);
             this.btn_Expenses.TabIndex = 8;
             this.btn_Expenses.Text = "Expenses";
             this.btn_Expenses.UseVisualStyleBackColor = false;
@@ -289,9 +289,9 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(1461, 135);
+            this.pictureBox3.Location = new System.Drawing.Point(1087, 93);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(270, 255);
+            this.pictureBox3.Size = new System.Drawing.Size(154, 143);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 14;
             this.pictureBox3.TabStop = false;
@@ -299,9 +299,9 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(1461, 551);
+            this.pictureBox4.Location = new System.Drawing.Point(1087, 370);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(270, 255);
+            this.pictureBox4.Size = new System.Drawing.Size(154, 143);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 16;
             this.pictureBox4.TabStop = false;
@@ -311,7 +311,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LavenderBlush;
-            this.ClientSize = new System.Drawing.Size(1786, 884);
+            this.ClientSize = new System.Drawing.Size(1310, 639);
             this.Controls.Add(this.btn_Expenses);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.btn_Brand);
@@ -330,9 +330,10 @@
             this.Controls.Add(this.pb_Customer);
             this.Controls.Add(this.btn_Logout);
             this.Controls.Add(this.pnl_Admin_Entry_Form);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Strikeout, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.MintCream;
             this.Name = "frm_Admin_Entry_Form";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin Entry Form";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frm_Admin_Entry_Form_Load);
