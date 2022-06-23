@@ -151,11 +151,11 @@ namespace RK_Cosmetics_System
                 }
                 else
                 {
-                    Cmd.ExecuteNonQuery();
+                        Cmd.ExecuteNonQuery();
 
-                    MessageBox.Show("Distributor Details Saved Successfully !!!", "Saving", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Distributor Details Saved Successfully !!!", "Saving", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    Clear_Controls();
+                        Clear_Controls();
                 }
             }
             else
