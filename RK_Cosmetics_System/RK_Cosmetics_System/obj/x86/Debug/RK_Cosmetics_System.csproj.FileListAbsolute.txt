@@ -54,3 +54,28 @@ C:\Users\91842\Desktop\Prog_Snehal\RK\C#_Project\RK_Cosmetics_System\RK_Cosmetic
 C:\Users\91842\Desktop\Prog_Snehal\RK\C#_Project\RK_Cosmetics_System\RK_Cosmetics_System\obj\x86\Debug\RK_Cosmetics_System.frm_View_Expense_Details.resources
 C:\Users\91842\Desktop\Prog_Snehal\RK\C#_Project\RK_Cosmetics_System\RK_Cosmetics_System\obj\x86\Debug\RK_Cosmetics_System.frm_View_Product_List.resources
 C:\Users\91842\Desktop\Prog_Snehal\RK\C#_Project\RK_Cosmetics_System\RK_Cosmetics_System\obj\x86\Debug\RK_Cosmetics_System.frm_View_Stock_List.resources
+C:\Users\91842\Desktop\Git_Upload\Git RK Project\RK_Cosmetics_System\RK_Cosmetics_System\bin\Debug\RK_Cosmetics_System.exe.config
+C:\Users\91842\Desktop\Git_Upload\Git RK Project\RK_Cosmetics_System\RK_Cosmetics_System\bin\Debug\RK_Cosmetics_System.exe
+C:\Users\91842\Desktop\Git_Upload\Git RK Project\RK_Cosmetics_System\RK_Cosmetics_System\bin\Debug\RK_Cosmetics_System.pdb
+C:\Users\91842\Desktop\Git_Upload\Git RK Project\RK_Cosmetics_System\RK_Cosmetics_System\obj\x86\Debug\RK_Cosmetics_System.csprojResolveAssemblyReference.cache
+C:\Users\91842\Desktop\Git_Upload\Git RK Project\RK_Cosmetics_System\RK_Cosmetics_System\obj\x86\Debug\RK_Cosmetics_System.frm_Add_Expenses.resources
+C:\Users\91842\Desktop\Git_Upload\Git RK Project\RK_Cosmetics_System\RK_Cosmetics_System\obj\x86\Debug\RK_Cosmetics_System.frm_Add_New_Brand.resources
+C:\Users\91842\Desktop\Git_Upload\Git RK Project\RK_Cosmetics_System\RK_Cosmetics_System\obj\x86\Debug\RK_Cosmetics_System.frm_Add_New_Customer.resources
+C:\Users\91842\Desktop\Git_Upload\Git RK Project\RK_Cosmetics_System\RK_Cosmetics_System\obj\x86\Debug\RK_Cosmetics_System.frm_Add_New_Distributor.resources
+C:\Users\91842\Desktop\Git_Upload\Git RK Project\RK_Cosmetics_System\RK_Cosmetics_System\obj\x86\Debug\RK_Cosmetics_System.frm_Add_New_Employee.resources
+C:\Users\91842\Desktop\Git_Upload\Git RK Project\RK_Cosmetics_System\RK_Cosmetics_System\obj\x86\Debug\RK_Cosmetics_System.frm_Add_New_Product.resources
+C:\Users\91842\Desktop\Git_Upload\Git RK Project\RK_Cosmetics_System\RK_Cosmetics_System\obj\x86\Debug\RK_Cosmetics_System.frm_Add_New_User.resources
+C:\Users\91842\Desktop\Git_Upload\Git RK Project\RK_Cosmetics_System\RK_Cosmetics_System\obj\x86\Debug\RK_Cosmetics_System.frm_Add_Stock.resources
+C:\Users\91842\Desktop\Git_Upload\Git RK Project\RK_Cosmetics_System\RK_Cosmetics_System\obj\x86\Debug\RK_Cosmetics_System.frm_Change_Password.resources
+C:\Users\91842\Desktop\Git_Upload\Git RK Project\RK_Cosmetics_System\RK_Cosmetics_System\obj\x86\Debug\RK_Cosmetics_System.frm_Delete_User.resources
+C:\Users\91842\Desktop\Git_Upload\Git RK Project\RK_Cosmetics_System\RK_Cosmetics_System\obj\x86\Debug\RK_Cosmetics_System.frm_Login_Page.resources
+C:\Users\91842\Desktop\Git_Upload\Git RK Project\RK_Cosmetics_System\RK_Cosmetics_System\obj\x86\Debug\RK_Cosmetics_System.frm_Update_Brand_Details.resources
+C:\Users\91842\Desktop\Git_Upload\Git RK Project\RK_Cosmetics_System\RK_Cosmetics_System\obj\x86\Debug\RK_Cosmetics_System.frm_Update_Distributor_Details.resources
+C:\Users\91842\Desktop\Git_Upload\Git RK Project\RK_Cosmetics_System\RK_Cosmetics_System\obj\x86\Debug\RK_Cosmetics_System.frm_Update_Employee_Details.resources
+C:\Users\91842\Desktop\Git_Upload\Git RK Project\RK_Cosmetics_System\RK_Cosmetics_System\obj\x86\Debug\RK_Cosmetics_System.frm_Update_Product_Details.resources
+C:\Users\91842\Desktop\Git_Upload\Git RK Project\RK_Cosmetics_System\RK_Cosmetics_System\obj\x86\Debug\RK_Cosmetics_System.frm_View_Expense_Details.resources
+C:\Users\91842\Desktop\Git_Upload\Git RK Project\RK_Cosmetics_System\RK_Cosmetics_System\obj\x86\Debug\RK_Cosmetics_System.frm_View_Product_List.resources
+C:\Users\91842\Desktop\Git_Upload\Git RK Project\RK_Cosmetics_System\RK_Cosmetics_System\obj\x86\Debug\RK_Cosmetics_System.frm_View_Stock_List.resources
+C:\Users\91842\Desktop\Git_Upload\Git RK Project\RK_Cosmetics_System\RK_Cosmetics_System\obj\x86\Debug\RK_Cosmetics_System.MDI.resources
+C:\Users\91842\Desktop\Git_Upload\Git RK Project\RK_Cosmetics_System\RK_Cosmetics_System\obj\x86\Debug\RK_Cosmetics_System.Properties.Resources.resources
+C:\Users\91842\Desktop\Git_Upload\Git RK Project\RK_Cosmetics_System\RK_Cosmetics_System\obj\x86\Debug\RK_Cosmetics_System.csproj.GenerateResource.Cache
